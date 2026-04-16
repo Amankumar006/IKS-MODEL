@@ -1,0 +1,241 @@
+[project]
+name = "iks-ai-assistant"
+version = "0.1.0"
+description = "Indian Knowledge Systems AI Assistant - Specialized AI for Indian heritage"
+authors = [
+    {name = "Amankumar", email = "your-email@example.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Education",
+]
+keywords = ["indian-knowledge-systems", "ai", "rag", "llm", "education", "heritage"]
+
+dependencies = [
+    # Core LLM & RAG
+    "llama-index>=0.12.0",
+    "llama-index-llms-ollama>=0.5.0",
+    "llama-index-embeddings-huggingface>=0.5.0",
+    "llama-index-vector-stores-chroma>=0.4.0",
+
+    # Vector Database
+    "chromadb>=0.6.0",
+
+    # Embeddings
+    "sentence-transformers>=3.0.0",
+    "huggingface-hub>=0.25.0",
+
+    # Document Processing
+    "pypdf>=5.0.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.0.0",
+
+    # Web Framework & UI
+    "fastapi>=0.115.0",
+    "uvicorn>=0.32.0",
+    "gradio>=5.0.0",
+
+    # Configuration & Utilities
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "pyyaml>=6.0.2",
+    "python-dotenv>=1.0.1",
+    "structlog>=24.4.0",
+
+    # Data Processing
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+
+    # HTTP Client
+    "httpx>=0.27.0",
+    "requests>=2.32.0",
+
+    # Progress & CLI
+    "tqdm>=4.66.0",
+    "rich>=13.9.0",
+    "typer>=0.13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    # Testing
+    "pytest>=8.3.0",
+    "pytest-cov>=6.0.0",
+    "pytest-asyncio>=0.24.0",
+    "pytest-mock>=3.14.0",
+    "factory-boy>=3.3.0",
+
+    # Code Quality
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+    "pre-commit>=4.0.0",
+
+    # Documentation
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.5.0",
+    "mkdocstrings[python]>=0.27.0",
+
+    # Jupyter
+    "jupyter>=1.1.0",
+    "ipykernel>=6.29.0",
+    "ipython>=8.29.0",
+]
+
+training = [
+    # Fine-tuning (Phase 2)
+    "unsloth[cu121-ampere-torch251] @ git+https://github.com/unslothai/unsloth.git",
+    "transformers>=4.46.0",
+    "trl>=0.12.0",
+    "peft>=0.14.0",
+    "accelerate>=1.1.0",
+    "bitsandbytes>=0.44.0",
+    "datasets>=3.1.0",
+    "wandb>=0.18.0",
+]
+
+monitoring = [
+    "prometheus-client>=0.21.0",
+    "opentelemetry-api>=1.28.0",
+    "opentelemetry-sdk>=1.28.0",
+]
+
+all = [
+    "iks-ai-assistant[dev,training,monitoring]"
+]
+
+[project.urls]
+Homepage = "https://github.com/Amankumar006/IKS-MODEL"
+Documentation = "https://github.com/Amankumar006/IKS-MODEL/tree/main/docs"
+Repository = "https://github.com/Amankumar006/IKS-MODEL.git"
+Issues = "https://github.com/Amankumar006/IKS-MODEL/issues"
+
+[project.scripts]
+iks-rag = "iks_rag.cli:main"
+iks-serve = "iks_rag.api.main:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/iks_rag", "src/iks_common"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+    "pre-commit>=4.0.0",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "D",   # pydocstyle
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "PL",  # pylint
+]
+ignore = [
+    "D100",  # Missing docstring in public module
+    "D104",  # Missing docstring in public package
+    "D107",  # Missing docstring in __init__
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = [
+    "chromadb.*",
+    "llama_index.*",
+    "transformers.*",
+    "unsloth.*",
+]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--verbose",
+    "--tb=short",
+    "-ra",
+]
+markers = [
+    "unit: Unit tests",
+    "integration: Integration tests",
+    "e2e: End-to-end tests",
+    "slow: Slow tests",
+]
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+omit = [
+    "*/tests/*",
+    "*/test_*",
+    "__pycache__/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+]
+fail_under = 80
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.coverage.xml]
+output = "coverage.xml"

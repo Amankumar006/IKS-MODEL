@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/amankumar/Aman/IKS-Model -type f -exec ls -lh {} \\\\;)",
+      "Bash(git add *)"
+    ]
+  }
+}

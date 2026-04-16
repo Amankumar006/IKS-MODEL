@@ -1,0 +1,180 @@
+
+<style>
+:root {
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f5f5f5;
+  --color-background-warning: #fff7e6;
+  --color-background-success: #edfdf3;
+  --color-background-info: #e9f4ff;
+  --color-background-danger: #fff0f0;
+  --color-border-tertiary: #e3e5e8;
+  --color-border-secondary: #c7ccd1;
+  --color-border-info: #7bb0e8;
+  --color-text-primary: #1f2328;
+  --color-text-secondary: #5a6470;
+  --color-text-warning: #8a5a00;
+  --color-text-success: #0e6a37;
+  --color-text-info: #0e4f8a;
+  --color-text-danger: #9f1d1d;
+  --border-radius-lg: 12px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--color-text-primary); }
+
+.model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; padding: 4px 0 16px; }
+.model-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 14px 16px; }
+.model-card.gap { border: 2px solid var(--color-border-info); }
+.badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; margin-bottom: 8px; }
+.b-lang { background: var(--color-background-warning); color: var(--color-text-warning); }
+.b-culture { background: var(--color-background-success); color: var(--color-text-success); }
+.b-vision { background: var(--color-background-info); color: var(--color-text-info); }
+.b-iks { background: var(--color-background-danger); color: var(--color-text-danger); }
+.b-missing { background: var(--color-background-secondary); color: var(--color-text-secondary); }
+.model-name { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+.model-org { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 10px; }
+.check-row { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--color-text-secondary); margin: 4px 0; }
+.dot-yes { width: 8px; height: 8px; border-radius: 50%; background: var(--color-text-success); flex-shrink: 0; }
+.dot-no  { width: 8px; height: 8px; border-radius: 50%; background: var(--color-border-secondary); flex-shrink: 0; }
+.dot-part { width: 8px; height: 8px; border-radius: 50%; background: var(--color-text-warning); flex-shrink: 0; }
+.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 10px 0; }
+.section-label { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 0 0 10px; letter-spacing: 0.04em; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .model-grid { grid-template-columns: 1fr; }
+  .model-card.gap > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
+}
+</style>
+
+<h2 class="sr-only">Comparison of Indian and global AI models for IKS domain coverage</h2>
+
+<p style="font-size: 13px; color: var(--color-text-secondary); margin: 0 0 14px;">
+  <span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;"><span class="dot-yes"></span> has it</span>
+  <span style="display:inline-flex;align-items:center;gap:5px;margin-right:14px;"><span class="dot-part"></span> partial</span>
+  <span style="display:inline-flex;align-items:center;gap:5px;"><span class="dot-no"></span> missing</span>
+</p>
+
+<p class="section-label">Indian language models</p>
+<div class="model-grid">
+
+  <div class="model-card">
+    <span class="badge b-lang">Language-focused</span>
+    <p class="model-name">Krutrim-2</p>           
+    <p class="model-org">Ola Krutrim · 12B params · 2025</p>
+    <div class="check-row"><span class="dot-yes"></span> 22 Indian languages</div>
+    <div class="check-row"><span class="dot-yes"></span> Indian cultural context (text)</div>
+    <div class="check-row"><span class="dot-part"></span> Vision (Chitrarth-1 add-on)</div>
+    <div class="check-row"><span class="dot-no"></span> Deep IKS domain knowledge</div>
+    <div class="check-row"><span class="dot-no"></span> Temple / art identification</div>
+    <div class="check-row"><span class="dot-no"></span> Music theory, raga knowledge</div>
+    <hr class="divider">
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Strong on language, weak on deep heritage content</p>
+  </div>
+
+  <div class="model-card">
+    <span class="badge b-lang">Language-focused</span>
+    <p class="model-name">Sarvam-1 / Sarvam-2B</p>
+    <p class="model-org">Sarvam AI · IIT Madras · 2024</p>
+    <div class="check-row"><span class="dot-yes"></span> 10 Indian languages</div>
+    <div class="check-row"><span class="dot-part"></span> Cultural context (basic)</div>
+    <div class="check-row"><span class="dot-no"></span> Vision / image understanding</div>
+    <div class="check-row"><span class="dot-no"></span> IKS domain depth</div>
+    <div class="check-row"><span class="dot-no"></span> Historical / architectural knowledge</div>
+    <div class="check-row"><span class="dot-no"></span> Classical arts knowledge</div>
+    <hr class="divider">
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Focused on NLP tasks, not heritage knowledge</p>
+  </div>
+
+  <div class="model-card">
+    <span class="badge b-lang">Language-focused</span>
+    <p class="model-name">Airavata (AI4Bharat)</p>
+    <p class="model-org">IIT Madras · Hindi specialist · 2024</p>
+    <div class="check-row"><span class="dot-yes"></span> Hindi instruction-tuning</div>
+    <div class="check-row"><span class="dot-part"></span> Some Indian context</div>
+    <div class="check-row"><span class="dot-no"></span> Vision / multimodal</div>
+    <div class="check-row"><span class="dot-no"></span> IKS deep knowledge</div>
+    <div class="check-row"><span class="dot-no"></span> Temple / art recognition</div>
+    <div class="check-row"><span class="dot-no"></span> Sanskrit / classical texts</div>
+    <hr class="divider">
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Open-source, excellent base but no heritage focus</p>
+  </div>
+
+</div>
+
+<p class="section-label" style="margin-top:8px;">Global models tested on Indian knowledge</p>
+<div class="model-grid">
+
+  <div class="model-card">
+    <span class="badge b-vision">Multimodal</span>
+    <p class="model-name">Gemini 1.5 / 2.0</p>
+    <p class="model-org">Google · Frontier model · 2024–25</p>
+    <div class="check-row"><span class="dot-yes"></span> Strong vision + text</div>
+    <div class="check-row"><span class="dot-part"></span> General Indian knowledge</div>
+    <div class="check-row"><span class="dot-no"></span> IKS-specific depth</div>
+    <div class="check-row"><span class="dot-no"></span> Reliable temple / raga ID</div>
+    <div class="check-row"><span class="dot-part"></span> Sanskrit (basic)</div>
+    <div class="check-row"><span class="dot-no"></span> Anti-Indic bias documented</div>
+    <hr class="divider">
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Capable base but proven cultural bias issues</p>
+  </div>
+
+  <div class="model-card">
+    <span class="badge b-vision">Multimodal</span>
+    <p class="model-name">GPT-4o / o3</p>
+    <p class="model-org">OpenAI · Frontier model · 2024–25</p>
+    <div class="check-row"><span class="dot-yes"></span> Excellent vision + reasoning</div>
+    <div class="check-row"><span class="dot-part"></span> General Indian history</div>
+    <div class="check-row"><span class="dot-no"></span> IKS-specific depth</div>
+    <div class="check-row"><span class="dot-no"></span> Textile / craft expertise</div>
+    <div class="check-row"><span class="dot-part"></span> Classical music (surface level)</div>
+    <div class="check-row"><span class="dot-no"></span> Evidence-backed heritage answers</div>
+    <hr class="divider">
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Best general model, but hallucinations on niche IKS topics</p>
+  </div>
+
+  <div class="model-card">
+    <span class="badge b-missing">Benchmark only</span>
+    <p class="model-name">IndQA (OpenAI benchmark)</p>
+    <p class="model-org">OpenAI · 2025 · Evaluation tool</p>
+    <div class="check-row"><span class="dot-yes"></span> 2,278 Indian culture questions</div>
+    <div class="check-row"><span class="dot-yes"></span> 12 languages, 10 domains</div>
+    <div class="check-row"><span class="dot-yes"></span> Created by 261 domain experts</div>
+    <div class="check-row"><span class="dot-no"></span> Not a deployable model</div>
+    <div class="check-row"><span class="dot-no"></span> No visual component</div>
+    <div class="check-row"><span class="dot-part"></span> Useful to evaluate YOUR model</div>
+    <hr class="divider">
+    <p style="font-size:12px;color:var(--color-text-secondary);margin:0;">Use this to benchmark your IKS model after training</p>
+  </div>
+
+</div>
+
+<p class="section-label" style="margin-top:8px;">The gap — what does not exist yet</p>
+<div class="model-card gap" style="margin-bottom:4px;">
+  <span class="badge b-iks">Does not exist</span>
+  <p class="model-name">An IKS-specialized multimodal model</p>
+  <p class="model-org">What you are proposing to build</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;">
+    <div class="check-row"><span class="dot-no"></span> Deep temple architecture ID</div>
+    <div class="check-row"><span class="dot-no"></span> Raga + tala classification</div>
+    <div class="check-row"><span class="dot-no"></span> Textile pattern recognition</div>
+    <div class="check-row"><span class="dot-no"></span> Manuscript + inscription reading</div>
+    <div class="check-row"><span class="dot-no"></span> Dynasty-level historical depth</div>
+    <div class="check-row"><span class="dot-no"></span> Evidence-cited answers</div>
+    <div class="check-row"><span class="dot-no"></span> All 3 IKS units covered</div>
+    <div class="check-row"><span class="dot-no"></span> VTU IKS curriculum aligned</div>
+  </div>
+  <hr class="divider">
+  <p style="font-size:12px;color:var(--color-text-info);margin:0;">No model in existence today covers this intersection of depth + vision + IKS domain specificity</p>
+</div>

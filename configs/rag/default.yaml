@@ -1,0 +1,174 @@
+# IKS RAG System Configuration
+# This configuration is used for Phase 1: RAG Foundation
+
+# Model Configuration
+# Supports any Ollama model - choose based on your hardware:
+# - gemma3:4b  (4GB VRAM)  - Default for development
+# - gemma3:12b (12GB VRAM) - Better quality
+# - gemma3:27b (24GB VRAM) - Best quality
+# - mistral, llama3.1, etc. (any Ollama model)
+llm:
+  provider: ollama
+  model: gemma3:4b
+  temperature: 0.7
+  max_tokens: 2048
+  request_timeout: 120.0
+  system_prompt: |
+    You are a knowledgeable expert on Indian Knowledge Systems (IKS).
+    Your expertise covers:
+    - Classical Hindu and Buddhist philosophy (Vedanta, Samkhya, Nyaya)
+    - Temple architecture (Dravidian, Nagara, Vesara styles)
+    - Classical Indian performing arts (Bharatanatyam, Kathakali, Odissi, Kathak)
+    - Indian classical music systems (Carnatic and Hindustani)
+    - Ancient Indian mathematics (zero, decimal system, Aryabhata)
+    - Ayurveda and traditional medicine
+    - Indian textiles and crafts
+    - Historical empires (Chola, Maurya, Mughal)
+
+    IMPORTANT RULES:
+    1. Answer ONLY using the provided context passages
+    2. If context doesn't contain sufficient information, explicitly say so
+    3. Do NOT make up facts or draw from general knowledge
+    4. Always cite which source document you're using
+    5. For ambiguous questions, ask for clarification
+    6. If multiple sources agree, mention consensus
+    7. Never claim certainty beyond what sources support
+    8. Use respectful, scholarly language appropriate for Indian heritage
+
+# Embedding Configuration
+# multilingual-e5-large supports 100+ languages including Hindi, Tamil, Kannada, Sanskrit
+embeddings:
+  model: intfloat/multilingual-e5-large
+  device: auto  # auto, cpu, cuda
+  max_length: 512
+  normalize_embeddings: true
+
+# Vector Store Configuration
+# ChromaDB for Phase 1 (local, zero-config)
+# Upgrade to Qdrant for Phase 2 (production, scale)
+vector_store:
+  type: chroma  # chroma, qdrant (Phase 2)
+  path: ./data/chroma_db
+  collection_name: iks_corpus
+  metadata:
+    description: Indian Knowledge Systems document collection
+    languages:
+      - en
+      - hi
+      - ta
+      - kn
+      - sa
+
+# Retrieval Configuration
+retrieval:
+  # Number of chunks to retrieve
+  top_k: 5
+
+  # Similarity threshold (0.0-1.0)
+  # Higher = more relevant but fewer results
+  similarity_threshold: 0.7
+
+  # Search mode: semantic, keyword, hybrid
+  search_mode: semantic
+
+# Document Processing
+document_processing:
+  # Chunk size in tokens
+  chunk_size: 512
+
+  # Overlap between chunks in tokens
+  # Helps preserve context across chunk boundaries
+  chunk_overlap: 50
+
+  # Supported file types
+  supported_extensions:
+    - .txt
+    - .md
+    - .pdf
+    - .html
+    - .json
+
+  # Excluded patterns
+  exclude_patterns:
+    - "*.tmp"
+    - "*.log"
+    - ".*"  # Hidden files
+
+# UI Configuration
+ui:
+  title: "🏛️ Indian Knowledge Systems (IKS) Assistant"
+  description: |
+    Ask anything about Indian Knowledge Systems — a specialized AI assistant
+    trained on curated IKS documents. This system retrieves relevant passages
+    and generates answers with source citations, avoiding hallucinations.
+
+  # Theme colors (Indian heritage inspired)
+  theme:
+    primary: orange
+    secondary: amber
+    text: dark
+
+  # Example questions for the UI
+  examples:
+    - "What are the key architectural features of Chola temples?"
+    - "Explain the significance of the number zero in Indian mathematics"
+    - "What are the 72 Melakarta ragas in Carnatic music?"
+    - "Describe the role of Natya Shastra in Indian classical dance"
+    - "How did the Mauryan empire organize its administrative systems?"
+    - "What are the main schools of Indian philosophy mentioned in the Upanishads?"
+    - "Explain the textile traditions of India and their significance"
+    - "What is Ayurveda and what are its fundamental principles?"
+
+# Logging Configuration
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR
+  format: structured  # structured, simple
+  log_file: ./logs/iks_rag.log
+
+  # Performance logging
+  log_retrieval_times: true
+  log_generation_times: true
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false  # Set to true for development
+
+  # CORS settings
+  cors:
+    allow_origins:
+      - "http://localhost"
+      - "http://localhost:7860"
+      - "http://localhost:3000"
+    allow_methods:
+      - "GET"
+      - "POST"
+    allow_headers:
+      - "*"
+
+# Data Sources
+data_sources:
+  # Directory containing IKS documents
+  documents_path: ./data/documents
+
+  # Supported sources for auto-download (Phase 2)
+  auto_download:
+    enabled: false  # Enable for automatic document fetching
+    sources:
+      - archive_org
+      - wikimedia
+      # - asi  # Requires API key
+      # - ignca  # Requires API key
+
+# Performance Tuning
+performance:
+  # Cache settings
+  cache_enabled: true
+  cache_ttl_seconds: 3600  # 1 hour
+
+  # Batch processing
+  batch_size: 32
+
+  # Async settings
+  max_workers: 4

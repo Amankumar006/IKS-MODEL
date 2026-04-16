@@ -1,0 +1,115 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+.uv/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Data (large files)
+data/raw/*
+data/processed/*
+data/curated/*
+data/chroma_db/*
+!data/.gitkeep
+!data/documents/.gitkeep
+
+# Models (large files)
+models/*
+!models/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Documentation build
+docs/_build/
+site/
+
+# HuggingFace cache
+.cache/
+transformers_cache/
+torch_cache/
+
+# Ollama
+.ollama/
+
+# DVC
+.dvc
+.dvcignore
+
+# Weights & Biases
+wandb/
+
+# Pre-commit
+.pre-commit-cache/
+
+# Docker
+.dockerignore
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Kubernetes
+*.kubeconfig
+
+# Misc
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej

@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAG Frameworks Comparison for IKS</title>
+<style>
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+.card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 14px 16px; }
+.card.rec { border: 2px solid var(--color-border-success); }
+.badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; margin-bottom: 8px; }
+.b-s { background: var(--color-background-success); color: var(--color-text-success); }
+.b-i { background: var(--color-background-info); color: var(--color-text-info); }
+.b-w { background: var(--color-background-warning); color: var(--color-text-warning); }
+.b-d { background: var(--color-background-danger); color: var(--color-text-danger); }
+.b-n { background: var(--color-background-secondary); color: var(--color-text-secondary); }
+.nm { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+.sub { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 10px; }
+.row { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: var(--color-text-secondary); margin: 3px 0; }
+.y { width: 7px; height: 7px; border-radius: 50%; background: var(--color-text-success); flex-shrink: 0; margin-top: 4px; }
+.n { width: 7px; height: 7px; border-radius: 50%; background: var(--color-border-secondary); flex-shrink: 0; margin-top: 4px; }
+.p { width: 7px; height: 7px; border-radius: 50%; background: var(--color-text-warning); flex-shrink: 0; margin-top: 4px; }
+.hr { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 10px 0 8px; }
+.note { font-size: 12px; color: var(--color-text-secondary); margin: 0; }
+.sec { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); margin: 16px 0 8px; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+
+<h2 class="sr-only">Open-source RAG frameworks comparison for IKS project</h2>
+
+<p class="sec">Orchestration frameworks (the brain of your RAG pipeline)</p>
+<div class="grid2">
+  <div class="card rec">
+    <span class="badge b-s">Recommended for IKS</span>
+    <p class="nm">LlamaIndex</p>
+    <p class="sub">Jerry Liu · Apache 2.0 · Python</p>
+    <div class="row"><span class="y"></span>Built for document Q&amp;A use cases</div>
+    <div class="row"><span class="y"></span>Multimodal RAG (text + images) natively</div>
+    <div class="row"><span class="y"></span>PDF, HTML, JSON, CSV loaders built in</div>
+    <div class="row"><span class="y"></span>Works with any LLM (Gemma, Ollama, etc.)</div>
+    <div class="row"><span class="y"></span>Easiest to get running fast</div>
+    <div class="row"><span class="y"></span>HuggingFace + Ollama integrations</div>
+    <div class="hr"></div>
+    <p class="note">Best choice for Phase 1 IKS RAG system</p>
+  </div>
+  <div class="card">
+    <span class="badge b-i">Production-grade</span>
+    <p class="nm">LangChain</p>
+    <p class="sub">Harrison Chase · MIT · Python / JS</p>
+    <div class="row"><span class="y"></span>Huge ecosystem, most tutorials</div>
+    <div class="row"><span class="y"></span>Works with every LLM &amp; vector DB</div>
+    <div class="row"><span class="y"></span>LangGraph for agentic flows</div>
+    <div class="row"><span class="p"></span>Slightly more complex setup than LlamaIndex</div>
+    <div class="row"><span class="p"></span>Multimodal RAG needs more manual wiring</div>
+    <div class="row"><span class="y"></span>LangSmith for tracing &amp; debugging</div>
+    <div class="hr"></div>
+    <p class="note">Great if you want more control and scale</p>
+  </div>
+</div>
+
+<p class="sec">Vector databases (where your IKS knowledge lives)</p>
+<div class="grid3">
+  <div class="card rec">
+    <span class="badge b-s">Best for local / free</span>
+    <p class="nm">ChromaDB</p>
+    <p class="sub">Apache 2.0 · runs in-process</p>
+    <div class="row"><span class="y"></span>Zero setup, pure Python</div>
+    <div class="row"><span class="y"></span>Runs fully locally (no server)</div>
+    <div class="row"><span class="y"></span>Persists to disk automatically</div>
+    <div class="row"><span class="n"></span>Not for millions of documents</div>
+    <div class="hr"></div>
+    <p class="note">Perfect for IKS Phase 1 prototype</p>
+  </div>
+  <div class="card">
+    <span class="badge b-i">Best open-source scale</span>
+    <p class="nm">Qdrant</p>
+    <p class="sub">Apache 2.0 · Rust-based</p>
+    <div class="row"><span class="y"></span>Very fast, production-ready</div>
+    <div class="row"><span class="y"></span>Docker image, easy local deploy</div>
+    <div class="row"><span class="y"></span>Supports image embeddings</div>
+    <div class="row"><span class="y"></span>Cloud tier available free</div>
+    <div class="hr"></div>
+    <p class="note">Upgrade to this for Phase 2</p>
+  </div>
+  <div class="card">
+    <span class="badge b-w">Good alternative</span>
+    <p class="nm">Weaviate</p>
+    <p class="sub">BSD-3 · Go-based</p>
+    <div class="row"><span class="y"></span>Multi-modal natively</div>
+    <div class="row"><span class="y"></span>Hybrid search built in</div>
+    <div class="row"><span class="p"></span>Heavier to self-host</div>
+    <div class="row"><span class="y"></span>Free cloud sandbox</div>
+    <div class="hr"></div>
+    <p class="note">Best multimodal vector search</p>
+  </div>
+</div>
+
+<p class="sec">Embedding models (converts IKS text to searchable vectors)</p>
+<div class="grid3">
+  <div class="card rec">
+    <span class="badge b-s">Best for IKS text</span>
+    <p class="nm">sentence-transformers</p>
+    <p class="sub">HuggingFace · Apache 2.0</p>
+    <div class="row"><span class="y"></span>all-MiniLM-L6-v2 (fast, free)</div>
+    <div class="row"><span class="y"></span>multilingual-e5-large (Indic langs)</div>
+    <div class="row"><span class="y"></span>Runs fully offline / local</div>
+    <div class="row"><span class="y"></span>Drop-in with LlamaIndex</div>
+    <div class="hr"></div>
+    <p class="note">Use multilingual-e5 for Sanskrit/Hindi</p>
+  </div>
+  <div class="card">
+    <span class="badge b-i">Best for images</span>
+    <p class="nm">CLIP / SigLIP</p>
+    <p class="sub">OpenAI / Google · MIT / Apache</p>
+    <div class="row"><span class="y"></span>Embeds images + text together</div>
+    <div class="row"><span class="y"></span>Search images with text queries</div>
+    <div class="row"><span class="y"></span>"Show me a Chola temple" → image results</div>
+    <div class="row"><span class="p"></span>Needs GPU for large collections</div>
+    <div class="hr"></div>
+    <p class="note">Key for visual IKS search</p>
+  </div>
+  <div class="card">
+    <span class="badge b-w">Indic-specific</span>
+    <p class="nm">IndicBERT / MuRIL</p>
+    <p class="sub">AI4Bharat / Google · Apache 2.0</p>
+    <div class="row"><span class="y"></span>Trained on 17 Indian languages</div>
+    <div class="row"><span class="y"></span>Best for Hindi/Kannada/Tamil text</div>
+    <div class="row"><span class="y"></span>Understands Devanagari scripts</div>
+    <div class="row"><span class="p"></span>Smaller community than sentence-transformers</div>
+    <div class="hr"></div>
+    <p class="note">Use when indexing Indic-language sources</p>
+  </div>
+</div>
+
+<p class="sec">LLM backends (the answering engine)</p>
+<div class="grid2">
+  <div class="card rec">
+    <span class="badge b-s">Best local option</span>
+    <p class="nm">Ollama + Gemma 3</p>
+    <p class="sub">MIT · runs on your machine</p>
+    <div class="row"><span class="y"></span>One command install: ollama pull gemma3</div>
+    <div class="row"><span class="y"></span>Completely offline, free forever</div>
+    <div class="row"><span class="y"></span>Vision support (gemma3:12b)</div>
+    <div class="row"><span class="y"></span>OpenAI-compatible API locally</div>
+    <div class="row"><span class="y"></span>LlamaIndex integrates natively</div>
+    <div class="hr"></div>
+    <p class="note">Run the full IKS RAG stack for ₹0/month</p>
+  </div>
+  <div class="card">
+    <span class="badge b-i">Cloud / API option</span>
+    <p class="nm">HuggingFace Inference API</p>
+    <p class="sub">Free tier · Mistral / Llama / etc.</p>
+    <div class="row"><span class="y"></span>No GPU needed on your machine</div>
+    <div class="row"><span class="y"></span>Serverless inference calls</div>
+    <div class="row"><span class="y"></span>Free tier: ~1000 calls/day</div>
+    <div class="row"><span class="p"></span>Latency higher than local Ollama</div>
+    <div class="row"><span class="n"></span>No vision on free tier</div>
+    <div class="hr"></div>
+    <p class="note">Good for sharing/demo without GPU</p>
+  </div>
+</div>
+
+<p class="sec">UI / interface (so students can actually use it)</p>
+<div class="grid3">
+  <div class="card rec">
+    <span class="badge b-s">Recommended</span>
+    <p class="nm">Gradio</p>
+    <p class="sub">HuggingFace · Apache 2.0</p>
+    <div class="row"><span class="y"></span>5 lines to build a chat UI</div>
+    <div class="row"><span class="y"></span>Image upload support built-in</div>
+    <div class="row"><span class="y"></span>Deploy free on HF Spaces</div>
+    <div class="hr"></div>
+    <p class="note">Fastest path to a usable demo</p>
+  </div>
+  <div class="card">
+    <span class="badge b-i">Full chat UI</span>
+    <p class="nm">Open WebUI</p>
+    <p class="sub">MIT · works with Ollama</p>
+    <div class="row"><span class="y"></span>ChatGPT-like interface</div>
+    <div class="row"><span class="y"></span>Document upload built-in</div>
+    <div class="row"><span class="y"></span>Runs locally via Docker</div>
+    <div class="hr"></div>
+    <p class="note">Best for a polished local experience</p>
+  </div>
+  <div class="card">
+    <span class="badge b-w">Customizable</span>
+    <p class="nm">Chainlit</p>
+    <p class="sub">Apache 2.0 · Python</p>
+    <div class="row"><span class="y"></span>Chat UI with source citations</div>
+    <div class="row"><span class="y"></span>Shows which documents were retrieved</div>
+    <div class="row"><span class="y"></span>Easy to embed in a website</div>
+    <div class="hr"></div>
+    <p
+
+</body>
+</html> class="note">Best for showing evidence to students</p>
+  </div>
+</div>
