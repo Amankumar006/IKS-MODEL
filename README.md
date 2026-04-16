@@ -219,7 +219,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 ## 📞 Contact
 
 - GitHub Issues: [IKS-MODEL Issues](https://github.com/Amankumar006/IKS-MODEL/issues)
-- Email: your-email@example.com
+- Email: 006amanraj@gmail.com
 
 ---
 
