@@ -1,0 +1,49 @@
+Indian Contributions to Mathematics
+
+Ancient India made revolutionary contributions to mathematics that changed the world.
+
+Key Contributions:
+
+1. The Concept of Zero (Shunya):
+   - Developed by 5th century CE
+   - Brahmagupta's Brahmasphutasiddhanta (628 CE) formalized rules for zero
+   - Enabled the decimal place-value system
+   - Crucial for advanced mathematics
+
+2. Decimal Place-Value System:
+   - Used today worldwide
+   - Base-10 system with place values (units, tens, hundreds)
+   - Far more efficient than Roman numerals
+
+3. Aryabhata's Contributions (476-550 CE):
+   - Approximated pi (π) as 3.1416
+   - Calculated Earth's circumference
+   - Sine tables in trigonometry
+   - Solutions to linear and quadratic equations
+
+4. Brahmagupta's Contributions (598-668 CE):
+   - Rules for arithmetic with zero
+   - Solutions to quadratic equations
+   - Formula for area of cyclic quadrilateral
+   - Introduction of negative numbers
+
+5. Other Important Mathematicians:
+   - Bhaskara II (1114-1185): Calculus concepts, astronomy
+   - Madhava (1340-1425): Infinite series for trigonometric functions
+   - Virasena (710-790): Work on logarithms
+
+6. Sulbasutras (800-500 BCE):
+   - Geometric constructions for Vedic altars
+   - Pythagorean theorem before Pythagoras
+   - Square roots and cube roots
+
+Impact:
+- Transformed mathematics globally
+- Enabled scientific revolution in Europe
+- Arabic numerals originated in India
+- Foundation of modern computing
+
+Sources:
+- Aryabhatiya by Aryabhata
+- Brahmasphutasiddhanta by Brahmagupta
+- Lilavati by Bhaskara II

@@ -52,12 +52,7 @@ vector_store:
   collection_name: iks_corpus
   metadata:
     description: Indian Knowledge Systems document collection
-    languages:
-      - en
-      - hi
-      - ta
-      - kn
-      - sa
+    languages: "en, hi, ta, kn, sa"
 
 # Retrieval Configuration
 retrieval:

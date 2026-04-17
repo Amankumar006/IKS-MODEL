@@ -1,0 +1,27 @@
+The 72 Melakarta Ragas (Carnatic Music)
+
+Melakarta ragas are the parent scales in Carnatic music. There are 72 melakarta ragas, organized in a systematic framework.
+
+Structure:
+- Each melakarta has all 7 notes (saptaka)
+- Notes: Sa, Ri, Ga, Ma, Pa, Da, Ni, Sa
+- Divided into 12 chakras (groups of 6)
+
+The 12 Chakras:
+1. Indu (1-6): Kanakangi, Ratnangi, Ganamurti, Vanaspati, Manavati, Tanarupi
+2. Netra (7-12): Senavati, Hanumatodi, Dhenuka, Natakapriya, Kokilapriya, Rupavati
+3. Agni (13-18): Gayakapriya, Vakulabharanam, Mayamalavagowla, Chakravakam, Suryakantam, Hatakambhari
+4. Veda (19-24): Jhankaradhwani, Natabhairavi, Keeravani, Kharaharapriya, Gourimanohari, Varunapriya
+5. Bana (25-30): Mararanjani, Charukesi, Sarasangi, Harikambhoji, Dheerashankarabharanam, Naganandini
+6. Rutu (31-36): Yagapriya, Ragavardhini, Gangeyabhusani, Vagadheeswari, Soolini, Chalanata
+7. Rishi (37-42): Salagam, Jalarnavam, Jhalavarali, Navaneetam, Pavani, Raghupriya
+8. Vasu (43-48): Gavambodhi, Bhavapriya, Subhapanthuvara, Shadvidamargini, Suvarnangi, Divyamani
+9. Brahma (49-54): Dhavalambari, Namanarayani, Kamavardhini, Ramapriya, Gamanashrama, Vishwambari
+10. Disi (55-60): Syamalangi, Shanmukhapriya, Simhendramadhyamam, Hemavati, Dharamavai, Nitimati
+11. Rudra (61-66): Kanthamani, Rishabhapriya, Latangi, Vachaspati, Mechakalyani, Chitrambari
+12. Aditya (67-72): Sucharitra, Jyotiswaroopini, Dhatuvardani, Nasikabhooshani, Kosalam, Rasikapriya
+
+Usage:
+- These are the parent scales
+- Janya ragas (derived scales) are created by omitting or modifying notes
+- Each melakarta can generate many janya ragas
