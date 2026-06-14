@@ -10,6 +10,12 @@ A specialized, state-of-the-art AI assistant for **Indian Knowledge Systems (IKS
 
 ---
 
+## 🔗 Live Demo (Hugging Face Spaces)
+Experience the interactive "Bharat" persona live in your browser:
+👉 **[Hugging Face Space: IKS AI Assistant](https://huggingface.co/spaces/006aman/IKS)**
+
+---
+
 ## 🎯 The Vision: Immersive Storytelling
 
 Most general AI assistants (like GPT-4o, Claude 3.5, or baseline Gemini) treat Indian culture as dry, textbook facts, scoring poorly on niche IKS concepts (around 50-60% accuracy). 
