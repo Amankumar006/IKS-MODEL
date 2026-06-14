@@ -1,226 +1,165 @@
-# 🏛️ IKS AI Assistant
+# 🏛️ IKS AI Assistant: "Bharat" — The World's Gateway to Indian Civilization
 
-A specialized AI assistant for **Indian Knowledge Systems (IKS)** - answering questions about Indian heritage including temples, classical music, dance, textiles, mathematics, and philosophy.
+A specialized, state-of-the-art AI assistant for **Indian Knowledge Systems (IKS)**. It acts as an immersive cultural guide named **Bharat**, explaining India's history, temples, classical music, dance, textiles, mathematics, and philosophy to a global audience.
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Model: Gemma 3 12B](https://img.shields.io/badge/Fine--Tune-Gemma%203%2012B-orange.svg)](https://huggingface.co/google/gemma-3-12b)
+[![Deployment: Live Space](https://img.shields.io/badge/HF%20Spaces-Live%20Demo-pink.svg)](https://huggingface.co/spaces/006aman/IKS)
 
-## 🎯 Problem Statement
+---
 
-Current AI models (GPT-4, Claude, Gemini, Krutrim-2) show significant gaps in understanding Indian Knowledge Systems:
-- **78% accuracy** on general IndQA benchmark (best Indian model)
-- **50-60% accuracy** on niche IKS topics (temples, ragas, mudras)
-- **Cultural bias** documented in Western-trained models
-- **No visual understanding** of Indian art, architecture, dance
+## 🎯 The Vision: Immersive Storytelling
 
-This project fills that gap with a specialized, open-source solution.
+Most general AI assistants (like GPT-4o, Claude 3.5, or baseline Gemini) treat Indian culture as dry, textbook facts, scoring poorly on niche IKS concepts (around 50-60% accuracy). 
+
+The **IKS AI Assistant** bridges this gap by introducing **Bharat**, a wise, storyteller persona that transforms dry academic concepts into immersive, sensory experiences. Bharat is evaluated on four core dimensions:
+*   **Knowledge**: Factually accurate, citing specific names, dates, dynasties, and places.
+*   **Transport**: Evokes physical presence (e.g., feeling the stone carvings of a temple under your feet).
+*   **Rasa**: Evokes the precise emotional essence of the topic (e.g., *Shanta* for Upanishads, *Vira* for Mauryan battles).
+*   **Bharat Voice**: Warm, culturally resonant, and welcoming—never sounding like a dry corporate chatbot.
+
+---
+
+## 🏗️ System Architecture
+
+The project is structured in two parallel architectural layers:
+
+### Phase 1: RAG Retrieval Engine (Live)
+Retrieves factually grounded contexts from **286 curated texts** (~4,516 vector chunks) mapped locally via multilingual embeddings.
+
+```mermaid
+graph TD
+    A[User Query] --> B[Embeddings Generation]
+    B -->|intfloat/multilingual-e5-large| C[ChromaDB Vector Store]
+    C -->|Retrieve Top-K Contexts| D[Persona Prompt Assembler]
+    D -->|Bharat Persona Guidelines| E[Google Gemini 2.5 Flash API]
+    E -->|Answer + Citations| F[Gradio Web UI / API]
+```
+
+### Phase 2: Domain-Specific SFT Fine-Tuning (In Progress)
+Injects the storyteller persona and deep IKS knowledge directly into **Gemma 3 12B IT** using LoRA.
+
+```mermaid
+graph TD
+    A[Curated IKS Docs] --> B[Data Extraction]
+    B -->|Mercury-2 API Generator| C[15,001 pristine ShareGPT pairs]
+    C -->|Unsloth LoRA Fine-Tuning| D[Kaggle Dual Tesla T4 / RunPod A100]
+    D -->|Export LoRA Adapters| E[Fine-Tuned Gemma 3 12B "Bharat"]
+    E -->|GGUF / Ollama Export| F[Offline Local Inference]
+```
+
+---
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### ⚙️ Prerequisites & Hardware Recommendations
+The local vector store runs embeddings on CPU/CUDA, while inference defaults to Google Gemini API (Free tier). For local LLM deployment, we recommend:
 
-**Hardware Requirements** (Flexible):
-| Setup | Hardware | Recommended Model |
-|-------|----------|-------------------|
-| Minimum | 16GB RAM, 4GB VRAM | `gemma3:4b` |
-| Better | 32GB RAM, RTX 3060 (12GB) | `gemma3:12b` |
-| Best | 64GB RAM, RTX 4090 (24GB) | `gemma3:12b` or `gemma3:27b` |
+| Setup | Hardware | Recommended Local Model |
+| :--- | :--- | :--- |
+| **Minimum** | 16GB RAM / Apple Silicon | `gemma3:4b` (via Ollama) |
+| **Recommended** | 32GB RAM / RTX 3060 (12GB) | `gemma3:12b` (via Ollama) |
+| **Extreme** | 64GB RAM / RTX 4090 (24GB) | `gemma3:27b` (via Ollama) |
 
-### Installation
+### 🔧 Installation
+
+We use the ultra-fast Python package manager **`uv`** to maintain lockfile parity and speed up setups.
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/Amankumar006/IKS-MODEL.git
 cd IKS-MODEL
 
-# 2. Install uv (fast Python package manager)
+# 2. Install uv package manager
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# 3. Install dependencies
+# 3. Synchronize environment and install dependencies
 uv sync
 
-# 4. Install Ollama and pull model
-# macOS: brew install ollama
-# Linux: curl -fsSL https://ollama.com/install.sh | sh
-ollama pull gemma3:4b
+# 4. Set up environment variables
+cp .env.example .env
+# Edit .env and paste your GOOGLE_API_KEY (from Google AI Studio)
 
-# 5. Download IKS documents
-python scripts/data/download_sample_docs.py
+# 5. Download base documents
+uv run python scripts/data/download_sample_docs.py
 
-# 6. Launch the assistant
+# 6. Run the local Gradio application
 uv run python src/iks_rag/ui/gradio_app.py
 ```
 
-### Usage
-
-**Web Interface** (Gradio):
-```bash
-# Opens at http://localhost:7860
-uv run python src/iks_rag/ui/gradio_app.py
-```
-
-**API** (FastAPI):
-```bash
-# Opens at http://localhost:8000/docs
-uv run python src/iks_rag/api/main.py
-```
-
-**Example Queries**:
-- "What are the 72 Melakarta ragas in Carnatic music?"
-- "Explain the architectural features of Chola temples"
-- "What is the significance of Natya Shastra?"
-- "Describe the difference between Nagara and Dravidian temple styles"
-
-## 📋 Project Phases
-
-### Phase 1: RAG Foundation ✅ [IN PROGRESS]
-- [x] Project initialization
-- [ ] Document ingestion pipeline
-- [ ] Vector database (ChromaDB)
-- [ ] Query engine with citations
-- [ ] Gradio UI
-- [ ] HuggingFace Spaces deployment
-
-**Timeline**: 3 weeks | **Cost**: $0
-
-### Phase 2: Domain Fine-Tuning ⏳ [PLANNED]
-- [ ] Data collection (18K examples)
-- [ ] Expert curation
-- [ ] Unsloth training (Gemma 3 12B)
-- [ ] Model evaluation
-- [ ] HuggingFace Hub upload
-
-**Timeline**: 2-3 months | **Cost**: $500-2000
-
-### Phase 3: Production System ⏳ [PLANNED]
-- [ ] Hybrid RAG + fine-tuned architecture
-- [ ] Multi-language support (Sanskrit, Hindi, Tamil, Kannada)
-- [ ] Cloud deployment
-- [ ] Admin dashboard
-
-**Timeline**: 1-2 months | **Cost**: $500-1500
-
-See [docs/project/roadmap.md](docs/project/roadmap.md) for detailed timeline.
-
-## 🏗️ Architecture
-
-```
-User Query
-    ↓
-┌─────────────────────────────────────────────┐
-│  Retrieval (RAG)                             │
-│  - ChromaDB vector store                     │
-│  - multilingual-e5 embeddings                │
-│  - Top-k document retrieval                  │
-└─────────────────────┬─────────────────────────────┘
-                      ↓
-┌─────────────────────────────────────────────┐
-│  Generation (LLM)                            │
-│  - Ollama + Gemma 3 (4B/12B/27B)            │
-│  - Source-grounded answers                   │
-│  - Citation included                         │
-└─────────────────────────────────────────────┘
-    ↓
-Answer + Sources
-```
-
-## 🔧 Configuration
-
-### Model Selection
-
-Edit `configs/rag/default.yaml` to switch models based on your hardware:
-
-```yaml
-# For 4GB VRAM (Default - Your Mac)
-llm:
-  provider: ollama
-  model: gemma3:4b
-  temperature: 0.7
-
-# For 12GB+ VRAM (Better quality)
-# llm:
-#   provider: ollama
-#   model: gemma3:12b
-#   temperature: 0.7
-
-# For 24GB+ VRAM (Best quality)
-# llm:
-#   provider: ollama
-#   model: gemma3:27b
-#   temperature: 0.7
-```
-
-### Document Sources
-
-The assistant retrieves from:
-- Archive.org (Sanskrit texts, historical documents)
-- ASI (Archaeological Survey of India) reports
-- IGNCA (Indira Gandhi National Centre for Arts) archives
-- Wikimedia Commons (temples, dance images)
-- Wikipedia IKS articles
-
-See [docs/guides/data-sources.md](docs/guides/data-sources.md) for complete list.
-
-## 📊 Performance
-
-| Metric | Target | Current |
-|--------|--------|---------|
-| Answer Accuracy | 85%+ | TBD |
-| Source Citation | 100% | TBD |
-| Response Time | <5s | TBD |
-| Hallucination Rate | <5% | TBD |
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-uv run pytest tests/ -v
-
-# Run with coverage
-uv run pytest tests/ --cov=src --cov-report=html
-
-# Run specific test
-uv run pytest tests/unit/ingestion/test_loaders.py -v
-```
-
-## 📚 Documentation
-
-- [Architecture Overview](docs/architecture/overview.md)
-- [Data Sources](docs/guides/data-sources.md)
-- [API Reference](docs/api-reference.md)
-- [Contributing Guidelines](docs/project/contributing.md)
-- [Changelog](docs/project/changelog.md)
-- [Architecture Decision Records](docs/adr/)
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [docs/project/contributing.md](docs/project/contributing.md) for guidelines.
-
-**Ways to contribute**:
-- Add IKS documents to the knowledge base
-- Improve retrieval accuracy
-- Add support for more Indian languages
-- Create visual question-answering capabilities
-- Domain expert review of training data
-
-## 📄 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
-
-## 🙏 Acknowledgments
-
-- [AI4Bharat](https://ai4bharat.iitm.ac.in/) for Indic language models
-- [Ollama](https://ollama.com/) for local LLM hosting
-- [LlamaIndex](https://www.llamaindex.ai/) for RAG framework
-- VTU for IKS curriculum guidance
-- Open source community
-
-## 📞 Contact
-
-- GitHub Issues: [IKS-MODEL Issues](https://github.com/Amankumar006/IKS-MODEL/issues)
-- Email: 006amanraj@gmail.com
+Open your browser at **http://localhost:7860** to interact with Bharat.
 
 ---
 
-**Status**: Phase 1 in progress | **Last Updated**: 2026-04-16
+## 📂 Repository Layout
+
+```text
+IKS-MODEL/
+├── src/
+│   ├── iks_common/       # Common shared utilities
+│   └── iks_rag/          # Core RAG Retrieval Pipeline
+│       ├── ingestion/    # Text & PDF loaders and classification
+│       ├── retrieval/    # EmbeddingsManager & ChromaDB vector wrappers
+│       ├── generation/   # LLM Wrapper (Gemini, Ollama, OpenAI) & Bharat prompts
+│       └── ui/           # Gradio Web Interface
+├── scripts/
+│   ├── data/             # Scrapers, QA generators, and dataset validators
+│   ├── eval/             # 500-question gold-standard benchmark compiler
+│   └── train/            # Unsloth Gemma 3 fine-tuning scripts
+├── tests/
+│   ├── unit/             # Fast, mock-enabled isolated tests
+│   └── integration/      # End-to-end components integration checks
+├── configs/
+│   └── rag/              # YAML configuration files
+└── docs/                 # Architecture Decision Records (ADRs) and guides
+```
+
+---
+
+## 📊 Project Roadmap
+
+| Phase | Core Features | Status |
+| :--- | :--- | :--- |
+| **Phase 1: RAG Foundation** | curation of 286 base docs, ChromaDB + Multilingual E5 integration, Gradio UI, HuggingFace Space deploy | ✅ **100% Complete** |
+| **Phase 2.1: Data Generation** | 15,001 multi-turn ShareGPT pairs generated and cleaned via Mercury-2 API | ✅ **100% Complete** |
+| **Phase 2.4: Evaluation** | 500-question gold-standard benchmark compiled testing held-out texts and adversarial limits | ✅ **100% Complete** |
+| **Phase 2.5: SFT Fine-Tuning** | Dual Tesla T4 Kaggle training notebook configured with W&B logging & automatic HF checkpoint backups | 🔄 **In Progress** |
+| **Phase 3: Production** | Local GGUF export, hybrid routing, multi-language support (Sanskrit, Tamil, Hindi), cloud deploy | ⏳ **Planned** |
+
+---
+
+## 🧪 Testing and Linting
+
+We maintain a strict quality target of **>80% test coverage**. All checks run locally via:
+
+```bash
+# Run the unit test suite
+uv run pytest tests/ -v
+
+# Run tests with HTML coverage report
+uv run pytest tests/ --cov=src --cov-report=html
+
+# Formatting and linting checks
+uv run ruff check src/
+uv run ruff format src/
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome cultural researchers, AI engineers, and historians to join our gateway initiative! 
+For detailed contribution rules, code styles, and Git conventions, check out:
+*   **[Code Conventions](docs/ai-context/conventions.md)**
+*   **[Contributing Guidelines](docs/project/contributing.md)**
+
+---
+
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact & Support
+*   **GitHub Issues**: [IKS-MODEL Issues Tracker](https://github.com/Amankumar006/IKS-MODEL/issues)
+*   **Email**: 006amanraj@gmail.com
