@@ -1,0 +1,140 @@
+The Charaka Samhita (Sanskrit: चरक संहिता, romanized: Caraka-Saṃhitā, lit. 'Compendium of Charaka') is a Sanskrit text on Ayurveda (Indian traditional medicine), attributed to Charaka (c. 1st–2nd century CE) and later revised by Dṛḍhabala. It presents theories of physiology, diagnosis, anatomy, and tridosha (three humors of the body), and is considered one of the most authoritative texts on Indian medicine. Along with the Sushruta Samhita, it is one of the two foundational texts of this field that have survived from ancient India. It is one of the three works that constitute the Brhat Trayi.
+The text is based on the Agnivesha Samhitā, an older encyclopedic medical compendium by Agniveśa. It was revised by Charaka between 100 BCE and 200 CE and renamed Charaka Samhitā. The pre-2nd century CE text consists of 8 books and 120 chapters. It describes ancient theories on the human body, etiology, symptomology and therapeutics for a wide range of diseases. The Charaka Samhita also includes sections on the importance of diet, hygiene, prevention, medical education, and the teamwork of a physician, nurse and patient necessary for recovery to health.
+
+
+Authorship
+
+The Charaka Samhita states that the content of the book was first taught by Atreya, and then subsequently codified by Agniveśa into the Agnivesha Samhita, which was later revised by Charaka into the Charaka Samhita and furthermore edited by Dṛḍhabala. The manuscripts of the Charaka Samhita that survive into the modern era are based on one completed by Dṛḍhabala. Dṛḍhabala stated in the Charaka Samhita that he had to write one-third of the book himself because this portion had been lost, and that he also re-wrote the last part of the book.
+Based on textual analysis, and the literal meaning of the Sanskrit word charaka, Chattopadhyay speculated that charaka does not refer to one person but a lineage or sect of people. Vishwakarma and Goswami state that the text exists in many versions and entire chapters are missing in some versions.
+
+
+Date
+Dates of composition of the Charaka Samhita are uncertain. Meulenbeld's History of Indian Medical Literature dates it to be between the 4th century BCE to the 2nd century CE, with Charaka's compilation likely between 100 BCE and 200 CE. The Dṛḍhabala revision and completion, the source of current texts, is dated to the 6th century CE.
+
+
+Roots
+In Sanskrit, charaka is a term for a wanderer, sannyasi (ascetic), and sometimes used in the context of the ancient tradition of wandering physicians who transmitted medical knowledge along with ritual and therapeutic practices rooted in Vedic traditions from village to village.
+Surendranath Dasgupta states that the medical tradition of wandering physicians is traceable to the Atharvaveda, particularly the  Caranavaidya shakha – one of the nine known shakha of Atharvaveda-based Vedic schools. The name of this school literally means "wandering physicians". Their texts have not survived into the modern era, but manuscripts from two competing schools – Paippalada and Saunakiya, have.
+The Atharvaveda contains chapters relating to medicine, surgery and ritualistic-therapeutic practices. This Atharvaveda layer of text was likely compiled contemporaneously with Samaveda and Yajurveda, in about 1200–1000 BCE. Dasgupta and other scholars state that the Atreya-Charaka school and its texts may have emerged from this older tradition, and he cites a series of Atharvaveda hymns to show that almost all organs and nomenclature found in Charaka Samhita are also found in the Vedic hymns.
+
+
+Contents
+
+The extant text has eight sthāna (books), totalling 120 chapters. The text includes a table of contents embedded in its verses, stating the names and describing the nature of the eight books, followed by a listing of the 120 chapters. These eight books are
+
+Sutra Sthana (General principles) –  30 chapters deal with general principles, philosophy, definitions, prevention through healthy living, and the goals of the text. It is divided into quadruplets of 7, making it 28 with 2 concluding chapters.
+Nidana Sthana (Pathology) –  8 chapters on causes of diseases.
+Vimana Sthana (Specific determination) 8 chapters contain training of a physician, ethics of medical practice, pathology, diet and nourishment, taste of medicines.
+Śarira Sthana (Anatomy) – 8 chapters describe embryology & anatomy of a human body (with a section on other living beings).
+Indriya Sthana (Sensory organ based prognosis) – 12 chapters elaborate on diagnosis & prognosis, mostly based on sensory response of the patient.
+Cikitsa Sthana (Therapeutics) – 30 chapters deal with medicines and treatment of diseases.
+Kalpa Sthana (Pharmaceutics and toxicology) – 12 chapters describe pharmacy, the preparation and dosage of medicine, signs of their abuse, and dealing with poisons.
+Siddhi Sthana (Success in treatment) – 12 chapters describe signs of cure, hygiene and healthier living.
+Seventeen chapters of Cikitsā sthāna and complete Kalpa sthāna and Siddhi sthāna were added later by Dṛḍhabala. The text starts with Sūtra sthāna which deals with fundamentals and basic principles of Ayurveda practice. Unique scientific contributions credited to the Caraka Saṃhitā include:
+
+a rational approach to the causation and cure of disease
+introduction of objective methods of clinical examination
+
+
+Physician, nurse, patient and medicines
+The text asserts that there are four important parts to medical practice – the patient, the physician, the nurse and the medicines. All four are essential to recovery and return to health, states the text. The physician provides knowledge and coordinates the treatment. He is who can "explore the dark interior of the body with the lamp of knowledge", according to the text and Valiathan's translation. The physician must express joy and cheer towards those who can respond to treatment, masterfully avoid and save time in cases where the patient suffers from an incurable disease, while compassionate towards all. The nurse must be knowledgeable, skilled at preparing formulations and dosage, sympathetic towards everyone and clean. The patient is responsible for being positive, have the ability to describe how he or she feels, remember and respectfully follow the physician instructions.
+The Charaka Samhita, states Curtin, was among the earliest texts that set a code of ethics on physicians and nurses, attributing "moral as well as scientific authority to the healer". The text, in chapters 8 and 9 of the Vimana Sthana dedicates numerous verses to discussing the code. It mandates that the physician must seek consent before entering a patient's quarters, must be accompanied by a male member of the family if he is attending a woman or minor, must inform and gain consent from the patient or the guardians if the patient is a minor, must never resort to extortion for his service, never involve himself in any other activities with the patient or patient's family (such as negotiating loans, arranging marriage, buying or selling property), speak with soft words and never use cruel words, only do "what is calculated to do good to the patient", and maintain the patient's privacy.
+There is no end in the knowledge of medical science, claims verse 3.8.12 of the Charaka Samhita, and the physician must constantly learn and devote himself to it. The text asserts that a physician should discuss his findings and questions with other physicians because "when one discusses with another that is possessed of a knowledge of the same science, such discussion leads to increase of knowledge and happiness". The verses that follow an outline that discussions can be hostile or peaceful, the former are unproductive, the latter useful; even if one faces hostile criticism, one must persuade with gentle words and manner, asserts the text.
+
+
+Religious ideas
+The Charaka Samhita, like other ancient Hindu literature, the text presents its knowledge within a traditional framework in which divine figures such as Indra are described as sources of medical wisdom, reflecting the integration of spiritual and medical knowledge in early Indian thought. The Charaka Samhita mentions Bharadvaja learning from god Indra, after pleading that "poor health was disrupting the ability of human beings from pursuing their spiritual journey", and then Indra provides both the method and specifics of medical knowledge. The method, asserts the text, revolves around three principles: etiology, symptomology and therapeutics. Thus, states Glucklich, the text presumes proper goals to include both spiritual and physical health.
+The Charaka Samhita, in addition to initial recitations, uses the foundational assumptions and values embedded in various layers of the Vedas. These assumptions include the Vedic doctrine that a human being is a microcosmic replica of the universe, and the ancient Hindu theory of six elements (five Prakriti and one Brahman), three humors (Vata, Pitta, Kapha), three Guṇas (Sattva, Rajas and Tamas) as constituent forces innate in a human body, and others. The text in Charak Samhita is based on philosophical concepts found in Hindu thought, including the idea of Atman(self), it is immutable and views health as a balance between bodily, mental, and existential factors, and hence thereafter the text defines physical and mental diseases as caused by a lack of correlation and imbalance in body, or mind, or both, because of external factors (Prakriti, objects of senses), age or a want of correlation (appropriate harmony, equilibrium) between the three humors or the three Gunas.
+The Sushruta Samhita and Charaka Samhita have religious ideas throughout, states Steven Engler, who then concludes, "Vedic concepts play a central role in shaping the theoretical foundations of the text.". The text integrates empirical observations with philosophical and spiritual concepts, reflecting a holistic approach in which physical, mental, and spiritual aspects of health are interconnected.
+There is a close relationship between the philosophic presuppositions and the approach to medicine in Caraka Samhita. The Charaka Samhita is notable for its systematic approach to medicine, including detailed discussions on diagnosis, preventive care, ethics, and the importance of individualized treatment.
+
+
+Nutrition and diet
+
+Charaka Samhita dedicates Chapters 5, 6, 25, 26 and 27 to "Aharatattva" (dietetics), stating that a wholesome diet is essential for good health and to prevent diseases, while unwholesome food is an important cause of diseases.
+
+The text suggests that foods are source of heat, nutritive value as well as physiological substances that act like drugs inside human body. Charaka identifies the three humors in the human body: Vata (linked with motion), Pitta (linked with metabolism), and Kapha (linked to structure). Imbalances or displacements of these three is the root of all diseases and malfunctions of the human body. Furthermore, along with medicine, Charaka Samhita in Chapters 26 and 27, states that proper nutrition is essential for expedient recovery from sickness or surgery.
+
+
+Meat for diebetics and medicine
+The Charaka Samhita suggests a regimen of Mamsa Rasa (meat soup) during pregnancy from the 6th month onwards.
+Freshly cut meat is also recommended by the text for treatment of poison: the cut meat is pressed against the affected part or spot of insect or reptile bite to absorb the poison.
+Ray et al. list medicinal substances from over 150 animal origins that are described in Charaka Samhita, and the chapters these are found in. These range from meat of wild animals such as fox and crocodile, to that of freshly cut fish, fish oil, eggs of birds, bee's wax. Additionally, the text describes hundreds of formulations (gruel) it asserts to be of medicinal value from a mixture of animal products and herb or plant products, as well as inert minerals such as various salts, soots and alkalis.
+
+
+Ancient pharmacy
+Numerous chapters in the Charaka Samhita are dedicated to identifying and classifying seeds, roots, flowers, fruits, stems, aromatic leaves, barks of different trees, plants juices, mountain herbs, animal products ranging from their milk to their excretory waste after the animals eat certain diet or grasses, different types of honey, stones, salts and others. The text also describes numerous recipes, detailing how a particular formulation should be prepared. A typical recipe appears in the Chikitsa Sthana book of the Charaka Samhita as follows:
+
+Anu Taila recipe
+
+The text, thereafter, asserts that this Anu-taila is to be used as a rubbing oil and as a nasal drop for a certain class of ailments. Glucklich mentions other medical texts from ancient India which include the use of Anu-taila in skin therapy.
+
+
+Sexual health
+The Charaka Samhita discusses sexual diseases as well as its theory of treatment of sexual dysfunctions and virility (Vajikarana). The text emphasizes methods of body cleansing, sexual health-promoting conduct, behavior and diet. Certain herb and mineral combinations are part of its regimen. The text asserts that obesity and a lifestyle lacking exercise is linked to sexual dysfunctions (Kṛcchra Vyavāya), dedicating many verses to this.
+The text, states Arnold, contains many verses relating to women's sexual health, suggesting "great antiquity of certain methods and therapeutic agents used in the treatment of gynecological cases", for example, the cautery, pessaries, and astringent washes.
+
+
+Medical education
+Chapter VIII of the Charaka Samhita's Vimana Sthana book includes a section for the student aiming to become a physician. The text asserts that any intelligent man who knows the challenge and patience necessary to become a physician must first decide on his guru (teacher) and the books he must study.  The Charaka Samhita claims, according to Kaviratna and Sharma translation, that "diverse treatises on medicine are in circulation", and the student must select one by a reputed scholar known for his wisdom, is free from tautology, ascribed to a Rishi, well compiled and has bhasya (commentaries), which treats nothing but the professed subject, is devoid of slang and unfamiliar words, explain its inferences, is non-contradictory, and is well illustrated.
+The teacher for apprenticeship should be one who knows the field, has experience gained from successfully treating diseases, who is compassionate towards who approach him, who lives a life of inner and outer Shaucha, is well equipped, who knows the characteristics of health and disease, one who is without malice towards anyone, is free of anger, who respects privacy and pain of his patients, is willing to teach, and is a good communicator.  When one finds such a teacher, asserts the Caraka Samhita, the student must revere the teacher like a deity or one's own father, because it is by his grace that one becomes educated.
+When the teacher accepts a student as his apprentice, asserts the Charaka Samhita, he should in the presence of fire initiate the student with the following mandates during the period of apprenticeship – "thou shalt be a brahmacharin, wear beard and mustache, thou shalt be always truthful, abstain from meat and unclean diet, never harbor envy, never bear weapons, thou shalt do anything I say except if that may lead to another person's death or to great harm or to a sin, thou shalt behave like my son, never be impatient, always be attentive, behave with humility, act after reflection, and always seek whether sitting or standing the good of all living creatures".
+
+
+Commentaries
+The most celebrated commentary on this text is the Carakatātparyaṭīkā "Commentary on the Meaning of the Caraka" or the Ayurveda Dīpikā, "The Lamp to Ayurveda" written by Chakrapani Datta (1066).  Other notable commentaries are Bhattaraka Harichandra's Carakanyāsa (c. 4th–6th century), Jejjaṭas Nirantarapadavyākhyā (c. 875), Shivadasa Sena's Carakatattvapradīpikā (c. 1460). Among the more recent commentaries are Narasiṃha Kavirāja's Carakatattvaprakāśa, Gaṅgādhara Kaviratna's Jalpakalpatāru (1879) and Yogindra Nath Sen's Charakopaskara (1920).
+The earliest scholarly bhasya (review, commentary) in Sanskrit may be of Bhattar Harichandra's Carakanyasa on the redaction by Dṛḍhabala. Two manuscripts of this bhasya have survived into the modern era, and currently stored as number 9290 in Asiatic Society of Kolkata and number 13092 manuscript at the Government East Library, Chennai.
+
+
+Comparison with Sushruta Samhita
+The Charaka Samhita is among the most important ancient medical treatises. It is one of the foundational texts of the medical tradition in India, alongside the Susruta Saṃhitā, the Bheḷa-Saṃhitā, and the medical portions of the Bower Manuscript.
+The Charaka Samhita is the oldest known Hindu text on Ayurveda (life sciences), followed by the Sushruta Samhita and Ashtanga Hrdaya. Except for some topics and their emphasis, they discuss many similar subjects such as General Principles, Pathology, Diagnosis, Anatomy, Sensorial Prognosis, Therapeutics, Pharmaceutics and Toxicology. The Sushruta and Caraka texts differ in one major aspect, with Sushruta Samhita providing the foundation of surgery, while Caraka Samhita being primarily a foundation of medicine.
+
+
+A source for socio-cultural and ecological history of ancient India
+The text is not only an interesting source of ancient medical practices, it also may be a source of valuable information on ecological, social, and economic conditions in ancient India. The text describes physical geography with words such as Jangala, Aanoopa, and Sadharana, then lists the trees, vegetables, lakes and rivers, bird life and animals found in each of these regions. Many of the drugs mentioned, they state, are linked to region of their origin (e.g. Maghadi from Maghada and Kashmarya from Kashmir). Ray et al. list the numerous mammals, reptiles, insects, fishes, amphibians, arthropods and birds and the respective chapters of Caraka Samhita these are mentioned in.
+The text also states that the food habits of ancient Indians varied by region. Mamsa (meat) was popular with people who lived in Bahlika, Pahlava, Cheena, Shoolika, Yavana and Shaka. People of Prachya preferred Matsya (fish), according to Bhavana and Shreevathsa translation. Those living in Sindhu Desha (now Gujarat and south Pakistan) were habituated to milk, according to Caraka Samhita, while people of Ashmaka and Avantika consumed more oily and sour food. The people of Dakshina Desha (South India) preferred Peya (thin gruel), whereas those of Uttara (North) and Pashchima (West) liked Mantha. Residents of Madhya Desha (Central India) preferred barley, wheat and milk products, according to the text.
+
+
+See also
+Ayurveda
+Charaka shapath
+Debates in ancient India
+Mitahara
+Naturopathy
+Siddha medicine
+Sushruta Samhita
+Sowa Rigpa
+Unani
+Yoga
+Homeopathy
+
+
+References
+
+
+Bibliography
+Ācārya, Yādava Trivikrama (ed.) Maharṣiṇā Punarvasunopadiṣṭā, tacchiṣyeṇĀgniveśena praṇītā, CarakaDṛḍhabalābhyāṃ pratisaṃskṛtā Carakasaṃhitā, śrīCakrapāṇidattaviracitayā Āyurvedadīpikāvyākhyayā saṃvalitā Nirnaya Sagara Press, 1941.  The best current edition of the Sanskrit text.  Often reprinted.  Online machine-readable transcription available at SARIT.info
+Engler, Steven (2003). ""Science" vs. "Religion" in Classical Ayurveda". Numen. 50 (4): 416–463. doi:10.1163/156852703322446679. hdl:11205/105.
+Kaviratna, Avinash C.; Sharma, P. (1913). The Charaka Samhita 5 Vols. Sri Satguru Publications. ISBN 978-81-7030-471-5. {{cite book}}: ISBN / Date incompatibility (help)
+Menon, I A and H F Haberman, Dermatological writings of ancient India Medical History. 1969 October; 13(4): 387–392. seen at The Wellcome Trust Centre for the History of Medicine at University College London [2] June 1, 2006
+Meulenbeld, G. J. A History of Indian Medical Literature (Groningen, 1999–2002), vol. IA, pp. 7–180, gives a detailed survey of the contents of the Carakasaṃhitā and a comprehensive discussion of all historical matters related to the text, its commentators, and its later history in the Islamic world and in Tibet.
+Meulenbeld, Gerrit Jan (1999). A History of Indian Medical Literature: Text. Forsten. ISBN 978-90-6980-124-7.
+Sharma, P. V. Caraka-Saṃhitā: Agniveśa's Treatise Refined and annotated by Caraka and Redacted by Dṛḍhabala (text with English translation) Chaukhambha Prakashan, 1981–1994.  The best modern English translation of the whole text.  Volume 4 gives summaries of the commentary of Chakrapani Datta.
+Ray, Priyadaranjan; Gupta, Hirendra Nath; Roy, Mira (1980). Suśruta Saṃhita (a Scientific Synopsis). New Delhi: INSA.
+Sharma, R. K. & Bhagwan Dash, V. Agniveśa's Caraka Saṃhitā (Text with English Translation & Critical Exposition Based on Cakrapāṇi Datta's Āyurveda Dīpikā) Chowkhamba Sanskrit Series Office, 1976–2002.  Another good English translation of the whole text, with paraphrases of the commentary of Chakrapani Datta.
+Wujastyk, Dominik, The Roots of Ayurveda (Penguin Classics, 3rd edition, 2003), pp. 1–50 gives an introduction to the Carakasaṃhitā and a modern translation of selected passages.
+
+
+External links
+Charaka Samhita English Translation All 7 volumes of Charaka Samhita in pdf for free.
+The Charaka Samhita, Full English translation by Shree Gulabkunverba Ayurvedic Society, 1949 (includes glossary)
+Charak Samhita New Edition Charak Samhita Research, Training and Skill Development Centre, India
+Charak Samhita New Edition Archived 2020-03-02 at the Wayback Machine,
+English translation of Charaka Samhita, Hathi Trust Archives, 5 Volumes
+Charaka Samhita – a scientific synopsis archived version Ray and Gupta, National Institute of Sciences, India
+Charak Samhita Original Sanskrit Text with commentary
+Carakasaṃhitā (Sanskrit, IAST-Translit), SARIT Initiative, The British Association for South Asian Studies and The British Academy
+Philosophy and Medicine in Early Classical India III, Department of South Asian, Tibetan and Buddhist Studies, University of Vienna
+Devendranath Sen Gupta; Upendranath Sen Gupta, eds. (1897). The Charaka-Samhita by Mahamuni Agnibesha, Revised by Maharshi Charaka (in Sanskrit). Dhanvantari Machine Press, Calcutta.
+Kenneth G. Zysk; Tsutomu Yamashita (2018). "Jajjaṭa's Nirantarapadavyākhyā and Other Commentaries on the Carakasaṃhitā". eJournal of Indian Medicine. 10: 1–113. doi:10.21827/5c3f01174756c. A critical edition and English translation of the oldest commentary on Charaka Samhita.

@@ -57,18 +57,26 @@ class RAGSystem:
         """Load documents from configured path.
 
         Loads all documents and creates the vector index.
+        If ChromaDB already has embeddings, loads the existing index instead.
         """
         if self.document_loader is None or self.vector_store is None:
             raise RuntimeError("System not initialized. Call initialize() first.")
 
-        # Load documents
+        # Check if ChromaDB already has data — skip re-embedding
+        existing_count = self.vector_store.count()
+        if existing_count > 0:
+            print(f"✅ Found {existing_count} existing chunks in ChromaDB — loading cached index")
+            self.index = self.vector_store.get_index()
+            return
+
+        # Load documents fresh
         documents = self.document_loader.load_all()
 
         if not documents:
             print(f"No documents found in {self.config.data_sources.documents_path}")
             return
 
-        # Create index
+        # Create index (this generates embeddings — takes ~70 min on CPU)
         self.index = self.vector_store.create_index(documents)
 
     def query(self, question: str) -> dict[str, Any]:

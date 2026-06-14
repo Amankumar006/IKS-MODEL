@@ -4,11 +4,74 @@ Provides a chat interface for students to ask IKS questions.
 """
 
 from pathlib import Path
+from typing import Any
+
+# Load .env FIRST — must happen before iks_rag imports so API keys are available
+try:
+    from dotenv import load_dotenv
+    load_dotenv()  # loads from .env in cwd (project root)
+except ImportError:
+    pass
 
 import gradio as gr
 
-from iks_rag.config import load_config
+from iks_rag.config import load_config, RAGConfig
 from iks_rag.rag_system import RAGSystem
+
+
+def format_examples(config: RAGConfig) -> str:
+    """Format example questions.
+    
+    Args:
+        config: RAG configuration
+        
+    Returns:
+        Formatted markdown string
+    """
+    examples = config.ui.examples
+    md = "### Example Questions\n\n"
+    for i, ex in enumerate(examples, 1):
+        md += f"{i}. {ex}\n\n"
+    return md
+
+
+def handle_response(message: str, chat_history: list, rag_system: RAGSystem) -> tuple[str, list]:
+    """Process user message and generate response.
+    
+    Args:
+        message: User input message
+        chat_history: Current chat history
+        rag_system: RAG system instance
+        
+    Returns:
+        Tuple of (empty string, updated chat history)
+    """
+    if not message.strip():
+        return "", chat_history
+
+    # Add user message (Gradio 6.0 message format)
+    chat_history.append({"role": "user", "content": message})
+
+    try:
+        # Query RAG system
+        result = rag_system.query(message)
+        answer = result["answer"]
+
+        # Format sources
+        sources_text = "\n\n**Sources:**\n"
+        for i, source in enumerate(result["sources"][:3], 1):
+            file_name = source["metadata"].get("file_name", "Unknown")
+            sources_text += f"\n{i}. {file_name}"
+
+        full_response = f"{answer}{sources_text}"
+
+        chat_history.append({"role": "assistant", "content": full_response})
+        return "", chat_history
+
+    except Exception as e:
+        error_msg = f"❌ Error: {str(e)}\n\nPlease ensure:\n- API keys are set\n- Documents are loaded"
+        chat_history.append({"role": "assistant", "content": error_msg})
+        return "", chat_history
 
 
 def create_interface(rag_system: RAGSystem) -> gr.Blocks:
@@ -76,49 +139,16 @@ def create_interface(rag_system: RAGSystem) -> gr.Blocks:
         # Examples section (hidden by default)
         examples_md = gr.Markdown(visible=False)
 
-        def format_examples():
-            """Format example questions."""
-            examples = config.ui.examples
-            md = "### Example Questions\n\n"
-            for i, ex in enumerate(examples, 1):
-                md += f"{i}. {ex}\n\n"
-            return md
-
         def respond(message: str, chat_history: list):
-            """Process user message and generate response."""
-            if not message.strip():
-                return "", chat_history
-
-            try:
-                # Query RAG system
-                result = rag_system.query(message)
-                answer = result["answer"]
-
-                # Format sources
-                sources_text = "\n\n**Sources:**\n"
-                for i, source in enumerate(result["sources"][:3], 1):
-                    file_name = source["metadata"].get("file_name", "Unknown")
-                    sources_text += f"\n{i}. {file_name}"
-
-                full_response = f"{answer}{sources_text}"
-
-                # Update chat history
-                chat_history.append((message, full_response))
-
-                return "", chat_history
-
-            except Exception as e:
-                error_msg = f"❌ Error: {str(e)}\n\nPlease ensure:\n- Ollama is running (ollama serve)\n- Documents are loaded"
-                chat_history.append((message, error_msg))
-                return "", chat_history
+            return handle_response(message, chat_history, rag_system)
 
         def clear_chat():
             """Clear chat history."""
-            return None
+            return []
 
         def toggle_examples():
             """Toggle examples visibility."""
-            return gr.update(visible=True, value=format_examples())
+            return gr.update(visible=True, value=format_examples(config))
 
         # Event handlers
         submit.click(respond, [msg, chatbot], [msg, chatbot])

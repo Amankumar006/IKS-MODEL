@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: Arthashastra — R. Shamasastry translation (1915)
+URL: https://archive.org/details/arthashastra00kaut
+DOMAIN: Governance
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/arthashastra00kaut
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+Arthashastra — R. Shamasastry translation (1915) — primary source for IKS domain: Governance

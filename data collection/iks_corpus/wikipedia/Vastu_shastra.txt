@@ -1,0 +1,80 @@
+Originating in ancient India, Vastu Shastra (Sanskrit: वास्तु शास्त्र, vāstu śāstra – literally "science of architecture") is a traditional Hindu system of architecture based on ancient texts that describe principles of design, layout, measurements, ground preparation, space arrangement, and spatial geometry. The designs aim to integrate architecture with nature, the relative functions of various parts of the structure, and ancient beliefs utilising geometric patterns (yantra), symmetry, and directional alignments. Vastu Shastra follows a design approach that is more inclined towards aligning spaces with natural forces like sunlight, wind, and gravity. The architecture design system fosters harmony amongst individuals and their surroundings.
+Vastu Shastra are the textual part of Vastu Vidya – the broader knowledge about architecture and design theories from ancient India. Vastu Vidya is a collection of ideas and concepts, with or without the support of layout diagrams, that are not rigid. Rather, these ideas and concepts are models for the organisation of space and form within a building or collection of buildings, based on their functions in relation to each other, their usage and the overall fabric of the Vastu. Ancient Vastu Shastra principles include those for the design of Mandir (Hindu temples) and the principles for the design and layout of houses, towns, cities, gardens, roads, water works, shops, and other public areas. The Pandit or Architects of Vastu Shastra are Sthapati, Sūtragrāhin(Sutradhar), Vardhaki, and Takṣhaka.
+
+
+Terminology
+The Sanskrit word vāstu means a dwelling or house with a corresponding plot of land. The vrddhi, vāstu, takes the meaning of "the site or foundation of a house, site, ground, building or dwelling-place, habitation, homestead, house". The underlying root is vas "to dwell, live, stay, reside". The term shastra may loosely be translated as "doctrine, teaching".
+Vāstu-Śastras (literally, science of dwelling) are ancient Sanskrit manuals of architecture. These contain Vastu-Vidya (literally, knowledge of dwelling).
+
+
+History
+
+Vastu, crafts and architecture are traditionally attributed to the divine Vishwakarma in the Hindu pantheon. Theories tracing links of the principles of composition in Vastu Shastra and the Indus Valley civilization have been made, but scholar Kapila Vatsyayan considers this speculation since the Indus Valley script remains undeciphered. According to Chakrabarti, Vastu Vidya is as old as the Vedic period and linked to the ritual architecture. According to Michael W. Meister, the Atharvaveda contains verses with mystic cosmogony which provide a paradigm for cosmic planning, but they did not represent architecture nor a developed practice. The Arthashastra dated to 2nd century BCE and 3rd century CE, dedicates chapters to domestic architecture, forts and town planning. 
+Vastu sastras are stated by some to have roots in pre-1st-century CE literature, but these views suffer from being a matter of interpretation. For example, the mathematical rules and steps for constructing Vedic yajna square for the sacrificial fire are in the Sulba-sutras dated to 4th-century BCE. However, these are ritual artifacts and they are not buildings or temples or broader objects of a lasting architecture. Varahamihira's Brihat Samhita dated to about the sixth century CE is among the earliest known Indian texts with dedicated chapters with principles of architecture. For example, Chapter 53 of the Brihat Samhita is titled "On architecture", and there and elsewhere it discusses elements of vastu sastra such as "planning cities and buildings" and "house structures, orientation, storeys, building balconies" along with other topics. According to Michael Meister, a scholar of Indian architecture, we must acknowledge that Varahamihira does mention his own sources on vastu as older texts and sages. However, these may be mythology and reflect the Indian tradition to credit mythical sages and deities.
+
+
+Description
+
+There exist many Vāstu-Śastras on the art of building houses, temples, towns and cities. Among early known example is the Arthashastra dated to 2nd century BCE and 3rd century CE, with chapters dedicated to domestic architecture, forts and town planning. By 6th century AD, Sanskrit texts for constructing palatial temples were in circulation in India. Vāstu-Śastras include chapters on home construction, town planning, and how efficient villages, towns and kingdoms integrated temples, water bodies and gardens within them to achieve harmony with nature. While it is unclear, states Barnett, as to whether these temple and town planning texts were theoretical studies and if or when they were properly implemented in practice, these texts suggest that town planning and Hindu temples were conceived as ideals of art and integral part of Hindu social and spiritual life. 
+Six of the most studied, complete and referred to Indian texts on Vastu Vidya that have survived into the modern age, states Tillotson, are – the Mayamata, the Manasara, the Samarangana Sutradhara, the Rajavallabha, the Vishvakarmaprakasha and the Aparajitaprccha. Numerous other important texts contain sections or chapters on aspects of architecture and design.
+The Silpa Prakasa of Odisha, authored by Ramachandra Bhattaraka Kaulachara sometime in ninth or tenth century CE, is another Vāstu Śastra. Silpa Prakasa describes the geometric principles in every aspect of the temple and symbolism such as 16 emotions of human beings carved as 16 types of female figures. These styles were perfected in Hindu temples prevalent in the eastern states of India. Other ancient texts found expand these architectural principles, suggesting that different parts of India developed, invented and added their own interpretations. For example, in Saurastra tradition of temple building found in western states of India, the feminine form, expressions and emotions are depicted in 32 types of Nataka-stri compared to 16 types described in Silpa Prakasa. Silpa Prakasa provides brief introduction to 12 types of Hindu temples. Other texts, such as Pancaratra Prasada Prasadhana compiled by Daniel Smith and Silpa Ratnakara compiled by Narmada Sankara provide a more extensive list of Hindu temple types.
+Sanskrit texts for temple construction discovered in Rajasthan, in northwestern region of India, include Sutradhara Mandana's Prasadamandana (literally, planning and building a temple) with chapters on town building. Manasara shilpa and Mayamata, texts of South Indian origin, estimated to be in circulation by 5th to 7th century AD, is a guidebook on South Indian Vastu design and construction. Isanasivagurudeva paddhati is another Sanskrit text from the 9th century describing the art of building in India in south and central India. In north India, Brihat-samhita by Varāhamihira is the widely cited ancient Sanskrit text from 6th century describing the design and construction of Nagara style of Hindu temples.
+These Vāstu Śastras, often discuss and describe the principles of Hindu temple design, but do not limit themselves to the design of a Hindu temple. They describe the temple as a holistic part of its community, and lay out various principles and a diversity of alternate designs for home, village and city layout along with the temple, gardens, water bodies and nature.
+
+
+Mandala types and properties
+
+The central area in all mandala is the Brahmasthana. Mandala "circle-circumference" or "completion", is a concentric diagram having spiritual and ritual significance in both Hinduism and Buddhism. The space occupied by it varies in different mandala – in Pitha (9) and Upapitha (25). 
+it occupies one square module, in Mahaapitha (16), Ugrapitha (36) and Manduka (64), four square modules and in Sthandila (49) and Paramasaayika (81), nine square modules. The Pitha is an amplified Prithvimandala in which, according to some texts, the central space is occupied by earth. The Sthandila mandala is used in a concentric manner.
+A site of any shape can be divided using the Pada Vinyasa. Sites are known by the number of squares. They range from 1x1 to 32x32 (1024) square sites. Examples of mandalas with the corresponding names of sites include:
+
+Sakala (1 square) corresponds to Eka-pada (single divided site)
+Pechaka (4 squares) corresponds to Dwi-pada (two divided site)
+Pitha (9 squares) corresponds to Tri-pada (three divided site)
+Mahaapitha (16 squares) corresponds to Chatush-pada (four divided site)
+Upapitha (25 squares) corresponds to Pancha-pada (five divided site)
+Ugrapitha (36 squares) corresponds to Shashtha-pada (six divided site)
+Sthandila (49 squares) corresponds to Sapta-pada (seven divided site)
+Manduka/ Chandita (64 square) corresponds to Ashta-pada (eight divided site)
+Paramasaayika (81 squares) corresponds to Nava-pada (nine divided site)
+Aasana (100 squares) corresponds to Dasa-pada (ten divided site)
+Bhadrmahasan (196 squares) corresponds to Chodah-pada (14 divided sites)
+
+
+Modern adaptations and usage
+
+Vāstu Śastra represents a body of ancient concepts and knowledge to many modern architects, a guideline but not a rigid code. The square-grid mandala is viewed as a model of organisation, not as a ground plan. The ancient Vāstu Śastra texts describe functional relations and adaptable alternate layouts for various rooms or buildings and utilities, but do not mandate a set compulsory architecture. Sachdev and Tillotson state that the mandala is a guideline, and employing the mandala concept of Vāstu Śastra does not mean every room or building has to be square. The basic theme is around core elements of central space, peripheral zones, direction with respect to sunlight, and relative functions of the spaces.
+The pink city Jaipur in Rajasthan was master planned by architect Vidyadhar Bhattacharya (1693–1751) who was approached by Rajput king Jai Singh and was built by 1727 CE, in part around Vastu Shilpa Sastra principles. Similarly, modern-era projects such as the architect Charles Correa's designed Gandhi Smarak Sangrahalaya in Ahmedabad, Vidhan Bhavan in Bhopal, and Jawahar Kala Kendra in Jaipur adapt and apply concepts from the Vastu Shastra Vidya. In the design of Chandigarh city, Le Corbusier incorporated modern architecture theories with those of Vastu Shastra.
+During the colonial rule period of India, town planning officials of the British Raj did not consider Vastu Vidya, but largely grafted Islamic Mughal era motifs and designs such as domes and arches onto Victorian-era style buildings without overall relationship layout. This movement, known as Indo-Saracenic architecture, is found in chaotically laid out, but externally grand structures in the form of currently used major railway stations, harbours, tax collection buildings, and other colonial offices in South Asia.
+Vāstu Śastra Vidya was ignored, during colonial era construction, for several reasons. These texts were viewed by 19th and early 20th century architects as archaic, the literature was inaccessible being in an ancient language not spoken or read by the architects, and the ancient texts assumed space to be readily available. In contrast, public projects in the colonial era were forced into crowded spaces and local layout constraints, and the ancient Vastu sastra were viewed with prejudice as superstitious and rigid about a square grid or traditional materials of construction. Sachdev and Tillotson state that these prejudices were flawed, as a scholarly and complete reading of the Vāstu Śastra literature amply suggests the architect is free to adapt the ideas to new materials of construction, local layout constraints and into a non-square space. The design and completion of a new city of Jaipur in early 1700s based on Vāstu Śastra texts, well before any colonial era public projects, was one of many proofs. Other examples include modern public projects designed by Charles Correa such as Jawahar Kala Kendra in Jaipur, and Gandhi Ashram in Ahmedabad. Vastu Shastra remedies have also been applied by Khushdeep Bansal in 1997 to the Parliament complex of India, when he contended that the library being built next to the building is responsible for political instability in the country.
+German architect Klaus-Peter Gast states that the principles of Vāstu Śastras is witnessing a major revival and wide usage in the planning and design of individual homes, residential complexes, commercial and industrial campuses, and major public projects in India, along with the use of ancient iconography and mythological art work incorporated into the Vastu vidya architectures.
+
+
+Vastu and superstition
+The use of Vastu shastra and Vastu consultants in modern home and public projects is controversial. Some architects, particularly during India's colonial era, considered it arcane and superstitious. Other architects state that critics have not read the texts and that most of the text is about flexible design guidelines for space, sunlight, flow and function.
+Vastu Shastra is a pseudoscience, states Narendra Nayak – the head of Federation of Indian Rationalist Associations. In contemporary India, Vastu consultants "promote superstition in the name of science". Astronomer Jayant Narlikar states that Vastu Shastra has rules about integrating architecture with its ambience but that the dictates of Vastu and alleged harm or benefits being marketed have "no logical connection to environment". He gives examples of Vastu consultants claiming the need to align the house to magnetic axis for "overall growth, peace and happiness, or that "parallelogram-shaped sites can lead to quarrels in the family", states Narlikar. He says this is pseudoscience.
+Vibhuti Chakrabarti, a scholar of Architecture and Sanskrit literature has critically translated historic Vastu literature, and states that in contemporary India, some are offering their services as Vastu consultants where they project it as a "religious tradition", rather than an "architectural methodology" as taught in historic texts. He says that these consultants include "quacks, priests and astrologers" fuelled by greed and with little knowledge of what the historic Vastu-sastra texts teach. They are said to market false advice and superstition in the name of Vastu Vidya tradition, sometimes under the rubric of "Vedic sciences".
+
+
+Sanskrit treatises on architecture
+
+Of the numerous Sanskrit treatises mentioned in ancient Indian literature, some have been translated in English. Many Agamas, Puranas and Hindu scriptures include chapters on architecture of temples, homes, villages, towns, fortifications, streets, shop layout, public wells, public bathing, public halls, gardens, river fronts among other things. In some cases, the manuscripts are partially lost, some are available only in Tibetan, Nepalese or South Indian languages, while in others original Sanskrit manuscripts are available in different parts of India. Some treatises, or books with chapters on Vaastu Shastra include:
+
+
+See also
+
+ 
+Aranmula Kottaram
+Dowsing
+Feng shui
+Geomancy
+Kanippayyur Shankaran Namboodiripad
+Ley line
+Shilpa Shastras
+Tajul muluk
+
+
+References
+
+
+Further reading

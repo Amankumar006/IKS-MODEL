@@ -1,0 +1,25 @@
+SOURCE: NPTEL/SWAYAM
+TITLE: NPTEL: Sanskrit for Self Development
+URL: https://nptel.ac.in/courses/109104045
+DOMAIN: Linguistics
+COLLECTED: 2026-04-19T11:05:07.764046
+────────────────────────────────────────────────────────────
+
+Course: Sanskrit for Self Development
+Instructor: Prof. Anuradha Choudry, IIT Kharagpur
+Sanskrit is an ancient Indo-Aryan language in which most Hindu scriptures are written.
+It is the mother of many Indian languages including Hindi, Marathi, Bengali, Telugu.
+Week 1: Introduction to Sanskrit alphabet (Devanagari script).
+Vowels (svaras): a, aa, i, ii, u, uu, ri, e, ai, o, au, am, ah.
+Consonants organized by place of articulation (varna-mala).
+Week 2-3: Panini's grammar system. Ashtadhyayi — 8 chapters, 3976 sutras.
+Dhatus (verbal roots), Vibhakti (cases), Sandhi (phonetic combination rules).
+The most complete and systematic grammar of any language.
+Week 4-5: Sanskrit in science and mathematics.
+Mathematical terms: ankam (digit), shunya (zero), bindu (point).
+Chandas (Vedic meter): Gayatri (24 syllables), Anushtup, Trishtup, Jagati.
+Pingala's Chandahshastra — binary representations of meters.
+Week 6-8: Sanskrit literature and its significance.
+Vedas, Upanishads, Bhagavad Gita. Kalidasa's Meghaduta, Shakuntala.
+Panini, Patanjali, Bhartrhari. Sanskrit computational linguistics.
+Sanskrit's influence on European languages (Proto-Indo-European connection).

@@ -1,0 +1,222 @@
+Prakrit ( PRAH-krit) is a group of vernacular classical Middle Indo-Aryan languages that were used in the Indian subcontinent from around the 5th century BCE to the 12th century CE. The term Prakrit is usually applied to the middle period of the Middle Indo-Aryan languages, excluding Pali.
+The oldest stage of Middle Indo-Aryan language is attested in the inscriptions of Ashoka (c. 260 BCE), as well as in the earliest forms of Pāli, the language of the Theravāda Buddhist canon. The most prominent form of Prakrit is Ardhamāgadhı̄, associated with the ancient kingdom of Magadha, in modern Bihar, and the subsequent Mauryan Empire. Mahāvīra, the 24th and last Tīrthaṅkara of Jainism, was born in Magadha, and the earliest Jain texts were composed in Ardhamāgadhı̄.
+
+
+Etymology
+There are two major views concerning the way in which Sanskrit and Prakrit are related. One view holds that Prakrit was the speech of the common people, unadorned by grammar, and that prākṛta thus refers to vernacular usage, while Sanskrit was a co-existing but elevated register of the language. This is the usual explanation accepted by Western linguists. It also is one of several views noted, for example, by Nami Sadhu (11th century CE) in his commentary on Rudraṭa’s Kāvyālaṅkāra (“Ornaments of Poetry”), a 9th-century treatise on poetics. In contrast, the view most commonly held by modern Prakrit grammarians holds that the Prakrit languages are vernaculars that descended from Sanskrit at a later date:
+
+According to the Prākrṭa Prakāśa, an ancient Prakrit grammar, “Saṃskṛtam is the prakṛti (source) and the language that originates in, or comes from, that prakṛti, is therefore called prākṛtam.”
+Hemachandra (a grammarian of the 11th century who lived in Gujarat) in his grammar of Sanskrit and Prākrit named Siddha-Hema-Śabdanuśāsana, defines prākṛta’s origin to be sanskṛt: “prakṛtiḥ saṃskṛtam, tatrabhavaṃ tata āgataṃ vā prākṛtaṃ”[Sanskrit is the prakṛti (source) and Prākṛta is so called because it either ‘originates in’ or ‘comes from’ Sanskrit.]
+Another prākṛta grammarian, Mārkaṇḍeya, writes in his grammar Prākṛtasarvasva: “prakṛtiḥ saṃskṛtaṃ, tatrabhavaṃ prākṛtam ucyate” [Sanskrit is called the prakṛti (origin), and from there prākṛtam originates].
+Dhanika, in his ‘Daśarūpakāvaloka’ commentary on Daśarūpaka (one of the most important treatises explaining the 10 types of Indian Drama), says: “prakṛter āgataṃ prākṛtam, prakṛtiḥ saṃskṛtam” [from the prakṛti (source) comes Prākṛtam, and that prakṛti is Sanskrit]
+Siṃhadevagaṇin while commenting on Vāgbhaṭālaṅkāra writes: “prakṛteḥ saṃskrtād āgataṃ prākṛtam” [from Sanskrit (which is the source, i.e. prakṛti) comes Prākṛta]
+The Prākṛtacandrikā (a grammar of Prākṛta) says: “prakṛtiḥ saṃskṛtaṃ, tatrabhavatvāt prākṛtaṃ smṛtam” [Sanskrit is the prakṛti, it is remembered that prākṛtam originates from that (prakṛti)]
+The Prākṛtaśabdapradīpikā of Narasiṃha says: “prakṛteḥ saṃskṛtāyāstu vikṛtiḥ prākṛtī matā” [Alterations/changes (vikṛti) of the original Sanskrit is known as Prākṛta]
+The Ṣaḍbhāṣācandrikā of Lakṣmīdhara says the same thing as the above: “prakṛteḥ saṃskṛtāyāstu vikṛtiḥ prākṛtī matā” [Alterations/changes (vikṛti) of the original Sanskrit is known as Prākṛta]
+Vāsudeva, in his Prākṛtasaṃjīvanī commentary on Rājaśekhara’s Karpūramañjarī, says: “prākṛtasya tu sarvameva saṃskṛtaṃ yoniḥ” [Sanskrit is the mother of all Prākṛta]
+Nārāyaṇa, in his Rasika-sarvasva commentary on the Gītāgovindam of Jayadeva, says: “saṃskṛtāt prākṛtam iṣṭaṃ tato ’pabhraṃśabhāṣaṇam” [From Sanskrit is derived proper prākṛt, and from that is derived the corrupt-speech, i.e. apabhraṃśa]
+Śaṅkara, in his Rasacandrikā commentary on the Abhijñānaśākuntala (play by Kālidāsa), says something slightly different from the above: “saṃskṛtāt prākṛtam śreṣṭhaṃ tato ’pabhraṃśabhāṣaṇam” [From Sanskrit is derived best prākṛta, and from that is derived the corrupt-speech, i.e. apabhraṃśa]
+The dictionary of Monier Monier-Williams (1819–1899), and other modern authors, however, interpret the word in the opposite sense: “The most frequent meanings of the term prakṛta, from which the word ‘prakrit’ is derived, are ‘original, natural, normal’ and the term is derived from prakṛti, ‘making or placing before or at first, the original or natural form or condition of anything, original or primary substance.’”
+
+
+Definition
+Modern scholars have used the term "Prakrit" to refer to two concepts:
+
+Prakrit languages: a group of closely related literary languages
+the Prakrit language: one of the Prakrit languages, which alone was used as the primary language of entire poems
+Some modern scholars include all Middle Indo-Aryan languages under the rubric of 'Prakrits', while others emphasize the independent development of these languages, often separated from the history of Sanskrit by wide divisions of caste, religion, and geography.
+The broadest definition uses the term "Prakrit" to describe any Middle Indo-Aryan language that deviates from Sanskrit in any manner. American scholar Andrew Ollett points out that this unsatisfactory definition makes "Prakrit" a cover term for languages that were not actually called Prakrit in ancient India, such as:
+
+Ashokan Prakrit: the language of Ashoka's inscriptions
+the language of later inscriptions of India, labeled "Monumental Prakrit", "Lena Prakrit", or "Stupa dialect"
+the language of inscriptions of Sri Lanka, labeled "Sinhalese Prakrit"
+Pali, the language of the Theravada Buddhist canon
+the Buddhist Hybrid Sanskrit
+Gandhari, the language of birch-bark scrolls discovered in the region stretching from northwestern Pakistan to western China.
+According to some scholars, such as German Indologists Richard Pischel and Oskar von Hinüber, the term "Prakrit" refers to a smaller set of languages that were used exclusively in literature:
+
+Scenic Prakrits
+These languages are used exclusively in plays, as secondary languages
+Their names indicate regional association (e.g. Shauraseni, Magadhi, and Avanti), although these associations are mostly notional
+Primary Prakrits
+These languages are used as primary languages of literary classics such as Gaha Sattasai
+This includes the Maharashtri Prakrit or "Prakrit par excellence", which according to Dandin's Kavya-darsha, was prevalent in the Maharashtra region, and in which poems such as Ravana-vaho (or Setubandha) were composed.
+According to Sanskrit and Prakrit scholar Shreyansh Kumar Jain Shastri and A. C. Woolner, the Ardhamāgadhı̄ (or simply Magadhi) Prakrit, which was used extensively to write the scriptures of Jainism, is often considered to be the definitive form of Prakrit, while others are considered variants of it. Prakrit grammarians would give the full grammar of Ardhamāgadhı̄ first, and then define the other grammars with relation to it. For this reason, courses teaching 'Prakrit' are often regarded as teaching Ardhamāgadhı̄.
+
+
+Development of Prakrit from Old Indo-Aryan
+
+The Prakrit and Pali languages developed from Old Indo-Aryan (OIA, e.g. Vedic Sanskrit, ca. 600 BCE) by a set of regular phonological transformations. This section summarizes the changes occurring between Vedic Sanskrit (ca. 600 BCE), Early Middle-Indo-Aryan (MIA) in Pali or Ashokan Prakrit (ca. 280 BCE), the dramatic regional Prakrits like Maharashtri Prakrit (ca. 200 AD), and finally the late Prakrit or Apabhramsha stage (ca. 900 AD).
+
+
+Conservative features lost in Vedic
+Prakrit and Pali languages partially-preserve some conservative features of Proto-Indo-Aryan (PIA) lost in Vedic Sanskrit. Specifically:
+
+PIA *kṣ, *gẓʰ merge to Vedic kṣ, but remain distinguished later as kh-, jh- initially and -kkh-, -jjh- medially. Compare PIA Hákṣi > Sanskrit akṣi > Prakrit akkhi "eye" with PIA gẓʰáranam > Vedic kṣaraṇam, later Sanskrit jharaṇam > Prakrit jharaṇa "falling".
+The distinction between PIE *r and *l survived in the "l-dialect" of Indo-Aryan, which went on to form the basis of Classical Sanskrit and Central MIA. The Northwestern Vedic dialect, perhaps under areal influence of Iranian, underwent an l > r shift alongside the same shift in Iranian. Thus, Vedic is part of the "r-dialect" of Indo-Aryan, though /l/ continues to exist as a relatively rarer phoneme in Vedic. Due to the prestige of the Vedic dialect, the r-dialect forms were often accepted into the dialect of Classical Sanskrit and later into Central MIA. More rarely, l is encountered in the later language for PIE *r.
+The l-dialect (and cases of /l/ in Vedic) then possibly underwent Fortunatov's law, wherein pre-Sanskrit dentals *t, *tʰ, *d, *dʱ, *s, and *n underwent cerebralization after PIA *l, after which the *l was deleted. — PIA *ȷ́l̥tʰáram > Sanskrit jaṭhára "stomach, womb".
+Proponents of Fortunatov's law will separate this from the Middle Indo-Aryan rule in which a dental is cerebralized by a preceding rhotic. That later rule only affects plosives (and even then, it operates sporadically), while Fortunatov's law reliably operated in Old Indo-Aryan. It shifts s > ṣ (Proto-Indo-Iranian bʰā̆ls- > Sanskrit bhāṣ- "to speak"), while the distinction between s ~ ṣ ~ ś had already been lost by Middle Indo-Aryan.
+In Vedic and Pali dialects, PIA *ẓḍ > ḷ (ळ) /ɭ/ and*ẓḍʰ > ḷh (ळ्ह) /ɭʱ/. Elsewhere (and regularly in Classical Sanskrit), PIA *ẓḍ > ḍ (ड) /ɖ/ and*ẓḍʰ > ḍh (ढ) /ɖʱ/.
+
+
+Early changes common to Dardic
+The following changes are common to Middle Indo-Aryan (MIA) and Dardic.
+
+The unpredictable pitch accent of Vedic was lost, resulting in the mora-timed isochrony of Pali. The pitch accent is sometimes used to explain some irregular consonant doubling (Vedic jitáḥ > Prakrit jitto "won") or differences between Marathi and neighboring languages, indicating that the Vedic accent may have converted to a stress accent (as with Ancient Greek) and persisted in the Maharashtri region. However, this topic is debated and in the case of the irregular consonant doubling there may be alternative explanations.
+Before a consonant, Vedic e /ɐj/ (ए) and o /ɐw/ (ओ) monophthongize to /eː/ and /oː/, respectively. In the same position, Vedic ai /ɑːj/ (ऐ) > /ɑj/ and au /ɑːw/ (औ) > /ɑw/. This pronunciation is already used in Classical Sanskrit, distinguishing it from Vedic.
+Loss of word-final consonants in a few ways:
+Sanskrit word-final plosives (only /k ʈ t̪ p/) are lost with compensatory lengthening of the preceding vowel.
+Based on the initial consonant of the following word, Vedic word-final visarga /h/ has the allophones [∅], [ɸ], [ɾ], [x], [s], [ɕ], [ʂ], or [w]. Already in Classical Sanskrit, [ɸ] and [x] are not found. Later, Vedic -अः /ɐh/ becomes MIA -ओ /oː/ everywhere. Remaining word-final /h/ was entirely lost without a trace.
+Final nasals are lost with compensatory nasalization of the preceding vowel, indicated by the anusvara. Mishra and Bloch argue that word-final anusvara was realized as nasalization, but elsewhere anusvara was still pronounced as a nasal consonant.
+MIA monophthongization of /ɑj ɐjɐ ɐji ɐjoː ɐvi/ > /eː/. Similarly, /ɑw ɐʋɐ/ > /oː/, though occasionally /ɐʋɐ/ fails to reduce. — Sanskrit avarodhanam /ɐʋɐɾoːd̪ʱɐn̪ɐm/ > Ashokan olodhanaṃ /oːloːd̪ʱɐn̪ɐ̃/ "harem"
+A dental spontaneously cerebralizes to a retroflex stop in the environment of a rhotic. This rule origined in the east, and later to the north and northwest; it was less common in the west. Some scholars like Wackernagel argue that the original cases (or borrowings from eastern dialects) with a retroflex stop in the environment of a rhotic, like prati- > paṭi- and mēḍhra "ram, penis" (already retroflex in Proto-Indo-Aryan *Hmáyẓḍʰram) influence later analogical formation. Due to later dialectal mixture and adaptation to Sanskrit, this sound change ends up occurring fairly sporadically in MIA. For example, as early as Pali we see Sanskrit ardhaḥ /ɐɾd̪ʱɐh/ > Pali addho /ɐd̪ːʱoː/ or aḍḍho /ɐɖːʱoː/ "half". Generally, cerebralization did not happen across a perceived morpheme boundary. Hence, Sanskrit nirdhanaḥ /n̪iɾd̪ʱɐn̪ɐh/ (morphologically nir- "without, -less" + dhana- "wealth") > Prakrit ṇiddhaṇo /nid̪ːʱɐnoː/ "not wealthy". Many cerebralized words were old enough to be borrowed back into Classical Sanskrit, like paṭh- "to read" (from older pṛth- "to spread") with a specialized meaning. See also Fortunatov's Law, a similar rule mentioned above.
+Loss of ṛ is common to Dardic, Pali, and Prakrit. The exact sound change depends on the context and region/dialect. In the Central dialect, initial ṛ- > ri and medial -ṛ > i (but cases of ṛ > a and ṛ > u—especially after labial—are occasionally found). Elsewhere (especially in Pali, Western, and Southern dialects), ṛ > a is more common. — Sanskrit ṛṇa > Prakrit riṇa "debt" and Sanskrit kṛta > Prakrit kida, kia "done".
+
+
+Sound changes common to Pali and Prakrit
+After the split of Dardic languages, these changes are common to Pali and Prakrit. These changes may be also grouped together as the "MIA assimilation rules", and are the most important rules from this period. Regarding the assimilations of Old Indo-Aryan consonant conjuncts, the Jayadhavalā (ca. ninth century AD) writes Dīsaṁti doṇṇi vaṇṇā saṁjuttā aha va tiṇṇi cattāri / Tāṇaṁ duvvala-lōvaṁ kāūṇa kamō pajuttavvō "When two, or three or four, consonants appear in combination, elide the weakest one, and continue the process." Here, "weakest" refers to sounds of higher sonority, and "elide" refers to either true elision/loss or total assimilation of the weaker sound to the stronger sound. Specifically, the sonority scale of Prakrit is (weakest) h < r < y < v < l < nasals (m, n, ṇ, ñ) < s (representing OIA sibilant series) < all stops (strongest). It will be helpful to keep this notion of "stronger" and "weaker" sounds in mind through the following sound changes. The relevant changes and organized below by approximate chronology.
+
+The sibilant series (ś /ɕ/, ṣ /ʂ/, and s /s/) merges in most regions to s /s/. In the Eastern region (e.g. Magadhan), it merges instead to ś /ɕ/. In Romani, the original three-way sibilant distinction is preserved. — Sanskrit daśa /d̪ɐɕɐ/ > Prakrit dasa /d̪ɐsɐ/ "ten".
+After a non-nasal dental or retroflex stop, /m/ and /ʋ/ assimilate to /p/ if the stop is unvoiced or /b/ is the stop is voiced. This stage is attested at Girnar — Sanskrit catvāraḥ /t͡ʃɐt̪ʋɑːɾɐh/ > Girnar Ashokan catpāro /t͡ʃɐt̪pɑːɾoː/.
+Vedic jñ /dʑɲ/, ny /n̪j/, and ṇy /ɳj/ > Early MIA ññ /ɲː/.
+Epenthetic b /b/ arises in -mr- /mɾ/ > -mbr- /mbɾ/ and -ml- /ml/ > -mbl- /mbl/. — Sanskrit āmraḥ /ɑːmɾɐh/ > */ɑːmbɾɐh/ > Prakrit aṃbo /ɐmboː/ "mango".
+A succeeding /j/ palatalizes a dental stop and a succeeding sibilant palatalizes /t̪/ and /p/. This tendency is represented scarcely in some "corruptions" in Sanskrit, like jyotiḥ /d͡ʒjoːt̪ih/ "light" < PIA *dyáwtiṣ.
+When a long vowel precedes a consonant cluster, the long vowel is shortened. More rarely, a long vowel was retained at the expense of simplifying the consonant cluster. This tendency is seen in the older language; for example, Classical Sanskrit kalyam /kɐljɐm/ "dawn" (< Vedic  kālyam /kɑːljɐm/) or margaḥ /mɐɾɡɐh/ "path" (< Vedic mārgaḥ /mɑːɾɡɐh/). In the case of e (ए) /eː/ and o (ओ) /oː/, this produces the short allophones /e/ and /o/. These allophones are generally not distinguished orthographically, but a distinction is made in romanization as ĕ and ŏ (with breve marks).
+A consonant cluster of three or more consonants is reduced to two consonants by elision from either the left or right, with some variation. — Vedic tīkṣṇáh /t̪iːkʂɳɐ́h/ > either Prakrit tikkho /t̪ikːʰoː/ or tiṇho /t̪inɦoː/ "sharp". In the first, /ɳ/ was deleted from the right and by a later sound change /kʂ/ > /kːʰ/. In the second, /k/ was deleted from the left and by a later sound change /ʂɳ/ > /ɳɦ/. In either case, the /iː/ shortens as it occurs before a consonant cluster.
+kṣ /kʂ/ > kh- /kʰ/ initially or -kkh- /kːʰ/ elsewhere. In the Central and Eastern regions, this outcome would naturally occur from the sound changes below. It is worth mentioning because in other regions, the special sequence kṣ /kʂ/ > ch- /t͡ʃʰ/ initially and -cch- /t͡ːʃʰ/ elsewhere. There is some dialectal borrowing already seen in Pali (which usually attests the -(k)kh- variant but sometimes has -(c)ch-) and regional Ashokan Prakrit.
+In a cluster with a plosive or affricate (always) or when followed by a nasal consonant (usually, but not always), s /s/ weakens to h /ɦ/. Alternatively when followed by a nasal consonant, the s can be retained (especially medially, where by the cluster simplification rule below the cluster becomes -ss-) or anaptyxis can break the cluster.
+When h /ɦ/ (either from older sibilant via the above rule or otherwise) precedes a consonant, the consonant and /ɦ/ metathesize. — Sanskrit cihnam /t͡ʃiɦn̪ɐm/ > Pali cinhaṃ /t͡ʃin̪ɦɐ̃/ "sign".
+At the start of a word, the sequence of an obstruent (i.e. non-sonorant) + h /ɦ/ simply results in an aspirated plosive or affricate. Elsewhere, the h /ɦ/ undergoes regressive assimilation by transforming into the aspirated equivalent of the plosive or affricate. The last rule is already known in Sanskrit sandhi, where, for example, tad + hi → taddhi, rather than *tadhi so as to preserve the syllable weight of the first syllable. — Sanskrit vatsaḥ ~ vatso /ʋɐt̪soː/ > */ʋɐt͡ʃsoː/ (palatalization) > */ʋɐt͡ʃɦoː/ (sibilant weakening) > /ʋɐt͡ːʃoː/ (sandhi of -c- + -h- → -cch-) > Pali and Prakrit vaccho /ʋɐt͡ːʃoː/ "calf".
+Cluster simplification: The main rule being referred to in the above Jayadhavalā quote. All consonant clusters are simplified to achieve the MIA phonotactic situation where syllables are restricted to at most a CVC structure (where the coda C is further restricted to either the anusvara ṃ, a nasal/plosive homorganic to the following syllable onset C, or a sonorant if the following syllable onset is h /ɦ/). Word-initially, only the strongest sound in a cluster survives — Sanskrit grāmaḥ /gɾɑːmɐh/ > Ashokan gāmo /gɑːmoː/ "village". Medially, the weaker sound totally assimilates to the stronger sound, and sequences like -CʰC- or -CʰCʰ- are immediately repaired to -CCʰ- — Sanskrit vyāghraḥ /ʋjɑːgʰɾɐh/ > */ʋjɐgʰɾoː/ (prior sound changes) > /ʋɐgːʰoː/ (initial /ʋj/ > /ʋ/, medial /gʰɾ/ > /gːʰ/, not */gʰg/) > Pali and Prakrit vaggho /ʋɐgːʰoː/ "tiger".
+The treatment of a sonorant + h /ɦ/ is complicated. Generally, aspirated sonorants are not phonemic in Pali or Prakrit, meaning yh /jɦ/, rh /ɾɦ/, lh /lɦ/, vh /ʋɦ/, ñh /ɲɦ/, ṇh /ɳɦ/, nh /n̪ɦ/, and mh /mɦ/ are all treated as a sequence/cluster of two consonants. However, these sequences are treated specially among the variety of consonant clusters, particularly because they are permitted word-medially. Word-initially, the result is varied. In Pali, epenthetic -a- breaks the sequence — Sanskrit hradaḥ /ɦɾɐd̪ɐh/ > */ɾɦɐd̪oː/ (prior sound changes) > Pali rahado /ɾɐɦɐd̪oː/ "lake". In Prakrit, this sequence is either permitted (especially in Maharashtri Prakrit), epenthetic -a- appears to break the sequence, or the h /ɦ/ is dropped. — Sanskrit snānam /sn̪ɑːn̪ɐm/ > Prakrit ṇhāṇa /n(ɐ)ɦɑːnɐ/, siṇāṇa /sinɑːnɐ/, and saṇāṇa /sɐnɑːnɐ/ "bathing".
+The sequence -sr- /sɾ/ can sometimes yield -ṃs- /ns/ rather than expected -ss- /sː/. — Sanskrit aśru /ɐɕɾu/ > Prakrit assu /ɐsːu/, aṃsu /ɐnsu/ "tear".
+The sequence -mh- /mɦ/ can sometimes fortify to -ṃbh- /mbʱ/.
+In general, anaptyxis, rather than assimilation, can be applied to break a heterogeneous cluster. This is most common in cases of a stop followed by sonorant, as in -tn-, -dm-, -kl-, etc. — Sanskrit ratna > Pali ratana or Sanskrit klēśa > Prakrit kilēsa "grief".
+
+
+Changes after the split of Pali and Prakrit
+The following changes are only seen in Prakrit and not in Pali (other Pali-specific changes do also occur beyond this point).
+
+yh /jɦ/ and vh /ʋɦ/ become jh- /d͡ʒʱ/ and bh- /bʱ/ initially and -jjh- /d͡ːʒʱ/ and -bbh- /bːʱ/ medially. In Pali, only /ʋɦ/ changes. — Sanskrit guhyaḥ /guɦjɐh/ > /gujɦoː/ (prior sound changes) > Pali guyho /gujɦoː/, but develops further into Prakrit gujjho /gud͡ːʒʱoː/.
+Relatedly, initial y /j/ fortifies to j /d͡ʒ/ and medial yy /jː/ > jj /d͡ːʒ/.— Sanskrit yaḥ /jɐh/ > Pali yo /joː/, Prakrit jo /d͡ʒoː/.
+In Pali, geminate -vv- /ʋː/ > -bb- /bː/, but this never occurred in Prakrit generally. However, in the Central and Eastern region, initial /ʋ/ > /b/ and medial geminate /ʋː/ > /bː/ has occurred before New Indo-Aryan. It can be argued that this fortification occurs earlier alongside the fortification of /j/ > /d͡ʒ/, and orthographic व् /ʋ/ beyond this point is merely conservative.
+Cases of -ēy- /eːj ~ ejː/ and -ī̆y- /iːj ~ ijː/ are re-analyzed as having a geminate glide and undergo the above rule as well. — Sanskrit kālēyam /kɑːleːjɐm/ > Prakrit kālēyaṃ /kɑːleːɐ̃/, kālijjaṃ ~ *kālĕjjaṃ /kɑːlid͡ːʒɐ̃ ~ kɑːled͡ːʒɐ̃/.
+In Pali, Sanskrit jñ /dʑɲ/ becomes ñ- /ɲ/ initially and -ññ- /ɲː/ medially. In Prakrit, the result is usually j- /d͡ʒ/ initially and -jj- /d͡ːʒ/ medially. Sometimes, ñ- /ɲ/ initially and -ññ- /ɲː/ medially are found too. — Sanskrit jñāna > Prakrit jāna; Sanskrit rājñī > Prakrit rāṇī.
+As noted before, the reflex of Sanskrit ṛ is different in Pali, Prakrit, and Dardic (e.g. initial ṛ > Prakrit ri- always, but Pali and Dardic a-, i-, u-). Also, the reflex of Sanskrit clusters involving a sibilant and sonorant is unstable between Pali and Prakrit.
+
+
+Changes up to Dramatic Prakrits
+These changes occur after Pali and Early Prakrit, but before the development of the dramatic regional Prakrits like Maharashtri Prakrit and Shauraseni Prakrit (ca. 200 AD).
+
+Before a consonant, ṅ, ñ, ṇ, n, m, and the anusvara ṃ are in complementary distribution in MIA. In Sanskrit, each different nasal consonant is typically written out. In later languages, all pre-consonant nasals are written as the anusvara ṃ.
+Merging of nasals ṇ, n > ṇ (n̪ ɳ > n), represented as a retroflex nasal. Whether the actual place of articulation of this sound was truly retroflex or was dental (and just orthographically represented as a retroflex nasal) is debated.
+Lenition of intervocalic stops over time, through various attested stages. First, all single intervocalic unvoiced stops become voiced. Then, non-retroflex stops spirantize (one possibility is g, gʱ, dʒ, d, dʱ, b, bʱ > ɣ, ɣʱ, ʑ, ð, ðʱ, β, βʱ / V_V). Per Chatterji, this stage is represented by vacillation between writing a voiced stop, semivowel, or nothing. The retroflex voiced stops ḍ, ḍh likely become flaps intervocalically, but this distinction is not represented orthographically. Finally, aspirated spirants debuccalize (ɣʱ, ðʱ, βʱ > ɦ), the spirant β > ʋ (romanized as v), and remaining spirants ɣ, ʑ, ð are lost, leaving the surrounding two vowels in hiatus. — Sanskrit kathanam /kɐt̪ʰɐn̪ɐm/ > Prakrit kahaṇaṃ /kɐɦɐnɐ̃/ "saying".
+Between two ā̆ vowels, hiatus is usually resolved by what Hemachandra, in his grammar of Prakrit, calls a “lightly pronounced y-sound” (laghuprayatnatarayakāraśrutiḥ). As far as orthography/romanization is concerned, this results in the optional inclusion of epenthetic -y- or less likely -v- between the ā̆ vowels. This orthographic choice should not be confused with the older genuine /j/ phoneme. Similarly, after a front vowel, euphonic/orthographic -y-appears. Elsewhere, hiatus is fully tolerated. After ā̆, the diaeresis is often used in romanization (e.g. aï, aü) to differentiate this sound from the older overlong vowels.
+Sanskrit śoka- /ɕoːkɐ/ > Pali/Ashokan soka- /soːkɐ/ > Early Dramatic Prakrit soga- /soːgɐ ~ soːɣɐ/ > Prakrit sōa- /soːɐ/ "sorrow".
+Sanskrit caturtha- /tɕɐt̪uɾt̪ʰɐ/ > Pali/Ashokan catuttha /t͡ʃɐt̪ut̪ːʰɐ/ > Early or Shauraseni Dramatic Prakrit caduttha- /t͡ʃɐd̪ut̪ːʰɐ ~ t͡ʃɐðut̪ːʰɐ/ > Prakrit caüttha- /t͡ʃɐut̪ːʰɐ/ "fourth".
+Occasionally, intervocalic -d- /d̪/ became -r- /ɾ/, as in the numbers from 11 to 18.
+Sanskrit ekādaśa /eː.kaː.d̪ɐ.ɕɐ/ > Prakrit egārasa /eː.ɡaː.ɾɐ.sɐ ~ eː.ɣaː.ɾɐ.sɐ/.
+Lenition of intervocalic y /j/, similarly to the above change. The optional inclusion of epenthetic -y- sometimes makes this confusing, but at this point /j/ is no longer phonemic in Prakrit; it is merely an epenthetic hiatus-filler. — Sanskrit nayanam /n̪ɐjɐn̪ɐm/ > Prakrit ṇa(y)aṇaṃ /nɐɐnɐ̃/ "eye".
+Lenition of intervocalic v /ʋ/ between ā̆ and a high vowel. — Sanskrit praviṣṭa- /pɾɐʋiʂʈɐ/ > Prakrit païṭṭha- /pɐiʈːʰɐ/ "entered", but Sanskrit nava /n̪ɐʋɐ/ > Prakrit ṇava /nɐʋɐ/ "nine" with retention of -v-.
+Occasionally, the sequences aï and aü contracted early on in Prakrit to ē̆ and ō̆. This is a separate change than the later coalescence of vowels in hiatus. — Sanskrit sthavira- /st̪ʰɐʋiɾɐ/ > Earlier Prakrit ṭhavira- /ʈʰɐʋiɾɐ/ > *ṭhaïra- /ʈʰɐiɾɐ/ > Later Prakrit ṭhēra- /ʈʰeːɾɐ/ "old".
+Prakrit ḍ, ḷ, l, and r often alternate with each other, particularly in words loaned from non Indo-Aryan sources. — PIA *swaẓḍaśa > Sanskrit ṣoḍaśa > Prakrit solasa /soːlɐsɐ/ "sixteen".
+Also worth noting here is the addition of pleonastic suffixes to older nominals and roots. This becomes more prevalent by late MIA and early New Indo-Aryan period. The consensus, implied by the name, is that these innovative suffixes have little semantic purpose and mainly serve to distinguish homophones (created by the sweeping sound changes between Sanskrit and Prakrit). They are applied after nominal and verb stems, before inflecting suffixes. Some are recognizable as the reflexes of Old Indo-Aryan diminutive suffixes. The most important suffixes are feminine -iā- (< earlier -igā < Sanskrit -ikā) and masculine -a- (< earlier -ga < Sanskrit -ka). The other common suffixes are -kka-, -ḍa-, -illa-, -la-, -lla-, -ulla-, and -ra-. These suffixes are very often combined with each other.
+
+
+Up to Apabhramsha
+These changes occur after the dramatic Prakrits, and characterize the Late Prakrit, or Apabhramsha (Apa.), stage (ca. 900 AD).
+
+Intervocalic -m- becomes a nasalized glide /ʋ̃/, and then the nasalization is shifted on the preceding or following vowel. This change notably did not occur in the Western zone (e.g. Gujarati and Sinhala). — (Sanskrit grāma >) Pali/Prakrit gāmo /gɑːmoː/ > Central Apa. /ˈgɑː.ʋ̃u/ "village".
+Prakrit final long vowels shorten and change in quality if necessary to merge with the short vowels: /ɑː iː uː eː oː/ > /ɐ i u i u/. This tendency is known since at least Ashokan times, where originally-long final vowels are frequently shortened and short vowels are confused with the long form (in a manner of orthographic conservatism)—we find Ashokan tada /t̪ɐd̪ɐ/ for Sanskrit tadā /t̪ɐd̪ɑː/ "then", Ashokan Ambika /ɐmbikɐ/ for Sanskrit Ambikā /ɐmbikɑː/, etc.
+Intervocalic -v- /ʋ/ is lost after a high vowel.
+Long ū is shortened before another vowel — (Sanskrit kūpa- /kuːpɐ/ >) Prakrit kūva- /kuːʋɐ/ > Apa. /ˈku.ɐ.u/ "well".
+Development of a Latin-like positional stress system. Stress falls on the penultimate syllable if it is heavy, failing which it falls on the antepenultimate syllable if it is heavy, failing which it falls on the fourth syllable from the end. This system retroactively came to characterize Classical Sanskrit, but it can be considered a MIA development that was only fully completed around the Apabhramsha stage.
+
+
+Grammar
+Medieval grammarians such as Markandeya (late 16th century) describe a highly systematized Prakrit grammar, but the surviving Prakrit texts do not adhere to this grammar. For example, according to [Vishvanatha (14th century), in a Sanskrit drama, the characters should speak Maharashtri Prakrit in verse and Shauraseni Prakrit in prose. But the 10th century Sanskrit dramatist Rajashekhara does not abide by this rule. Markandeya, as well as later scholars such as Sten Konow, find faults with the Prakrit portions of Rajashekhara's writings, but it is not clear if the rule enunciated by Vishvanatha existed during Rajashekhara's time. Rajashekhara himself imagines Prakrit as a single language or a single kind of language, alongside Sanskrit, Apabhramsha, and Paishachi.
+German Indologist Theodor Bloch (1894) dismissed the medieval Prakrit grammarians as unreliable, arguing that they were not qualified to describe the language of the texts composed centuries before them. Other scholars such as Sten Konow, Richard Pischel and Alfred Hillebrandt disagree with Bloch. It is possible that the grammarians sought to codify only the language of the earliest classics of the Prakrit literature, such as the Gaha Sattasai. Another explanation is that the extant Prakrit manuscripts contain scribal errors. Most of the surviving Prakrit manuscripts were produced in a variety of regional scripts during 1300–1800 CE. It appears that the scribes who made these copies from the earlier manuscripts did not have a good command of the original language of the texts, as several of the extant Prakrit texts contain inaccuracies or are incomprehensible.
+Also, like Sanskrit and other ancient languages Prakrit was spoken and written long before grammars were written for it. The Vedas do not follow Panini's Sanskrit grammar which is now the basis for all Sanskrit grammar. Similarly, the Agamas, and texts like Shatkhandagama, do not follow the modern Prakrit grammar.
+Prakrita Prakasha, a book attributed to Vararuchi, summarizes various Prakrit languages.
+Following are the prominent works on Prākṛta grammar available today:
+
+Prākṛta-Lakṣaṇam by Caṇḍa (post 3rd century B. C. E.)
+Prākṛta Prakāśa by Vararuci (3rd or 4th century C. E.)
+Prākṛta Vyākaraṇa (being 8th chapter of Siddhahemaśabdānuśāsana) by Hemachandra
+Prākṛta Adhyāya by Kramadīśvara
+Ṣaḍbhāṣācandrikā by Lakṣmīdhara (16th century C. E.)
+Prākṛta Kāmadhenu by Laṅkeśvara
+Prākṛta Saṃjīvanī by Vatsarāja
+Prākṛtānuśāsana by Puruṣottama
+Prākṛta Kalpataru by Rāmaśarma
+Prākṛta Sarvasva by Mārkaṇḍeya (17th century C. E.)
+
+
+Prevalence
+Prakrit literature was produced across a wide area of South Asia. Outside India, the language was also known in Cambodia and Java.
+Literary Prakrit is often wrongly assumed to have been a language (or languages) spoken by the common people, because it is different from Sanskrit, which is the predominant language of the ancient Indian literature. Several modern scholars, such as George Abraham Grierson and Richard Pischel, have asserted that the literary Prakrit does not represent the actual languages spoken by the common people of ancient India. This theory is corroborated by a market scene in Uddyotana's Kuvalaya-mala (779 CE), in which the narrator speaks a few words in 18 different languages: some of these languages sound similar to the languages spoken in modern India; but none of them resemble the language that Uddyotana identifies as "Prakrit" and uses for narration throughout the text.The local variants of Apabhramsha evolved into the modern day Indo-Aryan vernaculars of South Asia.
+
+
+Literature
+
+Literary Prakrit was among the main languages of the classical Indian culture. Dandin's Kavya-darsha (c. 700) mentions four kinds of literary languages: Sanskrit, Prakrit, Apabhramsha, and mixed. Bhoja's Sarasvati-Kanthabharana (11th century) lists Prakrit among the few languages suitable for composition of literature. Mirza Khan's Tuhfat al-hind (1676) names Prakrit among the three kinds of literary languages native to India, the other two being Sanskrit and the vernacular languages. It describes Prakrit as a mixture of Sanskrit and vernacular languages, and adds that Prakrit was "mostly employed in the praise of kings, ministers, and chiefs".
+During a large period of the first millennium, literary Prakrit was the preferred language for the fictional romance in India. Its use as a language of systematic knowledge was limited, because of Sanskrit's dominance in this area, but nevertheless, Prakrit texts exist on topics such as grammar, lexicography, metrics, alchemy, medicine, divination, and gemology. In addition, the Jains used Prakrit for religious literature, including commentaries on the Jain canonical literature, stories about Jain figures, moral stories, hymns and expositions of Jain doctrine. Prakrit is also the language of some Shaiva tantras and Vaishnava hymns.
+Besides being the primary language of several texts, Prakrit also features as the language of low-class men and most women in the Sanskrit stage plays. American scholar Andrew Ollett traces the origin of the Sanskrit Kavya to Prakrit poems.
+Some of the texts that identify their language as Prakrit include:
+
+Hāla's Gaha Sattasai (c. 1st or 2nd century), anthology of single verse poems
+Ananda-vardhana's 	now-lost God of Five Arrows at Play, poem
+Sarvasena's Hari-vijaya (late 4th century), epic
+Pravarasena II's Ravana-vaho (early 5th century), epic
+Palitta's Tarangavati (probably 1st or 2nd century), fictional romance
+Palitta's Rasikaprakāśana or Brilliance of the Connoisseurs
+Vakpati's Gaudavaho (c. 8th century)
+Haribhadra's Samaraditya-charitra (c. 8th century), fictional romance
+Uddyotana's Kuvalaya-mala (779 CE), fictional romance
+Kautuhala's Lilavati or Kouhala's Lilavai (c. 8th century), fictional romance
+Madhuka's Haramekhalā or Hara's Belt (10th century), a compendium covering a wide range of topics, such as casting love spells and treating snakebites
+Jineshvara's Treasury of Gatha-Jewels (1194), anthology of verses
+Addahamana's Sandesha-rasaka (13th century), a message poem; the author states that his family came from "the land of the Muslims", which suggests that Addahamana is the Prakrit variant of 'Abd ur-Rahman.
+
+
+List of Prakrits
+The languages that have been labeled "Prakrit" in modern times include the following:
+
+Not all of these languages were actually called "Prakrit" in the ancient period.
+
+
+Dramatic Prakrits
+
+Dramatic Prakrits were those that were used in dramas and other literature.  Whenever dialogue was written in a Prakrit, the reader would also be provided with a Sanskrit translation.
+The phrase "Dramatic Prakrits" often refers to three most prominent of them: Shauraseni Prakrit, Magadhi Prakrit, and Maharashtri Prakrit. However, there were a slew of other less commonly used Prakrits that also fall into this category. These include Prachya, Bahliki, Dakshinatya, Shakari, Chandali, Shabari, Abhiri, Dramili, and Odri. There was a strict structure to the use of these different Prakrits in dramas.  Characters each spoke a different Prakrit based on their role and background; for example, Dramili was the language of "forest-dwellers", Sauraseni was spoken by "the heroine and her female friends", and Avanti was spoken by "cheats and rogues". Maharashtri and Shaurseni Prakrit were more common and were used in literature extensively.
+
+
+Jain Prakrit
+Some 19th–20th century European scholars, such as Hermann Jacobi and Ernst Leumann, made a distinction between Jain and non-Jain Prakrit literature. Jacobi used the term "Jain Prakrit" (or "Jain Maharashtri", as he called it) to denote the language of relatively late and relatively more Sanskrit-influenced narrative literature, as opposed to the earlier Prakrit court poetry. Later scholars used the term "Jain Prakrit" for any variety of Prakrit used by Jain authors, including the one used in early texts such as Tarangavati and Vasudeva-Hindi. However, the works written by Jain authors do not necessarily belong to an exclusively Jain history, and do not show any specific literary features resulting from their belief in Jainism. Therefore, the division of Prakrit literature into Jain and non-Jain categories is no longer considered tenable.
+
+
+Status
+Under the Mauryan Empire various Prakrits enjoyed the status of royal language. Prakrit was the language of Emperor Ashoka who was patron of Buddhism.
+Prakrit languages are said to have held a lower social status than Sanskrit in classical India. In the Sanskrit stage plays, such as Kalidasa's Shakuntala, lead characters typically speak Sanskrit, while the unimportant characters and most female characters typically speak Prakrit.
+While Prakrits were originally seen as 'lower' forms of language, the influence they had on Sanskrit – allowing it to be more easily used by the common people – as well as the converse influence of Sanskrit on the Prakrits, gave Prakrits progressively higher cultural prestige.
+Mirza Khan's Tuhfat al-hind (1676) characterizes Prakrit as the language of "the lowest of the low", stating that the language was known as Patal-bani ("Language of the underground") or Nag-bani ("Language of the snakes").
+Among modern scholars, Prakrit literature has received less attention than Sanskrit. Few modern Prakrit texts have survived in modern times, and even fewer have been published or attracted critical scholarship. Prakrit was designated as a classical language on 3 October 2024 by the Government of India, as the earliest Prakrit literature is older than most Indian literatures.
+
+
+Research institutes
+In 1955, government of Bihar established at Vaishali, the Research Institute of Prakrit Jainology and Ahimsa with the aim to promote research work in Prakrit.
+The National Institute of Prakrit Study and Research is located in Shravanabelagola, Karnataka, India.
+
+
+Notes
+
+
+References
+
+
+Bibliography
+
+
+Further reading
+
+Richard Pischel (1999). Grammar of the Prākrit Languages. Translated by Subhadra Jha. Motilal Banarsidass. ISBN 9788120816800.

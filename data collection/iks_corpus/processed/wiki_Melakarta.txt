@@ -1,0 +1,41 @@
+SOURCE: Wikipedia
+TITLE: Melakarta
+URL: https://en.wikipedia.org/wiki/Melakarta
+DOMAIN: Classical Music
+COLLECTED: 2026-04-19T11:03:36.549439
+────────────────────────────────────────────────────────────
+
+Mēḷakartā is a collection of fundamental musical scales (ragas) in Carnatic music (South Indian classical music). Mēḷakartā ragas are parent ragas (hence known as janaka ragas) from which other ragas may be derived. A melakarta raga is sometimes referred as mela, karta or sampurna as well, though the latter usage is inaccurate, as a sampurna raga need not be a melakarta (take the raga Bhairavi, for example).
+In Hindustani music the thaat is the rough equivalent of Melakartā. There are 10 thaats in Hindustani music, though the commonly accepted melakarta scheme has 72 ragas.
+Rules for Mēḷakarta ragas
+Ragas must contain the following characteristics to be considered Melakarta:
+They are sampurna ragas – they contain all seven swaras (notes) of the octave in both ascending and descending scale.
+The upper shadjam is included in the raga scale. (ragas like Punnagavarali and Chenchurutti are not mēḷakarta as they end with nishadam)
+The ascending and descending scales must have the same notes.
+The mēḷa system of ragas was first propounded by Raamamaatya in his work Svaramelakalanidhi c. 1550. He is considered the father of mela system of ragas. Later, Venkatamakhin, a gifted musicologist in the 17th century, expounded a new mela system known today as mēḷakarta in his work Chaturdandi Prakaasikaa. He made some bold and controversial claims and defined somewhat arbitrarily 6 svaras from the known 12 semitones, at that time, to arrive at 72 mēḷakarta ragas. The controversial parts relate to double counting of R2 (and similar svaras) and his exclusive selection of madhyamas for which there is no specific reasoning (also known as asampurna melas as opposed to sampurna ragas). However, today the 72 mēḷakarta ragas use a standardized pattern, unlike Venkatamakhi's pattern, and have gained a significant following. Govindhacharya is credited with the standardization of rules and known for giving different names for standard ragas that have a different structure but the same swaras as those proposed by Venkatamakhi. The scales in this page are those proposed by Govindaacharya.
+Determining the Mēḷakarta
+A hundred years after Venkatamakhin's time the Katapayadi sankhya rule came to be applied to the nomenclature of the mēḷakarta ragas. The sankhya associates Sanskrit consonants with digits. The digits corresponding to the first two syllables of the name of a raga, when reversed, give the index of the raga. Thus the scale of a mēḷakarta raga can be easily derived from its name. The Sanskrit rule of “Sankhyānam vāmatò gatihi” means for arriving to digits, you read from right to left.
+For example, Harikambhoji raga starts with syllables Ha and ri, which have numbers 8 and 2 associated with them. Reversing them we get 28. Hence Harikambhoji is the 28th Mēḷakarta rāga. See Katapayadi sankhya for more details and examples.
+Each mēḷakarta raga has a different scale. This scheme envisages the lower Sa (Keezh Shadja), upper Sa (Mael Shadja) and Pa (Panchama) as fixed swaras, with the Ma (Madhyama) having two variants and the remaining swaras Ri (Rishabha), Ga (Gandhaara), Dha (Dhaivata) and Ni (Nishaada) as having three variants each. This leads to 72 seven-note combinations (scales) referred to as the Mēḷakarta ragas as follows.
+There are twelve semitones of the octave S, R1, R2=G1, R3=G2, G3, M1, M2, P, D1, D2=N1, D3=N2, N3 (see swaras in Carnatic music for explanation of these notations). A melakarta raga must necessarily have S and P, one of the M's, one each of the R's and G's, and one each of the D's and N's. Also, R must necessarily precede G and D must precede N (krama sampūrṇa rāga). This gives 2 × 6 × 6 = 72 ragas. Finding mēḷakarta ragas is a mathematical process. By following a simple set of rules we can find the corresponding raga and the scale associated with it.
+A raga which has a subset of svarās from a Mēḷakarta raga is said to be a janya (means born or derived from) of that Mēḷakarta raga. Every raga is the janya of a mēḷakarta raga. Janya ragas whose notes are found in more than one mēḷakarta raga are assigned (or associated) parent Melakarta based on subjective notions of similarity. This is obvious for ragas that have less than seven notes. For such ragas it can be associated with a Mēḷakarta which has any of the different swaras in that position. For example, Hindolam has Rishabha and Panchama missing. Hence, it could be considered a janya of Todi (also known as Hanumatodi) which has shuddha rishabha or with Natabhairavi which has a chathushruti rishabha. It is popularly associated with Natabhairavi.
+The 72 Mēḷakarta ragas are split into 12 groups called chakrās, each containing 6 ragas. The ragas within the chakra differ only in the dhaivatam and nishadam notes (D and N), as illustrated below. The name of each of the 12 chakras suggest their ordinal number as well.
+Indu stands for the moon, of which we have only one – hence it is the first chakra.
+Nētra means eyes, of which we have two – hence it is the second.
+Agni is the third chakra it indicates three kinds of Agni (Dakshina, Ahavaniyam and gArhapatyam). So agni indicates 3rd Chakra.
+Vēda denoting four Vedas is the name of the fourth chakra.
+Bāṇa comes fifth as it stands for the five Arrows of Manmatha.These arrows of Manmatha are mango, lotus, blue lily, jasmine and asoka. These arrows were to give the person hit by it have intense issues
+Rutu is the sixth chakra standing for the 6 seasons of Hindu calendar, which are Vasanta, Greeshma, Varsha, Sharat, Hemanta and Shishira.
+Rishi, meaning sage, is the seventh chakra representing the seven sages.
+Vasu stands for the eight vasus of Hinduism.
+Brahma comes next of which there are 9.
+Disi Chakra indicates Ten directions(East, West, North, South, North East, North West, South East, South West, Above and Below). Hence it is 10th Chakra.
+Eleventh chakra is Rudra of which there are eleven.
+Twelfth comes Ādityas of which there are twelve.
+These 12 chakras were also established by Venkatamakhi.
+The 72 Mēḷakartā ragas can be divided into two parts, shuddha madhyama and prati madhyama ragas. When a given shuddha madhyama raga's M1 is replaced by M2, we get the corresponding prati madhyama raga. See Katapayadi sankhya for more information on how to derive the various swaras of a raga from its mēḷakartā number.
+See swaras in Carnatic music for explanation of the notations like R1, G2, N2, and so forth.
+Alternate Mēḷakarta scheme
+Muthuswami Dikshitar school followed a different set of scales as the 72 Mēḷakarta ragas. These were taught by Venkatamakhin. Many of the scales were asampurna (not sampurna ragas) because Dikshitar chose to follow the earlier established structure to mitigate ill-effects of usage of direct vivadi swaras in the scales.
+Illustration of the notes in Melakarta ragas in a Keyboard layout at Wikimedia commons
+List of film songs based on ragas

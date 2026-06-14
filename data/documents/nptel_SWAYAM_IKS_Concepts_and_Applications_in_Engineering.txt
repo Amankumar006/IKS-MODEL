@@ -1,0 +1,51 @@
+SOURCE: NPTEL/SWAYAM
+TITLE: SWAYAM: IKS Concepts and Applications in Engineering
+URL: https://onlinecourses.swayam2.ac.in/imb23_mg53/preview
+DOMAIN: IKS Overview
+COLLECTED: 2026-04-19T11:05:12.659368
+────────────────────────────────────────────────────────────
+
+Course: Indian Knowledge System: Concepts and Applications in Engineering
+Instructors: B. Mahadevan (IIM Bangalore), Vinayak Rajat Bhat
+(Chanakya University), R. Venkata Raghavan (IIT Bhubaneswar)
+Textbook: Introduction to Indian Knowledge System: Concepts and Applications,
+Week 1: Introduction to IKS. What is IKS? The IKS corpus classification
+framework (Chaturdasha-Vidyasthana). Unique aspects: oral tradition, sutras,
+encryption, regenerative and spiritual dimensions.
+Week 2: Vedic corpus. Four Vedas — Rigveda (hymns), Samaveda (melodies),
+Yajurveda (rituals), Atharvaveda (spells/medicine). Six Vedangas.
+Upanishads — philosophical treatises. Puranas — mythological encyclopedias.
+Week 3: Mathematics in ancient India. Sulba Sutras (800-500 BCE) —
+geometrical constructions for altars. Aryabhata (476–550 CE) —
+place value system, approximation of pi, trigonometry.
+Brahmagupta (598–668 CE) — rules for zero, negative numbers.
+Bhaskara II (1114–1185 CE) — Lilavati, Bijaganita.
+Madhava (1340–1425 CE) — infinite series for pi and trigonometric functions
+(300 years before Gregory and Leibniz).
+Week 4: Astronomy. Aryabhatiya — heliocentric theory (predating Copernicus),
+rotation of Earth, eclipses. Surya Siddhanta — astronomical constants.
+Jantar Mantar observatories (Jai Singh II, 18th century) in Jaipur, Delhi.
+Week 5: Engineering and technology. Iron Pillar of Delhi (4th century CE) —
+corrosion-resistant iron, unsolved metallurgical mystery. Wootz steel —
+high-carbon crucible steel, traded globally. Shipbuilding — Arthashastra
+describes ocean-going vessels. Water management — stepwells (vav),
+tanks, irrigation canals.
+Week 6: Architecture and town planning. Vastu Shastra — principles of
+sacred space. Manasara and Mayamata — architectural treatises. Temple
+architecture styles: Nagara (North), Dravidian (South), Vesara (mixed).
+Mohenjo-daro and Harappa — grid planning, sewage systems, public baths.
+Week 7: Linguistics. Panini's Ashtadhyayi — considered the world's first
+formal grammar. 4000 sutras describe Sanskrit phonology, morphology, syntax.
+Sanskrit's computational nature — modern AI/NLP researchers study it.
+Week 8: Medicine. Ayurveda — Charaka Samhita (internal medicine),
+Sushruta Samhita (surgery — 300+ surgical procedures, plastic surgery of nose).
+Tridosha theory: Vata, Pitta, Kapha. Panchakarma — detoxification therapies.
+Yoga — Patanjali's Yoga Sutras. Eight limbs (Ashtanga).
+Week 9: Governance. Arthashastra by Kautilya (321 BCE) — statecraft,
+economics, military strategy, diplomacy. Ashoka's 14 Rock Edicts.
+Vijayanagara administrative system.
+Week 10: IKS and SDGs. Connections between Indian knowledge and
+Sustainable Development Goals: zero hunger (traditional agriculture),
+good health (Ayurveda), clean water (stepwells), sustainable cities
+(Vastu Shastra, Harappan planning), responsible consumption.
+Protecting traditional knowledge through WIPO, patents, and documentation.

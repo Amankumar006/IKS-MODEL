@@ -1,0 +1,321 @@
+Nyāya (Sanskrit: न्यायः, IAST: nyāyaḥ), literally meaning "justice", "rules", "method" or "judgment", is one of the six orthodox (Āstika) schools of Hindu philosophy. Nyāya's most significant contributions to Indian philosophy were the systematic development of the theory of logic, methodology, and its treatises on epistemology.
+Nyāya epistemology accepts four out of six pramanas as reliable means of gaining knowledge – pratyakṣa (perception), anumāṇa (inference), upamāna (comparison and analogy) and śabda (word, testimony of past or present reliable experts). In its metaphysics, Nyāya school is closer to the Vaisheshika school of Hinduism than others. It holds that human suffering results from mistakes/defects produced by activity under wrong knowledge (notions and ignorance). Moksha (liberation), it states, is gained through right knowledge. This premise led Nyāya to concern itself with epistemology, that is the reliable means to gain correct knowledge and to remove wrong notions. False knowledge is not merely ignorance to Naiyyayikas, it includes delusion. Correct knowledge is discovering and overcoming one's delusions, and understanding true nature of soul, self and reality.
+Naiyyayika scholars approached philosophy as a form of direct realism, stating that anything that really exists is in principle humanly knowable. To them, correct knowledge and understanding is different from simple, reflexive cognition; it requires Anuvyavasaya (अनुव्यवसाय, cross-examination of cognition, reflective cognition of what one thinks one knows). An influential collection of texts on logic and reason is the Nyāya Sūtras, attributed to Aksapada Gautama, variously estimated to have been composed between 6th-century BCE and 2nd-century CE.
+Nyāya school shares some of its methodology and human suffering foundations with Buddhism; however, a key difference between the two is that Buddhism believes that there is neither a soul nor self; Nyāya school like some other schools of Hinduism such as Dvaita and Viśiṣṭādvaita believes that there is a soul and self, with liberation (mokṣa) as a state of removal of ignorance, wrong knowledge, the gain of correct knowledge, and unimpeded continuation of self.
+
+
+Etymology
+Nyaya (न्याय) is a Sanskrit word which means justice, equality for all being, specially a collection of general or universal rules. In some contexts, it means model, axiom, plan, legal proceeding, judicial sentence, or judgment. Nyaya could also mean, "that which shows the way" tracing its Sanskrit etymology. In the theory of logic, and Indian texts discussing it, the term also refers to an argument consisting of an enthymeme or sometimes for any syllogism. In philosophical context, Nyaya encompasses propriety, logic and method.
+Panini, revered Sanskrit grammarian, derives the "Nyaya" from the root "i" which conveys the same meaning as "gam" – to go. "Nyaya" signifying logic is there etymologically identical with "nigama" the conclusion of a syllogism.
+Nyaya is related to several other concepts and words used in Indian philosophies: Hetu-vidya (science of causes), Anviksiki (science of inquiry, systematic philosophy), Pramana-sastra (epistemology, science of correct knowledge), Tattva-sastra (science of categories), Tarka-vidya (science of reasoning, innovation, synthesis), Vadartha (science of discussion) and Phakkika-sastra (science of uncovering sophism, fraud, error, finding fakes). Some of these subsume or deploy the tools of Nyaya.
+
+
+Development
+
+The historical development of Nyāya school is unclear, although Nasadiya hymns of Book 10 Chapter 129 of Rigveda recite its spiritual questions in logical propositions. In early centuries BCE, states Clooney, the early Nyāya scholars began compiling the science of rational, coherent inquiry and pursuit of knowledge.
+
+
+Foundational Text
+Aksapada Gautama composed the Nyāya Sūtras (by 2nd century CE), a foundational text for Nyāya, that primarily discusses logic, methodology and epistemology. Gautama is also known as Aksapada and Dirghatapas. The names Gotama and Gautama points to the family to which he belonged while the names Aksapada and Dirghatapas refer respectively to his meditative habit and practice of long penance. The people of Mithila (modern Darbhanga in North Bihar) ascribe the foundation of Nyāya philosophy to Gautama, husband of Ahalya, and point out as the place of his birth a village named Gautamasthana where a fair is held every year on the 9th day of the lunar month of Chaitra (March–April). It is situated 28 miles north-east of Darbhanga.
+
+
+Commentarial Tradition
+Concepts in the foundational text, the Nyaya Sutras, were clarified through a tradition of commentaries. Commentaries were also a means to defend the philosophy from misinterpretations by scholars of other traditions.
+The Nyāya scholars that followed refined, expanded, and applied the Nyaya Sutras to spiritual questions. While the early Nyaya scholars published little to no analysis on whether supernatural power or God exists, they did apply their insights into reason and reliable means to knowledge to the questions of nature of existence, spirituality, happiness and moksha. Later Nyāya scholars, such as Udayana, examined various arguments on theism and attempted to prove existence of God. Other Nyāya scholars offered arguments to disprove the existence of God.
+The most important contribution made by the Nyāya school to Hindu thought has been its treatises on epistemology and system of logic that, subsequently, has been adopted by the majority of the other Indian schools.
+
+
+Textual sources
+In the Yājñavalkya Smṛti, Nyāya is mentioned as one of the fourteen principal branches of learning. The Matsya-Purāṇa states that knowledge of Nyāya came from the mouth of Brahmā. The Mahābhārata also mentions principles of Nyāya.
+The earliest text of the Nyāya School is the Nyāya Sūtra of Akṣapāda Gautama. The text is divided into five books, each having two sections. Vatsyayana's Nyāya Bhāṣya is a classic commentary on the Nyāya Sūtra. Udyotakara's Nyāya Vārttika (6th century CE) is written to defend Vātsāyana against the attacks made by Dignāga. Vācaspati Miśra's  Nyāyavārttikatātparyaṭīkā (9th century CE) is the next major exposition of this school. Two other texts, Nyāyaṣūcinibandha and Nyāyasūtraddhāra are also attributed to him. Udayana's (984 CE) Nyāyatātparyapariśuddhi is an important commentary on Vācaspati's treatise. His Nyāyakusumāñjali is the first systematic account of theistic Nyāya. His other works include Ātmatattvaviveka, Kiraṇāvali and Nyāyapariśiṣṭa. Jayanta Bhatta's Nyāyamañjari (10th century CE) is basically an independent work. Bhasarvajna's  Nyayasara (10th century CE) is a survey of Nyāya philosophy.
+The later works on Nyāya accepted the Vaiśeṣika categories and Varadarāja's Tārkikarakṣā (12th century CE) is a notable treatise of this syncretist school. Keśava Miśra's Tārkabhaṣā (13th century CE) is another important work of this school.
+Gangeśa Upādhyāya's Tattvacintāmaṇi (14th century CE) is the first major treatise of the new school of Navya-Nyāya. His son, Vardhamāna Upādhyāya's Nyāyanibandhaprakāśa, though a commentary on Udayana's Nyāyatātparyapariśuddhi, incorporated his father's views. Jayadeva wrote a commentary on Tattvacintāmaṇi known as Āloka (14th century CE). Vāsudeva Sārvabhauma's  Tattvacintāmaṇivyākhyā (16th century CE) is first great work of Navadvipa school of  Navya-Nyāya. Raghunātha Śiromaṇi's Tattvacintāmaṇidīdhiti and Padārthakhaṇḍana are the next important works of this school. Viśvanatha's  Nyāyasūtravṛtti (17th century CE) is also a notable work. The Commentaries on Tattvacintāmaṇidīdhiti by Jagadish Tarkalankar (17th century CE) and Gadadhar Bhattacharya (17th century CE) are the last two notable works of this school.
+Annaṁbhatta (17th century CE) tried to develop a consistent system by combining the ancient and the new schools, Prācina nyāya and Navya-Nyāya and Vaiśeṣika to develop the nyāya-vaiśeṣika school. His Tarkasaṁgraha and Dīpikā are the popular manuals of this school.
+
+
+Metaphysics
+
+
+Sixteen categories (padārthas)
+The Nyāya metaphysics recognizes sixteen padarthas or categories and includes all six (or seven) categories of the Vaisheshika in the second one of them, called prameya.
+These sixteen categories are:
+
+Methods and objects of inquiry
+pramāṇa (valid means of knowledge or knowledge sources),
+prameya (objects of valid knowledge),
+Conditions and the components of inquiry
+saṁśaya (doubt),
+prayojana (aim),
+dṛṣṭānta (example),
+siddhānta (conclusion or accepted position),
+avayava (members of syllogism or inferential components),
+tarka (hypothetical/suppositional reasoning),
+nirṇaya (settlement or certainty),
+Forms of and strategies for debate
+vāda (truth-directed debate),
+jalpa (victory-directed debate),
+vitaṇḍā (destructive debate),
+hetvābhāsa (defective reasons),
+chala (tricks),
+jāti (sophisticated refutation or misleading/futile objections) and
+nigrahasthāna (point of defeat or clinchers).
+According to Matthew Dasti and Stephen Phillips, it may be useful to interpret the word jnana as cognition rather than knowledge when studying the Nyāya system.
+
+
+The self
+Nyaya posits that there exists a self distinct from the mind, which is distinct from the body. The self is a nonphysical substance and is not inherently conscious.
+The mind (manas) is postulated as a distinct entity because one can have two perceptions at the same time of the same object, through two different senses.
+
+
+Theory of causation
+
+A cause is defined as an unconditional and invariable antecedent of an effect and an effect as an unconditional and invariable consequent of a cause. The same cause produces the same effect; and the same effect is produced by the same cause. The cause is not present in any hidden form whatsoever in its effect.
+Nyaya recognizes three kinds of cause:
+
+Samavayi,  material cause, e.g. thread of a cloth.
+Asamavayi, colour of the thread which gives the colour of the cloth.
+Nimitta, efficient cause, e.g. the weaver of the cloth.
+The following conditions should be met for something to be a cause:
+
+The cause must be antecedent [Purvavrtti]
+Invariability [Niyatapurvavrtti]
+Unconditionality [Ananyathasiddha]
+Nyaya recognizes five kinds of accidental antecedents [Anyathasiddha]
+
+Mere accidental antecedent. E.g., The colour of the potter's cloth.
+Remote cause is not a cause because it is not unconditional. E.g., The father of the potter.
+The co-effects of a cause are not causally related.
+Eternal substances, or eternal conditions are not unconditional antecedents, e.g. space.
+Unnecessary things, e.g. the donkey of the potter
+
+
+Epistemology
+
+Nyāya treatises on epistemology widely influenced other schools of Hinduism. In Nyaya philosophy, knowledge is a type of "awareness event that is in accordance with its object by virtue of having been produced by a well-functioning epistemic instrument." Pramāṇa, a Sanskrit word, literally is "means of knowledge". It encompasses one or more reliable and valid means by which human beings gain accurate, true knowledge. The focus of Pramana is how correct knowledge can be acquired, how one knows, how one doesn't, and to what extent knowledge pertinent about someone or something can be acquired. By definition, pramāṇas are factive i.e. they cannot produce false belief. So, while statements can be false, testimony cannot be false. 
+Nyāya scholars accepted four valid means (pramāṇa) of obtaining valid knowledge (prameya) –
+
+perception (pratyakṣa),
+inference (anumāna),
+comparison (upamāna), and
+word/testimony of reliable sources (śabda).
+The Nyāya scholars, along with those from other schools of Hinduism, also developed a theory of error, to methodically establish means to identify errors and the process by which errors are made in human pursuit of knowledge. These include saṁśaya (problems, inconsistencies, doubts) and viparyaya (contrariness, errors) which can be corrected or resolved by a systematic process of tarka (reasoning, technique).
+
+
+Pratyaksha (perception)
+Pratyakṣa (perception) occupies the foremost position in the Nyāya epistemology. Perception can be of two types, laukika (ordinary) and alaukika (extraordinary). Ordinary perception is defined by Akṣapāda Gautama in his Nyāya Sutra (I, i.4) as a 'non-erroneous cognition which is produced by the intercourse of sense-organs with the objects'.
+Indian texts identify four requirements for correct perception: Indriyarthasannikarsa (direct experience by one's sensory organ(s) with the object, whatever is being studied), Avyapadesya (non-verbal; correct perception is not through hearsay, according to ancient Indian scholars, where one's sensory organ relies on accepting or rejecting someone else's perception), Avyabhicara (does not wander; correct perception does not change, nor is it the result of deception because one's sensory organ or means of observation is drifting, defective, suspect) and Vyavasayatmaka (definite; correct perception excludes judgments of doubt, either because of one's failure to observe all the details, or because one is mixing inference with observation and observing what one wants to observe, or not observing what one does not want to observe).
+Ordinary perception to Nyāya scholars was based on direct experience of reality by eyes, ears, nose, touch and taste. Extraordinary perception included yogaja or pratibha (intuition), samanyalaksanapratyaksa (a form of induction from perceived specifics to a universal), and jnanalaksanapratyaksa (a form of perception of prior processes and previous states of a 'topic of study' by observing its current state).
+
+
+Determinate and indeterminate perception
+The Naiyyayika maintains two modes or stages in perception. The first is called nirvikalpa (indeterminate), when one just perceives an object without being able to know its features, and the second savikalpa (determinate), when one is able to clearly know an object. All laukika and alaukika pratyakshas are savikalpa, but it is necessarily preceded by an earlier stage when it is indeterminate. Vātsāyana says that if an object is perceived with its name we have determinate perception but if it is perceived without a name, we have indeterminate perception. Jayanta Bhatta says that indeterminate perception apprehends substance, qualities and actions and universals as separate and indistinct, without any association with any names, whereas determinate perception apprehends them all together with a name. There is yet another stage called Pratyabhijñā, when one is able to re-recognise something on the basis of memory.
+
+
+Anumāna (inference)
+Anumāna (inference) is one of the most important contributions of the Nyāya. It can be of two types: inference for oneself (Svarthanumana, where one does not need any formal procedure, and at the most the last three of their 5 steps), and inference for others (Pararthanumana, which requires a systematic methodology of 5 steps). Inference can also be classified into 3 types: Purvavat (inferring an unperceived effect from a perceived cause), Sheshavat (inferring an unperceived cause from a perceived effect) and Samanyatodrishta (when inference is not based on causation but on uniformity of co-existence). A detailed analysis of error is also given, explaining when anumana could be false.
+
+
+Theory of inference
+The methodology of inference involves a combination of induction and deduction by moving from particular to particular via generality. It has five steps, as in the example shown:
+
+There is fire on the hill (called Pratijñā, required to be proved)
+Because there is smoke there (called Hetu, reason)
+Wherever there is smoke, there is fire, e.g. in a kitchen (called Udāhārana, example of vyāpti)
+The hill has smoke that is pervaded by fire (called Upanaya, reaffirmation or application)
+Therefore, there is fire on the hill (called Nigamana, conclusion)
+In Nyāya terminology for this example, the hill would be the paksha (minor term), the fire is the sādhya (major term), the smoke is hetu, and the relationship between the smoke and the fire is vyapti(middle term).
+Hetu further has five characteristics
+
+It must be present in the Paksha (the case under consideration),
+It must be present in all positive instances (sapaksha, or homologues),
+It must be absent in all negative instances
+It must not be incompatible with an established truth, (abādhitatva)
+Absence of another evidence for the opposite thesis (asatpratipakshitva)
+
+
+Inference Fallacies (hetvābhasa)
+The fallacies in Anumana (hetvābhasa) may occur due to the following
+
+Asiddha: It is the unproved hetu that results in this fallacy.
+Ashrayasiddha: If Paksha [minor term] itself is unreal, then there cannot be locus of the hetu. e.g. The sky-lotus is fragrant, because it is a lotus like any other lotus.
+Svarupasiddha: Hetu cannot exist in paksa at all. E.g. Sound is a quality, because it is visible.
+Vyapyatvasiddha: Conditional hetu. `Wherever there is fire, there is smoke'. The presence of smoke is due to wet fuel.
+Savyabhichara: This is the fallacy of irregular hetu.
+Sadharana: The hetu is too wide. It is present in both sapaksa and vipaksa. `The hill has fire because it is knowable'.
+Asadharana: The hetu is too narrow. It is only present in the Paksha, it is not present in the Sapaksa and in the Vipaksha. `Sound is eternal because it is audible'.
+Anupasamhari: Here the hetu is non-exclusive. The hetu is all-inclusive and leaves nothing by way of sapaksha or vipaksha. e.g. 'All things are non-ternal, because they are knowable'.
+Satpratipaksa: Here the hetu is contradicted by another hetu. If both have equal force, then nothing follows. 'Sound is eternal, because it is audible', and 'Sound is non-eternal, because it is produced'. Here 'audible' is counterbalanced by 'produced' and both are of equal force.
+Badhita: When another proof (as by perception) definitely contradicts and disproves the middle term (hetu). 'Fire is cold because it is a substance'.
+Viruddha: Instead of proving something it is proving the opposite. 'Sound is eternal because it is produced'.
+
+
+Upamāna (comparison, analogy)
+Upamāna (उपमान) means comparison and analogy. Upamāna, states Lochtefeld, may be explained with the example of a traveller who has never visited lands or islands with endemic population of wildlife. They are told, by someone who has been there, that in those lands you see an animal that sort of looks like a cow, grazes like cow but is different from a cow in such and such way. Such use of analogy and comparison is, state the Indian epistemologists, a valid means of conditional knowledge, as it helps the traveller identify the new animal later. The subject of comparison is formally called upameyam, the object of comparison is called upamānam, while the attribute(s) are identified as sāmānya. Thus, explains Monier Williams, if a boy says "her face is like the moon in charmingness", "her face" is upameyam, the moon is upamānam, and charmingness is sāmānya. The  7th century text Bhaṭṭikāvya in verses 10.28 through 10.63 discusses many types of comparisons and analogies, identifying when this epistemic method is more useful and reliable, and when it is not. In various ancient and medieval texts of Hinduism, 32 types of Upamāna and their value in epistemology are debated.
+
+
+Śabda (word, testimony)
+Śabda (शब्द) means relying on word, testimony of past or present reliable experts. Hiriyanna explains Sabda-pramana as a concept which means testimony of a reliable and trustworthy person (āptavākya). The schools of Hinduism which consider it epistemically valid suggest that a human being needs to know numerous facts, and with the limited time and energy available, he can learn only a fraction of those facts and truths directly.  He must rely on others, his parent, family, friends, teachers, ancestors and kindred members of society to rapidly acquire and share knowledge and thereby enrich each other's lives. This means of gaining proper knowledge is either spoken or written, but through Sabda (words). The reliability of the source is important, and legitimate knowledge can only come from the Sabda of reliable sources. The disagreement between the schools of Hinduism has been on how to establish reliability. Some schools, such as Carvaka, state that this is never possible, and therefore Sabda is not a proper pramana. Other schools debate means to establish reliability.
+Testimony can be of two types, Vaidika (Vedic), which are the words of the four sacred Vedas, and Laukika, or words and writings of trustworthy human beings. Vaidika testimony is preferred over Laukika testimony.  Laukika-sourced knowledge must be questioned and revised as more trustworthy knowledge becomes available.
+
+
+Direct Realism
+In Nyaya philosophy, direct realism asserts that our cognitions are informational states revealing external objects. According to Nyaya, the world consists of stable, three-dimensional objects, and their system of categories accurately mirrors reality's structure. Nyaya philosophy emphasizes the importance of universals, qualities, and relations in understanding the organization of the world. These foundational elements are believed to play essential roles in determining the phenomenological, causal, and logical organization of the world, playing a crucial role in the classification of objects.
+
+
+Comparison with other schools of Hinduism
+Each school of Hinduism has its own treatises on epistemology, with different number of Pramanas. For example, compared to Nyāya school's four pramanas, Carvaka school has just one (perception), while Advaita Vedanta school recognizes six means to reliable knowledge.
+
+
+Anyathākhyātivāda or Viparītakhyātivāda (Theory of Error)
+According to the Naiyāyikas, ordinary perception (where direct perception takes place) involves direct contact between sense organs and objects. In the case of illusory perception, the perceived object is not present in the locus of perception. To account for this, they propose the theory of "presentation through revived memory" (jñānalakṣaṇapratyāsatti), where qualities known from past experience are projected onto what is presently seen. Thus, in the nacre-silver illusion, the shell is qualified by "silverness", not as a mental construction or a non-existent entity, but as silver existing elsewhere, and the means by which it is perceived without coming into contact with the sense organs is through jñānalakṣaṇapratyāsatti.
+Naiyāyikas invoke Jñānalakṣaṇapratyāsatti to explain cases in which objects are perceived without direct contact between the senses and the object. Three examples of its application are commonly given:
+
+When sandalwood is seen from a distance, it may be judged as "fragrant sandalwood", even without smelling it.
+In reflective awareness (anuvyavasaya), which immediately follows the perception of an object, the mind's connection with the object takes the form of primary cognition.
+In illusions such as mistaking nacre for silver, there is a direct perception of silverness, though it exists in silver existing elsewhere.
+In these examples, although there is no direct connection between the object and the sense organ, perception arises through the mediation of revived memory. For instance, the memory of sandalwood's fragrance is revived and projected onto the cognition of the sandalwood present at a distance. In the case of perceiving silver upon seeing nacre, the memory of silver influences the perception of nacre. The central idea is that past knowledge or experience can directly influence or shape present perception: the mind draws on revived memories and associates remembered qualities with the object being perceived to such an extent that it takes on the character of direct perception.
+
+
+On God and liberation
+Early Naiyyayikas wrote very little about Ishvara (literally, the Supreme Soul). Evidence available suggests that early Nyāya scholars were non-theistic or atheists. Later, and over time, Nyāya scholars tried to apply some of their epistemological insights and methodology to the question: does God exist? Some offered arguments against and some in favor.
+
+
+Arguments that God does not exist
+In Nyāya Sūtra's Book 4, Chapter 1, verses 19–21, postulates God exists, states a consequence, then presents contrary evidence, and from contradiction concludes that the postulate must be invalid.
+
+The Lord is the cause, since we see that human action lacks results.
+This is not so since, as a matter of fact, no result is accomplished without human action.
+Since this is efficacious, the reason lacks force.
+
+A literal interpretation of the three verses suggests that Nyāya school rejected the need for a God for the efficacy of human activity. Since human action and results do not require assumption or need of the existence of God, sutra IV.1.21 is seen as a criticism of the "existence of God and theism postulate". The context of the above verses includes various efficient causes. Nyāya Sūtra verses IV.1.22 to IV.1.24, for example, examine the hypothesis that "random chance" explains the world, after these Indian scholars had rejected God as the efficient cause.
+
+
+Arguments that God exists
+In Nyayakusumanjali, Udayana gives the following nine arguments to prove the existence of creative God and also refutes the existing objections and questions by atheistic systems of Carvaka, Mimamsa, Buddhists, Jains and Samkhya:
+
+Kāryāt (lit. "from effect"): The world is an effect. All effects have efficient cause. Hence the world must have an efficient cause. That efficient cause is God.
+Āyojanāt (lit., from combination): Atoms are inactive. To form a substance, they must combine. To combine, they must move. Nothing moves without intelligence and source of motion. Since we perceive substance, some intelligent source must have moved the inactive atoms. That intelligent source is God.
+Dhŗtyādéḥ (lit., from support): Something sustains this world. Something destroys this world. Unintelligent Adrsta (unseen principles of nature) cannot do this. We must infer that something intelligent is behind. That is God.
+Padāt (lit., from word): Each word has meaning and represents an object. This representational power of words has a cause. That cause is God.
+Pratyayataḥ (lit, from faith): Vedas are infallible. Human beings are fallible. Infallible Vedas cannot have been authored by fallible human beings. Someone authored the infallible Vedas. That author is God.
+Shrutéḥ (lit., from scriptures): The infallible Vedas testify to the existence of God. Thus God exists.
+Vākyāt (lit., from precepts): Vedas deal with moral laws. These are divine. Divine injunctions and prohibitions can only come from a divine creator of laws. That divine creator is God.
+Samkhyāviśeşāt (lit., from the specialty of numbers): By rules of perception, only number "one" can ever be directly perceived. All other numbers other than one, are inferences and concepts created by consciousness. When man is born, his mind is incapable of inferences and concepts. He develops consciousness as he develops. The consciousness development is self-evident and proven because of man's ability with perfect numerical conception. This ability to conceive numerically perfect concepts must depend on something. That something is divine consciousness. So God must exist.
+Adŗşţāt (lit., from the unforeseen): Everybody reaps the fruits of his own actions. Merits and demerits accrue from his own actions. An Unseen Power keeps a balance sheet of the merit and demerit. But since this Unseen Power is Unintelligent, it needs intelligent guidance to work. That intelligent guide is God.
+Naiyyayikas characterize Ishvara as absent of adharma, false knowledge, and error; and possessing dharma, right knowledge, and equanimity. Additionally, Ishvara is omnipotent and acts in a way that is good for his creatures.
+
+
+Liberation
+The Naiyyayikas believe that the bondage of the world is due to false knowledge, which can be removed by constantly thinking of its opposite (pratipakshabhavana), namely, the true knowledge. The opening aphorism of the Nyāya Sūtra states that only the true knowledge leads to niḥśreyasa (liberation). However, the Nyāya school also maintains that God's grace is essential for obtaining true knowledge. Jayanta, in his Nyayamanjari describes salvation as a passive stage of the self in its natural purity, unassociated with pleasure, pain, knowledge and willingness.
+
+
+Nyāya Influence on Buddhism
+
+While initially distinct from Buddhism, Nyāya's rigorous approach to reasoning and epistemology profoundly influenced the development of Buddhist philosophy, particularly in the areas of logical analysis, epistemology, and the structure of doctrinal debates.
+
+
+Nyāya and Buddhist Epistemology
+The influence of Nyāya on Buddhist epistemology is profound, especially in the development of the four major pramāṇa (valid means of knowledge). Below is a breakdown of how Buddhist thinkers integrated and adapted Nyāya concepts in their philosophical systems:
+
+
+Nyāya and Buddhist Logic
+Another significant area of influence was in the domain of logic. Nyāya's formal system of inference (anumāna) directly impacted Buddhist logic, especially in the works of scholars like Dharmakīrti. Nyāya's focus on hetu (reasoning or cause) and the structure of valid arguments was adopted and modified by Buddhists in their development of logical proofs (pramāṇa) to support doctrines like impermanence and non-self.
+In the Pramāṇavārttika, Dharmakīrti reinterpreted Nyāya’s logical tools to fit within Buddhist metaphysical views. For example, Nyāya’s approach to inference was used to argue against essentialist doctrines by showing that all phenomena are dependent on causes and conditions (dependent origination), rather than existing inherently (svabhāva). In Mādhyamika philosophy, Nāgārjuna and Śāntideva also employed logic and dialectical reasoning, heavily influenced by Nyāya, to argue against Nyāya’s own concept of an unchanging self.
+
+
+Nyāya and Buddhist Debate Practices
+The formal practice of debate (yukti) in Buddhist scholasticism, especially within monastic institutions, reflects the influence of Nyāya. The rigorous techniques of formal reasoning and logical debate in Nyāya were adopted by Buddhists to engage in systematic argumentation, not only with other philosophical schools but also within their own traditions.
+Buddhist monastic institutions, particularly in India, followed a debate structure built on Nyāya’s epistemological principles, emphasizing the importance of valid reasoning and evidence in defending doctrinal views. These debates often centered around the validity of pramāṇas and the nature of reality (impermanence and non-self versus permanence and self). In Tibet and East Asia, these debates became central to the scholastic tradition and helped refine Buddhist thought over centuries.
+
+
+Nyāya's Criticism of Buddhist Principles
+Whilst Nyāya certainly influenced Buddhist philosophical arguments, it also openly criticised many of them. In his description of the nature of the Self, the Nyāya philosopher, Udāyana, criticises the Buddhist no-self doctrine by arguing that it cannot be the case that the notion of a single entity is falsely superimposed upon successive cognitive events. Udāyana's treatise on the nature of the Self, the Atmatattvaviveka, is also referred to as the Bauddha-dhikkāra.
+The related Buddhist doctrine of momentariness is also heavily criticised as being inconsistent with the real world actions of Buddhists, with Nyāya philosophers, for example, arguing why Buddhists teach the value of donation if they believe that everything is momentary. Such criticisms were not reserved only for metaphysics. Nyāya philosophers, such as Udyotakara, also criticised the Buddhist epistemological doctrine of apoha.
+
+
+Nyāya Influence in Later Buddhist Traditions
+The impact of Nyāya was not confined to early Indian Buddhist thinkers but continued to shape later Buddhist traditions. For example, Tibetan Buddhism developed sophisticated methods of debate and logic that were heavily influenced by Indian Nyāya. In the Gelug school, the Pramāṇa texts of Dharmakīrti became a central part of the curriculum, alongside Nyāya texts.
+In addition, Zen Buddhism and Chan Buddhism also exhibited traces of logical techniques influenced by the early scholastics of India, where rational discourse was used to sharpen the practitioner's understanding of emptiness (śūnyatā) and impermanence.
+
+
+B.K. Matilal's Contributions to the Study of Nyāya and Buddhism
+B.K. Matilal, a renowned scholar of Indian philosophy, was instrumental in highlighting the intellectual connections between Nyāya and Buddhist epistemology. In his work, Matilal emphasizes how Buddhist philosophers like Dharmakīrti incorporated and adapted Nyāya’s logical frameworks to argue for impermanence and non-self. Matilal further discusses how Buddhists criticized Nyāya’s essentialism, using formal logic and reasoning to refute Nyāya's claims about the permanence of the self and the inherent nature of things.
+Matilal’s analysis of these philosophical interactions shows that, despite their doctrinal differences, Nyāya and Buddhism shared a common interest in developing systematic methods of reasoning and argumentation. His work underscores how both traditions engaged in a shared intellectual project of refining methods of knowledge acquisition and logical analysis, even as they differed on metaphysical views.
+
+
+Table of Nyāya Influence on Buddhist Thought
+To illustrate the extent of Nyāya’s influence on Buddhist philosophy, the following table highlights key concepts adopted and adapted by Buddhist scholars:
+
+
+Further Developments and Synthesis
+In addition to Dharmakīrti and Nāgārjuna, Buddhist thinkers like Vasubandhu and Śāntideva also utilized Nyāya-derived logic in their writings. Vasubandhu's work in the Abhidharma tradition integrated Nyāya’s inference and perception frameworks to argue for emptiness and the illusion of permanence in all things.
+Moreover, Tibetan Buddhist scholars like Chandrakirti and Jamyang Zhépa further developed these ideas, showing that the dialogue between Nyāya and Buddhism was not a one-way flow but rather an ongoing intellectual exchange that continued across centuries and geographical regions.
+
+
+Commentaries on the Nyaya-Sutra
+Numerous commentaries have been written on Nyāya-Sutra since its composition. A few of the commentaries are mentioned below:
+
+Nyaya-Sutra by Gotama or Aksapada
+Nyaya-Bhasya by Vatsyayana
+Nyaya-Varttika by Udyotakar
+Nyaya-Varttika tatparya-tika by Vacaspati Misra
+Nyaya-Varttika-tatparayatika-parisuddhi by Udayans
+Parisuddhiprakasa by Vardhamana
+Vardhamanedu by Padmanabha Misra
+Nyayalankara by Srikantha
+Nyayalankara Vrtti by Jayanta
+Nyaya-manjari by Jayanta
+Nyaya-Vrtti by Abhayatilakopadhyaya
+Nyaya-Vrtti by Visvanatha
+Mitabhasini Vrtti by Mahadeva Vedanti
+Nyayaprakasa by Kesava Misra
+Nyayabodhini by Govardhana
+Nyaya Sutra Vyakhya by Mathuranatha
+
+
+Differences from Western Philosophy
+
+
+A priori knowledge
+Nyaya philosophy does not establish a category of a priori knowledge. This choice may be due to only considering de re knowledge, not de dicto knowledge.
+
+
+Logic
+It is significant that the name logic is etymologically connected with the Greek word logos, which denotes both 'thought' and 'word' or 'discourse'. The significance of this etymological connection can be adequately appreciated if it is remembered that logic, in its rise and development in the western world, particularly in Greece, was closely connected with rhetoric. Thus the name logic is of a tell-tale character in its application to logic in the West; and it may be taken to indicate how, almost from its very rise, western logic found itself in the firm grip of formalism and how it took more than twenty centuries for the scientific method underlying Aristotle's Organon to be redeemed, brought into prominence and implemented in the Novum Organum of Francis Bacon (1561–1626). The term logic should not be taken to carry with it all these implications of European history when it is used in the phrase Indian logic.
+The basic features of Western logic are: It deals with a study of ‘propositions’, specially their ‘logical form’ as abstracted from their ‘content’ or ‘matter’. It deals with ‘general conditions of valid inference’, wherein the truth or otherwise of the premises have no bearing on the ‘logical soundness or validity’ of an inference. It achieves this by taking recourse to a symbolic language that has little to do with natural languages. The main concern of Western logic, in its entire course of development, has been one of systematising patterns of mathematical reasoning, with the mathematical objects being thought of as existing either in an independent ideal world or in a formal domain. Indian logic however, does not deal with ideal entities, such as propositions, logical truth as distinguished from material truth, or with purely symbolic languages that apparently have nothing to do with natural languages.
+The central concern of Indian logic as founded in nyāya is epistemology, or the theory of knowledge. Thus Indian logic is not concerned merely with making arguments in formal mathematics rigorous and precise, but attends to the much larger issue of providing rigour to the arguments encountered in natural sciences (including mathematics, which in Indian tradition has the attributes of a natural science and not that of a collection of context free formal statements), and in philosophical discourse. Inference in Indian logic is ‘deductive and inductive’, ‘formal as well as material’. In essence, it is the method of scientific enquiry. Indian ‘formal logic’ is thus not ‘formal’, in the sense generally understood: in Indian logic ‘form’ cannot be entirely separated from ‘content’. In fact, great care is exercised to exclude from logical discourse terms, which have no referential content. No statement, which is known to be false, is admitted as a premise in a valid argument. Thus, the ‘method of indirect proof’ (reductio ad absurdum) is not accepted as a valid method−neither in Indian philosophy nor in Indian mathematics−for proving the existence of an entity whose existence is not demonstrable (even in principle) by other (direct) means of proof.
+Indian logic does not make any attempt to develop a purely symbolic and content independent or ‘formal language’ as the vehicle of logical analysis. Instead, what Indian logic, especially in its later phase of Navya-Nyāya starting with the work of Gāngeśa Upādhyāya of the 14th century, has developed is a technical language, which is based on the natural language Sanskrit, yet avoids ‘inexactness’ and ‘misleading irregularities’ by various technical devices. This technical language, being based on the natural language Sanskrit, inherits a certain natural structure and interpretation, and sensitivity to the context of enquiry. On the other hand, the symbolic formal systems of Western logic, though considerably influenced in their structure (say, in quantification, etc.) by the basic patterns discernible in European languages, are professedly purely symbolic, carrying no interpretation whatsoever−such interpretations are supposed to be supplied separately in the specific context of the particular field of enquiry ‘employing’ the symbolic formal system.
+
+
+Knowledge First Epistemology
+Departing from a traditional conceptualisation of knowledge, Timothy Williamson argues for a 'knowledge first' approach in which knowledge is not an occurrence of justified true belief. This approach parallels Nyaya epistemological arguments which suggest that knowledge is a 'non-composite' mental state. 
+
+
+See also
+
+
+References
+
+
+Further reading
+Kisor Kumar Chakrabarti (1995), Definition and induction: a historical and comparative study, University of Hawaii Press, ISBN 978-0-585-30953-8, OCLC 45728618
+Gangesa (2010), Classical Indian philosophy of induction: the Nyāya viewpoint, (Translator: Kisor Kumar Chakrabarti), ISBN 978-0-7391-4705-4, OCLC 665834163
+Gangesa (2020), Tattva-cintā-maṇi, (“Jewel”), translated by Stephen Phillips, Jewel of Reflection on the Truth about Epistemology. 3 volumes, London: Bloomsbury.
+Gopi Kaviraj (1961), Gleanings from the history and bibliography of the Nyaya-Vaisesika literature, Indian Studies: Past & Present, OCLC 24469380
+Arthur Keith (1921), Indian logic and atomism: an exposition of the Nyāya and Vaiçeṣika systems, Greenwood Press, OCLC 451428
+Bimal Matilal (1977), A History of Indian Literature – Nyāya-Vaiśeṣika, Otto Harrassowitz Verlag, ISBN 978-3-447-01807-4, OCLC 489575550
+Stephen Phillips (2012), Epistemology in classical India: the knowledge sources of the Nyāya school, Routledge, ISBN 978-0-415-89554-5, OCLC 701015636
+Karl Potter (1977), Indian metaphysics and epistemology: the tradition of Nyāya-Vaiśeṣika up to Gaṅgeśa, Princeton University Press, OCLC 3933891
+
+
+Navya-Nyaya school
+Bimal Matilal, The Navya-nyāya doctrine of negation: the semantics and ontology of negative statements, Harvard University Press, OCLC 606911358
+Daniel H.H. Ingalls, Materials for the study of Navya-nyāya logic, Harvard University Press, OCLC 1907221
+
+
+External links
+Zalta, Edward N. (ed.). "Analytic Philosophy in Early Modern India". Stanford Encyclopedia of Philosophy. ISSN 1095-5054. OCLC 429049174.
+Zalta, Edward N. (ed.). "Epistemology in Classical Indian Philosophy". Stanford Encyclopedia of Philosophy. ISSN 1095-5054. OCLC 429049174.
+Fieser, James; Dowden, Bradley (eds.). "Nyaya". Internet Encyclopedia of Philosophy. ISSN 2161-0002. OCLC 37741658.
+Lectures on Nyaya Archived 21 January 2021 at the Wayback Machine The Oxford Centre for Hindu Studies, Oxford University
+Ganeri, Jonardon, Edward N. Zalta (ed.), "Analytic Philosophy in Early Modern India", Stanford Encyclopedia of Philosophy.

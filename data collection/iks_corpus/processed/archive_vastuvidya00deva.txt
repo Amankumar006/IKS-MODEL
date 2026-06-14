@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: Vastu Vidya — Traditional Indian Architecture
+URL: https://archive.org/details/vastuvidya00deva
+DOMAIN: Temple Architecture
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/vastuvidya00deva
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+Vastu Vidya — Traditional Indian Architecture — primary source for IKS domain: Temple Architecture

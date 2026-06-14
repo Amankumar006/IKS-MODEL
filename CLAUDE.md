@@ -2,6 +2,8 @@
 
 **Context for Claude Code**: This file helps Claude understand the project context and conventions.
 
+> **Note**: For universal AI context, see `AGENTS.md`. For code conventions, see `docs/ai-context/conventions.md`.
+
 ---
 
 ## Project Overview
@@ -20,11 +22,10 @@
 - **Rationale**: Purpose-built for document Q&A, less boilerplate, better defaults
 - **See**: ADR-0001
 
-### 2. Why Gemma 3 4B as default?
-- **Decision**: Default to 4B model instead of 12B
-- **Rationale**: Hardware compatibility - 4GB VRAM requirement vs 6-7GB
-- **Upgrade path**: Same code works with 12B/27B via configuration
-- **See**: ADR-0002
+### 2. Why Google Gemini over Local Ollama?
+- **Decision**: Default to Google Gemini API
+- **Rationale**: Faster inference (2-3s vs 5-10m on CPU), free tier handles current limits, multimodal capabilities.
+- **See**: ADR-0005
 
 ### 3. Why ChromaDB (Phase 1)?
 - **Decision**: Use ChromaDB for Phase 1
@@ -119,61 +120,28 @@ uv run ruff check src/ && uv run ruff format --check src/ && uv run mypy src/ --
 
 ## Code Conventions
 
-### Python Style
-- **Formatter**: ruff
-- **Linter**: ruff
-- **Type Checker**: mypy (strict mode)
-- **Line Length**: 100 characters
-- **Docstrings**: Google style
-
-### Import Order
-```python
-# 1. Standard library
-import os
-from pathlib import Path
-
-# 2. Third-party
-import torch
-from llama_index import VectorStoreIndex
-
-# 3. Local
-from iks_rag.config import Settings
-```
-
-### Commit Messages
-Use Conventional Commits:
-```
-feat(ingestion): add PDF loader with OCR support
-fix(retrieval): resolve ChromaDB connection timeout
-docs(readme): add model configuration section
-test(embedding): add multilingual-e5 unit tests
-```
+Code conventions, testing strategies, and Git rules have been moved to [`docs/ai-context/conventions.md`](docs/ai-context/conventions.md).
 
 ---
 
 ## Model Configuration
 
-### Default (4GB VRAM)
+### Default (Gemini)
 ```yaml
-# configs/model.yaml
+# configs/rag/default.yaml
 llm:
-  provider: ollama
-  model: gemma3:4b
-  temperature: 0.7
+  provider: gemini
+  model: models/gemini-2.5-flash
 ```
 
-### Upgrade (12GB+ VRAM)
+### Upgrade (Ollama Local)
+If you need to run entirely offline on GPU:
 ```yaml
+# configs/rag/default.yaml
 llm:
   provider: ollama
   model: gemma3:12b
-  temperature: 0.7
 ```
-
-### Alternative Models
-Same code works with any Ollama model:
-- `gemma3:4b`, `gemma3:12b`, `gemma3:27b`
-- `llama3.1`, `mistral`, `mixtral`
 
 ---
 
@@ -207,7 +175,7 @@ Priority sources for IKS knowledge:
 4. **Wikimedia Commons** - Temples, dance, sculpture images
 5. **Wikipedia** - Baseline coverage
 
-See `docs/data-sources.md` for complete list.
+See `docs/guides/data-sources.md` for complete list.
 
 ---
 
@@ -274,8 +242,7 @@ file data/documents/*.pdf
 ## Related Links
 
 - **GitHub**: https://github.com/Amankumar006/IKS-MODEL
-- **HuggingFace**: (to be created)
-- **Documentation**: (to be deployed)
+- **Documentation**: See `docs/README.md` for full index.
 
 ---
 

@@ -1,0 +1,43 @@
+        SOURCE: Curated + Wikipedia
+        TITLE: Raga Marwa
+        URL: https://en.wikipedia.org/wiki/Marwa_(raga)
+        DOMAIN: Classical Music — Raga as Emotion
+RASA: Bhayanaka with Karuna — the anxiety of transition, beautiful unease
+        COLLECTED: 2026-04-19T22:55:46.049874
+        ────────────────────────────────────────────────────────────
+
+Time of day: Dusk — the transitional moment of day into night
+Primary rasa (emotion): Bhayanaka with Karuna — the anxiety of transition, beautiful unease
+Mood quality: unsettled, searching, the discomfort of a day ending without resolution
+Marwa is played at the precise moment when day ends and night has not yet
+begun — that brief, unsettled time when the light has gone and the stars are
+not yet visible, and the world is neither one thing nor another.
+It is one of the few ragas that avoids the note of completeness (the perfect
+fourth, shadja's complement). This absence creates a quality of unresolved
+searching — as if the raga is looking for something it knows exists but cannot
+quite reach. Musicians who love Marwa say this is exactly its truth: the sunset
+is beautiful precisely because it cannot be held.
+Marwa is notoriously difficult to perform well. Its emotional territory is
+narrow and precise. Played even slightly wrong, it sounds merely odd. Played
+right, it captures something most music doesn't attempt: the specific unease
+of beauty that is passing. The colour of light at 6:02pm in summer. The moment
+between one breath and the next.
+Ustad Vilayat Khan's sitar in Marwa and the vocalist Pandit Jasraj's Marwa
+recordings approach this rasa from two directions — one cool and architectural,
+one warm and searching — and both arrive at the same place: the feeling that
+everything beautiful is always just leaving.
+--- Wikipedia excerpt ---
+Raag Marwa or Marva is an Indian raag belonging to Hindustani classical music. This is a masculine raaga and conveys an emotion of longing or separation.This is a sandhiprakash raaga of sandhyakaaleen samay.This means that it is sung during dusk hour. This raag includes Teervra Madhyam and Komal Rishab and Pancham the 5th note is totally varjit or prohibited. The Kshadaj or Sa in this raag hold a special place. Kshadaj is considered to be the most important swara in this raag but is allowed to be used as minimum as possible in order to create a feeling of longing and frustration of patience for the swara. This minimizling the use of Kshadaj ultimately helps the raaga to achieve its proper mood
+Arohana: 'Ni Re Ga Ma Dha Ni Re' S'
+Keeping the key in C, in the Western scale this would roughly translate to: B D♭ E F♯ A B D♭ C
+Avarohana: Re' Ni Dha Ma Ga Re 'Ni 'Dha Sa
+The Ma is actually Ma Tivratara, which is a perfect fourth above Re komal (which is 112 cents above Sa))
+The Vadi is komal Re, while the Samvadi is shuddh Dha. Notice that these do not form a perfect interval. So V.N.Paṭvardhan says "It is customary to give Re and Dha as vādi and saṃvādi, but seen from the point of view of the śāstras (treatises) it is not possible for re and Dha to be saṃvādī (i.e. consonant) to each other. For this reason, in our opinion it is proper to accept Dha as vādī and Ga as saṃvādī" On the other hand if Ga receives too much emphasis, it would create the impression of raga Puriya
+Sa is omitted within a taan; it may only be used at the end of a phrase and even then is used infrequently. Bhatkhande gives the pakad as Dha Ma Ga Re, Ga Ma Ga, Re, Sa. Patwardan has shown the mukhya ang as Re Ga Ma Dha, Dha Ma Ga Re, but points out that the raga is also clearly indicated by: 'Ni Re Ga Ma Dha, Dha Ma Ga Re 'Ni Re Sa.
+The chalan given by Ruckert is: 'Ni 'Dha Re 'Ni 'Dha 'Ma 'Ni 'Dha 'Ni 'Dha Sa Re Ga Ma Dha Ma Ni Dha Ma Ga Re Sa 'Ni 'Dha Re Sa
+Organisation and relationships
+Puriya and Sohni have the same tonal material. In Puriya Ni and especially Ga are emphasised.
+Komal re of Marwa is slightly higher than komal re of Bhairavi
+According to O.Thakur Pūrvā Kalyāṇa is Marwa with Pa and less emphasis on komal Re. R. Jha treats Bhaṭiya as a mixture of Marwa and Maand. There is only one Author (B. Subba Rao) mentioning a raga Māravā Gaurī, thus Moutal does not consider this an own form. Aspects of Marwa are also incorporated in Mali Gaura
+For western listeners the tone material may feel strange. As the sixth is emphasised while the tonic is omitted it may feel like playing in A Major, while the base tone is C (not C sharp). If the musician turns back to Sa at the end of a phrase it always comes like a surprise note.
+Ni is not a leading note to Sa. Because Sa is omitted Ni leads to re or Dha (and then only to Sa), as in "Ḍ Ṇ r S" or "r Ṇ Ḍ S" .

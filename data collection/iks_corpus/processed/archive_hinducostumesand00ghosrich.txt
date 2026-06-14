@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: Hindu Costumes and Ornaments
+URL: https://archive.org/details/hinducostumesand00ghosrich
+DOMAIN: Textiles & Clothing
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/hinducostumesand00ghosrich
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+Hindu Costumes and Ornaments — primary source for IKS domain: Textiles & Clothing

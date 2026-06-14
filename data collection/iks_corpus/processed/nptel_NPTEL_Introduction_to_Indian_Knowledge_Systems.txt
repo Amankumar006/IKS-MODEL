@@ -1,0 +1,39 @@
+SOURCE: NPTEL/SWAYAM
+TITLE: NPTEL: Introduction to Indian Knowledge Systems
+URL: https://nptel.ac.in/courses/121106003
+DOMAIN: IKS Overview
+COLLECTED: 2026-04-19T11:05:06.549755
+────────────────────────────────────────────────────────────
+
+Course: Introduction to Indian Knowledge Systems (IKS)
+Instructor: Prof. Kapil Kapoor, JNU; Prof. Michel Danino, IIT Gandhinagar
+Duration: 12 weeks, 3 hours per week
+Week 1-2: Introduction and Overview of IKS
+What is IKS? Definition, scope, and importance. The Vedic corpus — four Vedas
+(Rigveda, Samaveda, Yajurveda, Atharvaveda), their structure and content.
+Vedangas: Shiksha (phonetics), Kalpa (ritual), Vyakarana (grammar),
+Nirukta (etymology), Jyotisha (astronomy), Chhandas (meter).
+Week 3-4: Indian Philosophical Systems
+Astika (Vedic) schools: Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, Vedanta.
+Nastika schools: Buddhism, Jainism, Charvaka.
+Advaita Vedanta of Adi Shankaracharya. Dvaita Vedanta of Madhvacharya.
+Vishishtadvaita of Ramanujacharya.
+Week 5-6: Traditional Knowledge in Sciences
+Mathematics: Sulba Sutras, Aryabhata (zero, decimal, algebra),
+Brahmagupta (negative numbers, Brahmasphutasiddhanta),
+Bhaskara II (Lilavati, Bijaganita), Madhava (infinite series, calculus precursor).
+Astronomy: Aryabhatiya, Surya Siddhanta, Varahamihira's Panchasiddhantika.
+Week 7-8: Traditional Knowledge in Humanities
+Linguistics: Panini's Ashtadhyayi — 4000 sutras describing Sanskrit grammar,
+considered the world's first formal grammar. Patanjali's Mahabhashya.
+Art: Natya Shastra by Bharata Muni — encyclopaedia of performing arts.
+Rasa theory (Navarasa). Classical dance forms.
+Week 9-10: Traditional Knowledge in Professional Domains
+Architecture: Vastu Shastra, Manasara, Mayamata. Temple architecture styles.
+Medicine: Charaka Samhita, Sushruta Samhita. Tridosha theory. Panchakarma.
+Governance: Arthashastra by Kautilya. Ashoka's Dhamma.
+Agriculture: Traditional farming practices, water harvesting (stepwells).
+Week 11-12: IKS and Sustainable Development Goals
+Connections between ancient Indian sustainability practices and UN SDGs.
+Protecting traditional knowledge. WIPO and intellectual property.
+Revival and relevance of IKS in modern engineering and technology.

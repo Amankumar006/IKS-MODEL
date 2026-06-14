@@ -1,0 +1,44 @@
+The Vedanga (Sanskrit: वेदाङ्ग vedāṅga, "limb of the Veda-s"; plural form: वेदाङ्गानि vedāṅgāni) are six auxiliary disciplines of Vedic studies that developed in Vedic and post-Vedic times.
+
+
+List of the Vedanga
+Shiksha (Sanskrit: शिक्षा śikṣā, "instruction, teaching"): phonetics, phonology, pronunciation. This auxiliary discipline has focused on the letters of the Sanskrit alphabet, accent, quantity, stress, melody and rules of euphonic combination of words during a Vedic recitation.
+Chanda (Sanskrit: छन्द chanda, "metre"): prosody. This auxiliary discipline has focused on the poetic meters, including those based on fixed number of syllables per verse, and those based on fixed number of morae per verse.
+Vyakarana (Sanskrit: व्याकरण vyākaraṇa, "grammar"): grammar and linguistic analysis. This auxiliary discipline has focused on the rules of grammar and linguistic analysis to establish the exact form of words and sentences to properly express ideas.
+Nirukta (Sanskrit: निरुक्त nirukta, "etymology"): etymology, explanation of words, particularly those that are archaic and have ancient uses with unclear meaning. This auxiliary discipline has focused on linguistic analysis to help establish the proper meaning of the words, given the context they are used in.
+Kalpa (Sanskrit: कल्प kalpa, "proper, fit"): ritual instructions. This field focused on standardising procedures for Vedic rituals, rites of passage rituals associated with major life events such as birth, wedding and death in family, as well as discussing the personal conduct and proper duties of an individual in different stages of his life.
+Jyotisha (Sanskrit: ज्योतिष jyotiṣa, "astronomy"): Right time for rituals with the help of position of nakshatras and asterisms and astronomy. This auxiliary Vedic discipline focused on time keeping.
+
+
+History and background
+
+The character of Vedangas has roots in ancient times, and the Brihadaranyaka Upanishad mentions it as an integral part of the Brahmanas layer of the Vedic texts. These auxiliary disciplines of study arise with the codification of the Vedas in Iron Age India. It is unclear when the list of six Vedangas were first conceptualised. The Vedangas likely developed towards the end of the Vedic period, around or after the middle of the 1st millennium BCE. An early text of the genre is the Nighantu by Yaska, dated to roughly the 5th century BCE. These auxiliary fields of Vedic studies emerged because the language of the Vedic texts composed centuries earlier grew too archaic to the people of that time.  
+Vedangas developed as ancillary studies for the Vedas, but its insights into meters, structure of sound and language, grammar, linguistic analysis and other subjects influenced post-Vedic studies, arts, culture and various schools of Hindu philosophy. The Kalpa Vedanga studies, for example, gave rise to the Dharma-sutras, which later expanded into Dharma-shastras.
+
+
+See also
+Sruti (श्रुति Śruti, "that which is heard")
+Smriti (स्मृति Smṛti, "that which is remembered")
+Gurukula
+
+
+References
+
+
+Sources
+George Cardona (1997). Pāṇini: A Survey of Research. Motilal Banarsidass. ISBN 978-81-208-1494-3.
+Harold G. Coward (1990). The Philosophy of the Grammarians, in Encyclopedia of Indian Philosophies Volume 5 (Editor: Karl Potter). Princeton University Press. ISBN 978-81-208-0426-5.
+Guy L. Beck (1995). Sonic Theology: Hinduism and Sacred Sound. Motilal Banarsidass. ISBN 978-81-208-1261-1.
+Tibor Kiss (2015). Syntax - Theory and Analysis. Walter de Gruyter. ISBN 978-3-11-037740-8.
+Patrick Olivelle (1999). Dharmasutras: The Law Codes of Ancient India. Oxford University Press. ISBN 978-0-19-283882-7.
+Sheldon Pollock (2006). The Language of the Gods in the World of Men: Sanskrit, Culture, and Power in Premodern India. University of California Press. ISBN 978-0-520-93202-9.
+Arnold, Edward Vernon (1905). Vedic Metre in Its Historical Development. Cambridge University Press (Reprint 2009). ISBN 978-1113224446. {{cite book}}: ISBN / Date incompatibility (help)
+Moritz Winternitz: Geschichte der Indischen Literatur, Leipzig, 1905 – 1922, Vol. I – III. English translation: History of Indian Literature, Motilal Barnarsidass, Delhi, 1985, Vol I – III.
+Annette Wilke; Oliver Moebus (2011). Sound and Communication: An Aesthetic Cultural History of Sanskrit Hinduism. Walter de Gruyter. ISBN 978-3-11-018159-3.
+Horace Hayman Wilson (1841). An Introduction to the Grammar of the Sanskrit Language. Madden.
+Maurice Winternitz (1963). History of Indian Literature. Motilal Banarsidass. ISBN 978-81-208-0056-4. {{cite book}}: ISBN / Date incompatibility (help)
+
+
+External links
+ Media related to Vedangas at Wikimedia Commons
+"Vedanga" on Hindupedia

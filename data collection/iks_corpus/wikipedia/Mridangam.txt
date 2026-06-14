@@ -1,0 +1,145 @@
+The mridangam is an ancient percussion instrument originating from the Indian subcontinent. It is a traditional royal instrument originating in the south Indian state of Tamil Nadu and is widely used in south Indian classical music, called Carnatic music, especially in its sangeetha kacherees. It is the primary rhythmic accompaniment in a Carnatic music ensemble. In dhrupad, a modified version, the pakhawaj, is the primary percussion instrument. A related instrument is the kendang, played in the Maritime Southeast Asia. It is a complex instrument to tune and involves a lot of mathematics to construct korvais.
+During a percussion ensemble, the mridangam is often accompanied by the ghatam, the kanjira, and the morsing.
+
+
+Etymology
+The word "Mridangam" is formulated by the union (sandhi) of the two Sanskrit words mŗd (clay or earth) and anga (limb), as the earliest versions of the instrument were made of hardened clay. An Article in the Journal of the Madras Music Academy (Vol. XXIV P:135- 136) Dr V Raghavan opines that the Mridangam gets its name by applying the black paste which produces the specialised tone for the instrument. Eventhough the original version of Mrit and Anga is accepted by many, Dr V Raghavan opines that the black patch, which gives it a specialised and unique tone, is made out of the mud particles (including silicon, iron, manganese etc., sand dust) taken out of a stone called "Kittam Stone".  Application of such a powder mixed with cooked rice and applied as concentric layers on the 2nd layer of the instrument produces its unique tone and hence called Mridanga.
+
+
+Legend
+In ancient Hindu sculpture, painting, and mythology, the mridangam is often depicted as the instrument of choice for a number of deities including Ganesha (the remover of obstacles) and Nandi, who is the vehicle and follower of Shiva. Nandi is said to have played the mridangam during Shiva's primordial tandava dance, causing a divine rhythm to resound across the heavens. The mridangam is thus also known as "deva vaadyam," or "Divine Instrument".
+
+
+History
+Over the years, the mridangam evolved and was made from different kinds of wood for increased durability, and today, its body is constructed from the wood of the jackfruit tree. It is widely believed that the tabla, the mridangam's Hindustani musical counterpart, was first constructed by splitting a mridangam in half. With the development of the mridangam came the tala (rhythm) system.
+The mridangam has a large role in Newa music. One of the earliest Nepal Bhasa manuscripts on music is a treatise on this instrument called Mridanga anukaranam.
+The range of its use has changed over the years. In the old days, percussionists were only employed to accompany the lead player, often the vocalist. Now its use is not restricted to accompaniment, and it is used for solo performances.
+
+
+Tamil culture
+
+In Tamil culture, it is called a tannumai. The earliest mention of the mridangam in Tamil literature is found perhaps in the Sangam literature where the instrument is known as 'tannumai'. In later works, like the Silappadikaram, we find detailed references to it as in the Natyasastra. During the Sangam period, it was one of the principal percussion instruments used to sound the beginning of war, along with the murasu, tudi and parai, because it was believed that its holy sound would deflect enemy arrows and protect the King. During the post-Sangam period, as mentioned in the epic Silappadikaram, it formed a part of the antarakoṭṭu  - a musical ensemble which performed at the beginning of dramatic performances, and that would later develop into Bharathanatyam. The player of this instrument held the title tannumai aruntozhil mutalvan.
+
+
+Construction
+
+The mridangam is a double-sided drum whose body is usually made using a hollowed piece of jackfruit wood about an inch thick. The two mouths or apertures of the drum are covered with a goat, cow or buffalo skin and laced to each other with leather straps along the length of the drum. These straps are put into a state of high tension to stretch out the circular membranes on either side of the hull, allowing them to resonate when struck. These two membranes are dissimilar in diameter to allow for the production of both bass and treble sounds from the same drum.
+The bass aperture is known as the thoppi or eda bhaaga and the smaller aperture is known as the valanthalai or bala bhaaga. The smaller membrane, when struck, produces higher pitched sounds with a metallic timbre. The wider aperture produces lower pitched sounds. The goat skin covering the smaller aperture is anointed in the center with a black disk made of rice flour, ferric oxide powder and starch. This black tuning paste is known as the saatham or karanai and gives the mridangam its distinct metallic timbre.
+The combination of two inhomogeneous circular membranes allows for the production of unique and distinct harmonics. Pioneering work on the mathematics of these harmonics was done by Nobel Prize-winning physicist C. V. Raman.
+
+
+Methods of use
+Immediately prior to use in a performance, the leather covering the wider aperture is made moist and a spot of paste made from semolina (rawa) and water is applied to the center of the left head, which lowers the pitch of the wider membrane and gives it a very powerful resonating bass sound. Nowadays, rubber gum is also used to loosen the membrane helping in creating the bass sound, and its advantage is that unlike semolina, it will not stick on hands. The artist tunes the instrument by varying the tension of the leather straps spanning the hull of the instrument. This is achieved by placing the mridangam upright with its larger side facing down, and then striking the tension-bearing straps located along of circumference of the smaller membrane with a heavy object (such as a stone). A wooden peg is sometimes placed between the stone and the mridangam during the tuning procedure to ensure that the force is exerted at precisely the point where it is needed. Striking the periphery of the smaller membrane in the direction toward the hull raises the pitch, while striking the periphery from the opposite side (away from the hull) lowers the pitch. More modern mridangams are often made by attaching the heads to the wooden body using nuts and bolts, and these mridangams are tuned either using a spanner or in the same manner as traditional mridangams. The pitch must be uniform and balanced at all points along the circumference of the valanthalai for the sound to resonate perfectly. The pitch can be balanced with the aid of a pitch pipe or a tambura. The larger membrane can also be tuned in a similar manner, and also by applying a small amount of water along the edge of the inner membrane to loosen the leather. Note that since the leather straps are interwoven between both the smaller and larger aperture, adjusting the tension on one side often can affect the tension on the other.
+
+
+Talam (Rhythmic Cycle)
+Tala or Talam refers to the constant rhythmic cycle that serves to maintain a consistent meter throughout a Carnatic performance. The choice of Talam can vary widely depending on the vocalist’s preference. While some Talams are more commonly used than others, there are a total of 175 possible combinations, derived through mathematical calculations. These 175 Talas are formed by combining three distinct yet essential aspects: Talas (different from those mentioned prior), Jathi, and Gathi.
+There are seven main Talas, known as the Sapta Talas:
+
+Dhruva
+Matya
+Roopaka
+Jhumpa
+Triputa
+Ata
+Eka
+These Talas are combined with one of the five Jathis:
+
+Tisra (3)
+Chathurasra (4)
+Khanda (5)
+Misra (7)
+Sankeerna (9)
+Lastly, the Talas and Jathis are combined with one of the five Gathis, which share the same names and counts as the Jathis:
+
+Tisra (3)
+Chathurasra (4)
+Khanda (5)
+Misra (7)
+Sankeerna (9)
+The total of 175 Talas comes from multiplying the number of Talas (7), Jathis (5), and Gathis (5). While the mathematical framework extends much deeper, professional Mridangam artists are trained to master Talam intricacies, enabling them to play spontaneously during Carnatic classical concerts.
+There are also the chaappu talams (roopaka chaappu, khanda chaappu, and misra chaappu), which are used more often in songs in Carnatic music. 
+
+
+Thani Avarthanam
+The term “Thani Avartanam” is derived from the words “Thani,” meaning “solo,” and “Avartanam,” referring to a recurring rhythmic cycle. This section of a Carnatic concert takes place after the completion of the centerpiece, usually following the Kalpanaswara segment—a melodic improvisation by the vocalist and violinist. During the Thani Avartanam, the percussionists perform in order: the Mridangam, Kanjira (a single-handed drum that complements the Mridangam), and Ghatam (a clay percussion instrument that also complements the Mridangam). The rhythmic cycle is repeated through a variety of intricate patterns (jathis) until it reaches the koraippu, where all the artists play together in a grand finale before the main performer resumes from where they left off. While the actual Thani Avartanam portion is not limited to just these three percussion instruments, this is the case in most Carnatic concerts.
+
+
+Modern usage
+
+Today the mridangam is most widely used in Carnatic music performances. These performances take place all over Southern India and are now popular all over the world. As the principal rhythmic accompaniment (pakkavadyam), the mridangam has a place of utmost importance, ensuring all of the other artists maintain rhythm while providing support to the main artist. One of the highlights of a modern Carnatic music concert is the percussion solo (thani avarthanam), where the mridangam artist and other percussionists such as kanjira, morsing, and ghatam vidwans exchange various complex rhythmic patterns based on a specific talam of choice, culminating in a grand finale where the main artist resumes where he or she left off.
+Mridangam is used as an accompanying instrument in Yakshagana Himmela (orchestra) where it is called the maddale. However, the mridangam used in Yakshagana is markedly different in structure and acoustics from the ones used in Carnatic music.
+While the instrument itself may seem in itself to be specific to Carnatic music, it has universal application to all types of music globally which is clearly shown through its uses in areas such as fusion band groups and cinema orchestra.
+Significant players of the mridangam in modern times are T. K. Murthy, Dandamudi Ram Mohan Rao, T. V. Gopalakrishnan, Umayalpuram K. Sivaraman, Vellore G. Ramabhadran, T S Nandakumar, Karaikudi Mani, Trichy Sankaran, Mannargudi Easwaran, Yella Venkateswara Rao, Srimushnam V. Raja Rao, and Thiruvarur Bakthavathsalam, who have been playing and advancing the technique for decades.
+
+
+Mridangamela
+
+Mridangamela is a synchronized performance of mridangam by a group of artists. The concept of Mridangamela was developed by Korambu Subrahmanian Namboodiri and is currently propagated by Korambu Vikraman Namboodiri.
+Mridangamela is designed to be easily performed and managed even when performed by a group of children. It is common that the age of artists can range from 3 years to above. Most Mridangamelas are performed by children soon after their initiation to learning mridangam. A teaching method developed to train for Mridangamela made this easy to be taught and contributed to its popularity.
+In Koodalmanikyam Temple, Irinjalakuda, it is a tradition that Mridangamela is held by children of the age group 3 years and above, as soon as the Utsavam is flagged off. This is performed as an offering to Lord Bharata, who is the deity of Koodalmanikyam Temple.
+In 2014, Mridangamela by 75 children was performed at Chembai Sangeetholsavam, which is the annual Carnatic music festival held in Guruvayur by the Guruvayur Devaswom. Mridangamela had been performed at Chembai Sangeetholsavam for the past 35 years orchestrated by Korambu Mridanga Kalari.
+
+
+Players
+Over the years and especially during the early 20th century, great maestros of mridangam also arose, inevitably defining "schools" of mridangam with distinct playing styles. Examples include the Puddukottai school and the Thanjavur school. The virtuosos Palani Subramaniam Pillai, Palghat Mani Iyer and C.S. Murugabhupathy contributed so much to the art that they are often referred to as the Mridangam Trinity.
+
+
+Past players
+
+
+Current players
+T. K. Murthy
+Umayalpuram K Sivaraman
+Venilan Vairavapillai
+T. V. Gopalakrishnan
+Trichy Sankaran
+Guruvayur Dorai
+Mannarkoil J Balaji
+Salem S. Ranganathan
+Madipakkam Suresh
+T S Nandakumar
+Yella Venkateswara Rao
+Mannargudi Easwaran
+Thiruvarur Bakthavathsalam
+A. V. Anand
+Dandamudi Sumathi Ram Mohan Rao
+Srimushnam V. Raja Rao
+Patri Satish Kumar
+Anoor Anantha Krishna Sharma
+Trichur C. Narendran
+K V Prasad
+Anantha R Krishnan
+Tiruvarur Vaidyanathan
+Neyveli R. Narayanan
+Erickavu N. Sunil
+H. S. Sudhindra
+B C Manjunath
+Paramaswamy Kirupakaran
+Adithya Ramaswamy Krishnan
+D.A.Srinivas
+Vishal Narayan
+K. Arun Prakash
+Peruna Harikumar
+Sumesh Narayanan
+Praveen Sparsh
+Delhi Sairam
+
+
+See also
+
+Khol
+Thavil
+Karatalas
+Trống cơm – a similar Vietnamese instrument
+
+
+References
+
+
+External links
+Rhythmic Syllables article by Mannarkoil J Balaji
+Rhythmic Descent in Karnatic Music by Mannarkoil J Balaji
+A Practical Guide to South Indian Rhythm Through Konnakkol -Vol 1 - Book by Mannarkoil J Balaji available on Amazon worldwide as Kindle and Paperback version.
+Korvais in Karnatak Music - Improvisation through Training article by Mannarkoil J Balaji
+Porutham - Creating varied Rhythmic cadences with Chart Templates article by Mannarkoil J Balaji

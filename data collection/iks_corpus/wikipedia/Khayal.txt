@@ -1,0 +1,111 @@
+Khyal or Khayal (ख़याल / خیال) is a major form of Hindustani classical music in the Indian subcontinent. Its name comes from a Persian/Arabic word meaning "imagination". Khyal is associated with romantic poetry, and allows the performer greater freedom of expression than dhrupad and is sung with the tabla instead of the pakhavaj. In khyal, ragas are extensively ornamented, and the style calls for more technical virtuosity.
+
+
+Etymology
+Khyāl (خیال) is an Urdu word of Arabic origin which means "imagination, thought, ideation, meditation, reflection". Hence khyal connotes the idea of a song that is imaginative and creative in either its nature or execution. The word entered India through the medium of the Persian language. Just as the word reflects ideas of imagination and imaginative composition, the musical form is imaginative in conception, artistic and decorative in execution and romantic in appeal.
+
+
+Characteristics
+There are three main characteristics of khyal: various musical materials that can be employed, the selection of different types of improvisation, and the placement of various materials in order to produce a balanced and aesthetically pleasing performance.
+
+
+Musical Materials
+
+
+Raga
+Rāga is a melodic framework for improvisation based on the idea that certain characteristic patterns of notes (svara) evoke a heightened state of emotion. These patterns of notes are a fusion of scalar and melodic elements, and each raga can be described in terms of its ascending lines (āroha) and descending lines (avaroha), as well in terms of its characteristic melodic figures in which certain intervals are emphasised and attention is focused on particular notes.
+Khyal can be played in hundreds of ragas and there are few conceptual limitations when it comes to selection. Instead such decisions are made on the basis of artistic preference, vocal quality, the nature of the composition and time of the day of the performance. Some khyal singers maintain a large anthology of ragas while others prefer to focus their attention on a smaller selection. Those with high pitched voices often prefer ragas in the upper register while those with heavy vocal quality can choose ragas that are deep and ponderous in nature. Similarly artists that are adept in intonation can cultivate ragas which has melodic skips and those who enjoy intellectual and musical challenges might choose ragas of a complex nature.
+
+
+Tala
+The term Tāla, which is perhaps best translated as 'time measure', covers the whole subject of musical meter in Indian classical music. A tala is a metrical framework, or structure of beats (mātrā), within which musical compositions are composed and performed. They can be performed in different tempi -  slow (vilambita), medium (madhya) and fast (druta).
+Khyal is usually performed in seven talas, which are Tilwāḍā, Jhūmrā, Rūpak, Ektāl, Jhaptāl, Tintāl and Aḍacautāl. Tilwada, Jhumra and Rupak are generally used for vilambit performance although composers who use tilwada are relatively few. Ektal was traditionally used for vilambit and madhya performances, but it is also used for drut performances. Jhaptal is used for madhya performances. Adacautal is used for both slow and fast performances, but rarely encountered. Tintal was conventionally associated with drut performances, especially those that emphasize rhythmic play. It is now used for playing performances in all three tempi.
+
+
+Bandish
+Khyal bases itself on a repertoire of short songs (two to eight lines); a khyal song is called a bandish. Every singer generally renders the same bandish differently, with only the text and the raga remaining the same. Khyal bandishes are typically composed in a variant of Hindi-Urdu or occasionally the Dari variant of the Persian language, Bhojpuri, Rajasthani, or Marathi. These compositions cover diverse topics, such as romantic or divine love, praise of kings or gods, the seasons, dawn and dusk, and the pranks of Krishna, and they can have symbolism and imagery. The Rajasthani or Marwari khyals were usually written down in the Dingal language.
+A bandish is divided into two parts, the sthayi and the antarā (if there are three sections, the third will be considered as an additional antara verse). These sections can be characterised in terms of three pitch registers, low middle and high. The sthayi section is composed in the low register and bottom of the middle half register, while the antara section is composed in the upper middle register and high registers. The sthayi section is considered more important because it shows the pitch selection and melodic contours of the raga, while antara section is more textually dense.
+
+
+Types of Improvisation
+
+
+Alap
+Ālāp is a form of improvisation that is used to introduce the characteristics of a raga in a gradual and systematic fashion. It can be sung to vocables in free form, in which case it is known as rāgālāp. It can also be sung to the text of the bandish in metrical form, in which case it is called bolālāp or rūpakālāpti (rūpaka is a Sanskrit word which means 'composition'). The degree of rhythm that is introduced to the alap by the bandish also varies from singer to singer. There are various styles of presenting a raga, such as merkhand (combination of various pitches manner) and badhat (pitch-by-pitch manner). The pacing and divisions of alap can also vary, some artists spend more time in a certain pitch register than others.
+
+
+Tans
+Tans are fast melodic figures of a virtuosic nature, sung to a vowel - usually 'ā' (which is called akār). They can vary in shape, range, presence of ornamentation, speed, etc. The concept of tans is elusive and difficult to define. Some singers are well known for singing tans, especially tans of shape such as 'roller-coaster' and 'plateau', while others use only a few in their performances. Tans can be sung in different sections, or they can be ornamented to the point that the different pitches are indistinguishable.
+When tans are sung to syllables of the bandish text they are known as boltans. They provide a textual element to improvisation in khyal. The bols in bolton are supposed to be spaced in a scattering of tans so that the meaning of the text can be properly understood. They can be described as being melismatic and contrasted with the long and stretched form of akars. They can be used to create rhythmic interest or they can be indistinguishable to akars.
+
+
+Bolbant
+Bolbant refers to the use of the bandish text (bols) for the purpose of rhythmic play. It is used by musicians who excel in the control of tala. Some artists create passages of bolbans with rhythmic placement of the straight lines of the bandish text while others recombine the text words and phrases for variety. Many artists use simple syncopation patterns while others use more audacious patterns such as layakari. The rhythmic variety in bolbant is essentially unlimited.
+
+
+Sargam
+Sargam passages are those enunciating the syllables for the pitches (Sa Re Ga Ma Pa Dha Ni) as they are sung. Most artists use them for speed, in the manner of tans, but with manifestation of mathematically proportioned rhythmic densities relative to the speed of the tala counts (double speed, quadruple speed, etc) than a 'flowing' tan is likely to give. Another option is to use sargam in bolbant-like improvisation, and a few khyal singers bring the text syllables into play.
+
+
+Nom-tom
+Nom-tom features rhythmic pulsations, achieved by pitch repetition, particular ornamentation, and enunciation of text syllables, vocables, or vowels. It is only used by a limited number of artists since it is associated more often with dhrupad than with khyal. In dhrupad, it is sung as part of the unmetered ragalap which is presented before the composition is performed, and it is sung to vocables. In khyal, it is sung before or after the composition is presented, and it can be sung to either vocables or syllables of the bandish text. Its features complement the rippling effects of tans and the lyrical element of alap while avoiding the rhythmic complexity of boltans.
+
+
+Placement of various materials
+A typical khyal performance uses two bandish compositions — the baḍā khyāl (great khyal) constitutes most of the performance, while the choṭā khyāl (small khyal) is used as a finale and is usually in the same raga but a different tala. The bada khyal covers a wide range of possibilities, ideally giving attention to all musical elements - melody, rhythm and speed. In the chota khyal, melody is accomplished through the bandish while rhythm and speed is emphasised through improvisation. Another difference is one of speed, the bada khyal begins at a slow speed (vilambit laya) or medium speed (madhya laya), while the chota khyal begins at a fast speed (drut laya). In each of these two songs, the rate of the tala counts gradually increases during the course of their performance.
+The main portion of the khyal performance is often preceded by some kind of melodic improvisation which widely varies due to artistic preference. Some artists begin their performance by singing to a small number of vocables, such as 'de', 'ne', or 'na', or to vowels (usually 'a'), or to the words of the bandish text. For some, this section acts as a kind of vocal warm-up, taking up only a few seconds. Others use it in order to set the mood, singing for a minute or two, with the effect of beginning a ragalap, or singing a kind of 'mini-ragalap', or possibly foreshadowing the bandish that comes next. Meanwhile, some singers make it a major structural portion of their bada khyal and surround it ragalap before and rupakalapti after.
+The first phrase (mukhda) of the sthayi is the most important component of the bandish because it provides material for most cadences in the performance. Some artists present the antara gradually by creating a cadence or two in the process while the first phrase of the antara (antara mukhda) provides material for the cadence. The mukhda can be performed as an element of rhythm, or it can be blended into the alap-oriented structure of the slow bada khyal. The melody of the mukhda generally undergoes a great deal of change during improvisation. The bandish is usually sung with its sections (sthayi and antara) separated in some way. In the bada khyal, especially at a slow speed, artists usually sing the sthayi only at the beginning, after which the sthayi text (or the vocables or the vowels) are augmented with new melody. Most artists begin singing the antara some point when the high pitch register is reached. Meanwhile, other artists prefer to skip the antara section, thereby reducing the textual density of the bada khyal, and instead sing the sthayi text in an antara-like melody. Some artists sing both the sthayi and the antara are the beginning of the bada khyal, this is particularly common in medium speed bada khyal performances. They often use some kind of improvisation to separate the sthayi from the antara, or they might use a different arrangement.
+
+
+Ensemble
+
+The basic ensemble of a khyal performance consists of the featured soloist(s), an accompanist (or two) on a melody-producing instrument, a tabla player, and one or two accompanists on the tanpura, the drone-producing instrument. A possible addition to the basic ensemble is a supporting singer (or two). This is a traditional part of training for young aspiring artists whose task is to begin improvising when the soloist wishes to rest, or when the soloist asks the supporting singer to repeat a passage after him (for example, a tan repeated in sargam). The supporting singer can also be assigned to play the tanpura.
+Khyal is usually sung as a solo, but in some cases there are two soloists who perform together by dividing the improvisation between them so that there is still only one vocal part, this is known as jugalbandi. The jugalbandi form of khyal is cooperative, as opposed to competitive, and it requires a considerable amount of skill and intimacy to create a performance in which both soloists contribute equally.
+The melody producing instrument in a khyal performance can either be a sarangi (a bowed string instrument) or a harmonium (a portable organ). The role of the artist is to complement the vocal line of the soloist, by playing in heterophony a split second behind as the soloist improvises, by repeating ends of phrases for continuity when the soloist takes a short break, or by repeating earlier phrases during longer breaks. In some cases, the soloist and the sarangi player can form a partnership, in which case the sarangi player can be asked to improvise rather than just repeat during vocal breaks, or they can be asked to perform a challenging feat such repeating a phrase such as a tan. The other major instrument used in a khyal performance is the tabla, which is a percussion instrument. The tabla player is essentially the time keeper for the performance, and it is their task to play the various drum patterns associated with a particular tala.
+
+
+History
+
+
+Development of Khyal
+
+Music in the Indian subcontinent was traditionally divided into two categories, gāndharva and prabhanda. Gandharva was an ancient form of music which was traditionally handed down from master to pupil while Prabhanda, also known as gāna or deśī gāna, consisted of regional songs or tunes. Prabhanda was a systematic and organised form of music that consisted of four sections, udgrāhaka (later known as sthāyī), melāpaka, dhruva and antarā, and numerous musical elements such as svara, tāla, pada, viruda, tenaka and pāta. There were several musical compositions such as sādhāraṇī, rūpakālapti, śuddhā, bhinnā, gauḍī and vesara. Sadharani was an eclectic style of composition that incorporated elements of other styles, particularly bhinna, and incorporated sweet idioms and delicate nuances of emotion. Rupakalapti was a creative and imaginative style of composition which consisted of ālap (musical improvisation), raga and tala, incorporated inside of a prabhanda.
+The Ghaznavid conquest of northern India resulted in the introduction of the Persian language and culture into the Indian subcontinent. The Ghaznavids were Turks based in Ghazni (in present day Afghanistan) and they were the political heirs of the Persian Samanid dynasty based in Bukhara (in present day Uzbekistan).  When Delhi became the capitol of the new rulers, it inherited many of the cultural institutions and literary practices of the Ghaznavids, causing a new literary florescence. The Mongol invasions caused many poets to seek refuge and find patronage at the royal court of Delhi. The first generation of Persian poets, such as Abu al-Faraj Runi and Mas'ud Sa'd Salman, continued the literary traditions of the Samanids. Amir Khusrau (1253 - 1325) was a poet and composer who lived during this period. He was born in North India but raised in a Turco-Iranian environment. He served in the courts of various sultans and princes belonging to the Mamluk, Khalji and Tughlaq dynasties, and remained attached to the Chisti suffis of Delhi. It has often been speculated that khyal was created by Amir Khusrau, but the evidence for this is insufficient. Most scholars agree that khyal was the outcome of a gradual process of evolution that occurred in the Delhi Sultanate. It developed upon the ancient structure of sadharani composition and its creative and imaginative style was based on the rupakalapti form of composition. The Sharqui rulers of Jaunpur were great patrons of fine art such as architecture, painting and music. They patronised khyal to a great extent in the 14th and 15th centuries.
+Medieval India also witnessed the emergence of different schools of classical music known as gharanas. The term gharana carries multiple and diverse connotations, but the concept can be said to include a lineage of hereditary musicians, their disciples and the different musical style they represent. In the case of khyal, a gharana may consist of a single lineage or several lineages of hereditary musicians. In the case of the Gwalior gharana, the oldest of the khyal gharanas, the lineage of hereditary musicians who were the founding family of the khyal style is extinct; a different family of hereditary musicians who were trained into the tradition by the founding family carries on the tradition.
+
+
+Mughal Period
+
+During the reign of the Mughal emperor Akbar, khyal was nurtured by eminent musicians, and many master musicians, such as Suraj Khan, Chand Khan, Baz Bahadur and Rupamati, were interested in the culture of khyal, though it did not enjoy royal patronage like dhrupad. As a result, it remained outside the pale of royal courts and aristocratic societies of the time. A list of musicians at the court of Mughal emperor Shah Jahan included in Raga Darpan, a book written by Faqir Ullah, one-time governor of Kashmir, mention two khyal performers.
+Mughal emperor Muhammad Shah was another great patron of music, poetry and painting, which he continued even after the invasion of India by Persian emperor Nadir Shah. One of his musicians, Niyamat Khan, who was adept in both dhrupad and veena, won the title Sadarang from the emperor for his talents and theoretical and practical knowledge in classical music. He created the elegant classical form of khyal in a majestic and colourful slow tempo (vilambita laya) like dhrupad. Sadarang heightened the classical form of khyal such that it was appreciated by the top-ranking musicians and royal sovereigns of the time. As a result, khyal attained a similar high position to that enjoyed by dhrupad, and gradually came to be developed with many modifications and changes in forms and styles and decorative elements.
+
+
+Colonial period
+The decline of the Mughal empire and the British colonisation of the Indian subcontinent had a detrimental effect on the quality and quantity of khyal music as it did not get any special patronage from the British colonial government in India. As a result, its patronage was more or less confined to the courts of certain maharajas, rajas and nawabs who provided employment for numerous artists. Meanwhile, others preferred (or could only afford) to maintain a few artists or to invite artists to visit on a temporary basis. Some patrons, such as the Gaekwads of Baroda, employed khyal players from more than one gharana; as a result, Baroda is associated with many different styles of performance. Others, such as the rulers of Gwalior and Rampur, preferred to patronize consistently and primarily musicians of one gharana, so that those courts are associated with a single style of performance. In the nineteenth century, a large number of wealthy urban citizens became patrons of Indian classical music. By the early twentieth century, some khyal players were leading efforts to introduce classical music to the general public, which helped in broadening the patronage base.
+During this period, particularly the early twentieth, two major ideas emerged about the study and transmission of Indian classical music. The first had to do with the growing demand for institutional teaching, which led to a rising number of music schools being established though patronage by native princes and urban elites. The other was concerned with systematisation and generalisation of the Indian classical music. The Indian musicologist Vishnu Narayan Bhatkhande played a major part in systematising the tradition while also opening it up for the general audience. He wrote the first modern treatise on Hindustani classical music, introduced the Thaat system for classifying ragas, published a series of textbooks, and initiated a number of conferences to provide a common platform for discussion between Hindustani and Carnatic classical musicians.
+
+
+Post-Independence period
+
+In 1947, British rule in the Indian subcontinent came to an end, and two new nations came into existence, India and Pakistan. The princely states that had been part of the British Raj were incorporated into the two new nation states. This led to a radical change as patronage shifted from the hundred of princely courts to the Government of India. As part of the post-independence project of nation building, the cultural domain was developed by the establishment of bodies such as Sangeet Natak Akademi (inaugurated in 1953), the state-owned All India Radio and, later, the national television broadcaster, Doordarshan. Such agencies have continued to support khayal music prominently, making it accessible to the public of the nation through concerts, recordings, music education, grants and fellowships, etc.
+The second half of the twentieth century was also a period when khayal entered the global stage on several levels. On the one hand, beginning in the 1960s, instrumental artists such as Ravi Shankar and Ali Akbar Khan introduced Hindustani classical music genres to mainstream audiences in Europe and North America through concerts, collaborations with popular musicians and training of non-Indian disciples. On the other hand, the growing Indian diaspora implied transnational audiences, patrons and students for the classical form.
+
+
+See also
+List of 20th-century Khyal singers
+
+
+References
+
+
+Bibliography
+Bonnie C Wade (1984). Khyāl: Creativity within North India's Classical Music Tradition. Cambridge University Press Archive. ISBN 0521256593.
+Prajananananda, Swami (1965). A Historical Study of Indian Music (Chapter 10) - The Evolution of Kheyal and its Development. Anandadhara Prakashan.
+Jairazbhoy, Nazir Ali (1971). The Rags of North Indian Music: Their Structure and Evolution - Introduction to the Historical Background. Faber and Faber. ISBN 0571083153.
+Singh, Jaideva (1970). The evolution of khayal aspects of indian music. New Delhi: Publications Division, Ministry of Information and Broadcasting, Government of India. pp. 88–95.
+Nijenhuis, Emmie Te (1974). Indian Music: History and Structure (Chapter 4) - Composition. BRILL. ISBN 9004039783.
+
+
+External links
+Some words about Khyal Retrieved 2007-06-10
+Khyal - Fantasy in Music Retrieved 2007-06-10

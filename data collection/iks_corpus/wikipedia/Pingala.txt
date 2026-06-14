@@ -1,0 +1,41 @@
+Acharya Pingala (Sanskrit: पिङ्गल, romanized: Piṅgala; c. 3rd–2nd century BCE) was an ancient Indian poet and mathematician, and the author of the Chandaḥśāstra (Sanskrit: छन्दःशास्त्र, lit. 'A Treatise on Prosody'), also called the Pingala Sutras (Sanskrit: पिङ्गलसूत्राः, romanized: Piṅgalasūtrāḥ, lit. 'Pingala's Threads of Knowledge'), the earliest known treatise on Sanskrit prosody.
+The Chandaḥśāstra is a work of eight chapters in the late Sūtra style, not fully comprehensible without a commentary. It has been dated to the last few centuries BCE. In the 10th century CE, Halayudha wrote a commentary elaborating on the Chandaḥśāstra. According to some historians Maharshi Pingala was the brother of Pāṇini, the famous Sanskrit grammarian, considered the first descriptive linguist. Others identify him as Patanjali, the 2nd century CE scholar who authored Mahabhashya.
+
+
+Combinatorics
+The Chandaḥśāstra presents a formula to generate systematic enumerations of metres, of all possible combinations of light (laghu) and heavy (guru) syllables, for a word of n syllables, using a recursive formula, that results in a partially ordered binary representation. Pingala is credited with being the first to express the combinatorics of Sanskrit metre, e.g.:
+
+Create a syllable list x comprising one light (L) and heavy (G) syllable
+Repeat till list x contains only words of the desired length n
+Replicate list x as lists a and b
+Append syllable L to each element of list a
+Append syllable G to each element of list b
+Append lists b to list a and rename as list x
+
+Because of this, Pingala is sometimes also credited with the first use of zero, as he used the Sanskrit word śūnya to explicitly refer to the number. Pingala's binary representation increases towards the right, and not to the left as modern binary numbers usually do. In Pingala's system, the numbers start from number one, and not zero. Four short syllables "0000" is the first pattern and corresponds to the value one. The numerical value is obtained by adding one to the sum of place values. Pingala's work also includes material related to the Fibonacci numbers, called mātrāmeru.
+
+
+Editions
+A. Weber, Indische Studien 8, Leipzig, 1863.
+Janakinath Kabyatittha & Brothers, Pingala Chhanda Sutram, Calcutta, 1931.
+Nirnayasagar Press, Chand Shastra, Bombay, 1938.
+
+
+Notes
+
+
+See also
+
+
+References
+Amulya Kumar Bag, 'Binomial theorem in ancient India', Indian J. Hist. Sci. 1 (1966), 68–74.
+George Gheverghese Joseph (2000). The Crest of the Peacock, p. 254, 355. Princeton University Press.
+Klaus Mylius, Geschichte der altindischen Literatur, Wiesbaden (1983).
+Van Nooten, B. (1993-03-01). "Binary numbers in Indian antiquity". Journal of Indian Philosophy. 21 (1): 31–50. doi:10.1007/BF01092744. S2CID 171039636.
+
+
+External links
+Math for Poets and Drummers, Rachel W. Hall, Saint Joseph's University, 2005.
+Mathematics of Poetry, Rachel W. Hall
+
+Internet Archive, The Prosody of Pingala

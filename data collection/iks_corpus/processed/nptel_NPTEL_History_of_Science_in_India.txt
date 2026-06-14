@@ -1,0 +1,14 @@
+SOURCE: NPTEL/SWAYAM
+TITLE: NPTEL: History of Science in India
+URL: https://nptel.ac.in/courses/106102082
+DOMAIN: Mathematics & Science
+NOTE: Page uses JavaScript — scraping returned empty content.
+      To add lecture transcripts:
+      1. Visit https://nptel.ac.in/courses/106102082
+      2. Enroll (free)
+      3. Open any lecture → click "Transcript" tab
+      4. Copy text and append to this file
+────────────────────────────────────────────────────────────
+
+Course: NPTEL: History of Science in India  |  Domain: Mathematics & Science
+URL: https://nptel.ac.in/courses/106102082

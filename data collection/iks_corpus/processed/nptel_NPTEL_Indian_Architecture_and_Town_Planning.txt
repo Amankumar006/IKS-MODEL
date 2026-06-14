@@ -1,0 +1,14 @@
+SOURCE: NPTEL/SWAYAM
+TITLE: NPTEL: Indian Architecture and Town Planning
+URL: https://nptel.ac.in/courses/104107082
+DOMAIN: Temple Architecture
+NOTE: Page uses JavaScript — scraping returned empty content.
+      To add lecture transcripts:
+      1. Visit https://nptel.ac.in/courses/104107082
+      2. Enroll (free)
+      3. Open any lecture → click "Transcript" tab
+      4. Copy text and append to this file
+────────────────────────────────────────────────────────────
+
+Course: NPTEL: Indian Architecture and Town Planning  |  Domain: Temple Architecture
+URL: https://nptel.ac.in/courses/104107082

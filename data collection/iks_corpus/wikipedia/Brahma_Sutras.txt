@@ -1,0 +1,146 @@
+The Brahma Sūtras (Sanskrit: ब्रह्मसूत्राणि), also known as the Vedanta Sūtra (Sanskrit: वेदान्त सूत्र), or as Shariraka Sūtra,  and Bhikshu-sūtra (latter two in monastic traditions), are a Sanskrit text which criticizes the metaphysical dualism of the influential Samkhya philosophy, and instead synthesizes and harmonizes divergent Upanishadic ideas and practices about the essence of existence, postulating Brahman as the only origin and essence of everything. It is attributed to the sages Bādarāyaṇa, who is also called Vyāsa (arranger), but probably an accumulation of incremental additions and changes by various authors to an earlier work, completed in its surviving form in approx. 400–450 CE. The oldest version may be composed between 500 BCE and 200 BCE, with 200 BCE being the most likely date.
+The Brahma Sūtras consist of 555 aphoristic verses (sutras) in four chapters, dealing with attaining knowledge of Brahman. Rejecting the smriti as a base of knowledge, it declares that the Vedic Upanishads are the only acceptable source of truth, infallible revelations describing the same metaphysical Reality, Brahman, which cannot be different for different people. The text attempts to synthesize and harmonize diverse and sometimes apparently conflicting vidyas ("knowledges") of, and upasanas (meditation, worship) of the essence of existence, stating they are actually synonyms for Brahman. It does so from a bhedabheda-perspective, arguing, as John Koller states: "that Brahman and Atman are, in some respects, different, but, at the deepest level, non-different (advaita), being identical." 
+The first chapter rejects Samkhya's view on pradhana, stating that an inert first principle cannot account for a universe which reflects purpose and intelligence. It harmonizes different views of Absolute Reality found in the Upanishads, subsuming them under the concept of Brahman. The second chapter reviews and addresses the objections raised by samkhya and other competing orthodox schools of Hindu philosophy, Nyaya, Yoga, Vaisheshika and Mimamsa, as well as heterodox schools such as Buddhism and Jainism. The third chapter compares the vidyas and upasanas found in the Upanishads, deciding which are similar and can be combined, and which are different. The last chapter states why such a knowledge is an important human need.
+The Brahma Sūtras is one of three most important texts in Vedanta along with the Principal Upanishads and the Bhagavad Gita. It has been influential to various schools of Indian philosophies, but interpreted differently by the non-dualistic Shiva Advaita and Advaita Vedanta sub-schools, and the Vaishnava theistic Vishishtadvaita and Dvaita Vedanta sub-schools, as well as others. Several commentaries on the Brahma Sūtras are lost to history or yet to be found; of the surviving ones, the most well studied commentaries on the Brahma Sūtras include the bhashya by Adi Shankara, The Vaishnava-exegetes Srinivasa, Ramanuja, Madhvacharya, Bhaskara, Baladeva Vidyabhushan, Ramanandacharya and the only Shaiva exegete Srikantha Sivacharya.
+
+
+Author and chronology
+The Brahma Sūtras or Brahmasutra are attributed to Badarayana. In some texts, Badarayana is also called Vyasa, which literally means "one who arranges".
+Badarayana was the Guru (teacher) of Jaimini, the latter credited with authoring Mimamsa Sutras of the Mimamsa school of Hindu philosophy. This is likely, given that both Badarayana and Jaimini quote each other as they analyze each other's theories, Badarayana emphasizing knowledge while Jaimini emphasizes rituals, sometimes agreeing with each other, sometimes disagreeing, often anti-thesis of the other.
+The Brahma Sūtras text is dated to centuries that followed Buddha and Mahavira, because it mentions and critiques the ideas of Buddhism and Jainism in Chapter 2. The text's relative chronology is also based on the fact that Badarayana quotes all major known orthodox Hindu schools of philosophy except Nyaya. The exact century of its composition or completion in final form is unknown. 200 BCE seems to be the most likely date for its initial composition, with scholars such as Lochtefeld suggesting that the text was composed sometime between 500 and 200 BCE, while Sarvepalli Radhakrishnan and Dasgupta independently suggest the 2nd century BCE as more likely. Paul Deussen places it between 200 BCE and 400 CE.
+Hermann Jacobi in early 20th century suggested that Madhyamaka Buddhist concepts such as Sunyavada, acknowledged in the Brahma Sūtras, may be a late invention, and suggests that both Sunyavada and Brahma Sūtras may therefore have emerged between 200 and 450 CE. Daniel Ingalls disagreed with Jacobi chronology in his 1954 paper, critiquing Jacobi's assumptions and interpretation of sutras 2.2.28-32 in dating the entire document, and stating that "the Brahma Sūtras could not have been composed later than the start of the common era". According to Hajime Nakamura, the Brahma Sūtras were likely complete in the current form between 400 and 450 CE. The existence of earlier versions of the Brahma Sūtras, and multiple authors predating Badarayana, is supported by textual evidence.
+Some scholars, such as Sengaku Mayeda, state that the Brahma Sūtras that have survived into the modern times may be the work of multiple authors but those who lived after Badarayana, and that these authors composed the currently surviving Brahma Sūtras starting about 300 BCE through about 400-450 CE. Nakamura states that the original version of Brahma Sūtras is likely very ancient and its inception coincides with the Kalpa Sutras period (1st-millennium BCE).
+Natalia Isaeva states, "on the whole, scholars are rather unanimous, considering the most probable date for Brahma Sūtras sometime between the 2nd-century BCE and the 2nd-century CE.
+Assigning a later date because of mention of concepts of Buddhism etc., is rejected by Madhvacharya in his work, Anuvyakhyana. He explains the mention of different philosophies and their criticism in the Brahma Sūtras as refutations of general ideas, which are eternal, and not of specific schools of thought like Buddhism etc. So, there is no necessity to assign a later date.
+
+
+Structure
+The Brahma Sūtras consist of 555 aphorisms or sūtras, in four chapters (adhyāya), with each chapter divided into four parts (pāda). Each part is further subdivided into sections called Adhikaraņas with sutras. Some scholars, such as Francis Clooney, call the Adhikaraņas as "case studies" with a defined hermeneutic process.
+
+Each Adhikaraņa of Brahma Sūtras has varying numbers of sutras, and most sections of the text are structured to address the following:
+
+Sangati (सङ्गति): connection between sections, synthesis, or coming together of knowledge. Setting the context.
+Vishaya (विषय): subject, issue or topic
+Vismaya (विस्मय): doubt, uncertainty or perplexity. Also called Sandeha (संदेह)
+Purva-paksha (पूर्वपक्ष): prima facie view, or prior part and arguments
+Siddhanta (सिद्धान्त): theory and arguments presented, proposed doctrine, or conclusions
+The Brahma Sūtras text has 189 Adhikaranas. Each section (case study) in the text opens with the Mukhya (chief, main) sutra that states the purpose of that section, and the various sections of the Brahma Sūtras include Vishaya-Vakyas (cite the text sources and evidence they use).
+Sutras were meant to assist the memory of the student who had gone through long discussions with his guru, as memory aids or clues and maximum thoughts were compressed in a few words which were unambiguous, giving the essence of the arguments on the topic. The Sutras of the text, states Adi Shankara in his commentary, are structured like a string that ties together the Vedanta texts like a garland of flowers.
+
+
+Contents
+The text is part of the Prasthanatrayi, or the three starting points for the Vedanta school of Hindu philosophy. The Principal Upanishads constitute the Sruti prasthāna or "starting point of heard scriptures," while the Bhagavad Gita constitutes the Smriti prasthāna or the "starting point of remembered canonical base", and the Brahma Sūtras constitute the Nyāya prasthāna (न्याय प्रस्थान) or "starting point of reasoning canonical base."
+Sengaku Mayeda states that the Brahma Sūtras distills and consolidates the extensive teachings found in a variety of Upanishads of Hinduism, summarizing, arranging, unifying and systematizing the Upanishadic theories, possibly "written from a Bhedābheda Vedāntic viewpoint." The Vedic literature had grown into an enormous collection of ideas and practices, ranging from practical rituals (karma-kanda) to abstract philosophy (jnana-kanda), with different and conflicting theories on metaphysical problems, diverse mutually contradicting unsystematized teachings on rituals and philosophies present in the Upanishads. Traditions of textual interpretation developed. While Jaimini's Mimamsa-sutra focused on externalized rituals as the spiritual path, Badarayana's Brahma Sūtras, the only surviving work of several of such compendia, focused on internalized philosophy as the spiritual path.
+
+The text reviews and critiques the major orthodox schools of Hindu philosophy as well as all heterodox Indian philosophies such as Buddhism; especially Samkhya and Yoga philosophies are noted, which seem to have been held in high regard in his time. It recurrently refers to them in all its four chapters, adding in sutras 2.1.3 and 4.2.21 that Yoga and Samkhya are similar. The text cites and quotes from the ten Principal Upanishads often, particularly the Kaushitaki Upanishad and the Shvetashvatara Upanishad in several sutras. Additionally, it also mentions Upanishads that are now unknown and lost. The contents of the text also acknowledge and analyze the various Vedic schools, and mentions the existence of multiple, diverging versions of the same underlying text.
+The sutras of the Brahma Sūtras are aphorisms, which Paul Deussen states to be "threads stretched out in weaving to form the basis of the web", and intelligible "when the woof is added" with a commentary.
+
+
+Chapter 1: Harmonisation of views on Brahman
+The central theme of the first chapter is considered Samanvaya (Harmony), because it aims to distill, synchronize and bring into a harmonious whole the seemingly diverse and conflicting passages in various Sruti texts. It consists of 134 sutras, with eleven Adhikaranas in the first Pada, seven Adhikaranas in second, fourteen Adhikaranas in third, and eight in the fourth Pada. The different sub-schools of Vedanta have interpreted the sutras in the last Pada differently, and some count only seven Adhikaranas in the fourth Pada.
+The four sutras of work, also known as Catuhsutri are: [1] how to ask about Brahman [2] where does birth and decay come from [3] how Vedas leads to more understanding of Catuhsutri [4] harmonious way of how Upanishad functions.
+
+This Brahma Sūtras chapter asserts that all the Upanishads primarily aim to and coherently describe the knowledge and meditation of Brahman, the ultimate reality. According to Mayeda, "the Brahmasutra made a special point of refuting the dualism of the then prevailing Samkhya school which posited Purusha (Spirit) and Prakriti (Matter) as the independent causes of the Universe. The Brahmasutra maintained instead that Brahman alone is the absolute ultimate cause of the Universe." Brahman is the source from which the world came into existence, in whom it inheres and to which it returns. The only source for the knowledge of this Brahman is the Sruti or the Upanishads.
+The first word (atha - now, then) of the first sutra has occasioned different interpretations. Ramanuja and Nimbarka argue that it refers to the position of knowledge of Brahman as coming "after the knowledge of karman and its fruits". Shankara takes it as referencing the "acquisition of the four requisite" qualities: "discrimination between eternal and non-eternal things, aversion to the enjoyment of the objects of sense here and in the next world, possession of self-restraint, tranquillity etc., and the desire to be absolutely free". Vallabha disagrees that one needs the four qualities before entering into an inquiry about Brahman, and interprets "atha" as merely initiating the beginning of a new topic.
+The sutras 1.1.5-11 address the Samkhya school's view that pradhana (prakriti) is the primal matter and the cause of the world, and that the Principle of the world is unconscious. The text refutes this claim by using scriptural references to establish that the Principle of the world is conscious and the Brahman itself. The remaining sutras in Pada 1.1 and all sutras in Padas 1.2 and 1.3 assert that Brahman is the primary focus of the Upanishads, is various aspects of empirical reality, quoting various verses in support, from Taittiriya Upanishad, Chandogya Upanishad, Kaushitaki Upanishad, Mundaka Upanishad, Katha Upanishad, Brihadaranyaka Upanishad and Prashna Upanishad.
+The first chapter in sutras 1.4.1-15 presents the Samkhya theories on Prakriti, and rejects its theories by demonstrating that they are inconsistent with and misinterpretations of the Katha, Brihadaranyaka, Shvetashvatara and Taittiriya Upanishad. Sutras 1.4.23-27 argue, according to many schools, that Brahman is the efficient cause and the material cause of the world. The last sutra of the first chapter extends the arguments that refutes Samkhya theories to the atomists' theories (the Vaisheshika school of Hindu philosophy).
+
+
+Chapter 2: Rejection of competing theories
+Second chapter (Avirodha: non-conflict, non-contradiction): discusses and refutes the possible objections to Vedānta philosophy, and states that the central themes of Vedanta are consistent across the various Vedic texts. The Brahma Sūtra states, examines and dismisses the refutations raised by other schools of thought, those now classified under Hinduism, Jainism and Buddhism. The second chapter consists of 157 sutras, with thirteen Adhikaranas in the first Pada, eight in second, seventeen Adhikaranas in third, and nine in the fourth Pada. Whereas the entire first chapter is focused on demonstrating that the Samkhya doctrine that the world created by the unconscious pradhana is wrong, and that the Upanishads substantiate the conscious Brahman as the cause of the world, the second chapter is engaged in responding to objections against the doctrine of Brahman raised in other schools. The first Adhikarana argues that when a smriti (texts of speculative reasoning) conflicts with the sruti (the Vedas), only that which is supported by the Vedas must be affirmed.
+The second chapter of the Brahma Sūtra has been variously interpreted by various monist, theistic and other sub-schools of Vedanta. The Advaita school for example, states Francis Clooney, asserts that the "identity of Atman and Brahman" based Advaita system is the coherent system while other systems conflict with the Upanishads, or are internally inconsistent, or incoherent with observed reality and cosmos. The theistic sub-schools interpret the text to be stating that Atman is different from Brahman, and thereafter each explains how other systems conflict with the Upanishads or are incoherent.
+The Pada 2.1 opens with Adhikarana on Samkhya and Vaisheshika schools argument that Smritis should be a basis for examining the concept of Brahman, and their objections to the Vedanta theory of reflection. The Brahma Sūtras asserts in 2.1.13 through 2.1.20 that the subject and object are one in Brahman, which agrees with Samkhya that there is an identity in cause and effect, adding that the Brahman and the empirical world are therefore one. The sutras 2.1.21 through 2.1.36 present the problem of evil, offering its own doctrine to address it, asserting that Brahman is neither unjust nor cruel, and that inequality and evil exists in the world because of will, choices and circumstances created by actions of living beings over time.
+The sutras in Pada 2.1 are variously interpreted by Advaita, Dvaita, Vishishtadvaita and other sub-schools of Vedanta. The monist Advaita school holds that ignorance or Avidya (wrong knowledge) is the root of "problem of evil"; in contrast, dualistic Vedanta schools hold karma and samsara to be the root.
+The atomistic physico-theological theories of Vaisheshika and Samkhya school are the focus of the first seventeen sutras of Pada 2.2. The theories of Buddhism are refuted in sutras 2.2.18 through 2.2.32, while the theories of Jainism are analyzed by the text in sutras 2.2.33 through 2.2.36.
+The theories of other orthodox traditions are discussed in 2.2.37 through 2.2.45. Ramanuja and Shankara disagree in their formulation as well as critique of then extant orthodox traditions, in their respective commentaries, but both agree that the theory on emergence of Pradyumna (intellect) in the competing orthodox system is the primary flaw.
+The first eight case studies in the third Pada of chapter 2 discuss whether the world has an origin or not, whether the universe is co-eternal with Brahman or is an effect of Brahman (interpreted as dualistic God in theistic sub-schools of Vedanta), and whether the universe returns into Brahman periodically. The last nine Adhikaranas of the third Pada discuss the nature of soul, whether it is eternal, is soul an agent, soul's relationship to Brahman, and states its proof that the soul exists and is immortal.
+The last Pada of the second chapter extracts and summarizes the theories of human body, sensory organs, action organs and their relationship to Prana (vital breath) in the various Vedic Brahmanas and Upanishads. The Brahma Sūtras states that the organs inside a living being are independent principles, in the seventh and eighth Adhikarana of the fourth Pada. The various sub-schools of Vedanta interpret the sutras in the fourth Pada differently.
+
+
+Chapter 3: The means to spiritual knowledge
+
+Third chapter (Sādhana: the means): describes the process by which ultimate emancipation can be achieved. The topics discussed are diverse. The third chapter is the longest and consists of 186 sutras, with six Adhikaranas in its first Pada, eight in second, thirty six in third, and fourteen Adhikaranas in the fourth Pada.
+
+
+The nature of liberating knowledge
+The third chapter focuses on the yearning for knowledge of Brahman, and the means to attain it. Dissatisfaction with mundane life and strengthening the wish for liberation is invoked, treating the theory of death and rebirth, karma and importance of conduct and free will, and the connection between Atman (Self, Soul) and the Brahman are discussed in sections 3.1 and 3.2 of the text.
+
+Sections 3.3 and 3.4 describe the need for self-study, reflection of texts read, meditation, etc., as steps while one makes progress and the role of sannyasa (monk, mendicant) in the pursuit of spiritual knowledge.
+
+
+Upasana (worship, meditation)
+
+The third pada, states George Thibaut, opens a new section and theme in chapter 3 of the Brahma Sūtras, describing how "the individual soul is enabled by meditation on Brahman to obtain final release," and harmonising the different Upanishadic views on this. The Upanishads describe many upasanas on Brahman, with considerable similarities, but also with differences, due to the variations in transmission in the different Vedic schools. The Brahma-sutra, in Adhikaranas of third and fourth pada, states Thibaut, assert that there is no contradiction in these teachings and that "the different Upanishads have to be viewed as teaching the same matter, and therefore the ideas must be combined in one meditation".
+
+सैव हि सत्यादयः
+For the True are so on (in different texts), are one and the same knowledge.
+
+The most referred to texts in these sections are the Brihadaranyaka Upanishad, the Chandogya Upanishad, the Kaushitaki Upanishad, the Katha Upanishad, and the non-Upanishadic parts of Shatapatha Brahmana and Aitereya Aranyaka. The topic of meditation, state the Brahma-sutras, is the spiritual knowledge of Brahman; the object of this knowledge, states Thibaut, is "Brahman viewed as the inner Self of all".
+While upasana may be regarded as a kind of meditation, it is more than dhyana or sitting in meditation; it is a continuous practice of "constant remembrance" of Brahman or the Divine throughout the day, as the culmination of a life of spiritual development.
+The Brahma Sutras, in addition to recommending meditation, suggest that rituals and rites are unnecessary because it is knowledge that achieves the purpose.
+
+And for this very reason there is no need of the lighting of the fire and so on.
+
+In sutras 3.4.26 and 3.4.27, the text adds that rituals, however, can spiritually prepare a mind, remove impurities within, empower calmness and distractions from sensory pursuits, and therefore assist in its ability to meditate and gain the ultimate knowledge. The text also discusses, in sutras 3.4.28 to 3.4.31 whether there are restrictions on food (meat) one can ingest, during the spiritual journey. The sutras, translates Thibaut, derive from the Vedic texts that there is "a prohibition of doing harm to any living creature", however, the scriptures state, "only in danger of life, in cases of highest need, food of any kind is permitted to be eaten".
+The last three sutras of the chapter 3 assert that a person, pursuing means to spiritual knowledge, should seek a childlike state of innocence, a psychological state that is free of anger, self-centeredness, pride and arrogance. The text declares that according to the Vedic literature knowledge is possible in this life, that one is one's own obstruction in this journey, that liberation and freedom is the fruit of knowledge.
+
+
+Chapter 4: The benefits of spiritual knowledge
+Fourth chapter (Phala: the result): talks of the state that is achieved in final emancipation. This is the shortest chapter with 78 sutras and 38 adhikaranas. The last chapter contains fourteen Adhikaranas in its first Pada, eleven in second, six in third, and seven Adhikaranas in the fourth. The last chapter of the Brahma Sūtras discusses the need and fruits of self-knowledge, the state of freedom and liberation.
+The opening sutras of chapter 4 continue the discussion of meditation as means to knowledge, with sutra 4.1.3 summarizing it to be the state where the person accepts, "I am Brahman, not another being" (Adi Shankara), as "Thou indeed I am, O holy divinity, and I indeed thou art, O holy divinity" (Jabalas), and "God is to be contemplated as the Self" and the individual is as the body of God (Ramanuja).
+
+The liberated soul, asserts the Brahma Sūtras, is of the nature of Brahman, with inner power and knowledge, free from evil, free from grief, free from suffering, one of bliss and "for such there is freedom in all worlds".
+
+
+Influence
+The impact of Brahma Sūtras text on Vedanta, and in turn Hinduism, has been historic and central:
+
+Many commentaries on the fundamental scripture of Vedanta, the Brahma Sūtras, were written by the founders or leading scholars of the various sects of Hinduism, and they are transmitted to this day as documents indispensable in the respective sectarian traditions.
+
+
+Commentaries
+Numerous commentaries have been written on the Brahma Sūtras text, but many such as that of Bodhayana, Upavarsa, and eighteen out of twenty one mentioned by Narayana in Madhvavijaya-bhava-prakashika are considered lost. Of the surviving commentaries, the earliest extant one is by Nimbarkacharya or Adi Shankara.
+The diversity of Brahma Sūtras commentaries by various sub-schools of Hinduism attests to the central importance of the Upanishads, that the text summarizes.
+
+
+Exegesis
+The sutras in the text can be, and have been read in different ways. Some commentators read each line separately, while others sometimes read two as one treating some sutras as contextually connected. Creative readers have read the last word of a sutra as the starting word for the next, some treat a given verse as Purva-paksha (opposing viewpoint) while others read the same verse as Siddhanta (proposed doctrine, or conclusion). For example, states Gregory Darling, Adi Shankara in his commentary on sutra 4.3.14 considers Saguna Brahman mentioned therein as Purva-paksha, but acknowledges that some scholars interpret this sutra as a Siddhanta. Another example is Shanakra's interpretation of a set of sutras (2.3.19-28) as reflective of the Purva-paksha and Ramanuja's taking the same set of sutras to be reflective of the Siddhanta. Shankara argues that the description of the individual self (jiva) as atomic in size in these sutras marks the Purva-paksha, whereas Ramanuja takes it to be the Siddhanta. A point of disagreement between commentators concerns where to divide the text into Adhikaranas. Although there is a clear division of Adhyayas and Padas in the text, no division of Adhikaranas is universally affirmed, leading to disagreements about how the sutras in each Adhikaranas should be divided.
+Another aspect of the sutra text that leads to variance in exegeses is that words in the sutras can mean different things. In sutra 2.3.15, the word antarā is used, which would mean both "without" and "in the midst". Shankara, Ramanuja, and Nimbarka agree that the word means "in the midst", but Madhva argues that the word must mean "without". It is very likely that the interpretations given by Shankara, Ramanuja, Nimbarka, and Madhva did not originate out of nowhere, and their key elements most probably existed even before the Brahma Sūtras themselves were written. It is extremely difficult to determine which of the commentators' interpretations are actually faithful to the original, and there is a possibility that the author of the Brahma Sūtras did not have a philosophical system in mind that Shankara, Ramanuja, Nimbarka, Madhva, and their successors have expressed.
+
+
+Translations
+The Brahma Sūtras has been translated into German by Paul Deussen, and in English by George Thibaut. The Thibaut translation is, state De Bary and Embree, "probably the best complete translation in English".
+
+
+See also
+Prasthanatrayi
+
+
+Notes
+
+
+References
+
+
+Sources
+Printed sources
+
+Web-sources
+
+
+External links
+Translations and transliteration
+The Vedanta Sutras Part 1, Translated by George Thibaut (English, 1890, Adi Shankara Exegesis, Theistic interpretation)
+The Vedanta Sutras Part 2, Translated by George Thibaut (English, 1890, Adi Shankara Exegesis, Theistic interpretation)
+The Vedanta Sutras Translated by George Thibaut (English, 1890, Ramanuja Exegesis, Theistic interpretation)
+Comparative analysis of traditional commentaries on Brahma Sutras. https://archive.org/download/in.ernet.dli.2015.283844/2015.283844.The-Vedanta.pdf
+Brahma Sutra, The Philosophy of Spiritual Life (English) Translated by Sarvepalli Radhakrishnan (English, Multiple scholars includes monist and theistic interpretation), - at archive.org
+Brahma sutra in 10 Indian languages and Roman Transliteration IIT Kanpur
+Commentaries
+Sri Bhashya - Brahma Sutra Bhashya by Ramanujacharya (Sanskrit) - at archive.org
+Brahma Sutra Bhashya by Adi Shankaracharya (Sanskrit) - at archive.org
+Brahmasutra Sankara Bhashya, with Ratna-Prabha of Govindananda, Bhamati of Vachaspati Misra and Nyaya-Nirnaya of Anandagari (Sanskrit) - at archive.org
+Brahmasutra Sankara Bhashya, with Bhamati of Vachaspati Misra, Kalpataru of Amalananda and Parimala of Appaya Dikshita (Sanskrit) - at archive.org
+Anubhashya on the Brahma Sutra by Vallabhacharya with Commentaries (4 Volumes Combined) (Sanskrit) - at archive.org
+Brahmasutra Bhasya of Sri Madhvacharya with Glosses (Sanskrit) - at archive.org
+Vedanta-Parijata-Saurabha of Nimbarka and Vedanta-Kaustubha of Srinivasa (English) - at archive.org or Proofread edition including glossary

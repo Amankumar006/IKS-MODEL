@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: The Indian Architect — E.B. Havell
+URL: https://archive.org/details/indianarchitect00haveuoft
+DOMAIN: Temple Architecture
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/indianarchitect00haveuoft
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+The Indian Architect — E.B. Havell — primary source for IKS domain: Temple Architecture

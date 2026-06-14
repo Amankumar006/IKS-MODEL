@@ -1,0 +1,30 @@
+SOURCE: Wikipedia
+TITLE: Līlāvatī
+URL: https://en.wikipedia.org/wiki/L%C4%ABl%C4%81vat%C4%AB
+DOMAIN: Mathematics
+COLLECTED: 2026-04-19T11:02:16.158304
+────────────────────────────────────────────────────────────
+
+Līlāvatī is a treatise by Indian mathematician Bhāskara II on mathematics, written in 1150 AD. It is the first volume of his main work, the Siddhānta Shiromani, alongside the Bijaganita, the Grahaganita and the Golādhyāya.
+Bhaskara II's book on arithmetic is the subject of interesting legends that assert that it was written for his daughter, Lilavati. As the story goes, the author had studied Lilavati's horoscope and predicted that she would remain both childless and unmarried. To avoid this fate, he ascertained an auspicious moment for his daughter's wedding. To alert his daughter at the correct time, he placed a cup with a small hole at the bottom of a vessel filled with water, arranged so that the cup would sink at the beginning of the propitious hour. He put the device in a room with a warning to Lilavati to not go near it. In her curiosity, though, she went to look at the device. A pearl from her bridal dress accidentally dropped into it, thus upsetting it. The auspicious moment for the wedding thus passed unnoticed leaving Bhaskara II devastated. Thus, he promised his daughter to write a book in her name, one that would remain till the end of time as a good name is akin to a second life.
+Many of the problems are addressed to Līlāvatī herself, who must have been a very bright young woman. For example "Oh Līlāvatī, intelligent girl, if you understand addition and subtraction, tell me the sum of the amounts 2, 5, 32, 193, 18, 10, and 100, as well as [the remainder of] those when subtracted from 10000." and "Fawn-eyed child Līlāvatī, tell me, how much is the number [resulting from] 135 multiplied by 12, if you understand multiplication by separate parts and by separate digits. And tell [me], beautiful one, how much is that product divided by the same multiplier?"
+The word Līlāvatī itself means playful or one possessing play (from Sanskrit, Līlā = play, -vatī = female possessing the quality).
+The book contains thirteen chapters, mainly definitions, arithmetical terms, interest computation, arithmetical and geometrical progressions, plane geometry, solid geometry, the shadow of the gnomon, the Kuṭṭaka - a method to solve indeterminate equations, and combinations. Bhaskara II gives the value of pi as 22/7 in the book but suggest a more accurate ratio of 3927/1250 for use in astronomical calculations. Also according to the book, the largest number is the parardha equal to one hundred thousand billion.
+Lilavati includes a number of methods of computing numbers such as multiplications, squares, and progressions, with examples using kings and elephants, objects which a common man could understand.
+Excerpt from Lilavati (Appears as an additional problem attached to stanza 54, Chapter 3. Translated by T N Colebrook)
+Bhaskaracharya's conclusion to Lilavati states:
+Joy and happiness is indeed ever increasing in this world for those who have Lilavati clasped to their throats, decorated as the members are with neat reduction of fractions, multiplication and involution, pure and perfect as are the solutions, and tasteful as is the speech which is exemplified.
+The translations or editions of the Lilavati into English and other languages include:
+1816. John Taylor, Lilawati: or A Treatise on Arithmetic or Geometry by Bhascara Acharya
+11th century: Eluganti Pedana ( ఎలుగంటి పెద్దన) translated Lilavati into Telugu. The work is called Prakīrna Ganitamu( ప్రకిర్ణ గణితము).
+1817. Henry Thomas Colebrooke, Algebra, with Arithmetic and mensuration, from the Sanscrit of Brahmegupta and Bháscara, Page 24, chap 2/3
+1842. Amichandra Shravaga of Jaipur translated Lilavati into Hindi.
+1936. Pidaparti Krishnamurti Sastry translated the work into Telugu language and it was published by Srividya press, Vizianagaram.
+1975. K. V. Sarma, Līlāvatī of Bhāskarācārya with Kriyā-kramakarī, Hoshiarpur: VVBIS & IS, Panjab University
+2001. K. S. Patwardhan, S. A. Naimpally and S. L. Singh. Līlāvatī of Bhāskarācārya: a treatise of mathematics of Vedic tradition : with rationale in terms of modern mathematics largely based on N.H. Phadke's Marāthī translation of Līlāvatī
+Bhaskaracharya's work 'Lilavati' was translated into Persian(फारसी) by-( Abul Faizi-in 1587 ).
+Bakul Kayastha from medieval Assam (1400CE) made Assamese rendering of Lilavati.
+Timeline of algebra and geometry
+Plofker, Kim (2009), Mathematics in India, Princeton University Press, ISBN 9780691120676
+Poulose, K. G., ed. (1991), Scientific heritage of India, mathematics, Ravivarma Samskr̥ta granthāvali, vol. 22, Govt. Sanskrit College (Tripunithura, India)
+Bhaskaracharya's Lilavathi - Book Review

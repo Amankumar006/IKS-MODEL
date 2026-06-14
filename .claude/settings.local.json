@@ -3,7 +3,11 @@
     "allow": [
       "Bash(find /Users/amankumar/Aman/IKS-Model -type f -exec ls -lh {} \\\\;)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(ollama pull *)",
+      "Bash(python3 -c ' *)",
+      "Bash(pip install *)"
     ]
   }
 }

@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: Industry and Trade in India
+URL: https://archive.org/details/industradecomme00unkngoog
+DOMAIN: Governance & Agriculture
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/industradecomme00unkngoog
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+Industry and Trade in India — primary source for IKS domain: Governance & Agriculture

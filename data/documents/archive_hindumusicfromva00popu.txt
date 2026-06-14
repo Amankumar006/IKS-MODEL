@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: Hindu Music from Various Authors
+URL: https://archive.org/details/hindumusicfromva00popu
+DOMAIN: Classical Music
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/hindumusicfromva00popu
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+Hindu Music from Various Authors — primary source for IKS domain: Classical Music

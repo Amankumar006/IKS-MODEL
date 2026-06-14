@@ -101,7 +101,7 @@ uv run python src/iks_rag/api/main.py
 
 **Timeline**: 1-2 months | **Cost**: $500-1500
 
-See [ROADMAP.md](ROADMAP.md) for detailed timeline.
+See [docs/project/roadmap.md](docs/project/roadmap.md) for detailed timeline.
 
 ## 🏗️ Architecture
 
@@ -129,7 +129,7 @@ Answer + Sources
 
 ### Model Selection
 
-Edit `configs/model.yaml` to switch models based on your hardware:
+Edit `configs/rag/default.yaml` to switch models based on your hardware:
 
 ```yaml
 # For 4GB VRAM (Default - Your Mac)
@@ -160,7 +160,7 @@ The assistant retrieves from:
 - Wikimedia Commons (temples, dance images)
 - Wikipedia IKS articles
 
-See [docs/data-sources.md](docs/data-sources.md) for complete list.
+See [docs/guides/data-sources.md](docs/guides/data-sources.md) for complete list.
 
 ## 📊 Performance
 
@@ -186,16 +186,16 @@ uv run pytest tests/unit/ingestion/test_loaders.py -v
 
 ## 📚 Documentation
 
-- [Architecture Overview](docs/architecture/rag-pipeline.md)
-- [Data Sources](docs/data-sources.md)
+- [Architecture Overview](docs/architecture/overview.md)
+- [Data Sources](docs/guides/data-sources.md)
 - [API Reference](docs/api-reference.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [Changelog](CHANGELOG.md)
+- [Contributing Guidelines](docs/project/contributing.md)
+- [Changelog](docs/project/changelog.md)
 - [Architecture Decision Records](docs/adr/)
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! Please see [docs/project/contributing.md](docs/project/contributing.md) for guidelines.
 
 **Ways to contribute**:
 - Add IKS documents to the knowledge base

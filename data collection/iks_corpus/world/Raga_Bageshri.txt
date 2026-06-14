@@ -1,0 +1,56 @@
+        SOURCE: Curated + Wikipedia
+        TITLE: Raga Bageshri
+        URL: https://en.wikipedia.org/wiki/Bageshri
+        DOMAIN: Classical Music — Raga as Emotion
+RASA: Shringara — the longing of lovers separated by rain
+        COLLECTED: 2026-04-19T22:55:43.442613
+        ────────────────────────────────────────────────────────────
+
+Time of day: Second quarter of night — 9pm to midnight
+Primary rasa (emotion): Shringara — the longing of lovers separated by rain
+Mood quality: romantic, yearning, the sound of rain on a tin roof at night
+Bageshri is inseparable from rain. It is the raga played when the monsoon breaks
+over the plains of North India, when the smell of wet earth — petrichor — enters
+every home through open windows. Musicians in the old tradition would wait for
+the monsoon to perform Bageshri; to play it in summer felt dishonest.
+The raga carries the specific emotion of virah — separation — in its most
+romantic form. The beloved is far away. Rain is falling. The night smells of
+earth and jasmine. This is Bageshri's world.
+Thumri singers — the masters of romantic classical music — consider Bageshri
+their home. It is a forgiving raga, allowing ornament and improvisation with
+unusual freedom. A skilled vocalist can spend hours in Bageshri and never
+exhaust its emotional range.
+The Kathak dance tradition associates specific movements with Bageshri — the
+gesture of looking toward a door that won't open, of writing a letter that
+will not be sent. When rain-scented air and Bageshri arrive together, Indians
+who have grown up with classical music describe a specific visceral joy:
+the pleasure of being exactly where you are supposed to be.
+--- Wikipedia excerpt ---
+Raga Bageshri or Bageshree (IAST: Bāgeśrī) is a Hindustani raga. It is meant to depict the emotion of waiting for reunion with one's lover. Being a very melodic raga it has gained popularity over the centuries. Like all ragas, Raga Bageshri traces its origins to the Samaveda, a sacred Hindu text with roots that likely date back to around 1500 BCE, though its oral tradition could be much older.
+Raga Bageshri is a night time raga (madhya raatri Ragsamaya), written in Kaafi thaat, Ma Vadi, Sa Samvadi, 5/7 Jati, Hasya Rasa (associated with joyful, the comic, and happy emotions).
+In modern days, people like the popular Hindi music director C.Ramchandra favour composing songs in Bageshri, as he found it simple. In a 1978 interview at BBC studios with Mahendra Kaul, he explained this, while playing songs like (Radha na bole – Azad, 1955) that were set to Bageshri.
+The theoretical aspects of Bageshri are as follows:
+Arohana : S g m D n S'
+Avarohana : S' n D m P D g m g R S
+Samavadi: Shadja (Sa)
+D n s, m, m P D, m g R S
+Varjit Swara – P & R in Aaroh
+Jati : – Audav-Sampoorna (Vakra)
+Organization & Relationships
+The time for this raaga is madhya raatri (middle of the night).
+Bageshri raga a popular raga. It is derived from the 22nd Melakarta, Kharaharapriya. This raga is a janya raga (derived) as it does not have all the seven notes in the ascending scale.
+Structure and Lakshana
+Bageshri is an asymmetric scale that does not contain panchamam or rishabam in the ascending scale. It is called a audava-sampurna rāgam, in Carnatic music classification (as it has 5 notes in ascending and 7 notes in descending scale). Its ārohaṇa-avarohaṇa structure is as follows (see swaras in Carnatic music for details on below notation and terms):
+ārohaṇa : S G₂ M₁ D₂ N₂ Ṡ
+avarohaṇa : Ṡ N₂ D₂ N₂ P M₁ G₂ R₂ S
+This scale uses the notes shadjam, chathusruti rishabham, sadharana gandharam, shuddha madhyamam, panchamam, chathusruthi dhaivatham, and kaisiki nishadam.
+Popular compositions
+Bageshri is a very melodic raga in Carnatic music. So, even though this scale has been used only in a few krithis (compositions), many devaranamas, ashtapadis, thiruppugazhs, and other lyrics have been set to tune in this raga. It is typically sung in concerts after the main piece, in viruttams, padams, bhajans, and ragamalika.
+Here are some popular compositions in Bageshri.
+Sagarasayana by M. D. Ramanathan
+Maname Ariyen by Papanasam Sivan
+Antakanadutarige Kimchittu Kayavilla by Purandaradasa
+Govindamiha by Narayana Theertha
+Kanden Kanden by Arunachala Kavi-Also sung in Vasantha
+List of film songs based on ragas
+Bor, Joep; Rao, Suvarnalata (1999). The Raga Guide: A Survey of 74 Hindustani Ragas. Nimbus Records with Rotterdam Conservatory of Music. p. 26.

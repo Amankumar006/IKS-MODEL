@@ -1,0 +1,27 @@
+        SOURCE: Curated
+        TITLE: Untranslatable: Jugaad
+        URL: iks://embedded/Untranslatable_Jugaad
+        DOMAIN: Indian Philosophical Concepts
+RASA: Hasya
+        COLLECTED: 2026-04-19T22:56:45.296388
+        ────────────────────────────────────────────────────────────
+
+Language: Hindi/Punjabi
+Root: Colloquial — no clear Sanskrit root
+Jugaad entered the global business vocabulary in the 2010s as "frugal innovation"
+— using whatever is available to solve a problem creatively, without waiting for
+ideal resources. But this translation makes it sound like a strategy. It is a
+Jugaad is the farmer who turns a discarded motor into an irrigation pump. The
+village mechanic who fixes a car with a piece of wire and absolute confidence.
+The mother who makes a child's toy from a broken plastic bottle. It is the
+specific Indian genius of making things work with what is here, now, rather than
+waiting for what should be.
+The word carries no shame of imperfection — the jugaad solution is celebrated,
+not apologized for. It represents a different relationship to resources: not
+wasteful abundance, not resigned poverty, but creative abundance — the
+recognition that necessity is genuinely the mother of invention and that
+invention is available to everyone.
+C.K. Prahalad's "fortune at the bottom of the pyramid" theory is essentially
+a formalization of jugaad. The global movement for appropriate technology —
+designing for real constraints rather than ideal conditions — is jugaad with
+a grant application attached.

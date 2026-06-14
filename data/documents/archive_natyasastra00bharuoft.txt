@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: Natyasastra of Bharata Muni Vol 1
+URL: https://archive.org/details/natyasastra00bharuoft
+DOMAIN: Classical Dance & Drama
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/natyasastra00bharuoft
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+Natyasastra of Bharata Muni Vol 1 — primary source for IKS domain: Classical Dance & Drama

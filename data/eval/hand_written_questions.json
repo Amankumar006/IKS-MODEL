@@ -1,0 +1,402 @@
+[
+  {
+    "instruction": "In the context of the *Ashtadhyayi*, how does the use of *Paribhasha* rules ensure that a *Vidhi* rule does not violate the underlying logic of the *Sutras*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why did Panini use the *hal* pratyahara to denote all consonants instead of *yal*, even though *hal* contains a duplicate *Hkara*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain a specific instance where a *Sutra* is entirely meaningless without the *Anuvritti* carried forward from a preceding *Adhikara* rule.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How do the *It-markers* (Anubandhas) in the *Maheshwara Sutras* prevent the accidental inclusion of the marker itself in the *Pratyahara*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Demonstrate the application of the *Vipratishedha* rule in resolving a conflict between two simultaneous *Vidhi* rules.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the functional and computational distinction between *Vidhi* (ordinary rules) and *Niyama* (exceptions/restrictions) in Paninian grammar?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the concept of *Atideśa* function as a rule of analogy or object inheritance to resolve derivational conflicts?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why is the single-syllable rule *ot* only comprehensible when placed in the context of its preceding *Adhikāra* rules?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In what way does Panini’s meta-language function similarly to a modern programming keyword system aiming for \"minimal words, maximal meaning\"?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Ashtadhyayi* act as an \"algorithmic engine\" for generating infinite word forms from a finite set of roots?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Kāraka* theory structurally differ from Western syntactic cases in mapping semantic intent to morphological realization?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the algorithmic necessity of *Savarna* (homogeneity) in resolving complex vowel sandhi without causing infinite loops.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How do *Utsarga* (general rules) and *Apavāda* (exceptions) interact when deriving complex nominal compounds (*Samasa*)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does Panini handle zero-morphemes (*Lopa*, *Luk*, *Slu*) while maintaining the integrity of the derivational history for subsequent rule applications?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In what way do the *Śiva Sūtras* utilize optimal data encoding for phonological classes?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How is the concept of *Asiddhatva* (suspension of rules) crucial for establishing rule-ordering hierarchies?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe the computational sequence of applying *Kṛt* (primary) affixes to verbal roots compared to *Taddhita* (secondary) affixes.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Aṣṭādhyāyī* differentiate between *Antaraṅga* (internal) and *Bahiraṅga* (external) operations?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What role does *Upadeśa* play in establishing the foundational forms of roots and affixes before derivation begins?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the meta-rule *Sthānivadbhāva* treat substitutes as their original forms during derivation?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why is the distinction between *Pada* (word) and *Bha* (stem) critical for terminal operations in nominal declension?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does Panini algorithmically generate the ten *Lakāras* (tense/mood paradigms) from a single semantic intent?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In what contexts does *Vikalpa* (optionality) reflect localized or Vedic dialectical variations in the grammar?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Dhatupatha* categorize verbal roots by their *Anubandhas* to dictate *Atmanepada* or *Parasmaipada* endings?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the logic behind the *Savarnadirgha* sandhi rule overriding *Guna* sandhi in continuous speech.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Charaka Samhita* classify mineral components within the framework of *Dravyaguna*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What are the strict ethical protocols for patient-centered care as outlined in the *Charaka Samhita*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the concept of *Vipāka* (post-digestive effect) alter the long-term therapeutic application of a drug compared to its initial *Rasa* (taste)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the logic of *Sāmānya-Viśeṣa* (similarity and dissimilarity) in managing *Doṣa* imbalances.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the role of *Anupāna* (vehicle, such as honey or ghee) in increasing the cellular bioavailability of specific herbal compounds?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Suśruta Saṃhitā* classify surgical instruments (*Yantras*) based on animal and bird morphology?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Detail the epistemological role of *Aptopadeśa* (authoritative testimony) versus *Pratyakṣa* (direct observation) in clinical diagnosis.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Pañcamahābhūta* theory map the elemental composition of medicinal plants in *Dravyaguṇa*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why is *Śodhana* (purification) mandatory for toxic minerals like *Pārada* (mercury) before internal administration?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe the relationship between impaired *Agni* (digestive fire) and the systemic formation of *Āma* (metabolic toxins).",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the sequential logic of nourishing the seven *Dhātus* (tissues) according to the *Kṣīra-Dadhi* (milk-curd) transformation theory?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In *Nāḍī Parīkṣā* (pulse diagnosis), how are different *Gatis* (pulse movements, e.g., frog or swan) correlated with specific *Doṣa* vitiations?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the concept of *Prabhāva* account for the inexplicable pharmacological actions of certain herbs that defy their basic elemental profile?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the rationale behind the seasonal purification therapies (*Pañcakarma*) prescribed in *Ṛtucaryā* (seasonal regimens).",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does *Ayurveda* structurally differentiate between *Śamana* (palliation) and *Śodhana* (purification) in chronic disease management?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What are the pharmaceutical protocols for preparing *Bhasmas* (calcined nanomedicines) to ensure non-toxicity?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Garbhini Paricarya* (prenatal care) regimen adjust diet and behavior month-by-month for fetal development?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the *Saṃprāpti* (pathogenesis) sequence spanning from *Sañcaya* (accumulation) to *Bheda* (complication).",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How do the ethical guidelines of the *Ashtanga Hridaya* balance commercial compensation with charitable care for the destitute?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the significance of *Virya* (potency) in determining whether a drug exerts a heating or cooling metabolic effect?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How are the rules of *Viruddha Ahara* (incompatible food combinations) rooted in biochemical and digestive antagonisms?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe the therapeutic logic of *Raktamokṣaṇa* (blood-letting) in Pitta-dominant dermatological conditions.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does Ayurvedic psychology classify mental constitutions based on the *Triguṇas* (Sattva, Rajas, Tamas) to tailor psychiatric interventions?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the role of *Ojas* in establishing immune resilience (*Vyadhikshamatva*)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How is *Svedana* (sudation therapy) utilized to mobilize toxins from the peripheral tissues back to the gastrointestinal tract?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the calculation of a building's *Aayu* (lifespan) logically differ between the *Kalamruta* method and the *Vishwakarma Prakasika* method?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Using the Ayadi formulae, explain why the *Aaya* (income) calculation `(Length × 8) ÷ 12` must mathematically result in a remainder greater than the *Vyaya* (loss) calculation `(Breadth × 9) ÷ 10`.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In establishing the *Yoni* (energy direction) of a building via `(Breadth × 3) ÷ 8`, why must the remainder be an odd number (1, 3, 5, 7) representing the cardinal directions?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe the significance of the *Brahmasthan* in a 9x9 *Paramasayika* grid and why it must remain unobstructed to channel passive energy.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Contrast the structural applications of the 64-square *Manduka* mandala versus the 81-square *Paramasayika* mandala.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What materials and foundation techniques does the *Nārada Śilpaśāstra* recommend for a *prāṇāli-setu* (check dam with sluices) to withstand the force of water?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In ancient Indian town planning, how does a *pratolī* (gateway) structurally and functionally differ from a *rathyā* (high road)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why do traditional texts like the *Nārada Śilpaśāstra* recommend roads with \"the back of a tortoise\" for civil infrastructure?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How is the *Vara* (weekday) of a building calculated `(Height × 9) ÷ 7`, and why are specific remainders avoided to prevent fire threats?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "According to the *Nārada Śilpaśāstra*, what are the differing dimensional standards for \"superior\" structures like palaces versus \"inferior\" structures like stables?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does aligning a building with true cardinal directions maximize positive solar and cosmic energies compared to angular orientations?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the energetic and functional purpose of placing the kitchen in the *Agneya* (Southeast) corner governed by the fire god Agni?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does placing a master bedroom in the *Nairutya* (Southwest) corner invoke stability and protection?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe how the *Ayadi* system utilizes the measurements of the *Paramanu* (primal energy particle) to establish positive building perimeters.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why should a site ideally slope from the Southwest down to the Northeast to facilitate optimal energy flow and water drainage?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Manaiyadi Shastram* correlate specific numerical perimeters of a room with the physiological health of its occupants?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the geotechnical protocols for testing soil stability, toxicity, and water retention before initiating foundation work (*Bhūmi Parīkṣā*).",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the mathematical relationship between the height of a temple's *Śikhara* (spire) and the width of its *Garbhagṛha* (sanctum)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the concept of *Marmasthāna* (sensitive energy intersection points) dictate the placement of load-bearing pillars and heavy furniture?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe the structural necessity of the *Gajapṛṣṭha* (elephant-back) roofing style in specific regional architectures.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In town planning (*Grāma Vinyāsa*), what is the strategic reasoning behind placing heavy civic infrastructure exclusively in the Southern/Western zones?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How do *Vastu* texts categorize timber based on gender and age to determine its load-bearing suitability for central beams?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the environmental rationale behind the strict prohibition of planting large root-system trees in the Northeast quadrant.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Pāda Vinyāsa* scale mathematically from micro-structures (domestic altars) to macro-structures (entire fortified cities)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What are the astronomical rationales for determining the precise *Muhūrta* (auspicious time) for placing the *Garbha Pātra* (foundation casket)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why is the *Mukhari* or *Ahir Bhairav* raga culturally appropriate for the *Kanyadaan* ritual to reflect solemnity and the \"blessed offering of love\"?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the energetic, \"peppy\" beat of the *Kurinji* or *Kedaram* raga align perfectly with the *Oonjal* (swing) ceremony at a wedding?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What emotional essence (*bhava*) makes the *Shankarabharanam* raga the majestic choice for the *Varmala* exchange?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In the *Samay Siddhant* (Time Theory), why are *Sātvic* ragas like *Bhairav* and *Todi* prescribed exclusively for the 4 AM to 8 AM window?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How do *Rājasic* ragas like *Sarang* and *Bilahari* capture the vitality and peak natural activity of the 8 AM to 4 PM timeframe?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the \"emotional cooling\" and nostalgic effect of twilight ragas like *Yaman* and *Kapi* performed between 4 PM and 8 PM.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why is the heavy, *Tāmisic* essence of *Darbari Kanada* appropriate for midnight but considered a severe failure mode if played during a celebratory afternoon ritual?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Megh Malhar* raga evoke the emotional state of \"longing and calm\" associated with the monsoon season to the point of purportedly invoking rainfall?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe the specific use of heavy *Gamakas* (ornamentations) in night ragas compared to morning ragas and their respective impacts on the listener’s *Rasa*.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why is the *Surati* or *Sri Raga* suitable for the devotional conclusion and seeking of blessings during the *Mangalaarati*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Vadi* (most important note) dictate the primary emotion and structure of a raga, such as the use of *Ga* in *Raga Bihag*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the function of the *Samvadi* (second-most important note) in supporting the *Vadi* to balance the raga's overall feeling, as seen with *Re* and *Dha* in *Raga Bhairav*.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What makes the *Pakad* a crucial melodic signature for instantly establishing the identity and mood of a raga during improvisation?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Arohana* (ascending scale) of *Raga Yaman* (Ni Re Ga Ma Dha Ni Sa) inherently differ in emotional setup from its *Avarohana* (descending scale)?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why does *Raga Hamsadhwani*, typically sung after sunset, evoke positive energy and a sense of well-being through its specific pentatonic scale?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the execution of a *Meend* (glissando) structurally differentiate the emotional gravity of a Dhrupad performance from a Khayal?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the psychological impact of alternating between *Komal* (flat) and *Tivra* (sharp) microtones in *Sandhiprakash* (twilight) ragas.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the *Bhaṭkhaṇḍe* system of 10 *Thāts* fundamentally differ from the Carnatic 72 *Melakarta* schema in classifying parent scales?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "What is the role of *Tirobhava* (concealment) in heightening emotional suspense before revealing the true *Pakad* of the raga?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Describe the aesthetic tension created by intentionally omitting the *Pañcam* (fifth) note in hexatonic (*Shadava*) ragas like *Marwa*.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How do rhythmic cycles (*Tālas*) mathematically interact with the melodic constraints of the raga during a complex *Tihai* resolution?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "In what way does the *Rasa* theory explain the invocation of *Vīra* (heroism) through the brisk, staccato *Gamakas* of *Raga Nata*?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Explain the auditory illusion of consonance (*Samvāda*) required between the *Sa-Pa* (root-fifth) axis to stabilize improvisational phrasing in a raga.",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "How does the Carnatic concept of *Bhashanga* ragas allow for the temporary borrowing of foreign notes (*Anya Svara*) without destroying the raga’s core identity?",
+    "output": "Pending expert answer."
+  },
+  {
+    "instruction": "Why is the *Alap* sequence absolutely critical for establishing the specific microtonal architecture (*Śruti*) of a raga before rhythmic percussion is introduced?",
+    "output": "Pending expert answer."
+  }
+]

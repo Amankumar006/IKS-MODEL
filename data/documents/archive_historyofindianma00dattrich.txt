@@ -1,0 +1,10 @@
+SOURCE: Archive.org
+TITLE: History of Hindu Mathematics — Datta & Singh
+URL: https://archive.org/details/historyofindianma00dattrich
+DOMAIN: Mathematics
+NOTE: Automatic download failed.
+      Visit https://archive.org/details/historyofindianma00dattrich
+      Download the .txt or .pdf and place in iks_corpus/processed/
+────────────────────────────────────────────────────────────
+
+History of Hindu Mathematics — Datta & Singh — primary source for IKS domain: Mathematics

@@ -1,0 +1,14 @@
+SOURCE: NPTEL/SWAYAM
+TITLE: NPTEL: Yoga and its Applications
+URL: https://nptel.ac.in/courses/124109007
+DOMAIN: Medicine & Health
+NOTE: Page uses JavaScript — scraping returned empty content.
+      To add lecture transcripts:
+      1. Visit https://nptel.ac.in/courses/124109007
+      2. Enroll (free)
+      3. Open any lecture → click "Transcript" tab
+      4. Copy text and append to this file
+────────────────────────────────────────────────────────────
+
+Course: NPTEL: Yoga and its Applications  |  Domain: Medicine & Health
+URL: https://nptel.ac.in/courses/124109007

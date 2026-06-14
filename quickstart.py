@@ -12,6 +12,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Load .env FIRST so API keys (GOOGLE_API_KEY etc.) are in environment
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
+from iks_rag.config import load_config
+
 
 def check_command(command: str, name: str) -> bool:
     """Check if a command is available."""
@@ -71,21 +80,35 @@ def setup_documents():
 def test_rag_system():
     """Test the RAG system."""
     print("\n🧪 Testing RAG system...")
+    print("   (Query on CPU can take 5-10 minutes — be patient)")
 
     test_script = """
+import os
+from pathlib import Path
+
+# Load .env file so GOOGLE_API_KEY etc. are available
+try:
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).parent / ".env" if "__file__" in dir() else ".env")
+    load_dotenv()  # fallback: load from cwd
+except ImportError:
+    pass
+
+os.environ.setdefault("OLLAMA_TIMEOUT", "600")
+
 from iks_rag.rag_system import create_rag_system
 
 print("Initializing RAG system...")
 rag = create_rag_system()
 
-print("Loading documents...")
+print("Loading documents (cached after first run)...")
 rag.load_documents()
 
-print(f"Loaded {rag.get_stats()['documents_loaded']} documents")
+print(f"Loaded {rag.get_stats()['documents_loaded']} document chunks")
 
 print("\\nTesting query...")
 result = rag.query("What are Melakarta ragas?")
-print(f"Answer: {result['answer'][:200]}...")
+print(f"\\nAnswer: {result['answer'][:300]}...")
 print(f"Sources: {len(result['sources'])} documents")
 print("\\n✅ RAG system is working!")
 """
@@ -94,8 +117,12 @@ print("\\n✅ RAG system is working!")
         subprocess.run(
             [sys.executable, "-c", test_script],
             check=True,
+            timeout=700,  # 700s hard limit — Ollama CPU inference can be very slow
         )
         return True
+    except subprocess.TimeoutExpired:
+        print("❌ RAG test timed out (CPU too slow for test). UI will still work.")
+        return False
     except subprocess.CalledProcessError as e:
         print(f"❌ RAG test failed: {e}")
         return False
@@ -109,7 +136,7 @@ def launch_ui():
 
     try:
         subprocess.run(
-            [sys.executable, "-m", "src.iks_rag.ui.gradio_app"],
+            [sys.executable, "src/iks_rag/ui/gradio_app.py"],
             check=True,
         )
     except KeyboardInterrupt:
@@ -130,23 +157,34 @@ def main():
         print("❌ Python 3.11+ required")
         return 1
 
-    # Check Ollama
-    print("\n🔍 Checking prerequisites...")
-    if not check_command("ollama", "Ollama"):
-        print("\nPlease install Ollama:")
-        print("  macOS: brew install ollama")
-        print("  Linux: curl -fsSL https://ollama.com/install.sh | sh")
-        print("  Then run: ollama serve")
-        return 1
-
-    # Check model
-    if not check_ollama_model("gemma3:4b"):
-        print("\n📥 Downloading model...")
-        try:
-            subprocess.run(["ollama", "pull", "gemma3:4b"], check=True)
-        except subprocess.CalledProcessError:
-            print("❌ Failed to download model")
+    # Check LLM Provider
+    config = load_config()
+    provider = config.llm.provider.lower()
+    
+    if provider == "ollama":
+        print("\n🔍 Checking prerequisites (Ollama)...")
+        if not check_command("ollama", "Ollama"):
+            print("\nPlease install Ollama:")
+            print("  macOS: brew install ollama")
+            print("  Linux: curl -fsSL https://ollama.com/install.sh | sh")
+            print("  Then run: ollama serve")
             return 1
+
+        # Check model
+        if not check_ollama_model(config.llm.model):
+            print(f"\n📥 Downloading model {config.llm.model}...")
+            try:
+                subprocess.run(["ollama", "pull", config.llm.model], check=True)
+            except subprocess.CalledProcessError:
+                print("❌ Failed to download model")
+                return 1
+    elif provider == "gemini":
+        print("\n🔍 Checking prerequisites (Gemini)...")
+        import os
+        if not os.environ.get("GOOGLE_API_KEY"):
+            print("⚠️ GOOGLE_API_KEY not found in environment. Please add it to your .env file.")
+        else:
+            print("✅ Google API Key found")
 
     # Setup documents
     docs_exist = any(Path("data/documents").glob("*.txt"))

@@ -1,0 +1,2660 @@
+[
+  {
+    "source": "wikipedia",
+    "title": "Indian philosophy",
+    "file": "iks_corpus/processed/wiki_Indian_philosophy.txt",
+    "url": "https://en.wikipedia.org/wiki/Indian_philosophy",
+    "domain": "IKS Overview",
+    "word_count": 3628,
+    "collected": "2026-04-19T11:01:40.480639"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vedas",
+    "file": "iks_corpus/processed/wiki_Vedas.txt",
+    "url": "https://en.wikipedia.org/wiki/Vedas",
+    "domain": "IKS Overview",
+    "word_count": 6875,
+    "collected": "2026-04-19T11:01:41.760532"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Rigveda",
+    "file": "iks_corpus/processed/wiki_Rigveda.txt",
+    "url": "https://en.wikipedia.org/wiki/Rigveda",
+    "domain": "IKS Overview",
+    "word_count": 6637,
+    "collected": "2026-04-19T11:01:43.091638"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Samaveda",
+    "file": "iks_corpus/processed/wiki_Samaveda.txt",
+    "url": "https://en.wikipedia.org/wiki/Samaveda",
+    "domain": "IKS Overview",
+    "word_count": 1694,
+    "collected": "2026-04-19T11:01:44.010942"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Yajurveda",
+    "file": "iks_corpus/processed/wiki_Yajurveda.txt",
+    "url": "https://en.wikipedia.org/wiki/Yajurveda",
+    "domain": "IKS Overview",
+    "word_count": 2329,
+    "collected": "2026-04-19T11:01:45.137641"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Atharvaveda",
+    "file": "iks_corpus/processed/wiki_Atharvaveda.txt",
+    "url": "https://en.wikipedia.org/wiki/Atharvaveda",
+    "domain": "IKS Overview",
+    "word_count": 3287,
+    "collected": "2026-04-19T11:01:46.264336"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vedanga",
+    "file": "iks_corpus/processed/wiki_Vedangas.txt",
+    "url": "https://en.wikipedia.org/wiki/Vedanga",
+    "domain": "IKS Overview",
+    "word_count": 657,
+    "collected": "2026-04-19T11:01:47.137705"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Upanishads",
+    "file": "iks_corpus/processed/wiki_Upanishads.txt",
+    "url": "https://en.wikipedia.org/wiki/Upanishads",
+    "domain": "IKS Overview",
+    "word_count": 5976,
+    "collected": "2026-04-19T11:01:48.212825"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Brahma Sutras",
+    "file": "iks_corpus/processed/wiki_Brahma_Sutras.txt",
+    "url": "https://en.wikipedia.org/wiki/Brahma_Sutras",
+    "domain": "IKS Overview",
+    "word_count": 4221,
+    "collected": "2026-04-19T11:01:49.250261"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Puranas",
+    "file": "iks_corpus/processed/wiki_Puranas.txt",
+    "url": "https://en.wikipedia.org/wiki/Puranas",
+    "domain": "IKS Overview",
+    "word_count": 4708,
+    "collected": "2026-04-19T11:01:50.361228"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Ramayana",
+    "file": "iks_corpus/processed/wiki_Ramayana.txt",
+    "url": "https://en.wikipedia.org/wiki/Ramayana",
+    "domain": "IKS Overview",
+    "word_count": 6697,
+    "collected": "2026-04-19T11:01:51.638722"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Mahabharata",
+    "file": "iks_corpus/processed/wiki_Mahabharata.txt",
+    "url": "https://en.wikipedia.org/wiki/Mahabharata",
+    "domain": "IKS Overview",
+    "word_count": 7542,
+    "collected": "2026-04-19T11:01:52.922010"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Bhagavad Gita",
+    "file": "iks_corpus/processed/wiki_Bhagavad_Gita.txt",
+    "url": "https://en.wikipedia.org/wiki/Bhagavad_Gita",
+    "domain": "IKS Overview",
+    "word_count": 14890,
+    "collected": "2026-04-19T11:01:54.256040"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Nyaya",
+    "file": "iks_corpus/processed/wiki_Nyaya.txt",
+    "url": "https://en.wikipedia.org/wiki/Nyaya",
+    "domain": "IKS Overview",
+    "word_count": 6108,
+    "collected": "2026-04-19T11:01:55.723391"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vaisheshika",
+    "file": "iks_corpus/processed/wiki_Vaisheshika.txt",
+    "url": "https://en.wikipedia.org/wiki/Vaisheshika",
+    "domain": "IKS Overview",
+    "word_count": 2068,
+    "collected": "2026-04-19T11:01:56.811126"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Samkhya",
+    "file": "iks_corpus/processed/wiki_Samkhya.txt",
+    "url": "https://en.wikipedia.org/wiki/Samkhya",
+    "domain": "IKS Overview",
+    "word_count": 7230,
+    "collected": "2026-04-19T11:01:58.080605"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Yoga Sutras of Patanjali",
+    "file": "iks_corpus/processed/wiki_Yoga_Sutras_of_Patanjali.txt",
+    "url": "https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali",
+    "domain": "IKS Overview",
+    "word_count": 6641,
+    "collected": "2026-04-19T11:01:59.372589"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Advaita Vedanta",
+    "file": "iks_corpus/processed/wiki_Advaita_Vedanta.txt",
+    "url": "https://en.wikipedia.org/wiki/Advaita_Vedanta",
+    "domain": "IKS Overview",
+    "word_count": 16179,
+    "collected": "2026-04-19T11:02:00.897979"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Dvaita Vedanta",
+    "file": "iks_corpus/processed/wiki_Dvaita_Vedanta.txt",
+    "url": "https://en.wikipedia.org/wiki/Dvaita_Vedanta",
+    "domain": "IKS Overview",
+    "word_count": 2130,
+    "collected": "2026-04-19T11:02:01.933678"
+  },
+  {
+    "source": "wikipedia",
+    "title": "History of Buddhism in India",
+    "file": "iks_corpus/processed/wiki_Buddhism_in_India.txt",
+    "url": "https://en.wikipedia.org/wiki/History_of_Buddhism_in_India",
+    "domain": "IKS Overview",
+    "word_count": 6037,
+    "collected": "2026-04-19T11:02:03.304245"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Jainism",
+    "file": "iks_corpus/processed/wiki_Jainism.txt",
+    "url": "https://en.wikipedia.org/wiki/Jainism",
+    "domain": "IKS Overview",
+    "word_count": 10413,
+    "collected": "2026-04-19T11:02:04.597691"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Dharma",
+    "file": "iks_corpus/processed/wiki_Dharma.txt",
+    "url": "https://en.wikipedia.org/wiki/Dharma",
+    "domain": "IKS Overview",
+    "word_count": 5542,
+    "collected": "2026-04-19T11:02:05.719922"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Indian mathematics",
+    "file": "iks_corpus/processed/wiki_Indian_mathematics.txt",
+    "url": "https://en.wikipedia.org/wiki/Indian_mathematics",
+    "domain": "Mathematics",
+    "word_count": 8639,
+    "collected": "2026-04-19T11:02:06.976889"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Aryabhata",
+    "file": "iks_corpus/processed/wiki_Aryabhata.txt",
+    "url": "https://en.wikipedia.org/wiki/Aryabhata",
+    "domain": "Mathematics",
+    "word_count": 3201,
+    "collected": "2026-04-19T11:02:08.909152"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Brahmagupta",
+    "file": "iks_corpus/processed/wiki_Brahmagupta.txt",
+    "url": "https://en.wikipedia.org/wiki/Brahmagupta",
+    "domain": "Mathematics",
+    "word_count": 4193,
+    "collected": "2026-04-19T11:02:10.123964"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Bhāskara II",
+    "file": "iks_corpus/processed/wiki_Bhaskara_II.txt",
+    "url": "https://en.wikipedia.org/wiki/Bh%C4%81skara_II",
+    "domain": "Mathematics",
+    "word_count": 2733,
+    "collected": "2026-04-19T11:02:11.250267"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Madhava of Sangamagrama",
+    "file": "iks_corpus/processed/wiki_Madhava_of_Sangamagrama.txt",
+    "url": "https://en.wikipedia.org/wiki/Madhava_of_Sangamagrama",
+    "domain": "Mathematics",
+    "word_count": 2612,
+    "collected": "2026-04-19T11:02:12.285901"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Pingala",
+    "file": "iks_corpus/processed/wiki_Pingala.txt",
+    "url": "https://en.wikipedia.org/wiki/Pingala",
+    "domain": "Mathematics",
+    "word_count": 443,
+    "collected": "2026-04-19T11:02:13.191450"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Shulba Sutras",
+    "file": "iks_corpus/processed/wiki_Sulba_Sutras.txt",
+    "url": "https://en.wikipedia.org/wiki/Shulba_Sutras",
+    "domain": "Mathematics",
+    "word_count": 2130,
+    "collected": "2026-04-19T11:02:14.321218"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vedic Mathematics",
+    "file": "iks_corpus/processed/wiki_Vedic_Mathematics.txt",
+    "url": "https://en.wikipedia.org/wiki/Vedic_Mathematics",
+    "domain": "Mathematics",
+    "word_count": 1474,
+    "collected": "2026-04-19T11:02:15.242340"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Līlāvatī",
+    "file": "iks_corpus/processed/wiki_Lilavati.txt",
+    "url": "https://en.wikipedia.org/wiki/L%C4%ABl%C4%81vat%C4%AB",
+    "domain": "Mathematics",
+    "word_count": 720,
+    "collected": "2026-04-19T11:02:16.159268"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Brāhmasphuṭasiddhānta",
+    "file": "iks_corpus/processed/wiki_Brahmasphutasiddhanta.txt",
+    "url": "https://en.wikipedia.org/wiki/Br%C4%81hmasphu%E1%B9%ADasiddh%C4%81nta",
+    "domain": "Mathematics",
+    "word_count": 277,
+    "collected": "2026-04-19T11:02:17.084475"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Kerala school of astronomy and mathematics",
+    "file": "iks_corpus/processed/wiki_Kerala_school_of_astronomy_and_mathematics.txt",
+    "url": "https://en.wikipedia.org/wiki/Kerala_school_of_astronomy_and_mathematics",
+    "domain": "Mathematics",
+    "word_count": 1676,
+    "collected": "2026-04-19T11:02:18.130492"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Indian astronomy",
+    "file": "iks_corpus/processed/wiki_Indian_astronomy.txt",
+    "url": "https://en.wikipedia.org/wiki/Indian_astronomy",
+    "domain": "Astronomy & Science",
+    "word_count": 5214,
+    "collected": "2026-04-19T11:02:19.238330"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Aryabhatiya",
+    "file": "iks_corpus/processed/wiki_Aryabhatiya.txt",
+    "url": "https://en.wikipedia.org/wiki/Aryabhatiya",
+    "domain": "Astronomy & Science",
+    "word_count": 1281,
+    "collected": "2026-04-19T11:02:20.067573"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Surya Siddhanta",
+    "file": "iks_corpus/processed/wiki_Surya_Siddhanta.txt",
+    "url": "https://en.wikipedia.org/wiki/Surya_Siddhanta",
+    "domain": "Astronomy & Science",
+    "word_count": 3317,
+    "collected": "2026-04-19T11:02:21.284918"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Varāhamihira",
+    "file": "iks_corpus/processed/wiki_Varahamihira.txt",
+    "url": "https://en.wikipedia.org/wiki/Var%C4%81hamihira",
+    "domain": "Astronomy & Science",
+    "word_count": 2513,
+    "collected": "2026-04-19T11:02:22.410805"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Jantar Mantar, Jaipur",
+    "file": "iks_corpus/processed/wiki_Jantar_Mantar_Jaipur.txt",
+    "url": "https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur",
+    "domain": "Astronomy & Science",
+    "word_count": 1725,
+    "collected": "2026-04-19T11:02:23.346566"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Atomism",
+    "file": "iks_corpus/processed/wiki_Indian_atomism.txt",
+    "url": "https://en.wikipedia.org/wiki/Atomism",
+    "domain": "Astronomy & Science",
+    "word_count": 5552,
+    "collected": "2026-04-19T11:02:24.402961"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Kaṇāda",
+    "file": "iks_corpus/processed/wiki_Kanada_philosopher.txt",
+    "url": "https://en.wikipedia.org/wiki/Ka%E1%B9%87%C4%81da",
+    "domain": "Astronomy & Science",
+    "word_count": 1343,
+    "collected": "2026-04-19T11:02:25.278723"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Wootz steel",
+    "file": "iks_corpus/processed/wiki_Wootz_steel.txt",
+    "url": "https://en.wikipedia.org/wiki/Wootz_steel",
+    "domain": "Astronomy & Science",
+    "word_count": 1689,
+    "collected": "2026-04-19T11:02:26.199383"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Iron pillar of Delhi",
+    "file": "iks_corpus/processed/wiki_Iron_pillar_of_Delhi.txt",
+    "url": "https://en.wikipedia.org/wiki/Iron_pillar_of_Delhi",
+    "domain": "Astronomy & Science",
+    "word_count": 3089,
+    "collected": "2026-04-19T11:02:27.228539"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Rasashastra",
+    "file": "iks_corpus/processed/wiki_Rasashastra.txt",
+    "url": "https://en.wikipedia.org/wiki/Rasashastra",
+    "domain": "Astronomy & Science",
+    "word_count": 640,
+    "collected": "2026-04-19T11:02:28.141686"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sanskrit",
+    "file": "iks_corpus/processed/wiki_Sanskrit.txt",
+    "url": "https://en.wikipedia.org/wiki/Sanskrit",
+    "domain": "Linguistics",
+    "word_count": 13169,
+    "collected": "2026-04-19T11:02:30.617888"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Pāṇini",
+    "file": "iks_corpus/processed/wiki_Panini_grammarian.txt",
+    "url": "https://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini",
+    "domain": "Linguistics",
+    "word_count": 2904,
+    "collected": "2026-04-19T11:02:31.626125"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Aṣṭādhyāyī",
+    "file": "iks_corpus/processed/wiki_Ashtadhyayi.txt",
+    "url": "https://en.wikipedia.org/wiki/A%E1%B9%A3%E1%B9%AD%C4%81dhy%C4%81y%C4%AB",
+    "domain": "Linguistics",
+    "word_count": 2022,
+    "collected": "2026-04-19T11:02:32.596993"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Tamil language",
+    "file": "iks_corpus/processed/wiki_Tamil_language.txt",
+    "url": "https://en.wikipedia.org/wiki/Tamil_language",
+    "domain": "Linguistics",
+    "word_count": 4899,
+    "collected": "2026-04-19T11:02:33.633334"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Tolkāppiyam",
+    "file": "iks_corpus/processed/wiki_Tolkappiyam.txt",
+    "url": "https://en.wikipedia.org/wiki/Tolk%C4%81ppiyam",
+    "domain": "Linguistics",
+    "word_count": 2440,
+    "collected": "2026-04-19T11:02:34.658953"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sangam literature",
+    "file": "iks_corpus/processed/wiki_Sangam_literature.txt",
+    "url": "https://en.wikipedia.org/wiki/Sangam_literature",
+    "domain": "Linguistics",
+    "word_count": 3110,
+    "collected": "2026-04-19T11:02:35.722638"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Kannada literature",
+    "file": "iks_corpus/processed/wiki_Kannada_literature.txt",
+    "url": "https://en.wikipedia.org/wiki/Kannada_literature",
+    "domain": "Linguistics",
+    "word_count": 8076,
+    "collected": "2026-04-19T11:02:37.262090"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Telugu language",
+    "file": "iks_corpus/processed/wiki_Telugu_language.txt",
+    "url": "https://en.wikipedia.org/wiki/Telugu_language",
+    "domain": "Linguistics",
+    "word_count": 6598,
+    "collected": "2026-04-19T11:02:38.591805"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Pali",
+    "file": "iks_corpus/processed/wiki_Pali.txt",
+    "url": "https://en.wikipedia.org/wiki/Pali",
+    "domain": "Linguistics",
+    "word_count": 10870,
+    "collected": "2026-04-19T11:02:39.885974"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Prakrit",
+    "file": "iks_corpus/processed/wiki_Prakrit.txt",
+    "url": "https://en.wikipedia.org/wiki/Prakrit",
+    "domain": "Linguistics",
+    "word_count": 5383,
+    "collected": "2026-04-19T11:02:41.355111"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Devanagari",
+    "file": "iks_corpus/processed/wiki_Devanagari.txt",
+    "url": "https://en.wikipedia.org/wiki/Devanagari",
+    "domain": "Linguistics",
+    "word_count": 4531,
+    "collected": "2026-04-19T11:02:42.787363"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Indian art",
+    "file": "iks_corpus/processed/wiki_Indian_art.txt",
+    "url": "https://en.wikipedia.org/wiki/Indian_art",
+    "domain": "Arts & Crafts",
+    "word_count": 7736,
+    "collected": "2026-04-19T11:02:44.122096"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Indian painting",
+    "file": "iks_corpus/processed/wiki_Indian_painting.txt",
+    "url": "https://en.wikipedia.org/wiki/Indian_painting",
+    "domain": "Arts & Crafts",
+    "word_count": 6046,
+    "collected": "2026-04-19T11:02:45.554777"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Madhubani art",
+    "file": "iks_corpus/processed/wiki_Madhubani_painting.txt",
+    "url": "https://en.wikipedia.org/wiki/Madhubani_art",
+    "domain": "Arts & Crafts",
+    "word_count": 1243,
+    "collected": "2026-04-19T11:02:46.472488"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Thanjavur painting",
+    "file": "iks_corpus/processed/wiki_Tanjore_painting.txt",
+    "url": "https://en.wikipedia.org/wiki/Thanjavur_painting",
+    "domain": "Arts & Crafts",
+    "word_count": 3162,
+    "collected": "2026-04-19T11:02:47.601711"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Warli painting",
+    "file": "iks_corpus/processed/wiki_Warli_painting.txt",
+    "url": "https://en.wikipedia.org/wiki/Warli_painting",
+    "domain": "Arts & Crafts",
+    "word_count": 1115,
+    "collected": "2026-04-19T11:02:48.519934"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Pattachitra",
+    "file": "iks_corpus/processed/wiki_Pattachitra.txt",
+    "url": "https://en.wikipedia.org/wiki/Pattachitra",
+    "domain": "Arts & Crafts",
+    "word_count": 2418,
+    "collected": "2026-04-19T11:02:49.648304"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sculpture in the Indian subcontinent",
+    "file": "iks_corpus/processed/wiki_Indian_sculpture.txt",
+    "url": "https://en.wikipedia.org/wiki/Sculpture_in_the_Indian_subcontinent",
+    "domain": "Arts & Crafts",
+    "word_count": 4017,
+    "collected": "2026-04-19T11:02:50.870209"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Greco-Buddhist art",
+    "file": "iks_corpus/processed/wiki_Gandhara_art.txt",
+    "url": "https://en.wikipedia.org/wiki/Greco-Buddhist_art",
+    "domain": "Arts & Crafts",
+    "word_count": 5551,
+    "collected": "2026-04-19T11:02:52.107503"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Indian painting",
+    "file": "iks_corpus/processed/wiki_Indian_miniature.txt",
+    "url": "https://en.wikipedia.org/wiki/Indian_painting",
+    "domain": "Arts & Crafts",
+    "word_count": 6046,
+    "collected": "2026-04-19T11:02:53.356383"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Mughal painting",
+    "file": "iks_corpus/processed/wiki_Mughal_painting.txt",
+    "url": "https://en.wikipedia.org/wiki/Mughal_painting",
+    "domain": "Arts & Crafts",
+    "word_count": 4319,
+    "collected": "2026-04-19T11:02:54.564275"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Hindu temple architecture",
+    "file": "iks_corpus/processed/wiki_Hindu_temple_architecture.txt",
+    "url": "https://en.wikipedia.org/wiki/Hindu_temple_architecture",
+    "domain": "Temple Architecture",
+    "word_count": 7376,
+    "collected": "2026-04-19T11:02:56.103376"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Nagara Style",
+    "file": "iks_corpus/processed/wiki_Nagara_architecture.txt",
+    "url": "https://en.wikipedia.org/wiki/Nagara_Style",
+    "domain": "Temple Architecture",
+    "word_count": 635,
+    "collected": "2026-04-19T11:02:57.021538"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Dravidian architecture",
+    "file": "iks_corpus/processed/wiki_Dravidian_architecture.txt",
+    "url": "https://en.wikipedia.org/wiki/Dravidian_architecture",
+    "domain": "Temple Architecture",
+    "word_count": 3536,
+    "collected": "2026-04-19T11:02:58.251208"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vesara",
+    "file": "iks_corpus/processed/wiki_Vesara.txt",
+    "url": "https://en.wikipedia.org/wiki/Vesara",
+    "domain": "Temple Architecture",
+    "word_count": 1903,
+    "collected": "2026-04-19T11:02:59.172094"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Brihadisvara Temple",
+    "file": "iks_corpus/processed/wiki_Brihadeeswarar_Temple.txt",
+    "url": "https://en.wikipedia.org/wiki/Brihadisvara_Temple",
+    "domain": "Temple Architecture",
+    "word_count": 4026,
+    "collected": "2026-04-19T11:03:00.300257"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Khajuraho Group of Monuments",
+    "file": "iks_corpus/processed/wiki_Khajuraho_temples.txt",
+    "url": "https://en.wikipedia.org/wiki/Khajuraho_Group_of_Monuments",
+    "domain": "Temple Architecture",
+    "word_count": 3364,
+    "collected": "2026-04-19T11:03:01.443429"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Hampi",
+    "file": "iks_corpus/processed/wiki_Hampi.txt",
+    "url": "https://en.wikipedia.org/wiki/Hampi",
+    "domain": "Temple Architecture",
+    "word_count": 7187,
+    "collected": "2026-04-19T11:03:03.491727"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Ellora Caves",
+    "file": "iks_corpus/processed/wiki_Ellora_Caves.txt",
+    "url": "https://en.wikipedia.org/wiki/Ellora_Caves",
+    "domain": "Temple Architecture",
+    "word_count": 5229,
+    "collected": "2026-04-19T11:03:04.559309"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Ajanta Caves",
+    "file": "iks_corpus/processed/wiki_Ajanta_Caves.txt",
+    "url": "https://en.wikipedia.org/wiki/Ajanta_Caves",
+    "domain": "Temple Architecture",
+    "word_count": 14431,
+    "collected": "2026-04-19T11:03:05.842858"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Shore Temple",
+    "file": "iks_corpus/processed/wiki_Shore_Temple.txt",
+    "url": "https://en.wikipedia.org/wiki/Shore_Temple",
+    "domain": "Temple Architecture",
+    "word_count": 2229,
+    "collected": "2026-04-19T11:03:06.955724"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Meenakshi Temple",
+    "file": "iks_corpus/processed/wiki_Meenakshi_Amman_Temple.txt",
+    "url": "https://en.wikipedia.org/wiki/Meenakshi_Temple",
+    "domain": "Temple Architecture",
+    "word_count": 5360,
+    "collected": "2026-04-19T11:03:07.996012"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vastu shastra",
+    "file": "iks_corpus/processed/wiki_Vastu_shastra.txt",
+    "url": "https://en.wikipedia.org/wiki/Vastu_shastra",
+    "domain": "Temple Architecture",
+    "word_count": 2253,
+    "collected": "2026-04-19T11:03:09.108478"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Indus Valley Civilisation",
+    "file": "iks_corpus/processed/wiki_Indus_Valley_civilisation.txt",
+    "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
+    "domain": "Temple Architecture",
+    "word_count": 10044,
+    "collected": "2026-04-19T11:03:10.444541"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Mohenjo-daro",
+    "file": "iks_corpus/processed/wiki_Mohenjo-daro.txt",
+    "url": "https://en.wikipedia.org/wiki/Mohenjo-daro",
+    "domain": "Temple Architecture",
+    "word_count": 3355,
+    "collected": "2026-04-19T11:03:11.566933"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Ayurveda",
+    "file": "iks_corpus/processed/wiki_Ayurveda.txt",
+    "url": "https://en.wikipedia.org/wiki/Ayurveda",
+    "domain": "Medicine & Health",
+    "word_count": 5596,
+    "collected": "2026-04-19T11:03:12.693285"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Charaka",
+    "file": "iks_corpus/processed/wiki_Charaka.txt",
+    "url": "https://en.wikipedia.org/wiki/Charaka",
+    "domain": "Medicine & Health",
+    "word_count": 813,
+    "collected": "2026-04-19T11:03:13.612041"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Charaka Samhita",
+    "file": "iks_corpus/processed/wiki_Charaka_Samhita.txt",
+    "url": "https://en.wikipedia.org/wiki/Charaka_Samhita",
+    "domain": "Medicine & Health",
+    "word_count": 3350,
+    "collected": "2026-04-19T11:03:14.741779"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sushruta",
+    "file": "iks_corpus/processed/wiki_Sushruta.txt",
+    "url": "https://en.wikipedia.org/wiki/Sushruta",
+    "domain": "Medicine & Health",
+    "word_count": 827,
+    "collected": "2026-04-19T11:03:15.658972"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sushruta Samhita",
+    "file": "iks_corpus/processed/wiki_Sushruta_Samhita.txt",
+    "url": "https://en.wikipedia.org/wiki/Sushruta_Samhita",
+    "domain": "Medicine & Health",
+    "word_count": 3149,
+    "collected": "2026-04-19T11:03:16.799318"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vagbhata",
+    "file": "iks_corpus/processed/wiki_Ashtanga_Hridayam.txt",
+    "url": "https://en.wikipedia.org/wiki/Vagbhata",
+    "domain": "Medicine & Health",
+    "word_count": 2797,
+    "collected": "2026-04-19T11:03:17.916095"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Siddha medicine",
+    "file": "iks_corpus/processed/wiki_Siddha_medicine.txt",
+    "url": "https://en.wikipedia.org/wiki/Siddha_medicine",
+    "domain": "Medicine & Health",
+    "word_count": 952,
+    "collected": "2026-04-19T11:03:18.719821"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Yoga",
+    "file": "iks_corpus/processed/wiki_Yoga.txt",
+    "url": "https://en.wikipedia.org/wiki/Yoga",
+    "domain": "Medicine & Health",
+    "word_count": 8470,
+    "collected": "2026-04-19T11:03:20.375712"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Pranayama",
+    "file": "iks_corpus/processed/wiki_Pranayama.txt",
+    "url": "https://en.wikipedia.org/wiki/Pranayama",
+    "domain": "Medicine & Health",
+    "word_count": 1441,
+    "collected": "2026-04-19T11:03:21.291755"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Ayurveda",
+    "file": "iks_corpus/processed/wiki_Panchakarma.txt",
+    "url": "https://en.wikipedia.org/wiki/Ayurveda",
+    "domain": "Medicine & Health",
+    "word_count": 5596,
+    "collected": "2026-04-19T11:03:22.421917"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Dosha",
+    "file": "iks_corpus/processed/wiki_Tridosha.txt",
+    "url": "https://en.wikipedia.org/wiki/Dosha",
+    "domain": "Medicine & Health",
+    "word_count": 949,
+    "collected": "2026-04-19T11:03:23.340063"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Indian classical music",
+    "file": "iks_corpus/processed/wiki_Indian_classical_music.txt",
+    "url": "https://en.wikipedia.org/wiki/Indian_classical_music",
+    "domain": "Classical Music",
+    "word_count": 5045,
+    "collected": "2026-04-19T11:03:24.470055"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Carnatic music",
+    "file": "iks_corpus/processed/wiki_Carnatic_music.txt",
+    "url": "https://en.wikipedia.org/wiki/Carnatic_music",
+    "domain": "Classical Music",
+    "word_count": 5601,
+    "collected": "2026-04-19T11:03:25.598608"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Hindustani classical music",
+    "file": "iks_corpus/processed/wiki_Hindustani_classical_music.txt",
+    "url": "https://en.wikipedia.org/wiki/Hindustani_classical_music",
+    "domain": "Classical Music",
+    "word_count": 4146,
+    "collected": "2026-04-19T11:03:26.721732"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Raga",
+    "file": "iks_corpus/processed/wiki_Raga.txt",
+    "url": "https://en.wikipedia.org/wiki/Raga",
+    "domain": "Classical Music",
+    "word_count": 4792,
+    "collected": "2026-04-19T11:03:27.849922"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Tala (music)",
+    "file": "iks_corpus/processed/wiki_Tala_music.txt",
+    "url": "https://en.wikipedia.org/wiki/Tala_(music)",
+    "domain": "Classical Music",
+    "word_count": 3526,
+    "collected": "2026-04-19T11:03:28.975742"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Natya Shastra",
+    "file": "iks_corpus/processed/wiki_Natya_Shastra.txt",
+    "url": "https://en.wikipedia.org/wiki/Natya_Shastra",
+    "domain": "Classical Music",
+    "word_count": 5111,
+    "collected": "2026-04-19T11:03:30.205627"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Bharata (sage)",
+    "file": "iks_corpus/processed/wiki_Bharata_Muni.txt",
+    "url": "https://en.wikipedia.org/wiki/Bharata_(sage)",
+    "domain": "Classical Music",
+    "word_count": 246,
+    "collected": "2026-04-19T11:03:31.121713"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Veena",
+    "file": "iks_corpus/processed/wiki_Veena.txt",
+    "url": "https://en.wikipedia.org/wiki/Veena",
+    "domain": "Classical Music",
+    "word_count": 2127,
+    "collected": "2026-04-19T11:03:32.248075"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sitar",
+    "file": "iks_corpus/processed/wiki_Sitar.txt",
+    "url": "https://en.wikipedia.org/wiki/Sitar",
+    "domain": "Classical Music",
+    "word_count": 2168,
+    "collected": "2026-04-19T11:03:33.382913"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Tabla",
+    "file": "iks_corpus/processed/wiki_Tabla.txt",
+    "url": "https://en.wikipedia.org/wiki/Tabla",
+    "domain": "Classical Music",
+    "word_count": 3525,
+    "collected": "2026-04-19T11:03:34.505566"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Mridangam",
+    "file": "iks_corpus/processed/wiki_Mridangam.txt",
+    "url": "https://en.wikipedia.org/wiki/Mridangam",
+    "domain": "Classical Music",
+    "word_count": 2051,
+    "collected": "2026-04-19T11:03:35.631282"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Melakarta",
+    "file": "iks_corpus/processed/wiki_Melakarta.txt",
+    "url": "https://en.wikipedia.org/wiki/Melakarta",
+    "domain": "Classical Music",
+    "word_count": 1146,
+    "collected": "2026-04-19T11:03:36.550396"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Dhrupad",
+    "file": "iks_corpus/processed/wiki_Dhrupad.txt",
+    "url": "https://en.wikipedia.org/wiki/Dhrupad",
+    "domain": "Classical Music",
+    "word_count": 1890,
+    "collected": "2026-04-19T11:03:37.411897"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Khyal",
+    "file": "iks_corpus/processed/wiki_Khayal.txt",
+    "url": "https://en.wikipedia.org/wiki/Khyal",
+    "domain": "Classical Music",
+    "word_count": 3517,
+    "collected": "2026-04-19T11:03:38.530295"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Tyagaraja",
+    "file": "iks_corpus/processed/wiki_Thyagaraja.txt",
+    "url": "https://en.wikipedia.org/wiki/Tyagaraja",
+    "domain": "Classical Music",
+    "word_count": 2443,
+    "collected": "2026-04-19T11:03:39.625522"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Purandara Dasa",
+    "file": "iks_corpus/processed/wiki_Purandara_Dasa.txt",
+    "url": "https://en.wikipedia.org/wiki/Purandara_Dasa",
+    "domain": "Classical Music",
+    "word_count": 3425,
+    "collected": "2026-04-19T11:03:40.669757"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Bharatanatyam",
+    "file": "iks_corpus/processed/wiki_Bharatanatyam.txt",
+    "url": "https://en.wikipedia.org/wiki/Bharatanatyam",
+    "domain": "Classical Dance",
+    "word_count": 4513,
+    "collected": "2026-04-19T11:03:41.877068"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Kathak",
+    "file": "iks_corpus/processed/wiki_Kathak.txt",
+    "url": "https://en.wikipedia.org/wiki/Kathak",
+    "domain": "Classical Dance",
+    "word_count": 4339,
+    "collected": "2026-04-19T11:03:42.906729"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Kuchipudi",
+    "file": "iks_corpus/processed/wiki_Kuchipudi.txt",
+    "url": "https://en.wikipedia.org/wiki/Kuchipudi",
+    "domain": "Classical Dance",
+    "word_count": 4092,
+    "collected": "2026-04-19T11:03:44.028703"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Odissi",
+    "file": "iks_corpus/processed/wiki_Odissi.txt",
+    "url": "https://en.wikipedia.org/wiki/Odissi",
+    "domain": "Classical Dance",
+    "word_count": 4510,
+    "collected": "2026-04-19T11:03:45.087756"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Kathakali",
+    "file": "iks_corpus/processed/wiki_Kathakali.txt",
+    "url": "https://en.wikipedia.org/wiki/Kathakali",
+    "domain": "Classical Dance",
+    "word_count": 4061,
+    "collected": "2026-04-19T11:03:46.383770"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Manipuri dance",
+    "file": "iks_corpus/processed/wiki_Manipuri_dance.txt",
+    "url": "https://en.wikipedia.org/wiki/Manipuri_dance",
+    "domain": "Classical Dance",
+    "word_count": 2989,
+    "collected": "2026-04-19T11:03:47.553981"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Mohiniyattam",
+    "file": "iks_corpus/processed/wiki_Mohiniyattam.txt",
+    "url": "https://en.wikipedia.org/wiki/Mohiniyattam",
+    "domain": "Classical Dance",
+    "word_count": 2209,
+    "collected": "2026-04-19T11:03:48.635541"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sattriya",
+    "file": "iks_corpus/processed/wiki_Sattriya.txt",
+    "url": "https://en.wikipedia.org/wiki/Sattriya",
+    "domain": "Classical Dance",
+    "word_count": 1943,
+    "collected": "2026-04-19T11:03:49.555777"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Abhinaya",
+    "file": "iks_corpus/processed/wiki_Abhinaya.txt",
+    "url": "https://en.wikipedia.org/wiki/Abhinaya",
+    "domain": "Classical Dance",
+    "word_count": 579,
+    "collected": "2026-04-19T11:03:50.376737"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Sari",
+    "file": "iks_corpus/processed/wiki_Sari.txt",
+    "url": "https://en.wikipedia.org/wiki/Sari",
+    "domain": "Textiles & Clothing",
+    "word_count": 5279,
+    "collected": "2026-04-19T11:03:52.807262"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Banarasi sari",
+    "file": "iks_corpus/processed/wiki_Banarasi_sari.txt",
+    "url": "https://en.wikipedia.org/wiki/Banarasi_sari",
+    "domain": "Textiles & Clothing",
+    "word_count": 812,
+    "collected": "2026-04-19T11:03:53.640833"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Bandhani",
+    "file": "iks_corpus/processed/wiki_Bandhani.txt",
+    "url": "https://en.wikipedia.org/wiki/Bandhani",
+    "domain": "Textiles & Clothing",
+    "word_count": 1456,
+    "collected": "2026-04-19T11:03:56.109970"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Phulkari",
+    "file": "iks_corpus/processed/wiki_Phulkari.txt",
+    "url": "https://en.wikipedia.org/wiki/Phulkari",
+    "domain": "Textiles & Clothing",
+    "word_count": 4236,
+    "collected": "2026-04-19T11:03:57.237589"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Pashmina (material)",
+    "file": "iks_corpus/processed/wiki_Pashmina.txt",
+    "url": "https://en.wikipedia.org/wiki/Pashmina_(material)",
+    "domain": "Textiles & Clothing",
+    "word_count": 1101,
+    "collected": "2026-04-19T11:03:58.086851"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Ikat",
+    "file": "iks_corpus/processed/wiki_Ikat.txt",
+    "url": "https://en.wikipedia.org/wiki/Ikat",
+    "domain": "Textiles & Clothing",
+    "word_count": 3117,
+    "collected": "2026-04-19T11:04:00.206159"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Kalamkari",
+    "file": "iks_corpus/processed/wiki_Kalamkari.txt",
+    "url": "https://en.wikipedia.org/wiki/Kalamkari",
+    "domain": "Textiles & Clothing",
+    "word_count": 1560,
+    "collected": "2026-04-19T11:04:01.129505"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Zari",
+    "file": "iks_corpus/processed/wiki_Zari.txt",
+    "url": "https://en.wikipedia.org/wiki/Zari",
+    "domain": "Textiles & Clothing",
+    "word_count": 702,
+    "collected": "2026-04-19T11:04:02.047654"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Chikankari",
+    "file": "iks_corpus/processed/wiki_Chikankari.txt",
+    "url": "https://en.wikipedia.org/wiki/Chikankari",
+    "domain": "Textiles & Clothing",
+    "word_count": 855,
+    "collected": "2026-04-19T11:04:02.854744"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Arthashastra",
+    "file": "iks_corpus/processed/wiki_Arthashastra.txt",
+    "url": "https://en.wikipedia.org/wiki/Arthashastra",
+    "domain": "Governance & Agriculture",
+    "word_count": 9046,
+    "collected": "2026-04-19T11:04:04.114816"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Arthashastra",
+    "file": "iks_corpus/processed/wiki_Kautilya.txt",
+    "url": "https://en.wikipedia.org/wiki/Arthashastra",
+    "domain": "Governance & Agriculture",
+    "word_count": 9046,
+    "collected": "2026-04-19T11:04:05.381683"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Ashoka",
+    "file": "iks_corpus/processed/wiki_Ashoka.txt",
+    "url": "https://en.wikipedia.org/wiki/Ashoka",
+    "domain": "Governance & Agriculture",
+    "word_count": 13115,
+    "collected": "2026-04-19T11:04:06.812610"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Edicts of Ashoka",
+    "file": "iks_corpus/processed/wiki_Edicts_of_Ashoka.txt",
+    "url": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka",
+    "domain": "Governance & Agriculture",
+    "word_count": 7522,
+    "collected": "2026-04-19T11:04:08.297587"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Maurya Empire",
+    "file": "iks_corpus/processed/wiki_Maurya_Empire.txt",
+    "url": "https://en.wikipedia.org/wiki/Maurya_Empire",
+    "domain": "Governance & Agriculture",
+    "word_count": 7394,
+    "collected": "2026-04-19T11:04:09.802127"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Gupta Empire",
+    "file": "iks_corpus/processed/wiki_Gupta_Empire.txt",
+    "url": "https://en.wikipedia.org/wiki/Gupta_Empire",
+    "domain": "Governance & Agriculture",
+    "word_count": 4892,
+    "collected": "2026-04-19T11:04:10.839353"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Chola dynasty",
+    "file": "iks_corpus/processed/wiki_Chola_dynasty.txt",
+    "url": "https://en.wikipedia.org/wiki/Chola_dynasty",
+    "domain": "Governance & Agriculture",
+    "word_count": 4027,
+    "collected": "2026-04-19T11:04:12.046565"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Vijayanagara Empire",
+    "file": "iks_corpus/processed/wiki_Vijayanagara_Empire.txt",
+    "url": "https://en.wikipedia.org/wiki/Vijayanagara_Empire",
+    "domain": "Governance & Agriculture",
+    "word_count": 8194,
+    "collected": "2026-04-19T11:04:13.419778"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Agriculture in India",
+    "file": "iks_corpus/processed/wiki_Indian_agriculture.txt",
+    "url": "https://en.wikipedia.org/wiki/Agriculture_in_India",
+    "domain": "Governance & Agriculture",
+    "word_count": 8177,
+    "collected": "2026-04-19T11:04:14.751099"
+  },
+  {
+    "source": "wikipedia",
+    "title": "History of agriculture in the Indian subcontinent",
+    "file": "iks_corpus/processed/wiki_History_of_agriculture_in_the_Indian_subcontinent.txt",
+    "url": "https://en.wikipedia.org/wiki/History_of_agriculture_in_the_Indian_subcontinent",
+    "domain": "Governance & Agriculture",
+    "word_count": 3417,
+    "collected": "2026-04-19T11:04:15.976320"
+  },
+  {
+    "source": "wikipedia",
+    "title": "Stepwell",
+    "file": "iks_corpus/processed/wiki_Stepwell.txt",
+    "url": "https://en.wikipedia.org/wiki/Stepwell",
+    "domain": "Governance & Agriculture",
+    "word_count": 1901,
+    "collected": "2026-04-19T11:04:17.103811"
+  },
+  {
+    "source": "archive.org",
+    "title": "Aryabhatiya — W.E. Clark translation (1930)",
+    "file": "iks_corpus/processed/archive_aryabhatiya00arya.txt",
+    "url": "https://archive.org/details/aryabhatiya00arya",
+    "domain": "Mathematics & Astronomy",
+    "word_count": 0,
+    "collected": "2026-04-19T11:04:21.093848"
+  },
+  {
+    "source": "archive.org",
+    "title": "Arthashastra — R. Shamasastry translation (1915)",
+    "file": "iks_corpus/processed/archive_arthashastra00kaut.txt",
+    "url": "https://archive.org/details/arthashastra00kaut",
+    "domain": "Governance",
+    "word_count": 0,
+    "collected": "2026-04-19T11:04:25.543282"
+  },
+  {
+    "source": "archive.org",
+    "title": "Natyasastra of Bharata Muni Vol 1",
+    "file": "iks_corpus/processed/archive_natyasastra00bharuoft.txt",
+    "url": "https://archive.org/details/natyasastra00bharuoft",
+    "domain": "Classical Dance & Drama",
+    "word_count": 0,
+    "collected": "2026-04-19T11:04:30.002468"
+  },
+  {
+    "source": "archive.org",
+    "title": "History of Hindu Mathematics — Datta & Singh",
+    "file": "iks_corpus/processed/archive_historyofindianma00dattrich.txt",
+    "url": "https://archive.org/details/historyofindianma00dattrich",
+    "domain": "Mathematics",
+    "word_count": 0,
+    "collected": "2026-04-19T11:04:34.405592"
+  },
+  {
+    "source": "archive.org",
+    "title": "The Indian Architect — E.B. Havell",
+    "file": "iks_corpus/processed/archive_indianarchitect00haveuoft.txt",
+    "url": "https://archive.org/details/indianarchitect00haveuoft",
+    "domain": "Temple Architecture",
+    "word_count": 0,
+    "collected": "2026-04-19T11:04:38.748630"
+  },
+  {
+    "source": "archive.org",
+    "title": "History of Sanskrit Literature — Macdonell",
+    "file": "iks_corpus/processed/archive_historyofsanskri00macduoft.txt",
+    "url": "https://archive.org/details/historyofsanskri00macduoft",
+    "domain": "Linguistics",
+    "word_count": 122021,
+    "collected": "2026-04-19T11:04:47.314502"
+  },
+  {
+    "source": "archive.org",
+    "title": "Hindu Music from Various Authors",
+    "file": "iks_corpus/processed/archive_hindumusicfromva00popu.txt",
+    "url": "https://archive.org/details/hindumusicfromva00popu",
+    "domain": "Classical Music",
+    "word_count": 0,
+    "collected": "2026-04-19T11:04:51.609538"
+  },
+  {
+    "source": "archive.org",
+    "title": "Hindu Costumes and Ornaments",
+    "file": "iks_corpus/processed/archive_hinducostumesand00ghosrich.txt",
+    "url": "https://archive.org/details/hinducostumesand00ghosrich",
+    "domain": "Textiles & Clothing",
+    "word_count": 0,
+    "collected": "2026-04-19T11:04:55.917081"
+  },
+  {
+    "source": "archive.org",
+    "title": "Vastu Vidya — Traditional Indian Architecture",
+    "file": "iks_corpus/processed/archive_vastuvidya00deva.txt",
+    "url": "https://archive.org/details/vastuvidya00deva",
+    "domain": "Temple Architecture",
+    "word_count": 0,
+    "collected": "2026-04-19T11:05:00.311673"
+  },
+  {
+    "source": "archive.org",
+    "title": "Industry and Trade in India",
+    "file": "iks_corpus/processed/archive_industradecomme00unkngoog.txt",
+    "url": "https://archive.org/details/industradecomme00unkngoog",
+    "domain": "Governance & Agriculture",
+    "word_count": 0,
+    "collected": "2026-04-19T11:05:04.714801"
+  },
+  {
+    "source": "nptel",
+    "title": "NPTEL: Introduction to Indian Knowledge Systems",
+    "file": "iks_corpus/processed/nptel_NPTEL_Introduction_to_Indian_Knowledge_Systems.txt",
+    "url": "https://nptel.ac.in/courses/121106003",
+    "domain": "IKS Overview",
+    "word_count": 237,
+    "collected": "2026-04-19T11:05:06.550437"
+  },
+  {
+    "source": "nptel",
+    "title": "NPTEL: Sanskrit for Self Development",
+    "file": "iks_corpus/processed/nptel_NPTEL_Sanskrit_for_Self_Development.txt",
+    "url": "https://nptel.ac.in/courses/109104045",
+    "domain": "Linguistics",
+    "word_count": 154,
+    "collected": "2026-04-19T11:05:07.764732"
+  },
+  {
+    "source": "nptel",
+    "title": "NPTEL: History of Science in India",
+    "file": "iks_corpus/processed/nptel_NPTEL_History_of_Science_in_India.txt",
+    "url": "https://nptel.ac.in/courses/106102082",
+    "domain": "Mathematics & Science",
+    "word_count": 0,
+    "collected": "2026-04-19T11:05:08.960031"
+  },
+  {
+    "source": "nptel",
+    "title": "NPTEL: Yoga and its Applications",
+    "file": "iks_corpus/processed/nptel_NPTEL_Yoga_and_its_Applications.txt",
+    "url": "https://nptel.ac.in/courses/124109007",
+    "domain": "Medicine & Health",
+    "word_count": 0,
+    "collected": "2026-04-19T11:05:10.172428"
+  },
+  {
+    "source": "nptel",
+    "title": "NPTEL: Indian Architecture and Town Planning",
+    "file": "iks_corpus/processed/nptel_NPTEL_Indian_Architecture_and_Town_Planning.txt",
+    "url": "https://nptel.ac.in/courses/104107082",
+    "domain": "Temple Architecture",
+    "word_count": 0,
+    "collected": "2026-04-19T11:05:11.374802"
+  },
+  {
+    "source": "nptel",
+    "title": "SWAYAM: IKS Concepts and Applications in Engineering",
+    "file": "iks_corpus/processed/nptel_SWAYAM_IKS_Concepts_and_Applications_in_Engineering.txt",
+    "url": "https://onlinecourses.swayam2.ac.in/imb23_mg53/preview",
+    "domain": "IKS Overview",
+    "word_count": 373,
+    "collected": "2026-04-19T11:05:12.659977"
+  },
+  {
+    "source": "web",
+    "title": "Ministry of Culture — Classical Dance Forms",
+    "file": "iks_corpus/processed/web_Ministry_of_Culture__Classical_Dance_Forms.txt",
+    "url": "https://indiaculture.gov.in/classical-dance-forms",
+    "domain": "Classical Dance",
+    "word_count": 709,
+    "collected": "2026-04-19T11:05:18.779583"
+  },
+  {
+    "source": "web",
+    "title": "ASI — Protected Monuments List",
+    "file": "iks_corpus/processed/web_ASI__Protected_Monuments_List.txt",
+    "url": "https://asi.nic.in/monuments-alphabetically/",
+    "domain": "Temple Architecture",
+    "word_count": 307,
+    "collected": "2026-04-19T11:05:23.368488"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Bhairavi",
+    "file": "iks_corpus/processed/raga_Raga_Bhairavi.txt",
+    "url": "https://en.wikipedia.org/wiki/Bhairavi",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Karuna (compassion, longing, the ache of parting)",
+    "word_count": 560,
+    "collected": "2026-04-19T22:55:38.941333"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Yaman",
+    "file": "iks_corpus/processed/raga_Raga_Yaman.txt",
+    "url": "https://en.wikipedia.org/wiki/Yaman",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Shringara (love, longing, romantic yearning)",
+    "word_count": 271,
+    "collected": "2026-04-19T22:55:39.751737"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Darbari Kanada",
+    "file": "iks_corpus/processed/raga_Raga_Darbari_Kanada.txt",
+    "url": "https://en.wikipedia.org/wiki/Darbari_Kanada",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Vira and Shanta (heroism meeting deep peace — the stillness of kings)",
+    "word_count": 723,
+    "collected": "2026-04-19T22:55:40.680464"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Todi",
+    "file": "iks_corpus/processed/raga_Raga_Todi.txt",
+    "url": "https://en.wikipedia.org/wiki/Todi_(music)",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Karuna and Shringara (tender grief, a kite whose string has snapped)",
+    "word_count": 207,
+    "collected": "2026-04-19T22:55:41.599641"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Bhimpalasi",
+    "file": "iks_corpus/processed/raga_Raga_Bhimpalasi.txt",
+    "url": "https://en.wikipedia.org/wiki/Bhimpalasi",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Shringara with a quality of Karuna — affectionate longing",
+    "word_count": 637,
+    "collected": "2026-04-19T22:55:42.522617"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Bageshri",
+    "file": "iks_corpus/processed/raga_Raga_Bageshri.txt",
+    "url": "https://en.wikipedia.org/wiki/Bageshri",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Shringara — the longing of lovers separated by rain",
+    "word_count": 700,
+    "collected": "2026-04-19T22:55:43.444717"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Malkauns",
+    "file": "iks_corpus/processed/raga_Raga_Malkauns.txt",
+    "url": "https://en.wikipedia.org/wiki/Malkauns",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Bhayanaka and Vira — the awesome and the heroic, power in darkness",
+    "word_count": 740,
+    "collected": "2026-04-19T22:55:44.313502"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Kafi",
+    "file": "iks_corpus/processed/raga_Raga_Kafi.txt",
+    "url": "https://en.wikipedia.org/wiki/Kafi",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Shringara and Hasya — love and joy, devotion through celebration",
+    "word_count": 729,
+    "collected": "2026-04-19T22:55:45.186669"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Marwa",
+    "file": "iks_corpus/processed/raga_Raga_Marwa.txt",
+    "url": "https://en.wikipedia.org/wiki/Marwa_(raga)",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Bhayanaka with Karuna — the anxiety of transition, beautiful unease",
+    "word_count": 812,
+    "collected": "2026-04-19T22:55:46.051730"
+  },
+  {
+    "source": "Curated + Wikipedia",
+    "title": "Raga Bhairav",
+    "file": "iks_corpus/processed/raga_Raga_Bhairav.txt",
+    "url": "https://en.wikipedia.org/wiki/Bhairav",
+    "domain": "Classical Music — Raga as Emotion",
+    "rasa": "Shanta and Karuna — deep peace, the serenity of first light",
+    "word_count": 336,
+    "collected": "2026-04-19T22:55:46.923738"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Melakarta",
+    "file": "iks_corpus/processed/raga_Melakarta.txt",
+    "url": "https://en.wikipedia.org/wiki/Melakarta",
+    "domain": "Classical Music",
+    "rasa": "",
+    "word_count": 1150,
+    "collected": "2026-04-19T22:55:53.274618"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Hindustani classical music",
+    "file": "iks_corpus/processed/raga_Hindustani_classical_music.txt",
+    "url": "https://en.wikipedia.org/wiki/Hindustani_classical_music",
+    "domain": "Classical Music",
+    "rasa": "",
+    "word_count": 4186,
+    "collected": "2026-04-19T22:55:55.223169"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Gharana",
+    "file": "iks_corpus/processed/raga_Gharana.txt",
+    "url": "https://en.wikipedia.org/wiki/Gharana",
+    "domain": "Classical Music",
+    "rasa": "",
+    "word_count": 688,
+    "collected": "2026-04-19T22:55:56.141730"
+  },
+  {
+    "source": "Curated",
+    "title": "Diwali — the festival of light",
+    "file": "iks_corpus/processed/festival_Diwali__the_festival_of_light.txt",
+    "url": "https://en.wikipedia.org/wiki/Diwali",
+    "domain": "Festivals — Lived Experience",
+    "rasa": "Adbhuta and Shringara — wonder, beauty, the triumph of light",
+    "word_count": 700,
+    "collected": "2026-04-19T22:55:57.269464"
+  },
+  {
+    "source": "Curated",
+    "title": "Holi — the festival of colour",
+    "file": "iks_corpus/processed/festival_Holi__the_festival_of_colour.txt",
+    "url": "https://en.wikipedia.org/wiki/Holi",
+    "domain": "Festivals — Lived Experience",
+    "rasa": "Hasya and Shringara — pure joy, the dissolution of self",
+    "word_count": 661,
+    "collected": "2026-04-19T22:55:58.601706"
+  },
+  {
+    "source": "Curated",
+    "title": "Pongal — the harvest festival of Tamil Nadu",
+    "file": "iks_corpus/processed/festival_Pongal__the_harvest_festival_of_Tamil_Nadu.txt",
+    "url": "https://en.wikipedia.org/wiki/Pongal_(festival)",
+    "domain": "Festivals — Lived Experience",
+    "rasa": "Shanta and Hasya — gratitude, abundance, the peace of harvest",
+    "word_count": 658,
+    "collected": "2026-04-19T22:55:59.522267"
+  },
+  {
+    "source": "Curated",
+    "title": "Durga Puja — Bengal's greatest festival",
+    "file": "iks_corpus/processed/festival_Durga_Puja__Bengals_greatest_festival.txt",
+    "url": "https://en.wikipedia.org/wiki/Durga_Puja",
+    "domain": "Festivals — Lived Experience",
+    "rasa": "Adbhuta and Vira — awe at the goddess, celebration of power",
+    "word_count": 655,
+    "collected": "2026-04-19T22:56:00.852839"
+  },
+  {
+    "source": "Curated",
+    "title": "Onam — Kerala's harvest home",
+    "file": "iks_corpus/processed/festival_Onam__Keralas_harvest_home.txt",
+    "url": "https://en.wikipedia.org/wiki/Onam",
+    "domain": "Festivals — Lived Experience",
+    "rasa": "Shanta and Shringara — the serene beauty of abundance, homecoming",
+    "word_count": 675,
+    "collected": "2026-04-19T22:56:02.083191"
+  },
+  {
+    "source": "Curated",
+    "title": "Kumbh Mela — the world's largest human gathering",
+    "file": "iks_corpus/processed/festival_Kumbh_Mela__the_worlds_largest_human_gathering.txt",
+    "url": "https://en.wikipedia.org/wiki/Kumbh_Mela",
+    "domain": "Festivals — Lived Experience",
+    "rasa": "Bhayanaka and Shanta — awe at scale, the peace of immense belonging",
+    "word_count": 698,
+    "collected": "2026-04-19T22:56:03.005127"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Navaratri",
+    "file": "iks_corpus/processed/festival_Navaratri.txt",
+    "url": "https://en.wikipedia.org/wiki/Navaratri",
+    "domain": "Festivals",
+    "rasa": "Vira",
+    "word_count": 11441,
+    "collected": "2026-04-19T22:56:04.303133"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Krishna Janmashtami",
+    "file": "iks_corpus/processed/festival_Krishna_Janmashtami.txt",
+    "url": "https://en.wikipedia.org/wiki/Krishna_Janmashtami",
+    "domain": "Festivals",
+    "rasa": "Shringara",
+    "word_count": 2578,
+    "collected": "2026-04-19T22:56:05.552696"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ganesh Chaturthi",
+    "file": "iks_corpus/processed/festival_Ganesh_Chaturthi.txt",
+    "url": "https://en.wikipedia.org/wiki/Ganesh_Chaturthi",
+    "domain": "Festivals",
+    "rasa": "Hasya",
+    "word_count": 3159,
+    "collected": "2026-04-19T22:56:06.598204"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Vaisakhi",
+    "file": "iks_corpus/processed/festival_Vaisakhi.txt",
+    "url": "https://en.wikipedia.org/wiki/Vaisakhi",
+    "domain": "Festivals",
+    "rasa": "Hasya",
+    "word_count": 5030,
+    "collected": "2026-04-19T22:56:07.633000"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Observance of Christmas by country",
+    "file": "iks_corpus/processed/festival_Observance_of_Christmas_by_country.txt",
+    "url": "https://en.wikipedia.org/wiki/Observance_of_Christmas_by_country",
+    "domain": "Festivals",
+    "rasa": "Shanta",
+    "word_count": 11654,
+    "collected": "2026-04-19T22:56:10.077864"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ugadi",
+    "file": "iks_corpus/processed/festival_Ugadi.txt",
+    "url": "https://en.wikipedia.org/wiki/Ugadi",
+    "domain": "Festivals",
+    "rasa": "Adbhuta",
+    "word_count": 840,
+    "collected": "2026-04-19T22:56:11.093598"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Bihu",
+    "file": "iks_corpus/processed/festival_Bihu.txt",
+    "url": "https://en.wikipedia.org/wiki/Bihu",
+    "domain": "Festivals",
+    "rasa": "Hasya",
+    "word_count": 3085,
+    "collected": "2026-04-19T22:56:12.131140"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Puthandu",
+    "file": "iks_corpus/processed/festival_Puthandu.txt",
+    "url": "https://en.wikipedia.org/wiki/Puthandu",
+    "domain": "Festivals",
+    "rasa": "Shanta",
+    "word_count": 1963,
+    "collected": "2026-04-19T22:56:13.242302"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Losar",
+    "file": "iks_corpus/processed/festival_Losar.txt",
+    "url": "https://en.wikipedia.org/wiki/Losar",
+    "domain": "Festivals",
+    "rasa": "Adbhuta",
+    "word_count": 1097,
+    "collected": "2026-04-19T22:56:14.167887"
+  },
+  {
+    "source": "Curated",
+    "title": "The Mahabharata — every human dilemma",
+    "file": "iks_corpus/processed/myth_The_Mahabharata__every_human_dilemma.txt",
+    "url": "iks://embedded/The_Mahabharata__every_human_dilemma",
+    "domain": "Mythology",
+    "rasa": "Karuna",
+    "word_count": 292,
+    "collected": "2026-04-19T22:56:14.671952"
+  },
+  {
+    "source": "Curated",
+    "title": "The Ramayana — dharma in action",
+    "file": "iks_corpus/processed/myth_The_Ramayana__dharma_in_action.txt",
+    "url": "iks://embedded/The_Ramayana__dharma_in_action",
+    "domain": "Mythology",
+    "rasa": "Vira and Karuna",
+    "word_count": 280,
+    "collected": "2026-04-19T22:56:14.673006"
+  },
+  {
+    "source": "Curated",
+    "title": "Panchatantra — wisdom through animals",
+    "file": "iks_corpus/processed/myth_Panchatantra__wisdom_through_animals.txt",
+    "url": "iks://embedded/Panchatantra__wisdom_through_animals",
+    "domain": "Mythology",
+    "rasa": "Hasya and Shanta",
+    "word_count": 253,
+    "collected": "2026-04-19T22:56:14.673989"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ramayana",
+    "file": "iks_corpus/processed/myth_Ramayana.txt",
+    "url": "https://en.wikipedia.org/wiki/Ramayana",
+    "domain": "Mythology",
+    "rasa": "Vira",
+    "word_count": 6853,
+    "collected": "2026-04-19T22:56:15.538385"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Mahabharata",
+    "file": "iks_corpus/processed/myth_Mahabharata.txt",
+    "url": "https://en.wikipedia.org/wiki/Mahabharata",
+    "domain": "Mythology",
+    "rasa": "Karuna",
+    "word_count": 7572,
+    "collected": "2026-04-19T22:56:16.833653"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Bhagavad Gita",
+    "file": "iks_corpus/processed/myth_Bhagavad_Gita.txt",
+    "url": "https://en.wikipedia.org/wiki/Bhagavad_Gita",
+    "domain": "Mythology",
+    "rasa": "Shanta",
+    "word_count": 14938,
+    "collected": "2026-04-19T22:56:18.169455"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Panchatantra",
+    "file": "iks_corpus/processed/myth_Panchatantra.txt",
+    "url": "https://en.wikipedia.org/wiki/Panchatantra",
+    "domain": "Mythology",
+    "rasa": "Hasya",
+    "word_count": 6009,
+    "collected": "2026-04-19T22:56:19.291720"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Jataka tales",
+    "file": "iks_corpus/processed/myth_Jataka_tales.txt",
+    "url": "https://en.wikipedia.org/wiki/Jataka_tales",
+    "domain": "Mythology",
+    "rasa": "Karuna",
+    "word_count": 4675,
+    "collected": "2026-04-19T22:56:20.517252"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Puranas",
+    "file": "iks_corpus/processed/myth_Puranas.txt",
+    "url": "https://en.wikipedia.org/wiki/Puranas",
+    "domain": "Mythology",
+    "rasa": "Adbhuta",
+    "word_count": 4715,
+    "collected": "2026-04-19T22:56:21.643920"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Vishnu Purana",
+    "file": "iks_corpus/processed/myth_Vishnu_Purana.txt",
+    "url": "https://en.wikipedia.org/wiki/Vishnu_Purana",
+    "domain": "Mythology",
+    "rasa": "Shanta",
+    "word_count": 2473,
+    "collected": "2026-04-19T22:56:22.666841"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Shiva Purana",
+    "file": "iks_corpus/processed/myth_Shiva_Purana.txt",
+    "url": "https://en.wikipedia.org/wiki/Shiva_Purana",
+    "domain": "Mythology",
+    "rasa": "Bhayanaka",
+    "word_count": 1372,
+    "collected": "2026-04-19T22:56:23.587452"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Devi Mahatmya",
+    "file": "iks_corpus/processed/myth_Devi_Mahatmya.txt",
+    "url": "https://en.wikipedia.org/wiki/Devi_Mahatmya",
+    "domain": "Mythology",
+    "rasa": "Vira",
+    "word_count": 3297,
+    "collected": "2026-04-19T22:56:24.715875"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Shakuntala (play)",
+    "file": "iks_corpus/processed/myth_Shakuntala_play.txt",
+    "url": "https://en.wikipedia.org/wiki/Shakuntala_(play)",
+    "domain": "Mythology",
+    "rasa": "Shringara",
+    "word_count": 2615,
+    "collected": "2026-04-19T22:56:25.740526"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Meghadūta",
+    "file": "iks_corpus/processed/myth_Meghadūta.txt",
+    "url": "https://en.wikipedia.org/wiki/Meghad%C5%ABta",
+    "domain": "Mythology",
+    "rasa": "Karuna",
+    "word_count": 1060,
+    "collected": "2026-04-19T22:56:26.659745"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Kalidasa",
+    "file": "iks_corpus/processed/myth_Kalidasa.txt",
+    "url": "https://en.wikipedia.org/wiki/Kalidasa",
+    "domain": "Mythology",
+    "rasa": "Shringara",
+    "word_count": 3035,
+    "collected": "2026-04-19T22:56:28.192494"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Kural",
+    "file": "iks_corpus/processed/myth_Kural.txt",
+    "url": "https://en.wikipedia.org/wiki/Kural",
+    "domain": "Mythology",
+    "rasa": "Shanta",
+    "word_count": 10351,
+    "collected": "2026-04-19T22:56:29.533299"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Sangam literature",
+    "file": "iks_corpus/processed/myth_Sangam_literature.txt",
+    "url": "https://en.wikipedia.org/wiki/Sangam_literature",
+    "domain": "Mythology",
+    "rasa": "Shringara",
+    "word_count": 3129,
+    "collected": "2026-04-19T22:56:30.860942"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Kabir",
+    "file": "iks_corpus/processed/myth_Kabir.txt",
+    "url": "https://en.wikipedia.org/wiki/Kabir",
+    "domain": "Mythology",
+    "rasa": "Shanta",
+    "word_count": 2810,
+    "collected": "2026-04-19T22:56:31.986400"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Mirabai",
+    "file": "iks_corpus/processed/myth_Mirabai.txt",
+    "url": "https://en.wikipedia.org/wiki/Mirabai",
+    "domain": "Mythology",
+    "rasa": "Shringara",
+    "word_count": 2649,
+    "collected": "2026-04-19T22:56:33.112664"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Tukaram",
+    "file": "iks_corpus/processed/myth_Tukaram.txt",
+    "url": "https://en.wikipedia.org/wiki/Tukaram",
+    "domain": "Mythology",
+    "rasa": "Karuna",
+    "word_count": 2363,
+    "collected": "2026-04-19T22:56:34.239066"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Andal",
+    "file": "iks_corpus/processed/myth_Andal.txt",
+    "url": "https://en.wikipedia.org/wiki/Andal",
+    "domain": "Mythology",
+    "rasa": "Shringara",
+    "word_count": 2113,
+    "collected": "2026-04-19T22:56:35.367142"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Basava",
+    "file": "iks_corpus/processed/myth_Basava.txt",
+    "url": "https://en.wikipedia.org/wiki/Basava",
+    "domain": "Mythology",
+    "rasa": "Shanta",
+    "word_count": 2147,
+    "collected": "2026-04-19T22:56:36.592447"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ravidas",
+    "file": "iks_corpus/processed/myth_Ravidas.txt",
+    "url": "https://en.wikipedia.org/wiki/Ravidas",
+    "domain": "Mythology",
+    "rasa": "Shanta",
+    "word_count": 3073,
+    "collected": "2026-04-19T22:56:37.516425"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Adi Shankara",
+    "file": "iks_corpus/processed/myth_Adi_Shankara.txt",
+    "url": "https://en.wikipedia.org/wiki/Adi_Shankara",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 8309,
+    "collected": "2026-04-19T22:56:38.852597"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ramanuja",
+    "file": "iks_corpus/processed/myth_Ramanuja.txt",
+    "url": "https://en.wikipedia.org/wiki/Ramanuja",
+    "domain": "Philosophy",
+    "rasa": "Shringara",
+    "word_count": 4063,
+    "collected": "2026-04-19T22:56:39.974105"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Yoga Sutras of Patanjali",
+    "file": "iks_corpus/processed/myth_Yoga_Sutras_of_Patanjali.txt",
+    "url": "https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 6698,
+    "collected": "2026-04-19T22:56:42.230274"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Arthashastra",
+    "file": "iks_corpus/processed/myth_Arthashastra.txt",
+    "url": "https://en.wikipedia.org/wiki/Arthashastra",
+    "domain": "Governance",
+    "rasa": "Vira",
+    "word_count": 9071,
+    "collected": "2026-04-19T22:56:43.564983"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Thiruvalluvar",
+    "file": "iks_corpus/processed/myth_Thiruvalluvar.txt",
+    "url": "https://en.wikipedia.org/wiki/Thiruvalluvar",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 4640,
+    "collected": "2026-04-19T22:56:44.788106"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Dharma",
+    "file": "iks_corpus/processed/concept_Untranslatable_Dharma.txt",
+    "url": "iks://embedded/Untranslatable_Dharma",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Shanta",
+    "word_count": 203,
+    "collected": "2026-04-19T22:56:45.294936"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Rasa",
+    "file": "iks_corpus/processed/concept_Untranslatable_Rasa.txt",
+    "url": "iks://embedded/Untranslatable_Rasa",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Adbhuta",
+    "word_count": 218,
+    "collected": "2026-04-19T22:56:45.296039"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Jugaad",
+    "file": "iks_corpus/processed/concept_Untranslatable_Jugaad.txt",
+    "url": "iks://embedded/Untranslatable_Jugaad",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Hasya",
+    "word_count": 199,
+    "collected": "2026-04-19T22:56:45.296970"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Atithi Devo Bhava",
+    "file": "iks_corpus/processed/concept_Untranslatable_Atithi_Devo_Bhava.txt",
+    "url": "iks://embedded/Untranslatable_Atithi_Devo_Bhava",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Shringara",
+    "word_count": 200,
+    "collected": "2026-04-19T22:56:45.297915"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Ananda",
+    "file": "iks_corpus/processed/concept_Untranslatable_Ananda.txt",
+    "url": "iks://embedded/Untranslatable_Ananda",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Shanta",
+    "word_count": 214,
+    "collected": "2026-04-19T22:56:45.298885"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Ahimsa",
+    "file": "iks_corpus/processed/concept_Untranslatable_Ahimsa.txt",
+    "url": "iks://embedded/Untranslatable_Ahimsa",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Shanta",
+    "word_count": 232,
+    "collected": "2026-04-19T22:56:45.299787"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Sthitaprajna",
+    "file": "iks_corpus/processed/concept_Untranslatable_Sthitaprajna.txt",
+    "url": "iks://embedded/Untranslatable_Sthitaprajna",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Shanta",
+    "word_count": 233,
+    "collected": "2026-04-19T22:56:45.300619"
+  },
+  {
+    "source": "Curated",
+    "title": "Untranslatable: Lila",
+    "file": "iks_corpus/processed/concept_Untranslatable_Lila.txt",
+    "url": "iks://embedded/Untranslatable_Lila",
+    "domain": "Indian Philosophical Concepts",
+    "rasa": "Hasya and Adbhuta",
+    "word_count": 220,
+    "collected": "2026-04-19T22:56:45.301443"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Karma",
+    "file": "iks_corpus/processed/concept_Karma.txt",
+    "url": "https://en.wikipedia.org/wiki/Karma",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 7322,
+    "collected": "2026-04-19T22:56:46.325660"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Moksha",
+    "file": "iks_corpus/processed/concept_Moksha.txt",
+    "url": "https://en.wikipedia.org/wiki/Moksha",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 5150,
+    "collected": "2026-04-19T22:56:47.554713"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Saṃsāra",
+    "file": "iks_corpus/processed/concept_Saṃsāra.txt",
+    "url": "https://en.wikipedia.org/wiki/Sa%E1%B9%83s%C4%81ra",
+    "domain": "Philosophy",
+    "rasa": "Karuna",
+    "word_count": 2958,
+    "collected": "2026-04-19T22:56:48.779515"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Maya (religion)",
+    "file": "iks_corpus/processed/concept_Maya_religion.txt",
+    "url": "https://en.wikipedia.org/wiki/Maya_(religion)",
+    "domain": "Philosophy",
+    "rasa": "Adbhuta",
+    "word_count": 6106,
+    "collected": "2026-04-19T22:56:49.999883"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Brahman",
+    "file": "iks_corpus/processed/concept_Brahman.txt",
+    "url": "https://en.wikipedia.org/wiki/Brahman",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 6081,
+    "collected": "2026-04-19T22:56:51.547412"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ātman (Hinduism)",
+    "file": "iks_corpus/processed/concept_Ātman_Hinduism.txt",
+    "url": "https://en.wikipedia.org/wiki/%C4%80tman_(Hinduism)",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 4706,
+    "collected": "2026-04-19T22:56:52.787512"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Viveka",
+    "file": "iks_corpus/processed/concept_Viveka.txt",
+    "url": "https://en.wikipedia.org/wiki/Viveka",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 690,
+    "collected": "2026-04-19T22:56:53.694564"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Vairagya",
+    "file": "iks_corpus/processed/concept_Vairagya.txt",
+    "url": "https://en.wikipedia.org/wiki/Vairagya",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 1055,
+    "collected": "2026-04-19T22:56:54.615637"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Santosha",
+    "file": "iks_corpus/processed/concept_Santosha.txt",
+    "url": "https://en.wikipedia.org/wiki/Santosha",
+    "domain": "Philosophy",
+    "rasa": "Shanta",
+    "word_count": 1829,
+    "collected": "2026-04-19T22:56:55.537696"
+  },
+  {
+    "source": "Curated",
+    "title": "Varanasi — where time stops",
+    "file": "iks_corpus/processed/sacred_Varanasi__where_time_stops.txt",
+    "url": "https://en.wikipedia.org/wiki/Varanasi",
+    "domain": "Sacred Geography of India",
+    "rasa": "Bhayanaka and Shanta",
+    "word_count": 614,
+    "collected": "2026-04-19T22:56:57.725701"
+  },
+  {
+    "source": "Curated",
+    "title": "Char Dham — the four corners of India",
+    "file": "iks_corpus/processed/sacred_Char_Dham__the_four_corners_of_India.txt",
+    "url": "https://en.wikipedia.org/wiki/Char_Dham",
+    "domain": "Sacred Geography of India",
+    "rasa": "Vira and Shanta",
+    "word_count": 560,
+    "collected": "2026-04-19T22:56:58.609556"
+  },
+  {
+    "source": "Curated",
+    "title": "The Ganga — a river that is alive",
+    "file": "iks_corpus/processed/sacred_The_Ganga__a_river_that_is_alive.txt",
+    "url": "https://en.wikipedia.org/wiki/Ganges",
+    "domain": "Sacred Geography of India",
+    "rasa": "Shanta and Karuna",
+    "word_count": 570,
+    "collected": "2026-04-19T22:56:59.939712"
+  },
+  {
+    "source": "Curated",
+    "title": "Vrindavan — where Krishna lives now",
+    "file": "iks_corpus/processed/sacred_Vrindavan__where_Krishna_lives_now.txt",
+    "url": "https://en.wikipedia.org/wiki/Vrindavan",
+    "domain": "Sacred Geography of India",
+    "rasa": "Shringara",
+    "word_count": 591,
+    "collected": "2026-04-19T22:57:00.965576"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Tirupati",
+    "file": "iks_corpus/processed/sacred_Tirupati.txt",
+    "url": "https://en.wikipedia.org/wiki/Tirupati",
+    "domain": "Sacred Geography",
+    "rasa": "Shanta",
+    "word_count": 4784,
+    "collected": "2026-04-19T22:57:02.296006"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Golden Temple",
+    "file": "iks_corpus/processed/sacred_Golden_Temple.txt",
+    "url": "https://en.wikipedia.org/wiki/Golden_Temple",
+    "domain": "Sacred Geography",
+    "rasa": "Shanta",
+    "word_count": 7563,
+    "collected": "2026-04-19T22:57:03.632720"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Shrine of Mu'in al-Din Chishti",
+    "file": "iks_corpus/processed/sacred_Shrine_of_Muin_al-Din_Chishti.txt",
+    "url": "https://en.wikipedia.org/wiki/Shrine_of_Mu%27in_al-Din_Chishti",
+    "domain": "Sacred Geography",
+    "rasa": "Shanta",
+    "word_count": 2565,
+    "collected": "2026-04-19T22:57:04.856797"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Velankanni",
+    "file": "iks_corpus/processed/sacred_Velankanni.txt",
+    "url": "https://en.wikipedia.org/wiki/Velankanni",
+    "domain": "Sacred Geography",
+    "rasa": "Karuna",
+    "word_count": 843,
+    "collected": "2026-04-19T22:57:05.777719"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Bodh Gaya",
+    "file": "iks_corpus/processed/sacred_Bodh_Gaya.txt",
+    "url": "https://en.wikipedia.org/wiki/Bodh_Gaya",
+    "domain": "Sacred Geography",
+    "rasa": "Shanta",
+    "word_count": 1648,
+    "collected": "2026-04-19T22:57:06.700198"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Hampi",
+    "file": "iks_corpus/processed/sacred_Hampi.txt",
+    "url": "https://en.wikipedia.org/wiki/Hampi",
+    "domain": "Sacred Geography",
+    "rasa": "Adbhuta",
+    "word_count": 7199,
+    "collected": "2026-04-19T22:57:07.992742"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Pushkar",
+    "file": "iks_corpus/processed/sacred_Pushkar.txt",
+    "url": "https://en.wikipedia.org/wiki/Pushkar",
+    "domain": "Sacred Geography",
+    "rasa": "Shanta",
+    "word_count": 2028,
+    "collected": "2026-04-19T22:57:08.868710"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Rishikesh",
+    "file": "iks_corpus/processed/sacred_Rishikesh.txt",
+    "url": "https://en.wikipedia.org/wiki/Rishikesh",
+    "domain": "Sacred Geography",
+    "rasa": "Shanta",
+    "word_count": 2699,
+    "collected": "2026-04-19T22:57:10.025108"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Amarnath",
+    "file": "iks_corpus/processed/sacred_Amarnath.txt",
+    "url": "https://en.wikipedia.org/wiki/Amarnath",
+    "domain": "Sacred Geography",
+    "rasa": "Bhayanaka",
+    "word_count": 164,
+    "collected": "2026-04-19T22:57:10.848889"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Sabarimala (place)",
+    "file": "iks_corpus/processed/sacred_Sabarimala_place.txt",
+    "url": "https://en.wikipedia.org/wiki/Sabarimala_(place)",
+    "domain": "Sacred Geography",
+    "rasa": "Vira",
+    "word_count": 162,
+    "collected": "2026-04-19T22:57:11.714505"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Art and culture of Karnataka",
+    "file": "iks_corpus/processed/regional_Art_and_culture_of_Karnataka.txt",
+    "url": "https://en.wikipedia.org/wiki/Art_and_culture_of_Karnataka",
+    "domain": "Regional — Karnataka",
+    "rasa": "Shringara",
+    "word_count": 681,
+    "collected": "2026-04-19T22:57:12.549813"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Tamil Nadu",
+    "file": "iks_corpus/processed/regional_Tamil_Nadu.txt",
+    "url": "https://en.wikipedia.org/wiki/Tamil_Nadu",
+    "domain": "Regional — Tamil Nadu",
+    "rasa": "Vira",
+    "word_count": 11828,
+    "collected": "2026-04-19T22:57:13.876197"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Kerala",
+    "file": "iks_corpus/processed/regional_Culture_of_Kerala.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Kerala",
+    "domain": "Regional — Kerala",
+    "rasa": "Shanta",
+    "word_count": 2876,
+    "collected": "2026-04-19T22:57:14.994317"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Andhra Pradesh",
+    "file": "iks_corpus/processed/regional_Culture_of_Andhra_Pradesh.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Andhra_Pradesh",
+    "domain": "Regional — Andhra",
+    "rasa": "Vira",
+    "word_count": 1526,
+    "collected": "2026-04-19T22:57:15.913513"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Telangana",
+    "file": "iks_corpus/processed/regional_Culture_of_Telangana.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Telangana",
+    "domain": "Regional — Telangana",
+    "rasa": "Vira",
+    "word_count": 3658,
+    "collected": "2026-04-19T22:57:17.043401"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Rajasthan",
+    "file": "iks_corpus/processed/regional_Culture_of_Rajasthan.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Rajasthan",
+    "domain": "Regional — Rajasthan",
+    "rasa": "Adbhuta",
+    "word_count": 1649,
+    "collected": "2026-04-19T22:57:17.963666"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Punjabi culture",
+    "file": "iks_corpus/processed/regional_Punjabi_culture.txt",
+    "url": "https://en.wikipedia.org/wiki/Punjabi_culture",
+    "domain": "Regional — Punjab",
+    "rasa": "Hasya",
+    "word_count": 3724,
+    "collected": "2026-04-19T22:57:19.195590"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Gujarat",
+    "file": "iks_corpus/processed/regional_Culture_of_Gujarat.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Gujarat",
+    "domain": "Regional — Gujarat",
+    "rasa": "Hasya",
+    "word_count": 5520,
+    "collected": "2026-04-19T22:57:20.290775"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Maharashtra",
+    "file": "iks_corpus/processed/regional_Culture_of_Maharashtra.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Maharashtra",
+    "domain": "Regional — Maharashtra",
+    "rasa": "Vira",
+    "word_count": 2089,
+    "collected": "2026-04-19T22:57:21.239002"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Uttar Pradesh",
+    "file": "iks_corpus/processed/regional_Culture_of_Uttar_Pradesh.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Uttar_Pradesh",
+    "domain": "Regional — UP",
+    "rasa": "Shanta",
+    "word_count": 1388,
+    "collected": "2026-04-19T22:57:22.161095"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of West Bengal",
+    "file": "iks_corpus/processed/regional_Culture_of_West_Bengal.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_West_Bengal",
+    "domain": "Regional — Bengal",
+    "rasa": "Karuna",
+    "word_count": 1276,
+    "collected": "2026-04-19T22:57:23.083027"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Odisha",
+    "file": "iks_corpus/processed/regional_Culture_of_Odisha.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Odisha",
+    "domain": "Regional — Odisha",
+    "rasa": "Shringara",
+    "word_count": 3720,
+    "collected": "2026-04-19T22:57:24.211722"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Bihari culture",
+    "file": "iks_corpus/processed/regional_Bihari_culture.txt",
+    "url": "https://en.wikipedia.org/wiki/Bihari_culture",
+    "domain": "Regional — Bihar",
+    "rasa": "Shanta",
+    "word_count": 3841,
+    "collected": "2026-04-19T22:57:25.337192"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Culture of Assam",
+    "file": "iks_corpus/processed/regional_Culture_of_Assam.txt",
+    "url": "https://en.wikipedia.org/wiki/Culture_of_Assam",
+    "domain": "Regional — Assam",
+    "rasa": "Shanta",
+    "word_count": 2697,
+    "collected": "2026-04-19T22:57:26.464102"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Manipur",
+    "file": "iks_corpus/processed/regional_Manipur.txt",
+    "url": "https://en.wikipedia.org/wiki/Manipur",
+    "domain": "Regional — Manipur",
+    "rasa": "Shringara",
+    "word_count": 7433,
+    "collected": "2026-04-19T22:57:27.933854"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Meghalaya",
+    "file": "iks_corpus/processed/regional_Meghalaya.txt",
+    "url": "https://en.wikipedia.org/wiki/Meghalaya",
+    "domain": "Regional — Meghalaya",
+    "rasa": "Adbhuta",
+    "word_count": 9322,
+    "collected": "2026-04-19T22:57:29.233712"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Nagaland",
+    "file": "iks_corpus/processed/regional_Nagaland.txt",
+    "url": "https://en.wikipedia.org/wiki/Nagaland",
+    "domain": "Regional — Nagaland",
+    "rasa": "Vira",
+    "word_count": 5140,
+    "collected": "2026-04-19T22:57:30.458323"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Madhya Pradesh",
+    "file": "iks_corpus/processed/regional_Madhya_Pradesh.txt",
+    "url": "https://en.wikipedia.org/wiki/Madhya_Pradesh",
+    "domain": "Regional — MP",
+    "rasa": "Adbhuta",
+    "word_count": 6415,
+    "collected": "2026-04-19T22:57:31.895040"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Yakshagana",
+    "file": "iks_corpus/processed/regional_Yakshagana.txt",
+    "url": "https://en.wikipedia.org/wiki/Yakshagana",
+    "domain": "Regional — Karnataka",
+    "rasa": "Vira",
+    "word_count": 3412,
+    "collected": "2026-04-19T22:57:33.119438"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Chhau",
+    "file": "iks_corpus/processed/regional_Chhau.txt",
+    "url": "https://en.wikipedia.org/wiki/Chhau",
+    "domain": "Regional — East India",
+    "rasa": "Vira",
+    "word_count": 1348,
+    "collected": "2026-04-19T22:57:34.128749"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Theyyam",
+    "file": "iks_corpus/processed/regional_Theyyam.txt",
+    "url": "https://en.wikipedia.org/wiki/Theyyam",
+    "domain": "Regional — Kerala",
+    "rasa": "Bhayanaka",
+    "word_count": 2715,
+    "collected": "2026-04-19T22:57:35.271357"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Lavani",
+    "file": "iks_corpus/processed/regional_Lavani.txt",
+    "url": "https://en.wikipedia.org/wiki/Lavani",
+    "domain": "Regional — Maharashtra",
+    "rasa": "Shringara",
+    "word_count": 867,
+    "collected": "2026-04-19T22:57:36.103887"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ghoomar",
+    "file": "iks_corpus/processed/regional_Ghoomar.txt",
+    "url": "https://en.wikipedia.org/wiki/Ghoomar",
+    "domain": "Regional — Rajasthan",
+    "rasa": "Shringara",
+    "word_count": 406,
+    "collected": "2026-04-19T22:57:37.008264"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Bihu dance",
+    "file": "iks_corpus/processed/regional_Bihu_dance.txt",
+    "url": "https://en.wikipedia.org/wiki/Bihu_dance",
+    "domain": "Regional — Assam",
+    "rasa": "Hasya",
+    "word_count": 607,
+    "collected": "2026-04-19T22:57:37.853310"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Bhangra (dance)",
+    "file": "iks_corpus/processed/regional_Bhangra_dance.txt",
+    "url": "https://en.wikipedia.org/wiki/Bhangra_(dance)",
+    "domain": "Regional — Punjab",
+    "rasa": "Hasya",
+    "word_count": 1049,
+    "collected": "2026-04-19T22:57:38.722010"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Rabindranath Tagore",
+    "file": "iks_corpus/processed/lit_Rabindranath_Tagore.txt",
+    "url": "https://en.wikipedia.org/wiki/Rabindranath_Tagore",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 7038,
+    "collected": "2026-04-19T22:57:40.087438"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "R. K. Narayan",
+    "file": "iks_corpus/processed/lit_R_K_Narayan.txt",
+    "url": "https://en.wikipedia.org/wiki/R._K._Narayan",
+    "domain": "Literature",
+    "rasa": "Hasya",
+    "word_count": 5393,
+    "collected": "2026-04-19T22:57:41.197634"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Premchand",
+    "file": "iks_corpus/processed/lit_Premchand.txt",
+    "url": "https://en.wikipedia.org/wiki/Premchand",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 3885,
+    "collected": "2026-04-19T22:57:42.335987"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Kamala Surayya",
+    "file": "iks_corpus/processed/lit_Kamala_Surayya.txt",
+    "url": "https://en.wikipedia.org/wiki/Kamala_Surayya",
+    "domain": "Literature",
+    "rasa": "Shringara",
+    "word_count": 1847,
+    "collected": "2026-04-19T22:57:43.361453"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Arundhati Roy",
+    "file": "iks_corpus/processed/lit_Arundhati_Roy.txt",
+    "url": "https://en.wikipedia.org/wiki/Arundhati_Roy",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 5203,
+    "collected": "2026-04-19T22:57:44.589944"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Girish Karnad",
+    "file": "iks_corpus/processed/lit_Girish_Karnad.txt",
+    "url": "https://en.wikipedia.org/wiki/Girish_Karnad",
+    "domain": "Literature",
+    "rasa": "Raudra",
+    "word_count": 3216,
+    "collected": "2026-04-19T22:57:45.818722"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "U. R. Ananthamurthy",
+    "file": "iks_corpus/processed/lit_U_R_Ananthamurthy.txt",
+    "url": "https://en.wikipedia.org/wiki/U._R._Ananthamurthy",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 1574,
+    "collected": "2026-04-19T22:57:46.942006"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Vikram Seth",
+    "file": "iks_corpus/processed/lit_Vikram_Seth.txt",
+    "url": "https://en.wikipedia.org/wiki/Vikram_Seth",
+    "domain": "Literature",
+    "rasa": "Shringara",
+    "word_count": 800,
+    "collected": "2026-04-19T22:57:47.838520"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Amitav Ghosh",
+    "file": "iks_corpus/processed/lit_Amitav_Ghosh.txt",
+    "url": "https://en.wikipedia.org/wiki/Amitav_Ghosh",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 1648,
+    "collected": "2026-04-19T22:57:48.649005"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Jhumpa Lahiri",
+    "file": "iks_corpus/processed/lit_Jhumpa_Lahiri.txt",
+    "url": "https://en.wikipedia.org/wiki/Jhumpa_Lahiri",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 3857,
+    "collected": "2026-04-19T22:57:49.710013"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Mulk Raj Anand",
+    "file": "iks_corpus/processed/lit_Mulk_Raj_Anand.txt",
+    "url": "https://en.wikipedia.org/wiki/Mulk_Raj_Anand",
+    "domain": "Literature",
+    "rasa": "Bibhatsa",
+    "word_count": 2142,
+    "collected": "2026-04-19T22:57:50.817449"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Ismat Chughtai",
+    "file": "iks_corpus/processed/lit_Ismat_Chughtai.txt",
+    "url": "https://en.wikipedia.org/wiki/Ismat_Chughtai",
+    "domain": "Literature",
+    "rasa": "Shringara",
+    "word_count": 3175,
+    "collected": "2026-04-19T22:57:51.962608"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Saadat Hasan Manto",
+    "file": "iks_corpus/processed/lit_Saadat_Hasan_Manto.txt",
+    "url": "https://en.wikipedia.org/wiki/Saadat_Hasan_Manto",
+    "domain": "Literature",
+    "rasa": "Bibhatsa",
+    "word_count": 3493,
+    "collected": "2026-04-19T22:57:53.089668"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Subramania Bharati",
+    "file": "iks_corpus/processed/lit_Subramania_Bharati.txt",
+    "url": "https://en.wikipedia.org/wiki/Subramania_Bharati",
+    "domain": "Literature",
+    "rasa": "Vira",
+    "word_count": 1723,
+    "collected": "2026-04-19T22:57:53.914504"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Mahadevi Varma",
+    "file": "iks_corpus/processed/lit_Mahadevi_Varma.txt",
+    "url": "https://en.wikipedia.org/wiki/Mahadevi_Varma",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 2483,
+    "collected": "2026-04-19T22:57:55.046151"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "Gitanjali",
+    "file": "iks_corpus/processed/lit_Gitanjali.txt",
+    "url": "https://en.wikipedia.org/wiki/Gitanjali",
+    "domain": "Literature",
+    "rasa": "Shanta",
+    "word_count": 341,
+    "collected": "2026-04-19T22:57:55.864661"
+  },
+  {
+    "source": "Wikipedia",
+    "title": "The God of Small Things",
+    "file": "iks_corpus/processed/lit_The_God_of_Small_Things.txt",
+    "url": "https://en.wikipedia.org/wiki/The_God_of_Small_Things",
+    "domain": "Literature",
+    "rasa": "Karuna",
+    "word_count": 2368,
+    "collected": "2026-04-19T22:57:57.703154"
+  }
+]

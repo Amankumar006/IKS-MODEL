@@ -1,0 +1,237 @@
+The Kerala school of astronomy and mathematics or the Kerala school was a school of mathematics and astronomy founded by Madhava of Sangamagrama in Tirur, Malappuram, Kerala, India, which included among its members: Parameshvara, Nilakantha Somayaji, Jyeshtadeva, Achyuta Pisharati, Melpathur Narayana Bhattathiri, Achyuta Panikkar, Govinda Menon, Madhava Nair, Keshava Menon. The school flourished between the 14th and 16th centuries and its original discoveries seem to have ended with Narayana Bhattathiri (1559–1632).  In attempting to solve astronomical problems, the Kerala school independently discovered a number of important mathematical concepts. Their most important results—series expansion for trigonometric functions—were described in Sanskrit verse in a book by Neelakanta called Tantrasangraha (around 1500), and again in a commentary on this work, called Tantrasangraha-vakhya, of unknown authorship. The theorems were stated without proof, but proofs for the series for sine, cosine, and inverse tangent were provided a century later in the work Yuktibhasa (c. 1530), written in Malayalam, by Jyesthadeva, and also in a commentary on Tantrasangraha.
+Their work, completed two centuries before the invention of calculus in Europe, provided what is now considered the first example of a power series (apart from geometric series).
+
+
+Background
+Islamic scholars nearly developed a general formula for finding integrals of polynomials by 1000 AD —and evidently could find such a formula for any polynomial in which they were interested. But, it appears, they were not interested in any polynomial of degree higher than four, at least in any of the material that has been found to date. Indian scholars, on the other hand, were by the year 1600 able to use formula similar to Ibn al-Haytham's sum formula for arbitrary integral powers in calculating power series for the functions in which they were interested. By the same time, they also knew how to calculate the differentials of these functions. So some of the basic ideas of calculus were known in Egypt and India many centuries before Isaac Newton. It does not appear, however, that either Islamic or Indian mathematicians saw the necessity of connecting some of the disparate ideas that we include under the name calculus. They were apparently only interested in specific cases in which these ideas were needed.
+
+
+Contributions
+
+
+Infinite series
+The Kerala school has made a number of contributions to the fields of infinite series .These include the following infinite geometric series:
+
+The Kerala school made intuitive use of mathematical induction, though the inductive hypothesis was not yet formulated or employed in proofs. They used this to discover a semi-rigorous proof of the result:
+
+for large n.
+They applied ideas from (what was to become) differential and integral calculus to obtain (Taylor–Maclaurin) infinite series for 
+  
+    
+      
+        sin
+        ⁡
+        x
+      
+    
+    {\displaystyle \sin x}
+  
+, 
+  
+    
+      
+        cos
+        ⁡
+        x
+      
+    
+    {\displaystyle \cos x}
+  
+, and 
+  
+    
+      
+        arctan
+        ⁡
+        x
+      
+    
+    {\displaystyle \arctan x}
+  
+. The Tantrasangraha-vakhya gives the series in verse, which when translated to mathematical notation, can be written as:
+
+where, for 
+  
+    
+      
+        r
+        =
+        1
+        ,
+      
+    
+    {\displaystyle r=1,}
+  
+ the series reduce to the standard power series for these trigonometric functions, for example:
+
+(The Kerala school did not use the "factorial" symbolism.)
+The Kerala school made use of the rectification (computation of length) of the arc of a circle to give a proof of these results.  (The later method of Leibniz, using quadrature (i.e. computation of area under the arc of the circle), was not yet developed.) They also made use of the series expansion of 
+  
+    
+      
+        arctan
+        ⁡
+        x
+      
+    
+    {\displaystyle \arctan x}
+  
+ to obtain an infinite series expression (later known as Gregory series) for 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+:
+
+Their rational approximation of the error for the finite sum of their series are of particular interest.  For example, the error, 
+  
+    
+      
+        
+          f
+          
+            i
+          
+        
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle f_{i}(n+1)}
+  
+, (for n odd, and i = 1, 2, 3) for the series:
+
+They manipulated the terms, using the partial fraction expansion of :
+  
+    
+      
+        
+          
+            1
+            
+              
+                n
+                
+                  3
+                
+              
+              −
+              n
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {1}{n^{3}-n}}}
+  
+ to obtain a more rapidly converging series for 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+:
+
+They used the improved series to derive a rational expression, 
+  
+    
+      
+        104348
+        
+          /
+        
+        33215
+      
+    
+    {\displaystyle 104348/33215}
+  
+ for 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ correct up to nine decimal places, i.e. 
+  
+    
+      
+        3.141592653
+      
+    
+    {\displaystyle 3.141592653}
+  
+. They made use of an intuitive notion of a limit to compute these results. The Kerala school mathematicians also gave a semi-rigorous method of differentiation of some trigonometric functions, though the notion of a function, or of exponential or logarithmic functions, was not yet formulated.
+
+
+Recognition
+In 1825 John Warren published a memoir on the division of time in southern India, called the Kala Sankalita, which briefly mentions the discovery of infinite series by Kerala astronomers.
+The works of the Kerala school were first written up for the Western world by Englishman C. M. Whish in 1835. According to Whish, the Kerala mathematicians had "laid the foundation for a complete system of fluxions" and these works abounded "with fluxional forms and series to be found in no work of foreign countries". However, Whish's results were almost completely neglected until over a century later, when the discoveries of the Kerala school were investigated again by C. T. Rajagopal and his associates. Their work includes commentaries on the proofs of the arctan series in Yuktibhasa given in two papers, a commentary on the Yuktibhasa's proof of the sine and cosine series and two papers that provide the Sanskrit verses of the Tantrasangrahavakhya for the series for arctan, sine, and cosine (with English translation and commentary).
+In 1972 K. V. Sarma published his A History of the Kerala School of Hindu Astronomy which described features of the School such as the continuity of knowledge transmission from the 13th to the 17th century:  Govinda Bhattathiri to Parameshvara to Damodara to Nilakantha Somayaji to Jyesthadeva to Acyuta Pisarati. Transmission from teacher to pupil conserved knowledge in "a practical, demonstrative discipline like astronomy at a time when there was not a proliferation of printed books and public schools."
+In 1994 it was argued that the heliocentric model had been adopted about 1500 A.D. in Kerala.
+
+
+Possible transmission of Kerala school results to Europe
+A. K. Bag suggested in 1979 that knowledge of these results might have been transmitted to Europe through the trade route from Kerala by traders and Jesuit missionaries. Kerala was in continuous contact with China and Arabia, and Europe.  The suggestion of some communication routes and a chronology by some scholars could make such a transmission a possibility; however, there is no direct evidence by way of relevant manuscripts that such a transmission took place. According to David Bressoud, "there is no evidence that the Indian work of series was known beyond India, or even outside of Kerala, until the nineteenth century". V. J. Katz notes some of the ideas of the Kerala school have similarities to the work of 11th-century Iraqi scholar Ibn al-Haytham, suggesting a possible transmission of ideas from Islamic mathematics to Kerala.
+Both Indian and Arab scholars made discoveries before the 17th century that are now considered a part of calculus. According to Katz, they were yet to "combine many differing ideas under the two unifying themes of the derivative and the integral, show the connection between the two, and turn calculus into the great problem-solving tool we have today", like Newton and Leibniz. The intellectual careers of both Newton and Leibniz are well documented and there is no indication of their work not being their own; however, it is not known with certainty whether the immediate predecessors of Newton and Leibniz, "including, in particular, Fermat and Roberval, learned of some of the ideas of the Islamic and Indian mathematicians through sources of which we are not now aware". This is an active area of current research, especially in the manuscript collections of Spain and Maghreb, research that is now being pursued, among other places, at the Centre national de la recherche scientifique in Paris.
+
+
+See also
+Indian astronomy
+Indian mathematics
+Indian mathematicians
+History of mathematics
+A History of the Kerala School of Hindu Astronomy
+List of astronomers and mathematicians of the Kerala school
+
+
+Notes
+
+
+References
+Bressoud, David (2002), "Was Calculus Invented in India?", The College Mathematics Journal, 33 (1): 2–13, doi:10.2307/1558972, JSTOR 1558972.
+Gupta, R. C. (1969) "Second Order of Interpolation of Indian Mathematics", Indian Journal of History of Science 4: 92-94
+Hayashi, Takao (2003), "Indian Mathematics", in Grattan-Guinness, Ivor (ed.), Companion Encyclopedia of the History and Philosophy of the Mathematical Sciences, vol. 1, pp. 118–130, Baltimore, MD: The Johns Hopkins University Press, 976 pages, ISBN 0-8018-7396-7.
+Joseph, G. G. (2000), The Crest of the Peacock: The Non-European Roots of Mathematics, Princeton, NJ: Princeton University Press, ISBN 0-691-00659-8.
+Katz, Victor J. (1995), "Ideas of Calculus in Islam and India", Mathematics Magazine, 68 (3): 163–174, doi:10.2307/2691411, JSTOR 2691411.
+Parameswaran, S. (1992) "Whish's showroom revisited", Mathematical Gazette 76, no. 475 pages 28–36
+Pingree, David (1992), "Hellenophilia versus the History of Science", Isis, 83 (4): 554–563, Bibcode:1992Isis...83..554P, doi:10.1086/356288, JSTOR 234257, S2CID 68570164
+Plofker, Kim (1996), "An Example of the Secant Method of Iterative Approximation in a Fifteenth-Century Sanskrit Text", Historia Mathematica, 23 (3): 246–256, doi:10.1006/hmat.1996.0026.
+Plofker, Kim (2001), "The "Error" in the Indian "Taylor Series Approximation" to the Sine", Historia Mathematica, 28 (4): 283–295, doi:10.1006/hmat.2001.2331.
+Plofker, K. (20 July 2007), "Mathematics of India", in Katz, Victor J. (ed.), The Mathematics of Egypt, Mesopotamia, China, India, and Islam: A Sourcebook, Princeton, NJ: Princeton University Press, 685 pages (published 2007), pp. 385–514, ISBN 978-0-691-11485-9.
+C. K. Raju. 'Computers, mathematics education, and the alternative epistemology of the calculus in the Yuktibhâsâ', Philosophy East and West 51, University of Hawaii Press, 2001.
+Roy, Ranjan (1990), "Discovery of the Series Formula for 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+ by Leibniz, Gregory, and Nilakantha", Mathematics Magazine, 63 (5): 291–306, doi:10.2307/2690896, JSTOR 2690896.
+Sarma, K. V.; Hariharan, S. (1991). "Yuktibhasa of Jyesthadeva : a book of rationales in Indian mathematics and astronomy – an analytical appraisal". Indian J. Hist. Sci. 26 (2): 185–207.
+Singh, A. N. (1936), "On the Use of Series in Hindu Mathematics", Osiris, 1: 606–628, doi:10.1086/368443, JSTOR 301627, S2CID 144760421
+Stillwell, John (2004), Mathematics and its History (2 ed.), Berlin and New York: Springer, 568 pages, ISBN 0-387-95336-1.
+Tacchi Venturi. 'Letter by Matteo Ricci to Petri Maffei on 1 Dec 1581', Matteo Ricci S.I., Le Lettre Dalla Cina 1580–1610, vol. 2, Macerata, 1613.
+
+
+External links
+
+An overview of Indian mathematics, MacTutor History of Mathematics archive, 2002.
+Indian Mathematics: Redressing the balance, MacTutor History of Mathematics archive, 2002.
+Keralese mathematics, MacTutor History of Mathematics archive, 2002.
+Possible transmission of Keralese mathematics to Europe, MacTutor History of Mathematics archive, 2002.
+"Indians predated Newton 'discovery' by 250 years" phys.org, 2007

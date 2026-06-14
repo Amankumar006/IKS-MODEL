@@ -1,0 +1,447 @@
+Bhāskara II ([bʰɑːskərə]; c.1114–1185), also known as Bhāskarāchārya (lit. 'Bhāskara the teacher'), was an Indian polymath, mathematician, and astronomer. From verses in his main work, Siddhānta Śiromaṇi, it can be inferred that he was born in 1114 in Vijjadavida (Vijjalavida) and living in the Satpura mountain ranges of Western Ghats, believed to be the town of Patana in Chalisgaon, located in present-day Khandesh region of Maharashtra by scholars. In a temple in Maharashtra, an inscription, supposedly created by his grandson Changadeva, lists Bhaskaracharya's ancestral lineage for several generations before him as well as two generations after him. Henry Colebrooke who was the first European to translate (1817) Bhaskaracharya's mathematical classics refers to the family as Maharashtrian Brahmins residing on the banks of the Godavari.
+Born in a Hindu Deshastha Brahmin family of scholars, mathematicians and astronomers, Bhaskara II was the leader of a cosmic observatory at Ujjain, the main mathematical centre of ancient India. Bhāskara and his works represent a significant contribution to mathematical and astronomical knowledge in the 12th century. He has been called the greatest mathematician of medieval India. His main work, Siddhānta-Śiromaṇi (Sanskrit for "Crown of Treatises"), is divided into four parts called Līlāvatī, Bījagaṇita, Grahagaṇita and Golādhyāya, which are also sometimes considered four independent works. These four sections deal with arithmetic, algebra, mathematics of the planets, and spheres respectively. He also wrote another treatise named Karaṇā Kautūhala.
+
+
+Date, place and family
+Bhāskara gives his date of birth, and date of composition of his major work, in a verse in the Āryā metre:
+
+This reveals that he was born in 1036 of the Shaka era (1114 CE), and that he composed the Siddhānta Shiromani when he was 36 years old. Siddhānta Shiromani was completed during 1150 CE. He also wrote another work called the Karaṇa-kutūhala when he was 69 (in 1183). His works show the influence of Brahmagupta, Śrīdhara, Mahāvīra, Padmanābha and other predecessors. Bhaskara lived in Patnadevi located near Patan (Chalisgaon) in the vicinity of Sahyadri.
+He was born in a Deśastha Rigvedi Brahmin family near Vijjadavida (Vijjalavida). 
+Munishvara (17th century), a commentator on Siddhānta Shiromani of Bhaskara has given the information about the location of Vijjadavida in his work Marīci Tīkā as follows:
+
+सह्यकुलपर्वतान्तर्गत भूप्रदेशे 
+महाराष्ट्रदेशान्तर्गतविदर्भपरपर्यायविराटदेशादपि निकटे 
+गोदावर्यां नातिदूरे 
+
+पंचक्रोशान्तरे विज्जलविडम्।
+This description locates Vijjalavida in Maharashtra, near the Vidarbha region and close to the banks of Godavari river. However scholars differ about the exact location. Many scholars have placed the place near Patan in Chalisgaon Taluka of Jalgaon district whereas a section of scholars identified it with the modern day Beed city. Some sources identified Vijjalavida as Bijapur or Bidar in Karnataka. Identification of Vijjalavida with Basar in Telangana has also been suggested. However, the identifications suggested by these sources remain untenable.
+Bhāskara is said to have been the head of an astronomical observatory at Ujjain, the leading mathematical centre of medieval India. History records his great-great-great-grandfather holding a hereditary post as a court scholar, as did his son and other descendants. His father Maheśvara (Maheśvaropādhyāya) was a mathematician, astronomer and astrologer, who taught him mathematics, which he later passed on to his son Lokasamudra. Lokasamudra's son helped to set up a school in 1207 for the study of Bhāskara's writings. He died in 1185 CE.
+
+
+The Siddhānta-Śiromaṇi
+
+
+Līlāvatī
+
+The first section Līlāvatī (also known as pāṭīgaṇita or aṅkagaṇita), named after his daughter, consists of 277 verses. It covers calculations, progressions, measurement, permutations, and other topics.
+
+
+Bijaganita
+The second section Bījagaṇita (Algebra) has 213 verses. It discusses zero, infinity, positive and negative numbers, and indeterminate equations including (the now called) Pell's equation, solving it using a kuṭṭaka method. In particular, he also solved the 
+  
+    
+      
+        61
+        
+          x
+          
+            2
+          
+        
+        +
+        1
+        =
+        
+          y
+          
+            2
+          
+        
+      
+    
+    {\displaystyle 61x^{2}+1=y^{2}}
+  
+ case that was to elude Fermat and his European contemporaries centuries later.
+
+
+Grahaganita
+In the third section Grahagaṇita, while treating the motion of planets, he considered their instantaneous speeds. It consists of 451 verses
+
+  
+    
+      
+        sin
+        ⁡
+        
+          y
+          ′
+        
+        −
+        sin
+        ⁡
+        y
+        ≈
+        (
+        
+          y
+          ′
+        
+        −
+        y
+        )
+        cos
+        ⁡
+        y
+      
+    
+    {\displaystyle \sin y'-\sin y\approx (y'-y)\cos y}
+  
+ for.
+
+  
+    
+      
+        
+          y
+          ′
+        
+      
+    
+    {\displaystyle y'}
+  
+ close to 
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  
+.This can be interpreted as the discovery that cosine is the derivative of sine although he did not develop the notion of a derivative.
+In his words:
+
+bimbārdhasya koṭijyā guṇastrijyāhāraḥ phalaṃ dorjyāyorantaram
+This result had also been observed earlier by Muñjalācārya (or Mañjulācārya) mānasam, in the context of a table of sines.
+Bhāskara also stated that at its highest point a planet's instantaneous speed is zero.
+
+
+Mathematics
+Some of Bhaskara's contributions to mathematics include the following:
+
+Proofs of the Pythagorean Theorem. In his algebraic treatise Bijaganita, two methods for calculating the hypotenuse of a right triangle are described. These are equivalent to proofs of the Pythagorean Theorem.
+The first method involves dividing the right triangle using a perpendicular line drawn from the right angle to the hypotenuse, and then applying the principle of similar figures and proportions.(See the figure.)
+The second method involves calculation of the area of the square on the hypotenuse. First, the square is divided into smaller pieces, one square with side length a-b and four triangles, illustrating the area is  
+  
+    
+      
+        (
+        a
+        −
+        b
+        
+          )
+          
+            2
+          
+        
+        +
+        2
+        a
+        b
+      
+    
+    {\displaystyle (a-b)^{2}+2ab}
+  
+. (see the figure on the left.) Here, the length of the hypotenuse is denoted by c, and the lengths of the other two sides are denoted by a and b. Then he computes the hypotenuse of a right angled triangle, where a=15 and b=20. Next, the author states a fact equivalent to
+  
+    
+      
+        (
+        a
+        −
+        b
+        
+          )
+          
+            2
+          
+        
+        +
+        2
+        a
+        b
+        =
+        
+          a
+          
+            2
+          
+        
+        +
+        
+          b
+          
+            2
+          
+        
+      
+    
+    {\displaystyle (a-b)^{2}+2ab=a^{2}+b^{2}}
+  
+, and presents a figure (the figure on the right) as a demonstration. (The figure accompanies no further explanation.) Finally, he presents 
+  
+    
+      
+        c
+        =
+        
+          
+            
+              a
+              
+                2
+              
+            
+            +
+            
+              b
+              
+                2
+              
+            
+          
+        
+      
+    
+    {\displaystyle c={\sqrt {a^{2}+b^{2}}}}
+  
+ as a concise method.
+Solutions of indeterminate quadratic equations (of the type ax2 + b = y2).
+Integer solutions of linear and quadratic indeterminate equations (Kuṭṭaka). The rules he gives are (in effect) the same as those given by the Renaissance European mathematicians of the 17th century.
+A cyclic Chakravala method for solving indeterminate equations of the form ax2 + bx + c = y. The solution to this equation was traditionally attributed to William Brouncker in 1657, though his method was more difficult than the chakravala method.
+The first general method for finding the solutions of the problem x2 − ny2 = 1 (so-called "Pell's equation") was given by Bhaskara II.
+Solutions of Diophantine equations of the second order, such as 61x2 + 1 = y2. This very equation was posed as a problem in 1657 by the French mathematician Pierre de Fermat, but its solution was unknown in Europe until the time of Euler in the 18th century.
+Some preliminary ideas of differential calculus and suggested that the "differential coefficient" vanishes at the extreme end.
+Stated early form of Rolle's theorem, special case of mean value theorem for inverse interpolation of the sine was later describe by parameshvara through his commentary.
+Calculated the derivative of sine function, although he did not develop the notion of a derivative. (See Calculus section below.)
+In Siddhanta-Śiromaṇi, Bhaskara developed spherical trigonometry along with a number of other trigonometric results. (See Trigonometry section below.)
+
+
+Arithmetic
+Bhaskara's arithmetic text Līlāvatī covers the topics of definitions, arithmetical terms, interest computation, arithmetical and geometrical progressions, plane geometry, solid geometry, the shadow of the gnomon, methods to solve indeterminate equations, and combinations.
+Līlāvatī is divided into 13 chapters and covers many branches of mathematics, arithmetic, algebra, geometry, and a little trigonometry and measurement. More specifically the contents include:
+
+Definitions.
+Properties of zero (including division, and rules of operations with zero).
+Further extensive numerical work, including use of negative numbers and surds.
+Estimation of π.
+Arithmetical terms, methods of multiplication, and squaring.
+Inverse rule of three, and rules of 3, 5, 7, 9, and 11.
+Problems involving interest and interest computation.
+Indeterminate equations (Kuṭṭaka), integer solutions (first and second order). His contributions to this topic are particularly important, since the rules he gives are (in effect) the same as those given by the renaissance European mathematicians of the 17th century, yet his work was of the 12th century. Bhaskara's method of solving was an improvement of the methods found in the work of Aryabhata and subsequent mathematicians.
+His work is outstanding for its systematisation, improved methods and the new topics that he introduced. Furthermore, the Lilavati contained excellent problems and it is thought that Bhaskara's intention may have been that a student of 'Lilavati' should concern himself with the mechanical application of the method.
+
+
+Algebra
+His Bījaganita ("Algebra") was a work in twelve chapters. It was the first text to recognize that a positive number has two square roots (a positive and negative square root). His work Bījaganita is effectively a treatise on algebra and contains the following topics:
+
+Positive and negative numbers.
+The 'unknown' (includes determining unknown quantities).
+Determining unknown quantities.
+Surds (includes evaluating surds and their square roots).
+Kuṭṭaka (for solving indeterminate equations and Diophantine equations).
+Simple equations (indeterminate of second, third and fourth degree).
+Simple equations with more than one unknown.
+Indeterminate quadratic equations (of the type ax2 + b = y2).
+Solutions of indeterminate equations of the second, third and fourth degree.
+Quadratic equations.
+Quadratic equations with more than one unknown.
+Operations with products of several unknowns.
+Bhaskara derived a cyclic, chakravala method for solving indeterminate quadratic equations of the form ax2 + bx + c = y. Bhaskara's method for finding the solutions of the problem Nx2 + 1 = y2 (the so-called "Pell's equation") is of considerable importance.
+
+
+Trigonometry
+The Siddhānta Shiromani (written in 1150) demonstrates Bhaskara's knowledge of trigonometry, including the sine table and relationships between different trigonometric functions. He also developed spherical trigonometry, along with other interesting trigonometrical results. In particular Bhaskara seemed more interested in trigonometry for its own sake than his predecessors who saw it only as a tool for calculation. Among the many interesting results given by Bhaskara, results found in his works include computation of sines of angles of 18 and 36 degrees, and the now well known formulae for 
+  
+    
+      
+        sin
+        ⁡
+        
+          (
+          
+            a
+            +
+            b
+          
+          )
+        
+      
+    
+    {\displaystyle \sin \left(a+b\right)}
+  
+ and 
+  
+    
+      
+        sin
+        ⁡
+        
+          (
+          
+            a
+            −
+            b
+          
+          )
+        
+      
+    
+    {\displaystyle \sin \left(a-b\right)}
+  
+.
+
+
+Calculus
+Evidence suggests Bhaskara was acquainted with some preliminary ideas of differential calculus and suggested that the "differential coefficient" vanishes at an extremum value of the function indicating knowledge of the concept of 'infinitesimals'. There is evidence of an early form of Rolle's theorem in his work, though it was stated without a modern formal proof..  In his astronomical work, Bhāskara gives a result that looks like a precursor to infinitesimal methods: if 
+  
+    
+      
+        x
+        ≈
+        y
+      
+    
+    {\displaystyle x\approx y}
+  
+ then 
+  
+    
+      
+        sin
+        ⁡
+        (
+        y
+        )
+        −
+        sin
+        ⁡
+        (
+        x
+        )
+        ≈
+        (
+        y
+        −
+        x
+        )
+        cos
+        ⁡
+        (
+        y
+        )
+      
+    
+    {\displaystyle \sin(y)-\sin(x)\approx (y-x)\cos(y)}
+  
+. This can be interpreted as the discovery that cosine is the derivative of sine,although he did not develop the notion of a derivative.In his works, there are traces of a special case of mean value theorem. The mean value formula for inverse interpolation of the sine was later formulated by Parameshvara in the 15th century in the Lilavati Bhasya, a commentary on Bhāskara’s Lilavati.
+
+
+Astronomy
+Using an astronomical model developed by Brahmagupta in the 7th century, Bhāskara accurately defined many astronomical quantities, including, for example, the length of the sidereal year, the time that is required for the Sun to orbit the Earth, as approximately 365.2588 days which is the same as in Surya siddhanta. The modern accepted measurement is 365.25636 days, a difference of 3.5 minutes.
+His mathematical astronomy text Siddhanta Shiromani is written in two parts: the first part on mathematical astronomy and the second part on the sphere.
+The twelve chapters of the first part cover topics such as:
+
+Mean longitudes of the planets.
+True longitudes of the planets.
+The three problems of diurnal rotation. Diurnal motion refers to the apparent daily motion of stars around the Earth, or more precisely around the two celestial poles. It is caused by the Earth's rotation on its axis, so every star apparently moves on a circle that is called the diurnal circle.
+Syzygies.
+Lunar eclipses.
+Solar eclipses.
+Latitudes of the planets.
+Sunrise equation.
+The Moon's crescent.
+Conjunctions of the planets with each other.
+Conjunctions of the planets with the fixed stars.
+The paths of the Sun and Moon.
+The second part contains thirteen chapters on the sphere. It covers topics such as:
+
+Praise of study of the sphere.
+Nature of the sphere.
+Cosmography and geography.
+Planetary mean motion.
+Eccentric epicyclic model of the planets.
+The armillary sphere.
+Spherical trigonometry.
+Ellipse calculations.
+First visibilities of the planets.
+Calculating the lunar crescent.
+Astronomical instruments.
+The seasons.
+Problems of astronomical calculations.
+
+
+Engineering
+The earliest reference to a perpetual motion machine date back to 1150, when Bhāskara II described a wheel that he claimed would run forever.
+Bhāskara II invented a variety of instruments one of which is Yaṣṭi-yantra. This device could vary from a simple stick to V-shaped staffs designed specifically for determining angles with the help of a calibrated scale.
+
+
+Legends
+In his book Lilavati, he reasons: "In this quantity also which has zero as its divisor there is no change even when many quantities have entered into it or come out [of it], just as at the time of destruction and creation when throngs of creatures enter into and come out of [him, there is no change in] the infinite and unchanging [Vishnu]".
+
+
+"Behold!"
+It has been stated, by several authors, that Bhaskara II proved the Pythagorean theorem by drawing a diagram and providing the single word "Behold!". Sometimes Bhaskara's name is omitted and this is referred to as the Hindu proof, well known by schoolchildren.
+However, Bhaskara II, in his Bijaganita,  devotes two verses and prose commentaries following them on the explanation of the proofs .
+A mathematics historian Kim Plofker
+comments:
+
+These verses are presumably the ultimate source of the widespread legend ... 
+Exactly which part of these verses  was meant by her is not clear. But the prose commentary after the latter verse ends as follows: 
+
+And otherwise, when one has set down those parts of the figure there [merely] seeing [it is sufficient].
+
+
+Legacy
+A number of institutes and colleges in India are named after him, including Bhaskaracharya Pratishthana in Pune, Bhaskaracharya College of Applied Sciences in Delhi, Bhaskaracharya Institute For Space Applications and Geo-Informatics in Gandhinagar.
+On 20 November 1981 the Indian Space Research Organisation (ISRO) launched the Bhaskara II satellite honouring the mathematician and astronomer.
+Invis Multimedia released Bhaskaracharya, an Indian documentary short on the mathematician in 2015.
+
+
+See also
+List of Indian mathematicians
+Bride's Chair
+Bījapallava
+
+
+Notes
+
+
+References
+
+
+Bibliography
+Burton, David M. (2011), The History of Mathematics: An Introduction (7th ed.), McGraw Hill, ISBN 978-0-07-338315-6
+Takao Hayashi, Bījagaṇita of Bhāskara, SCIAMVS 10 (2009), 3—301
+Eves, Howard (1990), An Introduction to the History of Mathematics (6th ed.), Saunders College Publishing, ISBN 978-0-03-029558-4
+Mazur, Joseph (2005), Euclid in the Rainforest, Plume, ISBN 978-0-452-28783-9
+Sarkār, Benoy Kumar (1918), Hindu achievements in exact science: a study in the history of scientific development, Longmans, Green and co.
+Seal, Sir Brajendranath (1915), The positive sciences of the ancient Hindus, Longmans, Green and co.
+Colebrooke, Henry T. (1817), Arithmetic and mensuration of Brahmegupta and Bhaskara
+White, Lynn Townsend (1978), "Tibet, India, and Malaya as Sources of Western Medieval Technology", Medieval religion and technology: collected essays, University of California Press, ISBN 978-0-520-03566-9
+Selin, Helaine, ed. (2008), "Astronomical Instruments in India", Encyclopaedia of the History of Science, Technology, and Medicine in Non-Western Cultures (2nd edition), Springer Verlag Ny, ISBN 978-1-4020-4559-2
+Shukla, Kripa Shankar (1984), "Use of Calculus in Hindu Mathematics", Indian Journal of History of Science, 19: 95–104
+Pingree, David Edwin (1970), Census of the Exact Sciences in Sanskrit, vol. 146, American Philosophical Society, ISBN 9780871691460
+Plofker, Kim (2007), "Mathematics in India", in Katz, Victor J. (ed.), The Mathematics of Egypt, Mesopotamia, China, India, and Islam: A Sourcebook, Princeton University Press, ISBN 9780691114859
+Plofker, Kim (2009), Mathematics in India, Princeton University Press, ISBN 9780691120676
+Cooke, Roger (1997), "The Mathematics of the Hindus", The History of Mathematics: A Brief Course, Wiley-Interscience, pp. 213–215, ISBN 0-471-18082-3
+Poulose, K. G. (1991), K. G. Poulose (ed.), Scientific heritage of India, mathematics, Ravivarma Samskr̥ta granthāvali, vol. 22, Govt. Sanskrit College (Tripunithura, India)
+Chopra, Pran Nath (1982), Religions and communities of India, Vision Books, ISBN 978-0-85692-081-3
+Goonatilake, Susantha (1999), Toward a global science: mining civilizational knowledge, Indiana University Press, ISBN 978-0-253-21182-8
+Selin, Helaine; D'Ambrosio, Ubiratan, eds. (2001), "Mathematics across cultures: the history of non-western mathematics", Science Across Cultures, 2, Springer, ISBN 978-1-4020-0260-1{{citation}}:  CS1 maint: work parameter with ISBN (link)
+Stillwell, John (2002), Mathematics and its history, Undergraduate Texts in Mathematics, Springer, ISBN 978-0-387-95336-6
+Sahni, Madhu (2019), Pedagogy Of Mathematics, Vikas Publishing House, ISBN 978-9353383275
+
+
+Further reading
+W. W. Rouse Ball. A Short Account of the History of Mathematics, 4th Edition. Dover Publications, 1960.
+George Gheverghese Joseph. The Crest of the Peacock: Non-European Roots of Mathematics, 2nd Edition. Penguin Books, 2000.
+O'Connor, John J.; Robertson, Edmund F., "Bhāskara II", MacTutor History of Mathematics Archive, University of St Andrews University of St Andrews, 2000.
+Ian Pearce. Bhaskaracharya II at the MacTutor archive. St Andrews University, 2002.
+Pingree, David (1970–1980). "Bhāskara II". Dictionary of Scientific Biography. Vol. 2. New York: Charles Scribner's Sons. pp. 115–120. ISBN 978-0-684-10114-9.
+
+
+External links
+
+4to40 Biography
