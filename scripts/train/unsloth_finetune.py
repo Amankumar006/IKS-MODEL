@@ -1,138 +1,147 @@
-import os
-import argparse
-import wandb
-import json
-import torch
-from datasets import Dataset
-from trl import SFTTrainer, SFTConfig
-from unsloth import FastLanguageModel
-from unsloth.chat_templates import get_chat_template
+# Fine-tuning Kaggle Notebook Code for Mistral 7B SFT
+# Overwritten with the exact code used successfully on the Kaggle Free Tier.
+# Run 'pip install unsloth' first in your environment.
 
-def load_clean_dataset(path: str):
-    """Loads JSONL dataset safely, stripping out problematic schemas to avoid PyArrow cast errors."""
+# Cell 2 — Environment & credentials
+import os
+
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # stick to one GPU, avoids the duplication issue
+
+from kaggle_secrets import UserSecretsClient
+secrets = UserSecretsClient()
+
+# 👇 FIX: Pull BOTH secrets so the background server can log in!
+os.environ["HF_TOKEN"] = secrets.get_secret("HF_TOKEN")
+os.environ["WANDB_API_KEY"] = secrets.get_secret("WANDB_API_KEY")
+
+HF_USERNAME = "006aman"      
+HF_REPO_NAME = "iks-mistral-7b-checkpoints"
+
+# Cell 3 — Load Mistral 7B + LoRA
+import torch
+from unsloth import FastLanguageModel
+
+MODEL_NAME = "unsloth/mistral-7b-instruct-v0.3-bnb-4bit"
+MAX_SEQ_LENGTH = 1024  # bump to 2048 later if the memory print below has headroom
+
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name = MODEL_NAME,
+    max_seq_length = MAX_SEQ_LENGTH,
+    dtype = None,          # auto -> float16 on T4
+    load_in_4bit = True,
+)
+
+model = FastLanguageModel.get_peft_model(
+    model,
+    r = 16,
+    target_modules = ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"],
+    lora_alpha = 16,
+    lora_dropout = 0,
+    bias = "none",
+    use_gradient_checkpointing = "unsloth",
+    random_state = 3407,
+)
+
+print(f"GPU: {torch.cuda.get_device_name(0)}")
+print(f"Memory allocated after load: {torch.cuda.memory_allocated()/1e9:.2f} GB")
+
+
+# Cell 4 — Dataset (auto-discover & safe parse)
+import json
+from datasets import Dataset
+
+# Find candidate data files
+data_files = []
+for root, dirs, files in os.walk("/kaggle/input"):
+    for f in files:
+        if f.endswith((".json", ".jsonl", ".csv")):
+            data_files.append(os.path.join(root, f))
+
+DATA_PATH = data_files[0] # 👈 adjust if needed
+print(f"\nLoading: {DATA_PATH}")
+
+# 1. Safe JSON loader to strip out unwanted keys (pr, words)
+def load_sharegpt_jsonl(path: str):
     rows = []
     with open(path, "r", encoding="utf-8") as f:
         for line in f:
-            if not line.strip():
-                continue
-            try:
-                obj = json.loads(line)
-                conv = obj.get("conversations", [])
-                cleaned = []
-                for turn in conv:
-                    cleaned.append({
-                        "from": str(turn.get("from", "")),
-                        "value": str(turn.get("value", ""))
-                    })
-                if cleaned:
-                    rows.append({"conversations": cleaned})
-            except Exception:
-                continue
+            if not line.strip(): continue
+            obj = json.loads(line)
+            conv = obj.get("conversations", [])
+            # Forcibly extract ONLY 'from' and 'value'
+            cleaned = [{"from": str(turn.get("from", "")), "value": str(turn.get("value", ""))} for turn in conv]
+            if cleaned:
+                rows.append({"conversations": cleaned})
     return Dataset.from_list(rows)
 
-def main():
-    parser = argparse.ArgumentParser(description="Fine-tune IKS Bharat Persona using Unsloth")
-    parser.add_argument("--resume", action="store_true", help="Resume from the latest checkpoint if it crashed")
-    args = parser.parse_args()
+raw_dataset = load_sharegpt_jsonl(DATA_PATH)
 
-    # 1. Environment & Hardware Optimization Hacks for Kaggle/T4
-    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-    os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+# 2. Format using the correct Llama 3 template
+def format_llama3(example):
+    user_msg, assistant_msg = "", ""
+    for turn in example["conversations"]:
+        role = turn.get("from", "").strip().lower()
+        val = turn.get("value", "")
+        if role == "human": user_msg = val
+        elif role == "gpt": assistant_msg = val
+        
+    # Llama 3 specific prompt tokens
+    text = f"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n{user_msg}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{assistant_msg}<|eot_id|>"
+    return {"text": text}
 
-    # 2. Weights & Biases Setup
-    wandb.init(project="iks-bharat-persona", name="mistral-7b-run-1")
+train_dataset = raw_dataset.map(format_llama3, remove_columns=raw_dataset.column_names)
 
-    # 3. Model & LoRA Configuration (Pivoted to Mistral 7B for standard float16 compatibility)
-    max_seq_length = 512  # Throttled context window to prevent memory blowout
-    dtype = None  # Auto detection
-    load_in_4bit = True  # Use 4bit quantization to save memory
+print("\nColumns:", train_dataset.column_names)
+print("\nFirst example formatted for Llama:")
+print(train_dataset[0])
 
-    print("Loading Base Model (Mistral 7B)...")
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name = "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
-        max_seq_length = max_seq_length,
-        dtype = dtype,
-        load_in_4bit = load_in_4bit,
-        token = os.environ.get("HF_TOKEN")
-    )
 
-    print("Configuring LoRA for deep persona injection...")
-    model = FastLanguageModel.get_peft_model(
-        model,
-        r = 32,             # Higher rank for stylistic/persona changes
-        target_modules = ["q_proj", "k_proj", "v_proj", "o_proj",
-                          "gate_proj", "up_proj", "down_proj",],
-        lora_alpha = 64,    # Alpha = 2 * r is standard
-        lora_dropout = 0,   # 0 is optimized for Unsloth
-        bias = "none",
-        use_gradient_checkpointing = "unsloth", # Crucial for 15k multi-turn examples
-        random_state = 3407,
-        use_rslora = False,
-        loftq_config = None,
-    )
+# Cell 5 — Trainer setup
+from trl import SFTTrainer, SFTConfig  # 👈 FIX: Import the new SFTConfig
 
-    # 4. Dataset Preparation with safe JSONL loader
-    print("Loading Dataset cleanly...")
-    tokenizer = get_chat_template(
-        tokenizer,
-        chat_template = "mistral",
-    )
+SANITY_CHECK = False # 👈 Ready for the full run!
+OUTPUT_DIR = "/kaggle/working/bharat-checkpoints"
 
-    def formatting_prompts_func(examples):
-        convos = examples["conversations"]
-        texts = [tokenizer.apply_chat_template(convo, tokenize = False, add_generation_prompt = False) for convo in convos]
-        return { "text" : texts, }
+extra = {"max_steps": 20} if SANITY_CHECK else {"num_train_epochs": 3}
 
-    # Load cleaned dataset to bypass PyArrow schema casts errors
-    dataset = load_clean_dataset("data/curated/iks_instruction_dataset.jsonl")
-    dataset = dataset.map(formatting_prompts_func, batched = True,)
+training_args = SFTConfig(               # 👈 FIX: Use SFTConfig instead of TrainingArguments
+    output_dir=OUTPUT_DIR,
+    dataset_text_field="text",           # 👈 Moved here for SFTConfig compatibility
+    max_seq_length=MAX_SEQ_LENGTH,       # 👈 Moved here for SFTConfig compatibility
+    per_device_train_batch_size=2,
+    gradient_accumulation_steps=4,
+    learning_rate=2e-4,
+    warmup_steps=10,
+    lr_scheduler_type="cosine",
+    weight_decay=0.01,
+    optim="paged_adamw_8bit",
+    fp16=not torch.cuda.is_bf16_supported(),
+    bf16=torch.cuda.is_bf16_supported(),
+    logging_steps=1 if SANITY_CHECK else 10,
+    save_steps=500,
+    save_total_limit=2,
+    remove_unused_columns=False,
+    average_tokens_across_devices=False,
+    report_to="none" if SANITY_CHECK else "wandb", 
+    push_to_hub=not SANITY_CHECK,
+    hub_model_id=f"{HF_USERNAME}/{HF_REPO_NAME}",
+    hub_strategy="checkpoint", 
+    hub_private_repo=True,     
+    hub_token=os.environ.get("HF_TOKEN"),
+    **extra,
+)
 
-    # 5. Training Configuration using SFTConfig
-    print("Initializing SFTTrainer...")
-    
-    # Configure SFTConfig to resolve PicklingError and Transformers 5.5.0 bugs
-    sft_config = SFTConfig(
-        dataset_text_field = "text",
-        max_seq_length = max_seq_length,
-        dataset_num_proc = 1,  # Single-process mapping to reduce memory spikes
-        packing = False,
-        per_device_train_batch_size = 1,
-        gradient_accumulation_steps = 8,  # Effective batch size = 8
-        warmup_steps = 50,
-        num_train_epochs = 3,
-        learning_rate = 2e-4,
-        fp16 = not torch.cuda.is_bf16_supported(),
-        bf16 = torch.cuda.is_bf16_supported(),
-        logging_steps = 10,
-        optim = "paged_adamw_8bit",
-        weight_decay = 0.01,
-        lr_scheduler_type = "cosine",
-        seed = 3407,
-        output_dir = "iks-mistral-7b-checkpoints",
-        report_to = "wandb",
-        gradient_checkpointing = True,
-        save_strategy = "steps",
-        save_steps = 500,
-        save_total_limit = 2,  # Limit checkpoints to save disk space
-        average_tokens_across_devices = False,  # Fix for transformers 5.5.0 bug
-    )
+trainer = SFTTrainer(
+    model=model,
+    tokenizer=tokenizer,
+    train_dataset=train_dataset,
+    args=training_args,
+)
 
-    trainer = SFTTrainer(
-        model = model,
-        tokenizer = tokenizer,
-        train_dataset = dataset,
-        args = sft_config,
-    )
+print("Mode:", "SANITY CHECK (20 steps)" if SANITY_CHECK else "FULL RUN (3 epochs)")
+print("per_device_train_batch_size:", trainer.args.per_device_train_batch_size)
 
-    # 6. Training Execution
-    print(f"Starting Training! Resume mode: {args.resume}")
-    trainer_stats = trainer.train(resume_from_checkpoint=args.resume)
 
-    print("Training Complete. Saving Final Model...")
-    model.save_pretrained("iks_bharat_lora")
-    tokenizer.save_pretrained("iks_bharat_lora")
-
-    print("Done. LoRA adapter weights saved successfully.")
-
-if __name__ == "__main__":
-    main()
+# Cell 6 — Train
+trainer.train()
