@@ -150,7 +150,8 @@ IKS-MODEL/
 │   └── train/            # Unsloth Mistral 7B fine-tuning scripts
 ├── tests/
 │   ├── unit/             # Fast, mock-enabled isolated tests
-│   └── integration/      # End-to-end components integration checks
+│   ├── integration/      # Component integration checks
+│   └── e2e/              # System-level end-to-end tests
 ├── configs/
 │   └── rag/              # YAML configuration files
 └── docs/                 # Architecture Decision Records (ADRs) and guides

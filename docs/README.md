@@ -26,6 +26,8 @@ How-to guides for developers and maintainers.
 *   [`deployment.md`](guides/deployment.md): How to deploy to HuggingFace Spaces.
 *   [`data-sources.md`](guides/data-sources.md): Where the IKS corpus comes from.
 *   [`runpod_setup.md`](guides/runpod_setup.md): How to run the Phase 2 fine-tuning on an A100 GPU.
+*   [`kaggle_training_notebook.md`](guides/kaggle_training_notebook.md): Cells and dependencies for T4 x2 Kaggle fine-tuning.
+*   [`evaluation_framework.md`](guides/evaluation_framework.md): Rubrics and code to compile the 500-question benchmark.
 
 ### 📋 [`project/`](project/)
 Project management and tracking.
