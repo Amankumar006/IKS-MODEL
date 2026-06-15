@@ -1,52 +1,52 @@
 # Next Tasks - IKS AI Assistant
 
 **After completing current tasks, follow this task list in order.**
-**Last updated**: Phase 2.2
+**Last updated**: Phase 2.5 (Mistral 7B SFT Handoff)
 
 ---
 
 ## 🎯 Current Vision: The "World Gateway" (Bharat Persona)
 
-**IMPORTANT**: We have pivoted away from building a VTU student exam tool. The goal is to build an immersive, culturally resonant AI that speaks with the voice of "Bharat" to a global audience.
+**IMPORTANT**: The goal is to build an immersive, culturally resonant AI that speaks with the voice of "Bharat" to a global audience, rather than a dry academic exam helper.
 
 ---
 
 ## Phase 2: Domain-Specific Fine-Tuning (IN PROGRESS)
 
-### 🔄 Task 2.1: Dataset Generation (Active)
-**Status**: IN PROGRESS (Currently running in background)
-**Goal**: Generate 15,000 ShareGPT instruction-tuning pairs covering sensory, philosophical, and architectural domains.
-- [ ] Monitor background process: `wc -l data/curated/iks_instruction_dataset.jsonl`
-- [ ] Wait for completion.
-- [ ] Audit dataset for quality and "verbal tics" (e.g., repeating "Ah," too often).
+### ✅ Task 2.1: Dataset Generation
+**Status**: 100% COMPLETE
+- Successfully generated, cleaned, and validated exactly 15,001 ShareGPT pairs in `data/curated/iks_instruction_dataset.jsonl`.
 
-### ⏳ Task 2.2: Cloud GPU Fine-Tuning (Pending)
-**Status**: READY (Waiting on Task 2.1)
-**Goal**: Fine-tune Gemma 3 12B using Unsloth on an A100 GPU.
-- [ ] Follow `docs/guides/runpod_setup.md` to rent A100.
-- [ ] Transfer `iks_instruction_dataset.jsonl` to the cloud.
-- [ ] Execute `python scripts/train/unsloth_finetune.py`.
-- [ ] Monitor loss curve on Weights & Biases.
-- [ ] Export final model to GGUF.
+### 🔄 Task 2.2: Cloud GPU Fine-Tuning (Mistral 7B)
+**Status**: IN PROGRESS / EXECUTED ON KAGGLE
+- [x] Pivot architecture from Gemma 3 to Mistral 7B to support float16 on Kaggle T4 GPUs.
+- [x] Integrate custom dataset schema cleaner to bypass PyArrow crash.
+- [x] Apply Kaggle T4 VRAM hacks (`CUDA_VISIBLE_DEVICES="0"`, `expandable_segments:True`, `max_seq_length=512`).
+- [x] Resolve `SFTConfig` PicklingError and Transformers 5.5.0 average tokens bugs.
+- [ ] Monitor and verify W&B loss curve convergence for `mistral-7b-run-1`.
+- [ ] Confirm LoRA adapter checkpoints are uploaded to Hugging Face `iks-mistral-7b-checkpoints` repository.
 
-### ⏳ Task 2.3: Model Evaluation
+### ⏳ Task 2.3: Model Evaluation & Testing
 **Status**: PLANNED
-**Goal**: Verify that the fine-tuned Gemma 3 model successfully holds the Bharat persona.
-- [ ] Compare baseline Gemma 3 vs Fine-tuned Gemma 3.
-- [ ] Test hallucination rate on specific temple/architectural queries.
+- [ ] Set up local inference script loading the Mistral 7B base model and merging the fine-tuned LoRA adapters.
+- [ ] Run the compiled 500-question benchmark (`data/eval/iks_benchmark_gold.json`).
+- [ ] Evaluate responses using the LLM-as-a-judge rubric on the 4 dimensions: Knowledge, Transport, Rasa, and Bharat Voice.
+- [ ] Compare fine-tuned model against baseline Mistral 7B.
+
+### ⏳ Task 2.4: Multimodal Data Collection
+**Status**: PLANNED
+- [ ] Collect 3,000 temple architecture and Indian classical art images for vision tuning.
 
 ---
 
 ## 📦 Archive: Phase 1 (RAG Foundation) - 100% COMPLETE
 
 The following tasks were completed in April 2026:
-- [x] Task 1: Integrate 286 IKS Documents
-- [x] Task 2: Create Bharat Persona system prompt
-- [x] Task 3: Fix CPU Timeouts
-- [x] Task 4: Rebuild ChromaDB with 4,516 chunks
-- [x] Task 5: End-to-End Local Test
-- [x] Task 6: Build Gradio UI
-- [x] Task 7: Switch from Ollama to Google Gemini (Free Tier)
-- [x] Task 8: Deploy to HuggingFace Spaces
-
-**Architecture Note**: The Phase 1 deployed app lives at HF Spaces and uses RAG + Gemini API. Phase 2 (this phase) will replace the Gemini API with our own fine-tuned Gemma 3 local model.
+- [x] Integrate 286 IKS Documents
+- [x] Create Bharat Persona system prompt
+- [x] Fix CPU Timeouts
+- [x] Rebuild ChromaDB with 4,516 chunks
+- [x] End-to-End Local Test
+- [x] Build Gradio UI
+- [x] Switch from Ollama to Google Gemini (Free Tier)
+- [x] Deploy to HuggingFace Spaces
