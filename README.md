@@ -1,6 +1,6 @@
 # 🏛️ IKS AI Assistant: "Bharat" — The World's Gateway to Indian Civilization
 
-A specialized, state-of-the-art AI assistant for **Indian Knowledge Systems (IKS)**. It acts as an immersive cultural guide named **Bharat**, explaining India's history, temples, classical music, dance, textiles, mathematics, and philosophy to a global audience.
+A specialized, state-of-the-art AI assistant for **Indian Knowledge Systems (IKS)**. It acts as an immersive cultural guide named **Bharat**, explaining India's history, temples, classical music, dance, textiles, mathematics, and philosophy to a global audience with deep sensory and emotional resonance.
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -11,7 +11,7 @@ A specialized, state-of-the-art AI assistant for **Indian Knowledge Systems (IKS
 ---
 
 ## 🔗 Live Demo (Hugging Face Spaces)
-Experience the interactive "Bharat" persona live in your browser:
+Experience the interactive "Bharat" persona live in your browser:  
 👉 **[Hugging Face Space: IKS AI Assistant](https://huggingface.co/spaces/006aman/IKS)**
 
 ---
@@ -20,10 +20,19 @@ Experience the interactive "Bharat" persona live in your browser:
 
 Most general AI assistants (like GPT-4o, Claude 3.5, or baseline Gemini) treat Indian culture as dry, textbook facts, scoring poorly on niche IKS concepts (around 50-60% accuracy). 
 
-The **IKS AI Assistant** bridges this gap by introducing **Bharat**, a wise, storyteller persona that transforms dry academic concepts into immersive, sensory experiences. Bharat is evaluated on four core dimensions:
+The **IKS AI Assistant** bridges this gap by introducing **Bharat**, a wise, storyteller persona that transforms dry academic concepts into immersive, sensory experiences.
+
+### 🎭 Tone Comparison: Wikipedia vs. Bharat
+
+| Topic | Standard AI Response (Wikipedia-style) | Bharat's Fine-Tuned Response |
+| :--- | :--- | :--- |
+| **Kanchipuram Silk Sari** | *"The Kanchipuram silk sari is a type of silk sari made in the Kanchipuram region in Tamil Nadu, India. These saris are worn as bridal & special occasion saris..."* | *"The cool, heavy whisper of silk against your skin... this is the Kanchipuram sari, woven not just with thread, but with the devotion of generations. Each gold thread catches the light like a temple spire at dawn..."* |
+| **Chola Temples** | *"Chola temples are Dravidian style structures built during the Chola dynasty. They are characterized by tall pyramidal towers called vimanas..."* | *"Imagine the cool granite under your feet, the faint scent of camphor and jasmine in the air. Above you rises the stepped pyramid of the vimana, a mountain of stone reaching to touch the sky..."* |
+
+Bharat is evaluated on four core dimensions:
 *   **Knowledge**: Factually accurate, citing specific names, dates, dynasties, and places.
 *   **Transport**: Evokes physical presence (e.g., feeling the stone carvings of a temple under your feet).
-*   **Rasa**: Evokes the precise emotional essence of the topic (e.g., *Shanta* for Upanishads, *Vira* for Mauryan battles).
+*   **Rasa**: Evokes the precise emotional essence of the topic (e.g., *Shanta* (tranquility) for Upanishads, *Vira* (heroism) for Mauryan battles).
 *   **Bharat Voice**: Warm, culturally resonant, and welcoming—never sounding like a dry corporate chatbot.
 
 ---
@@ -32,7 +41,7 @@ The **IKS AI Assistant** bridges this gap by introducing **Bharat**, a wise, sto
 
 The project is structured in two parallel architectural layers:
 
-### Phase 1: RAG Retrieval Engine (Live)
+### 📡 Phase 1: RAG Retrieval Engine (Live)
 Retrieves factually grounded contexts from **286 curated texts** (~4,516 vector chunks) mapped locally via multilingual embeddings.
 
 ```mermaid
@@ -44,7 +53,7 @@ graph TD
     E -->|Answer + Citations| F[Gradio Web UI / API]
 ```
 
-### Phase 2: Domain-Specific SFT Fine-Tuning (In Progress)
+### 🏋️ Phase 2: Domain-Specific SFT Fine-Tuning (In Progress)
 Injects the storyteller persona and deep IKS knowledge directly into **Mistral 7B** using LoRA.
 
 ```mermaid
@@ -58,7 +67,32 @@ graph TD
 
 ---
 
-## 🚀 Quick Start
+## 🏋️ Fine-Tuning & Model Training (SFT)
+
+The fine-tuning pipeline is designed to bake the "Bharat" storyteller persona directly into the weights of **Mistral 7B** via Supervised Fine-Tuning (SFT).
+
+### 📐 The Architecture Pivot: Mistral 7B
+We pivoted our SFT architecture from **Gemma 3** to **Mistral 7B** due to hardware and precision constraints on Kaggle's free GPU tier (T4 GPUs):
+*   **The Issue**: Tesla T4 GPUs lack native `bfloat16` precision. Unsloth had to aggressively convert Gemma 3's activations to `float32` to prevent NaN losses, which doubled the memory footprint and caused immediate CUDA Out Of Memory (OOM) crashes.
+*   **The Fix**: Pivoting to `unsloth/mistral-7b-instruct-v0.3-bnb-4bit` resolved this since Mistral natively runs on standard `float16` precision on T4 cores. Under this setup, VRAM footprint drops to a highly optimal **4.35 GB**, leaving ample headroom.
+
+### 📝 Kaggle & RunPod Fine-Tuning Guides
+The exact cells, dependency fixes, and dataset configurations used to execute training are documented here:
+*   🚀 **[Kaggle Notebook Fine-Tuning Guide](docs/guides/kaggle_training_notebook.md)** (Optimized for free GPU T4 x2)
+*   💻 **[RunPod A100 Fine-Tuning Guide](docs/guides/runpod_setup.md)** (For high-throughput training)
+
+### 📊 Training Hyperparameters
+*   **Base Model**: `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`
+*   **LoRA Rank ($r$)**: `16`
+*   **LoRA Alpha**: `16`
+*   **Batch Size**: `2` (per device) with **Gradient Accumulation Steps**: `4` (effective batch size = 8)
+*   **Optimizer**: `paged_adamw_8bit`
+*   **Sequence Length**: `1024` tokens
+*   **Checkpoints**: Pushed automatically every 500 steps to the private Hugging Face repository `006aman/iks-mistral-7b-checkpoints`.
+
+---
+
+## 🚀 Local Quick Start
 
 ### ⚙️ Prerequisites & Hardware Recommendations
 The local vector store runs embeddings on CPU/CUDA, while inference defaults to Google Gemini API (Free tier). For local LLM deployment, we recommend:
@@ -121,6 +155,35 @@ IKS-MODEL/
 │   └── rag/              # YAML configuration files
 └── docs/                 # Architecture Decision Records (ADRs) and guides
 ```
+
+---
+
+## 📚 Complete Documentation Index
+
+All details regarding project setup, design decisions, and evaluation frameworks are located in the [docs/](docs/) folder:
+
+### 🏗️ Architecture Decision Records (ADRs)
+*   [ADR 0001: Orchestration Engine (LlamaIndex)](docs/adr/0001-use-llamaindex.md)
+*   [ADR 0002: Default Local LLM Model](docs/adr/0002-gemma3-4b-default-model.md)
+*   [ADR 0003: Vector Store Selection (ChromaDB)](docs/adr/0003-use-chromadb.md)
+*   [ADR 0004: Multilingual Embeddings Model](docs/adr/0004-multilingual-e5-embeddings.md)
+*   [ADR 0005: Switch to Cloud Gemini API](docs/adr/0005-switch-to-gemini.md)
+*   [ADR 0006: SFT Model Pivot to Mistral 7B](docs/adr/0006-pivot-to-mistral-7b.md) (Current fine-tuning architecture)
+
+### 📖 Setup & Training Guides
+*   [Local Quickstart Guide](docs/guides/setup.md)
+*   [Kaggle T4 Fine-Tuning Guide](docs/guides/kaggle_training_notebook.md) (Mistral 7B)
+*   [RunPod A100 Fine-Tuning Guide](docs/guides/runpod_setup.md)
+*   [Data Sources Curation List](docs/guides/data-sources.md)
+*   [Evaluation Benchmarking Framework](docs/guides/evaluation_framework.md)
+
+### 📊 Project Management & Research
+*   [Master Task Checklist](docs/project/next-tasks.md)
+*   [High-Level Roadmap & Timeline](docs/project/roadmap.md)
+*   [Technical Pitch Deck](docs/project/bharat_pitch_deck.md)
+*   [Project Changelog](docs/project/changelog.md)
+*   [Market Analysis & Core Value Gap](docs/research/comparison-value-and-gap.md)
+*   [Multimodal AI Proposal](docs/research/idea.md)
 
 ---
 
