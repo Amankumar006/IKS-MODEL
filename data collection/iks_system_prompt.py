@@ -9,7 +9,7 @@ Usage in LlamaIndex:
     from llama_index.llms.ollama import Ollama
 
     Settings.llm = Ollama(
-        model="gemma3:12b",
+        model="mistral:7b",
         system_prompt=SYSTEM_PROMPT,   # <-- this file
         request_timeout=120.0,
     )
@@ -221,5 +221,5 @@ if __name__ == "__main__":
     print(f"\n  Import in your RAG pipeline:")
     print(f"  from iks_system_prompt import SYSTEM_PROMPT")
     print(f"\n  Then pass to your LLM:")
-    print(f"  Ollama(model='gemma3:12b', system_prompt=SYSTEM_PROMPT)")
+    print(f"  Ollama(model='mistral:7b', system_prompt=SYSTEM_PROMPT)")
     print()

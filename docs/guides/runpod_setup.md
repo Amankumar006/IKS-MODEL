@@ -1,6 +1,6 @@
 # RunPod Setup Guide: Fine-Tuning IKS "Bharat" Persona
 
-This guide walks you through renting a GPU on RunPod and running the fine-tuning script (`unsloth_finetune.py`) to inject the Bharat persona into Gemma 3.
+This guide walks you through renting a GPU on RunPod and running the fine-tuning script (`unsloth_finetune.py`) to inject the Bharat persona into Mistral 7B.
 
 ## 1. Rent an A100 Instance on RunPod
 
@@ -56,7 +56,7 @@ Run the training script! It will automatically format the dataset, initialize th
 python scripts/train/unsloth_finetune.py
 ```
 
-*Note: Training on 15,000 examples with Gemma 3 12B on an A100 takes roughly 10-15 hours.*
+*Note: Training on 15,000 examples with Mistral 7B on an A100 or T4 GPU takes roughly 10-15 hours.*
 
 ---
 

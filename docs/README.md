@@ -2,7 +2,7 @@
 
 Welcome to the documentation for the **IKS AI Assistant**. This project is designed as a **World Gateway** to Indian Knowledge Systems—a culturally immersive AI that uses the "Bharat" storyteller persona to explain temples, music, dance, textiles, math, and philosophy to a global audience.
 
-**Current Phase**: Phase 2 (Gemma 3 Fine-Tuning) - Actively generating the instruction dataset.
+**Current Phase**: Phase 2 (Mistral 7B Fine-Tuning) - Actively training the instruction dataset.
 
 ## Directory Structure
 

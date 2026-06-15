@@ -1,6 +1,6 @@
 # Evaluation Framework: The "Gold Standard" Benchmark
 
-To scientifically prove that the fine-tuned Gemma 3 model has absorbed the "Bharat" persona and deep Indian Knowledge Systems, we use a rigorous 500-question benchmark. 
+To scientifically prove that the fine-tuned Mistral 7B model has absorbed the "Bharat" persona and deep Indian Knowledge Systems, we use a rigorous 500-question benchmark. 
 
 We do **not** use the training model (Gemini) to generate the entire benchmark, as that would only test if the model learned to sound like Gemini. Instead, we use a three-pronged approach.
 
@@ -27,7 +27,7 @@ When evaluating the model's responses against the gold standard, we use an LLM-a
 *   **RASA (1-5)**: Does the answer evoke the correct emotional essence? *(1 = flat, 5 = precise rasa)*
 *   **BHARAT VOICE (1-5)**: Does it sound like our cultural guide? *(1 = generic chatbot, 5 = unmistakably Bharat)*
 
-*Total Score is out of 20. Target for fine-tuned Bharat is 16+. Baseline Gemma 3 expected to score 8-10.*
+*Total Score is out of 20. Target for fine-tuned Bharat is 16+. Baseline Mistral 7B expected to score 8-10.*
 
 ## 3. Generating the Benchmark
 

@@ -104,7 +104,7 @@ Foundation (100% done)      Domain-specific (WIP)      Comprehensive
 
 **Timeline**: Months 2-4 (May-July 2026)  
 **Budget**: $600-2200 (training + expert curation)  
-**Goal**: Fine-tune Gemma 3 12B on curated IKS data to inject the "World Gateway / Bharat" persona.
+**Goal**: Fine-tune Mistral 7B on curated IKS data to inject the "World Gateway / Bharat" persona.
 **Status**: 🔄 Data Generation & Infrastructure Setup in progress.
 
 ### Month 2: Data Collection & Curation
@@ -138,14 +138,14 @@ Target dataset: 18,000 examples
 - [x] Create training configuration (`unsloth_finetune.py`)
 
 #### Training
-- [ ] Prepare dataset in Gemma 3 format
+- [ ] Prepare dataset in Mistral 7B format
 - [ ] Run full training with LoRA r=32, alpha=64
 - [ ] Monitor with W&B
 - [ ] Save checkpoints every 500 steps
 
 **Training Configuration**:
 ```yaml
-model: unsloth/gemma-3-12b-it-bnb-4bit
+model: unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 lora:
   r: 32
   alpha: 64
@@ -163,7 +163,7 @@ training:
 
 #### Evaluation Benchmark
 - [ ] Create IKS-specific test set (500 questions)
-- [ ] Compare against baseline Gemma 3
+- [ ] Compare against baseline Mistral 7B
 - [ ] Visual recognition accuracy (85%+ on temple images)
 - [ ] Hallucination rate testing
 
@@ -215,5 +215,5 @@ training:
 
 ---
 
-**Last Updated**: Phase 2.2
+**Last Updated**: Phase 2.5 (Mistral 7B SFT Handoff)
 **Next Review**: After Phase 2 Dataset Generation Completes

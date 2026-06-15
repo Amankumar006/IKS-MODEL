@@ -3,28 +3,26 @@
 Provides a chat interface for students to ask IKS questions.
 """
 
-from pathlib import Path
-from typing import Any
-
 # Load .env FIRST — must happen before iks_rag imports so API keys are available
 try:
     from dotenv import load_dotenv
+
     load_dotenv()  # loads from .env in cwd (project root)
 except ImportError:
     pass
 
 import gradio as gr
 
-from iks_rag.config import load_config, RAGConfig
+from iks_rag.config import RAGConfig, load_config
 from iks_rag.rag_system import RAGSystem
 
 
 def format_examples(config: RAGConfig) -> str:
     """Format example questions.
-    
+
     Args:
         config: RAG configuration
-        
+
     Returns:
         Formatted markdown string
     """
@@ -37,12 +35,12 @@ def format_examples(config: RAGConfig) -> str:
 
 def handle_response(message: str, chat_history: list, rag_system: RAGSystem) -> tuple[str, list]:
     """Process user message and generate response.
-    
+
     Args:
         message: User input message
         chat_history: Current chat history
         rag_system: RAG system instance
-        
+
     Returns:
         Tuple of (empty string, updated chat history)
     """
@@ -69,7 +67,9 @@ def handle_response(message: str, chat_history: list, rag_system: RAGSystem) -> 
         return "", chat_history
 
     except Exception as e:
-        error_msg = f"❌ Error: {str(e)}\n\nPlease ensure:\n- API keys are set\n- Documents are loaded"
+        error_msg = (
+            f"❌ Error: {str(e)}\n\nPlease ensure:\n- API keys are set\n- Documents are loaded"
+        )
         chat_history.append({"role": "assistant", "content": error_msg})
         return "", chat_history
 
@@ -110,13 +110,12 @@ def create_interface(rag_system: RAGSystem) -> gr.Blocks:
         gr.Markdown(config.ui.description)
 
         # System status
-        with gr.Row():
-            with gr.Column(scale=1):
-                stats = rag_system.get_stats()
-                status_text = f"📚 **Documents**: {stats['documents_loaded']}\n\n"
-                status_text += f"🤖 **Model**: {stats['config']['model']}\n\n"
-                status_text += f"🔤 **Embeddings**: {stats['config']['embeddings'].split('/')[-1]}"
-                gr.Markdown(status_text)
+        with gr.Row(), gr.Column(scale=1):
+            stats = rag_system.get_stats()
+            status_text = f"📚 **Documents**: {stats['documents_loaded']}\n\n"
+            status_text += f"🤖 **Model**: {stats['config']['model']}\n\n"
+            status_text += f"🔤 **Embeddings**: {stats['config']['embeddings'].split('/')[-1]}"
+            gr.Markdown(status_text)
 
         # Chat interface
         chatbot = gr.Chatbot(

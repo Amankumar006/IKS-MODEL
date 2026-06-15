@@ -5,7 +5,7 @@ A specialized, state-of-the-art AI assistant for **Indian Knowledge Systems (IKS
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
-[![Model: Gemma 3 12B](https://img.shields.io/badge/Fine--Tune-Gemma%203%2012B-orange.svg)](https://huggingface.co/google/gemma-3-12b)
+[![Model: Mistral 7B](https://img.shields.io/badge/Fine--Tune-Mistral%207B-orange.svg)](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
 [![Deployment: Live Space](https://img.shields.io/badge/HF%20Spaces-Live%20Demo-pink.svg)](https://huggingface.co/spaces/006aman/IKS)
 
 ---
@@ -45,14 +45,14 @@ graph TD
 ```
 
 ### Phase 2: Domain-Specific SFT Fine-Tuning (In Progress)
-Injects the storyteller persona and deep IKS knowledge directly into **Gemma 3 12B IT** using LoRA.
+Injects the storyteller persona and deep IKS knowledge directly into **Mistral 7B** using LoRA.
 
 ```mermaid
 graph TD
     A[Curated IKS Docs] --> B[Data Extraction]
     B -->|Mercury-2 API Generator| C[15,001 pristine ShareGPT pairs]
     C -->|Unsloth LoRA Fine-Tuning| D[Kaggle Dual Tesla T4 / RunPod A100]
-    D -->|Export LoRA Adapters| E[Fine-Tuned Gemma 3 12B "Bharat"]
+    D -->|Export LoRA Adapters| E[Fine-Tuned Mistral 7B "Bharat"]
     E -->|GGUF / Ollama Export| F[Offline Local Inference]
 ```
 
@@ -65,9 +65,9 @@ The local vector store runs embeddings on CPU/CUDA, while inference defaults to 
 
 | Setup | Hardware | Recommended Local Model |
 | :--- | :--- | :--- |
-| **Minimum** | 16GB RAM / Apple Silicon | `gemma3:4b` (via Ollama) |
-| **Recommended** | 32GB RAM / RTX 3060 (12GB) | `gemma3:12b` (via Ollama) |
-| **Extreme** | 64GB RAM / RTX 4090 (24GB) | `gemma3:27b` (via Ollama) |
+| **Minimum** | 16GB RAM / Apple Silicon | `mistral:7b` (via Ollama) |
+| **Recommended** | 32GB RAM / RTX 3060 (12GB) | `mistral:7b` (via Ollama) |
+| **Extreme** | 64GB RAM / RTX 4090 (24GB) | `mistral:7b` (via Ollama) |
 
 ### 🔧 Installation
 
@@ -113,7 +113,7 @@ IKS-MODEL/
 ├── scripts/
 │   ├── data/             # Scrapers, QA generators, and dataset validators
 │   ├── eval/             # 500-question gold-standard benchmark compiler
-│   └── train/            # Unsloth Gemma 3 fine-tuning scripts
+│   └── train/            # Unsloth Mistral 7B fine-tuning scripts
 ├── tests/
 │   ├── unit/             # Fast, mock-enabled isolated tests
 │   └── integration/      # End-to-end components integration checks

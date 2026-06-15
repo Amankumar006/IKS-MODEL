@@ -967,8 +967,8 @@ def print_summary():
                  llama-index-embeddings-huggingface \\
                  chromadb gradio
 
-  2. Install Ollama + Gemma 3:
-     https://ollama.com  →  ollama pull gemma3:12b
+  2. Install Ollama + Mistral 7B:
+     https://ollama.com  →  ollama pull mistral:7b
 
   3. Run the RAG chatbot:
      python iks_rag.py

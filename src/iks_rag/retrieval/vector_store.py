@@ -54,9 +54,7 @@ class IKSVectorStore:
         self.vector_store = ChromaVectorStore(chroma_collection=self.collection)
 
         # Create storage context
-        self.storage_context = StorageContext.from_defaults(
-            vector_store=self.vector_store
-        )
+        self.storage_context = StorageContext.from_defaults(vector_store=self.vector_store)
 
     def add_documents(self, documents: list[Any]) -> None:
         """Add documents to the vector store.
@@ -128,11 +126,13 @@ class IKSVectorStore:
         # Format results
         documents = []
         for i in range(len(results["documents"][0])):
-            documents.append({
-                "text": results["documents"][0][i],
-                "metadata": results["metadatas"][0][i] if results["metadatas"] else {},
-                "distance": results["distances"][0][i] if results["distances"] else 0,
-            })
+            documents.append(
+                {
+                    "text": results["documents"][0][i],
+                    "metadata": results["metadatas"][0][i] if results["metadatas"] else {},
+                    "distance": results["distances"][0][i] if results["distances"] else 0,
+                }
+            )
 
         return documents
 
@@ -164,9 +164,7 @@ class IKSVectorStore:
         )
 
         self.vector_store = ChromaVectorStore(chroma_collection=self.collection)
-        self.storage_context = StorageContext.from_defaults(
-            vector_store=self.vector_store
-        )
+        self.storage_context = StorageContext.from_defaults(vector_store=self.vector_store)
 
     def get_stats(self) -> dict[str, Any]:
         """Get vector store statistics.

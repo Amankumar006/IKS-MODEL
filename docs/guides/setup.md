@@ -5,9 +5,9 @@
 **Hardware Requirements** (Flexible):
 | Setup | Hardware | Recommended Model |
 |-------|----------|-------------------|
-| Minimum | 16GB RAM, 4GB VRAM | `gemma3:4b` |
-| Better | 32GB RAM, RTX 3060 (12GB) | `gemma3:12b` |
-| Best | 64GB RAM, RTX 4090 (24GB) | `gemma3:12b` or `gemma3:27b` |
+| Minimum | 16GB RAM, 4GB VRAM | `mistral:7b` (4-bit) |
+| Better | 32GB RAM, RTX 3060 (12GB) | `mistral:7b` |
+| Best | 64GB RAM, RTX 4090 (24GB) | Mistral 7B or fine-tuned adapter |
 
 *Note: For the Gemini API fallback, you only need internet access, as inference runs on Google's servers.*
 
@@ -27,7 +27,7 @@ uv sync
 # 4. Optional: Install Ollama (if using local models instead of Gemini)
 # macOS: brew install ollama
 # Linux: curl -fsSL https://ollama.com/install.sh | sh
-ollama pull gemma3:4b
+ollama pull mistral:7b
 
 # 5. Set up API Keys
 cp .env.example .env

@@ -31,38 +31,35 @@ Indian Knowledge Systems are deeply visual:
 - **Manuscripts** contain Sanskrit, Tamil, and Kannada text in unique scripts
 - **Iconography** requires understanding symbolic representations
 
-A text-only model (like Gemma 2) cannot process this visual richness. You need a **vision-language model** that can:
+A text-only model (like baseline Mistral 7B) cannot process this visual richness. You need a **vision-language model** that can:
 - Encode images into semantic vectors
 - Understand the relationship between images and text
 - Answer questions like "What temple is this? What dynasty? What's the architectural significance?"
 
-### Model Selection: Gemma 3 vs. Alternatives
+### Model Selection: Mistral 7B & SFT Fine-Tuning Pivot
 
-Comparing vision-language models suitable for IKS fine-tuning:
+Comparing models suitable for IKS fine-tuning:
 
 | Model | Parameters | Vision Support | Context Window | Best For | Cost |
 |-------|-----------|-----------------|-----------------|----------|------|
-| **Gemma 3** | 4B/12B/27B | ✅ Full multimodal | 4,096 tokens | IKS visual tasks | ~$0 (open) |
+| **Mistral 7B** | 7B | ❌ Text-only (LoRA fine-tune) | 32,768 tokens | Budget-friendly text SFT | ~$0 (open) |
+| **Gemma 3** | 4B/12B/27B | ✅ Full multimodal | 4,096 tokens | IKS visual tasks (needs bfloat16) | ~$0 (open) |
 | Llava | 7B/13B/34B | ✅ Dual encoder | 4,096 tokens | Cost-effective vision | ~$0 (open) |
-| LLaVA-NeXT | 8B/34B | ✅ Improved | 8K tokens | Better visual understanding | ~$0 (open) |
 | Claude 3.5 Sonnet | Proprietary | ✅ Professional | 200K tokens | High accuracy, no training | $$ API |
 | GPT-4 Vision | Proprietary | ✅ Advanced | 128K tokens | Highest quality, not trainable | $$$ API |
 
-**Recommendation: Start with Gemma 3 12B**
+**Recommendation: Start with Mistral 7B (Pivoted from Gemma 3 12B)**
 
 ```
-Model Size Comparison:
-- 4B variant: Fast, mobile-friendly, less nuanced (good for prototyping)
-- 12B variant: Sweet spot — good quality, fits on RTX 4090, trains in <24 hours ✓
-- 27B variant: Highest quality, needs A100 GPU ($50+/hour), overkill for initial phase
+Model Selection Context:
+We initially recommended Gemma 3 12B. However, due to Kaggle T4 GPU hardware limits (Tesla T4 has no native bfloat16 support, causing upcasting to float32 which doubles VRAM usage and triggers OOM), we pivoted the fine-tuning architecture to **Mistral 7B**. Mistral 7B natively runs in float16 precision, allowing efficient fine-tuning under 4.35 GB VRAM on a single GPU.
 ```
 
-**Why Gemma 3 over others?**
-- ✅ Built for multimodal understanding by Google
-- ✅ Optimized for fine-tuning with QLoRA (60% less VRAM needed)
-- ✅ Chat instruction-tuned (understands follow-ups, can be steered)
-- ✅ Active community, good documentation
-- ✅ Can be fine-tuned locally or on affordable cloud GPUs
+**Why Mistral 7B?**
+- ✅ Natively runs on standard float16 precision without float32 upcasting on older hardware (T4 GPUs)
+- ✅ Highly efficient fine-tuning using Unsloth (fits in <5 GB VRAM)
+- ✅ Strong instruction-following capability and cultural reasoning
+- ✅ Large 32K context window support
 
 ---
 
@@ -220,7 +217,7 @@ print(f"Downloaded metadata for {len(temple_images)} temple images")
 
 ### Stage 2: Dataset Preparation & Formatting
 
-Your training dataset needs to be in a specific format that Gemma 3 understands. You'll create two types of training examples:
+Your training dataset needs to be in a specific format that Mistral 7B understands. You'll create two types of training examples:
 
 #### 2A. Pure Text Examples (Instruction-Response Pairs)
 
@@ -303,16 +300,16 @@ training_dataset/
 
 ### Stage 3: Dataset Size Recommendations
 
-Training a vision-language model requires careful scaling:
+Training the model requires careful scaling:
 
-| Phase | Text Examples | Multimodal Examples | Total | Cost | Time (A100) | Quality |
-|-------|---------------|-------------------|-------|------|-------------|---------|
-| **Phase 0: Prototype** | 500 | 100 | 600 | Free (local CPU) | 30 min | ~50% |
-| **Phase 1: MVP** | 2,000 | 500 | 2,500 | $5-10 (Colab) | 2-3 hours | ~65% |
-| **Phase 2: Production** | 15,000 | 3,000 | 18,000 | $30-45 (RunPod) | 10-15 hours | ~85% |
-| **Phase 3: Excellence** | 50,000+ | 10,000+ | 60,000+ | $100-200 | 40-60 hours | ~92%+ |
+| Phase | Text Examples | Multimodal Examples | Total | Cost | Time (Kaggle T4 / A100) | Quality |
+|-------|---------------|-------------------|-------|------|-------------------------|---------|
+| **Phase 0: Prototype** | 500 | - | 500 | Free (local CPU) | 30 min | ~50% |
+| **Phase 1: MVP** | 2,000 | - | 2,000 | Free (Kaggle T4) | 1-2 hours | ~65% |
+| **Phase 2: Production (Current)** | 15,000 | - | 15,000 | Free (Kaggle T4) | 10-12 hours | ~85% |
+| **Phase 3: Excellence** | 50,000+ | 10,000+ (Multimodal) | 60,000+ | $100-200 (RunPod A100) | 40-60 hours | ~92%+ |
 
-**Recommendation**: Start with Phase 2 (18K examples). This gives you good quality without excessive cost.
+**Recommendation**: Start with Phase 2 text fine-tuning (15,000 ShareGPT conversational pairs) on free Kaggle T4.
 
 **Data Distribution**:
 - 60% temples & architecture
@@ -325,271 +322,148 @@ Training a vision-language model requires careful scaling:
 
 ### Stage 4: Training Code (Complete, Production-Ready)
 
-Using **Unsloth** (fastest Gemma fine-tuning library — 2x speedup, 60% less VRAM):
+Using **Unsloth** (fastest fine-tuning library — 2x speedup, 60% less VRAM):
 
 ```python
-# ═══════════════════════════════════════════════════════════════
-# IKS Gemma 3 Multimodal Fine-tuning with Unsloth
-# ═══════════════════════════════════════════════════════════════
+# Fine-tuning Kaggle Notebook Code for Mistral 7B SFT
+# Overwritten with the exact code used successfully on the Kaggle Free Tier.
+# Run 'pip install unsloth' first in your environment.
 
-# ─── INSTALLATION ──────────────────────────────────────────────
-# pip install unsloth[gemma-new] @ git+https://github.com/unslothai/unsloth.git
-# pip install wandb datasets pillow torch torchvision
+# Cell 2 — Environment & credentials
+import os
 
-# ─── IMPORTS ───────────────────────────────────────────────────
-from unsloth import FastVisionModel
-from unsloth.chat_templates import get_chat_template
-from datasets import load_dataset
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # stick to one GPU, avoids the duplication issue
+
+from kaggle_secrets import UserSecretsClient
+secrets = UserSecretsClient()
+
+os.environ["HF_TOKEN"] = secrets.get_secret("HF_TOKEN")
+os.environ["WANDB_API_KEY"] = secrets.get_secret("WANDB_API_KEY")
+
+HF_USERNAME = "006aman"      
+HF_REPO_NAME = "iks-mistral-7b-checkpoints"
+
+# Cell 3 — Load Mistral 7B + LoRA
 import torch
-from transformers import TrainingArguments
-from trl import SFTTrainer
-import wandb
-import json
-from pathlib import Path
+from unsloth import FastLanguageModel
 
-# ═══════════════════════════════════════════════════════════════
-# STEP 1: Load Gemma 3 12B Vision-Language Model
-# ═══════════════════════════════════════════════════════════════
+MODEL_NAME = "unsloth/mistral-7b-instruct-v0.3-bnb-4bit"
+MAX_SEQ_LENGTH = 1024  # bump to 2048 later if the VRAM headroom allows
 
-print("🚀 Loading Gemma 3 12B Instruction-tuned Vision Model...")
-
-model, tokenizer = FastVisionModel.from_pretrained(
-    model_name="unsloth/gemma-3-12b-it-bnb-4bit",
-    max_seq_length=4096,
-    dtype=torch.bfloat16,  # Better stability than float16
-    load_in_4bit=True,      # QLoRA: 4-bit quantization for VRAM efficiency
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name = MODEL_NAME,
+    max_seq_length = MAX_SEQ_LENGTH,
+    dtype = None,          # auto -> float16 on T4
+    load_in_4bit = True,
 )
 
-print("✅ Model loaded successfully")
-
-# ═══════════════════════════════════════════════════════════════
-# STEP 2: Add LoRA (Low-Rank Adapter) for Efficient Fine-tuning
-# ═══════════════════════════════════════════════════════════════
-
-print("⚙️  Adding LoRA adapters for efficient training...")
-
-model = FastVisionModel.get_peft_model(
+model = FastLanguageModel.get_peft_model(
     model,
-    finetune_vision_layers=True,        # Fine-tune vision encoder (image understanding)
-    finetune_language_layers=True,       # Fine-tune language decoder (answer generation)
-    finetune_attention_modules=True,     # Train attention mechanisms
-    finetune_mlp_modules=True,           # Train feed-forward networks
-    r=16,                                # LoRA rank (higher = more parameters, slower)
-    lora_alpha=32,                       # LoRA scaling parameter
-    lora_dropout=0.05,                   # Dropout for regularization
-    bias="none",                         # Don't train bias terms
-    random_state=3407,
+    r = 16,
+    target_modules = ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"],
+    lora_alpha = 16,
+    lora_dropout = 0,
+    bias = "none",
+    use_gradient_checkpointing = "unsloth",
+    random_state = 3407,
 )
 
-print("✅ LoRA adapters configured")
-print(f"   Trainable parameters: {model.get_num_parameters(only_trainable=True):,}")
-print(f"   Total parameters: {model.get_num_parameters():,}")
-print(f"   Training efficiency: ~{100 * model.get_num_parameters(only_trainable=True) / model.get_num_parameters():.2f}%")
+print(f"GPU: {torch.cuda.get_device_name(0)}")
+print(f"Memory allocated after load: {torch.cuda.memory_allocated()/1e9:.2f} GB")
 
-# ═══════════════════════════════════════════════════════════════
-# STEP 3: Load Your IKS Dataset
-# ═══════════════════════════════════════════════════════════════
 
-print("\n📚 Loading IKS training dataset...")
+# Cell 4 — Dataset (auto-discover & safe parse)
+import json
+from datasets import Dataset
 
-# Option 1: Load from HuggingFace Hub (recommended)
-dataset = load_dataset(
-    "your-username/iks-multimodal-dataset",
-    split="train",
-    trust_remote_code=True,
-)
+# Find candidate data files
+data_files = []
+for root, dirs, files in os.walk("/kaggle/input"):
+    for f in files:
+        if f.endswith((".json", ".jsonl", ".csv")):
+            data_files.append(os.path.join(root, f))
 
-# Option 2: Load from local JSONL files
-# def load_local_dataset(folder_path):
-#     data = {"messages": []}
-#     for jsonl_file in Path(folder_path).glob("*.jsonl"):
-#         with open(jsonl_file) as f:
-#             for line in f:
-#                 data["messages"].append(json.loads(line))
-#     return data
+DATA_PATH = data_files[0]
+print(f"\nLoading: {DATA_PATH}")
 
-print(f"✅ Loaded {len(dataset)} training examples")
-print(f"   Breakdown:")
-print(f"   - {len([x for x in dataset if 'image' not in str(x.get('messages', []))])} text examples")
-print(f"   - {len([x for x in dataset if 'image' in str(x.get('messages', []))])} multimodal examples")
+# Safe JSON loader to strip out unwanted keys (pr, words)
+def load_sharegpt_jsonl(path: str):
+    rows = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip(): continue
+            obj = json.loads(line)
+            conv = obj.get("conversations", [])
+            # Forcibly extract ONLY 'from' and 'value'
+            cleaned = [{"from": str(turn.get("from", "")), "value": str(turn.get("value", ""))} for turn in conv]
+            if cleaned:
+                rows.append({"conversations": cleaned})
+    return Dataset.from_list(rows)
 
-# ═══════════════════════════════════════════════════════════════
-# STEP 4: Set Up Chat Template (Important!)
-# ═══════════════════════════════════════════════════════════════
+raw_dataset = load_sharegpt_jsonl(DATA_PATH)
 
-print("\n🎯 Configuring chat template...")
+# Format using the correct Llama 3 template
+def format_llama3(example):
+    user_msg, assistant_msg = "", ""
+    for turn in example["conversations"]:
+        role = turn.get("from", "").strip().lower()
+        val = turn.get("value", "")
+        if role == "human": user_msg = val
+        elif role == "gpt": assistant_msg = val
+        
+    text = f"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n{user_msg}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{assistant_msg}<|eot_id|>"
+    return {"text": text}
 
-# Get proper chat template for Gemma 3
-tokenizer = get_chat_template(
-    tokenizer,
-    chat_template="gemma",
-    mapping={"role": "role", "content": "content"},
-    tools=None,
-)
+train_dataset = raw_dataset.map(format_llama3, remove_columns=raw_dataset.column_names)
 
-def formatting_func(examples):
-    """Format dataset examples for training."""
-    output_texts = []
-    for messages in examples["messages"]:
-        text = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=False,
-        )
-        output_texts.append(text)
-    return {"text": output_texts}
 
-dataset = dataset.map(formatting_func, batched=True)
+# Cell 5 — Trainer setup
+from trl import SFTTrainer, SFTConfig
 
-print("✅ Chat template configured")
+SANITY_CHECK = False
+OUTPUT_DIR = "/kaggle/working/bharat-checkpoints"
 
-# ═══════════════════════════════════════════════════════════════
-# STEP 5: Configure Training Arguments
-# ═══════════════════════════════════════════════════════════════
+extra = {"max_steps": 20} if SANITY_CHECK else {"num_train_epochs": 3}
 
-print("\n⚙️  Setting up training configuration...")
-
-training_args = TrainingArguments(
-    # Output and logging
-    output_dir="iks-gemma3-12b-lora-v1",
-    logging_dir="./logs",
-    logging_steps=10,
-    save_steps=100,
-    save_total_limit=3,  # Keep only 3 latest checkpoints
-    
-    # Training hyperparameters
-    num_train_epochs=3,
-    per_device_train_batch_size=2,  # Adjust if you have more VRAM
-    per_device_eval_batch_size=2,
-    gradient_accumulation_steps=4,   # Effective batch size = 2 * 4 = 8
-    gradient_checkpointing=True,     # Save memory during backward pass
-    
-    # Learning rate and warmup
+training_args = SFTConfig(
+    output_dir=OUTPUT_DIR,
+    dataset_text_field="text",
+    max_seq_length=MAX_SEQ_LENGTH,
+    per_device_train_batch_size=2,
+    gradient_accumulation_steps=4,
     learning_rate=2e-4,
-    warmup_steps=50,
-    warmup_ratio=0.05,
+    warmup_steps=10,
     lr_scheduler_type="cosine",
-    
-    # Precision and optimization
-    optim="paged_adamw_32bit",  # Memory-efficient optimizer
-    fp16=False,
-    bf16=True,  # Use bfloat16 for better stability
-    
-    # Evaluation
-    eval_strategy="steps",
-    eval_steps=100,
-    
-    # Device and distributed training
-    max_grad_norm=1.0,
-    seed=42,
-    data_seed=42,
-    
-    # Reporting
-    report_to="wandb",  # Log to Weights & Biases
-    run_name="IKS-Gemma3-12B-MultimodalV1",
-    push_to_hub=True,
-    hub_model_id="your-username/iks-gemma3-12b-finetuned",
+    weight_decay=0.01,
+    optim="paged_adamw_8bit",
+    fp16=not torch.cuda.is_bf16_supported(),
+    bf16=torch.cuda.is_bf16_supported(),
+    logging_steps=1 if SANITY_CHECK else 10,
+    save_steps=500,
+    save_total_limit=2,
+    remove_unused_columns=False,
+    average_tokens_across_devices=False,
+    report_to="none" if SANITY_CHECK else "wandb", 
+    push_to_hub=not SANITY_CHECK,
+    hub_model_id=f"{HF_USERNAME}/{HF_REPO_NAME}",
+    hub_strategy="checkpoint", 
+    hub_private_repo=True,     
+    hub_token=os.environ.get("HF_TOKEN"),
+    **extra,
 )
-
-print("✅ Training configuration ready")
-
-# ═══════════════════════════════════════════════════════════════
-# STEP 6: Create Trainer
-# ═══════════════════════════════════════════════════════════════
 
 trainer = SFTTrainer(
     model=model,
     tokenizer=tokenizer,
-    train_dataset=dataset,
+    train_dataset=train_dataset,
     args=training_args,
-    dataset_text_field="text",
-    max_seq_length=4096,
-    packing=False,  # Don't pack sequences (better for vision)
 )
 
-print("✅ Trainer configured")
 
-# ═══════════════════════════════════════════════════════════════
-# STEP 7: Train!
-# ═══════════════════════════════════════════════════════════════
-
-print("\n🎓 Starting training...")
-print(f"   Device: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'}")
-print(f"   Estimated time: 10-15 hours on A100")
-
-FastVisionModel.for_training(model)  # Enable training mode
+# Cell 6 — Train
 trainer.train()
-
-print("\n✅ Training complete!")
-
-# ═══════════════════════════════════════════════════════════════
-# STEP 8: Save and Upload Model
-# ═══════════════════════════════════════════════════════════════
-
-print("\n💾 Saving model...")
-
-# Save locally
-model.save_pretrained("iks-gemma3-12b-lora-final")
-tokenizer.save_pretrained("iks-gemma3-12b-lora-final")
-
-# Push to HuggingFace Hub
-model.push_to_hub(
-    "your-username/iks-gemma3-12b",
-    token="your-hf-token",
-)
-tokenizer.push_to_hub(
-    "your-username/iks-gemma3-12b",
-    token="your-hf-token",
-)
-
-print("✅ Model saved and uploaded!")
-
-# ═══════════════════════════════════════════════════════════════
-# STEP 9: Inference (Test Your Trained Model)
-# ═══════════════════════════════════════════════════════════════
-
-print("\n🧪 Testing trained model...")
-
-FastVisionModel.for_inference(model)  # Optimize for inference
-
-# Example: Image understanding
-from PIL import Image
-
-test_image = Image.open("path/to/temple_image.jpg")
-
-# Prepare message for inference
-messages = [
-    {
-        "role": "user",
-        "content": [
-            {"type": "image", "image": test_image},
-            {"type": "text", "text": "What is this temple? When was it built?"}
-        ]
-    }
-]
-
-# Tokenize
-inputs = tokenizer.apply_chat_template(
-    messages,
-    add_generation_prompt=True,
-    tokenize=True,
-    return_tensors="pt",
-    return_dict=True
-).to("cuda")
-
-# Generate response
-with torch.no_grad():
-    output = model.generate(
-        **inputs,
-        max_new_tokens=512,
-        temperature=0.7,
-        top_p=0.9,
-    )
-
-# Decode response
-response_text = tokenizer.decode(output[0], skip_special_tokens=True)
-print("Model response:")
-print(response_text)
+```
 ```
 
 ---
@@ -745,7 +619,7 @@ Your multimodal dataset should comprehensively cover these IKS domains:
 
 ⚠️ **Important**: Fine-tuning makes sense ONLY after Phase 1 succeeds.
 
-- **If RAG works well**: You may not need fine-tuning. RAG + Gemma 3 can handle 80% of cases.
+- **If RAG works well**: You may not need fine-tuning. RAG + Gemini/Mistral can handle 80% of cases.
 - **If RAG has limitations**: Fine-tune to overcome specific gaps
   - Example 1: RAG retrieves documents but student questions are outside the corpus → fine-tune on synthetic queries
   - Example 2: Students ask visual questions about temples → multimodal fine-tuning helps

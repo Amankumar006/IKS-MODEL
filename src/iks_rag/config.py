@@ -14,8 +14,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class LLMConfig(BaseModel):
     """LLM configuration."""
 
-    provider: str = Field(default="ollama", description="LLM provider")
-    model: str = Field(default="gemma3:4b", description="Model name")
+    provider: str = Field(default="gemini", description="LLM provider")
+    model: str = Field(default="models/gemini-2.5-flash", description="Model name")
     temperature: float = Field(default=0.7, ge=0.0, le=2.0)
     max_tokens: int = Field(default=2048, gt=0)
     request_timeout: float = Field(default=120.0, gt=0)
@@ -59,9 +59,7 @@ class DocumentProcessingConfig(BaseModel):
     supported_extensions: list[str] = Field(
         default_factory=lambda: [".txt", ".md", ".pdf", ".html", ".json"]
     )
-    exclude_patterns: list[str] = Field(
-        default_factory=lambda: ["*.tmp", "*.log", ".*"]
-    )
+    exclude_patterns: list[str] = Field(default_factory=lambda: ["*.tmp", "*.log", ".*"])
 
 
 class UIConfig(BaseModel):
@@ -124,9 +122,7 @@ class RAGConfig(BaseSettings):
     embeddings: EmbeddingsConfig = Field(default_factory=EmbeddingsConfig)
     vector_store: VectorStoreConfig = Field(default_factory=VectorStoreConfig)
     retrieval: RetrievalConfig = Field(default_factory=RetrievalConfig)
-    document_processing: DocumentProcessingConfig = Field(
-        default_factory=DocumentProcessingConfig
-    )
+    document_processing: DocumentProcessingConfig = Field(default_factory=DocumentProcessingConfig)
     ui: UIConfig = Field(default_factory=UIConfig)
     logging: LoggingConfig = Field(default_factory=LoggingConfig)
     api: APIConfig = Field(default_factory=APIConfig)
@@ -159,7 +155,7 @@ def load_config(config_path: str | Path = "configs/rag/default.yaml") -> RAGConf
     Example:
         >>> config = load_config("configs/rag/default.yaml")
         >>> print(config.llm.model)
-        'gemma3:4b'
+        'models/gemini-2.5-flash'
     """
     config_path = Path(config_path)
 

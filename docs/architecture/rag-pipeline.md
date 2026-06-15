@@ -40,7 +40,7 @@ Your Indian Knowledge Systems RAG system will use these four core components wor
         └────────────┬────────────┘
                      ↓
 ┌─────────────────────────────────────────────────────────┐
-│      Ollama + Gemma 3 LLM (Answer Generation)           │
+│      Ollama + Mistral 7B (Answer Generation)            │
 │    Runs locally on your machine, completely offline     │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -50,7 +50,7 @@ Your Indian Knowledge Systems RAG system will use these four core components wor
 - **LlamaIndex**: Purpose-built for document Q&A. Handles PDF, HTML, JSON, images natively. Better than LangChain for your use case because it requires less boilerplate.
 - **ChromaDB**: Zero-configuration vector database that persists to disk locally. Perfect for prototypes and Phase 1.
 - **multilingual-e5**: Embedding model trained on 100+ languages, including Hindi, Kannada, Tamil, Sanskrit. Free from HuggingFace.
-- **Ollama + Gemma 3**: Small, fast LLM that runs on CPU. Can be deployed offline on any machine. Free and private.
+- **Ollama + Mistral 7B**: Small, fast LLM that runs on CPU. Can be deployed offline on any machine. Free and private.
 
 **Cost breakdown:** $0. Everything runs locally. No API keys, no subscriptions, no cloud bills.
 
@@ -120,7 +120,7 @@ Answer this question: What architectural features distinguish Chola temples?
 If the passages don't contain enough info, say so."
                     ↓
          [LLM Generation]
-Gemma 3 (via Ollama) reads the prompt and generates an answer
+Mistral 7B (via Ollama) reads the prompt and generates an answer
 Drawing ONLY from the provided passages (not from training memory)
 Minimizes hallucinations and keeps answers grounded in sources
                     ↓
@@ -154,18 +154,18 @@ pip install chromadb gradio pypdf python-dotenv
 pip install wikipedia beautifulsoup4 requests
 ```
 
-Install Ollama (for running Gemma 3 locally):
+Install Ollama (for running Mistral 7B locally):
 
 ```bash
 # macOS: Download from ollama.com and install
 # Linux: curl -fsSL https://ollama.ai/install.sh | sh
 # Windows: Download installer from ollama.com
 
-# After install, pull Gemma 3 (one-time download, ~5 GB)
-ollama pull gemma3:12b
+# After install, pull Mistral 7B (one-time download, ~4.1 GB)
+ollama pull mistral:7b
 
 # Verify it works
-ollama run gemma3:12b "What is Indian classical music?"
+ollama run mistral:7b "What is Indian classical music?"
 # (Ctrl+D to exit)
 ```
 
@@ -209,7 +209,7 @@ def initialize_iks_rag_system():
     """
     Initialize the complete RAG system with all components.
     This function sets up:
-    - LLM (Gemma 3 via Ollama)
+    - LLM (Mistral 7B via Ollama)
     - Embedding model (multilingual-e5-large)
     - Vector database (ChromaDB)
     - Storage context
@@ -218,10 +218,10 @@ def initialize_iks_rag_system():
     print("🚀 Initializing IKS RAG System...")
     
     # ─── Configure the LLM (Answer Generation) ──────────────────
-    print("  1️⃣  Loading Gemma 3 via Ollama...")
+    print("  1️⃣  Loading Mistral 7B via Ollama...")
     
     llm = Ollama(
-        model="gemma3:12b",
+        model="mistral:7b",
         request_timeout=120.0,
         system_prompt="""You are a knowledgeable expert on Indian Knowledge Systems (IKS),
 with deep expertise in:
@@ -718,7 +718,7 @@ Even with just these 6 sources, your RAG system will outperform any general LLM 
 | **LlamaIndex** | $0 | Open source (Apache 2.0) |
 | **ChromaDB** | $0 | Open source (Apache 2.0), runs locally |
 | **multilingual-e5 embedding** | $0 | Free from HuggingFace, runs locally |
-| **Ollama + Gemma 3 LLM** | $0 | Free, runs on your machine (no cloud) |
+| **Ollama + Mistral 7B LLM** | $0 | Free, runs on your machine (no cloud) |
 | **Gradio interface** | $0 | Open source (Apache 2.0), deploy free to HF Spaces |
 | **Document sources** | $0 | Wikipedia, archive.org, ASI (all free) |
 | **Hosting** | $0 | Can run on laptop or free HF Spaces tier |
@@ -748,7 +748,7 @@ If you scale to thousands of documents and thousands of concurrent users:
 
 **Morning (1 hour):**
 - Download and install Ollama (5 minutes)
-- Run `ollama pull gemma3:12b` (takes 10-15 min, downloads ~5GB)
+- Run `ollama pull mistral:7b` (takes 10-15 min, downloads ~4.1GB)
 - Install Python packages (pip install...) (5 minutes)
 
 **Afternoon (2-3 hours):**
@@ -868,7 +868,7 @@ curl http://localhost:11434/api/tags
 ollama serve
 
 # Or pull model again
-ollama pull gemma3:12b
+ollama pull mistral:7b
 ```
 
 ### **Problem: Taking too long to answer**
@@ -879,7 +879,7 @@ ollama pull gemma3:12b
 
 ### **Problem: "Out of memory" error**
 - **Solution 1:** Use smaller embedding model (all-MiniLM-L6-v2 instead)
-- **Solution 2:** Use smaller LLM (Mistral 7B instead of Gemma 12B)
+- **Solution 2:** Use smaller or quantized LLM (Mistral 7B quantized)
 - **Solution 3:** Increase server RAM or use cloud
 
 ---

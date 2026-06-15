@@ -35,7 +35,7 @@ BHARAT VOICE (1-5): Does it sound like a knowledgeable cultural guide, not a cha
   1 = generic AI response  3 = some personality  5 = unmistakably Bharat
 
 Total score: /20. A fine-tuned model should score 16+ on average.
-Baseline Gemma 3 should score 8-10.
+Baseline Mistral 7B should score 8-10.
 """
 
 # Configure Gemini for the generation of held-out questions

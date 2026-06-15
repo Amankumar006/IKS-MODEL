@@ -57,8 +57,7 @@ class LLMWrapper:
             self._init_ollama(system_prompt)
         else:
             raise ValueError(
-                f"Unsupported LLM provider: {provider}. "
-                "Use 'gemini', 'openai', or 'ollama'."
+                f"Unsupported LLM provider: {provider}. Use 'gemini', 'openai', or 'ollama'."
             )
 
     def _init_gemini(self, system_prompt: str) -> None:
@@ -173,10 +172,7 @@ class LLMWrapper:
 
         from llama_index.core.llms import ChatMessage
 
-        chat_messages = [
-            ChatMessage(role=msg["role"], content=msg["content"])
-            for msg in messages
-        ]
+        chat_messages = [ChatMessage(role=msg["role"], content=msg["content"]) for msg in messages]
 
         response = self.llm.chat(chat_messages)
         return response.message.content

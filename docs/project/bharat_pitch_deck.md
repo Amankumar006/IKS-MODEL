@@ -52,10 +52,9 @@ flowchart TD
     end
 
     subgraph Pillar 3: Supervised Fine-Tuning
-        dataset --> runpod["RunPod A100 GPU (Unsloth Framework)"]
-        runpod --> gemma["Base Model (Gemma 3 12B)"]
+        runpod --> gemma["Base Model (Mistral 7B)"]
         gemma --> lora["LoRA Weights Fine-Tuning"]
-        lora --> model(("IKS-Bharat-12B Final Model"))
+        lora --> model(("IKS-Bharat-7B Final Model"))
     end
 
     subgraph Production Inference
@@ -121,7 +120,7 @@ flowchart TD
         RetrievedContext --> FinalPrompt
         Query --> FinalPrompt
         
-        FinalPrompt["📝 The Final Prompt\n(Persona Rules + Factual Context + User Question)"]:::process --> LLM(("🤖 Fine-Tuned LLM\n(IKS-Bharat-12B)")):::model
+        FinalPrompt["📝 The Final Prompt\n(Persona Rules + Factual Context + User Question)"]:::process --> LLM(("🤖 Fine-Tuned LLM\n(IKS-Bharat-7B)")):::model
         
         LLM -->|Generates an answer using ONLY the provided facts| Output["✨ Final Answer\n('The towering 66m granite vimana catches the sun...')"]:::data
     end
@@ -148,20 +147,20 @@ Since hiring human historians to write 15,000 perfect Question & Answer pairs wo
 
 With our 15,000-pair "Golden Dataset" generated, we move to the final stage: permanently baking the "Bharat" persona into the neural network of an open-source model.
 
-**The Base Model: Gemma 3 12B**
-We selected Google's open-weights **Gemma 3 (12-Billion parameters)**. At 12B parameters, it is small enough to be run locally by enthusiasts or researchers, but possesses advanced reasoning capabilities rivaling much larger models.
+**The Base Model: Mistral 7B**
+We selected **Mistral 7B**. At 7B parameters, it is small enough to be run locally by enthusiasts or researchers, but possesses advanced reasoning capabilities.
 
 **The Training Hardware (RunPod A100)**
 Fine-tuning requires massive VRAM and compute power. We provision cloud GPU instances via **RunPod**, specifically utilizing **NVIDIA A100 80GB GPUs** to handle the heavy matrix multiplications required for backpropagation.
 
 **The Fine-Tuning Mechanics (PEFT & LoRA)**
-Training a 12-Billion parameter model from scratch would cost millions. Instead, we use **Parameter-Efficient Fine-Tuning (PEFT)** using a technique called **LoRA (Low-Rank Adaptation)**.
-* Instead of altering all 12 billion internal weights, LoRA freezes the base model and injects a tiny, trainable "adapter" matrix on top of it.
+Training a 7-Billion parameter model from scratch would cost millions. Instead, we use **Parameter-Efficient Fine-Tuning (PEFT)** using a technique called **LoRA (Low-Rank Adaptation)**.
+* Instead of altering all 7 billion internal weights, LoRA freezes the base model and injects a tiny, trainable "adapter" matrix on top of it.
 * We feed our 15,000 Q&A pairs through the model. The system calculates the mathematical "Loss" (the difference between Gemma's default robotic answer and our ideal "Bharat" answer).
 * Using backpropagation, the model updates the LoRA adapter matrix to minimize this loss, physically learning to mimic the sensory storytelling and cultural nuance of the training data.
 
-**The Final Result: IKS-Bharat-12B**
-The result is a standalone AI model. We merge the LoRA weights back into the base model. This produces `IKS-Bharat-12B`, a totally bespoke, deeply knowledgeable AI that natively speaks with the emotional resonance of Indian civilization, requiring zero fragile "system prompts" to maintain its persona.
+**The Final Result: IKS-Bharat-7B**
+The result is a standalone AI model. We merge the LoRA weights back into the base model. This produces `IKS-Bharat-7B`, a totally bespoke, deeply knowledgeable AI that natively speaks with the emotional resonance of Indian civilization, requiring zero fragile "system prompts" to maintain its persona.
 
 ---
 
@@ -173,4 +172,4 @@ The result is a standalone AI model. We merge the LoRA weights back into the bas
 ---
 
 ## 5. Quick Elevator Pitch (If you only have 30 seconds)
-> *"For our Final Year Project, we built 'Bharat', an AI model specialized in Indian Knowledge Systems. Standard AI models treat Indian culture like a Wikipedia page—dry and robotic. We wanted an AI that speaks with the warmth, storytelling, and sensory depth of a true cultural guide. To build this, we didn't just write a prompt. We built a Retrieval-Augmented Generation (RAG) pipeline for factual accuracy, and then engineered a synthetic data pipeline to distill the knowledge of massive LLMs into a 15,000-pair instruction dataset. We are using this dataset to fine-tune a 12-Billion parameter open-source model. The result is a highly custom, culturally aligned AI that preserves and teaches Indian heritage like never before."*
+> *"For our Final Year Project, we built 'Bharat', an AI model specialized in Indian Knowledge Systems. Standard AI models treat Indian culture like a Wikipedia page—dry and robotic. We wanted an AI that speaks with the warmth, storytelling, and sensory depth of a true cultural guide. To build this, we didn't just write a prompt. We built a Retrieval-Augmented Generation (RAG) pipeline for factual accuracy, and then engineered a synthetic data pipeline to distill the knowledge of massive LLMs into a 15,000-pair instruction dataset. We are using this dataset to fine-tune a 7-Billion parameter open-source model. The result is a highly custom, culturally aligned AI that preserves and teaches Indian heritage like never before."*

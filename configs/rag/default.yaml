@@ -18,12 +18,12 @@
 #
 # ALTERNATIVE: Ollama (free, local, SLOW on CPU)
 #   - Install: https://ollama.ai
-#   - Pull model: ollama pull gemma3:4b
+#   - Pull model: ollama pull mistral:7b
 #   - Note: 5-10 min per query on Intel Mac CPU
 
 llm:
   provider: gemini  # Options: gemini, openai, ollama
-  model: models/gemini-2.5-flash  # Gemini: models/gemini-2.5-flash | OpenAI: gpt-4o-mini | Ollama: gemma3:4b
+  model: models/gemini-2.5-flash  # Gemini: models/gemini-2.5-flash | OpenAI: gpt-4o-mini | Ollama: mistral:7b
   temperature: 0.7
   max_tokens: 2048
   request_timeout: 60.0  # Gemini/OpenAI are fast; increase to 600 for Ollama CPU

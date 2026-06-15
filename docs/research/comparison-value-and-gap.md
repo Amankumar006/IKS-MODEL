@@ -219,7 +219,7 @@ Krutrim-2 (launched Jan 2025):
 - ✅ 128K context window
 - ✅ Available for fine-tuning
 
-So why build on Gemma 3 when Krutrim-2 already has Indian cultural grounding?
+So why build on Mistral 7B when Krutrim-2 already has Indian cultural grounding?
 
 ---
 
@@ -233,7 +233,7 @@ Rather than "build from scratch" OR "give up," here's the recommended approach:
 **What you do**:
 - Collect 20-30 high-quality IKS documents (temples, music, dance, philosophy)
 - Build a ChromaDB vector database
-- Use Gemma 3 or Claude as the LLM backbone
+- Use Mistral 7B or Claude as the LLM backbone
 - Deploy on Gradio + HuggingFace Spaces
 
 **Advantages**:
@@ -273,11 +273,11 @@ Once you've proven the concept with Phase 2, consider building a comprehensive m
 - **Training**: 20-30 A100 hours
 - **Result**: State-of-the-art IKS AI
 
-**Why Krutrim-2 over Gemma?**
+**Why Krutrim-2 over Mistral 7B?**
 - ✅ Already trained on 22 Indian languages
 - ✅ Already has cultural context
 - ✅ You're adding depth, not starting from zero
-- ✅ 128K context (vs 4K in Gemma)
+- ✅ 128K context (vs 32K in Mistral)
 - ✅ Indian company (strategic)
 
 ---
@@ -334,7 +334,7 @@ If you build this:
 📊 **Design Phase 2 Dataset**
 - Pick one domain where RAG struggles
 - Collect 5,000 text + 1,000 image examples
-- Fine-tune Gemma 3 12B on that domain
+- Fine-tune Mistral 7B on that domain
 
 ### **Month 3-6 (Comprehensive Model)**
 

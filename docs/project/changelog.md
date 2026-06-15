@@ -24,6 +24,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - RAG query engine with source citations
 
 ### Changed
+- **SFT Model Fine-Tuning**: Pivoted fine-tuning architecture from Gemma 3 (12B/4B) to Mistral 7B.
+  - Mistral 7B natively runs in float16 precision, bypassing float32 upcasting on older hardware (T4 GPUs) which caused memory exhaustion and CUDA OOM crashes.
+  - Configured Unsloth SFT pipeline with custom PyArrow data parsing and single GPU binding.
+  - Upload checkpoints to Hugging Face private repository (`iks-mistral-7b-checkpoints`).
+  - Updated RAG local fallback recommendations to `mistral:7b`.
 - **LLM Provider**: Switched from Ollama → Google Gemini (FREE, fast, multimodal)
   - See ADR-0005 for rationale
   - 2-3 second responses vs 5-10 minutes on CPU

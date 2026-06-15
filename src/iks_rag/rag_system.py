@@ -49,9 +49,7 @@ class RAGSystem:
         self.vector_store.initialize()
 
         # Initialize document loader
-        self.document_loader = DocumentLoader(
-            self.config.data_sources.documents_path
-        )
+        self.document_loader = DocumentLoader(self.config.data_sources.documents_path)
 
     def load_documents(self) -> None:
         """Load documents from configured path.

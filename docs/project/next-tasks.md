@@ -23,6 +23,7 @@
 - [x] Integrate custom dataset schema cleaner to bypass PyArrow crash.
 - [x] Apply Kaggle T4 VRAM hacks (`CUDA_VISIBLE_DEVICES="0"`, `expandable_segments:True`, `max_seq_length=512`).
 - [x] Resolve `SFTConfig` PicklingError and Transformers 5.5.0 average tokens bugs.
+- [x] Clean up all outdated references to Gemma 3 in codebase, configurations, and documentation.
 - [ ] Monitor and verify W&B loss curve convergence for `mistral-7b-run-1`.
 - [ ] Confirm LoRA adapter checkpoints are uploaded to Hugging Face `iks-mistral-7b-checkpoints` repository.
 

@@ -140,7 +140,7 @@ If you need to run entirely offline on GPU:
 # configs/rag/default.yaml
 llm:
   provider: ollama
-  model: gemma3:12b
+  model: mistral:7b
 ```
 
 ---
@@ -190,13 +190,13 @@ curl http://localhost:11434/api/tags
 ollama serve
 
 # Pull model
-ollama pull gemma3:4b
+ollama pull mistral:7b
 ```
 
 ### Out of Memory
 ```bash
-# Use smaller model
-ollama pull gemma3:4b  # Instead of 12B
+# Use quantized or smaller models
+ollama pull mistral:7b
 
 # Or use CPU mode (slower)
 # Set in configs/model.yaml: device: cpu
@@ -246,4 +246,4 @@ file data/documents/*.pdf
 
 ---
 
-**Last Updated**: 2026-04-16
+**Last Updated**: 2026-06-15

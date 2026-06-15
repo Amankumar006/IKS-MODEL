@@ -39,7 +39,7 @@ def test_initialize_openai(mock_openai, mock_config):
 def test_initialize_ollama(mock_ollama, mock_config):
     """Test LLMWrapper initialization for Ollama provider."""
     mock_config.llm.provider = "ollama"
-    mock_config.llm.model = "gemma:7b"
+    mock_config.llm.model = "mistral:7b"
     
     wrapper = LLMWrapper(mock_config.llm)
     wrapper.initialize()

@@ -3,12 +3,10 @@
 Supports PDF, Markdown, HTML, TXT, and JSON files.
 """
 
-import json
 from pathlib import Path
 from typing import Any
 
 from llama_index.core import Document, SimpleDirectoryReader
-from llama_index.core.readers.base import BaseReader
 from llama_index.readers.file import (
     HTMLTagReader,
     MarkdownReader,
@@ -38,9 +36,7 @@ class DocumentLoader:
             List of loaded documents with metadata
         """
         if not self.documents_path.exists():
-            raise FileNotFoundError(
-                f"Documents directory not found: {self.documents_path}"
-            )
+            raise FileNotFoundError(f"Documents directory not found: {self.documents_path}")
 
         # Use SimpleDirectoryReader with file extractors
         file_extractor = {
@@ -114,7 +110,7 @@ class DocumentLoader:
         Returns:
             List with single document
         """
-        with open(file_path, "r", encoding="utf-8") as f:
+        with open(file_path, encoding="utf-8") as f:
             text = f.read()
 
         doc = Document(
