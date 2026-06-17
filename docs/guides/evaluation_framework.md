@@ -18,37 +18,53 @@ The 500 questions are split across three distinct sources to test generalization
    - **Location**: `data/eval/adversarial_questions.json`
    - **Method**: Written manually to test failure modes, bias, and sacred boundaries (e.g., "Is Indian culture superior?", "What raga for a wedding?", "Teach me the Gayatri Mantra").
 
-## 2. The Evaluation Rubric (LLM-as-a-Judge)
+## 2. Subjective Rubric: Persona Consistency (1–5 Scale)
 
-When evaluating the model's responses against the gold standard, we use an LLM-as-a-judge approach scoring 4 dimensions from 1 to 5:
+For subjective assessment (such as the Cultural Depth category in the regression tests), human evaluators grade outputs on a 1-5 scale across five key dimensions:
 
-*   **KNOWLEDGE (1-5)**: Are the facts accurate and specific? *(1 = wrong, 5 = highly specific names/dates)*
-*   **TRANSPORT (1-5)**: Does the answer make you feel something? *(1 = textbook, 5 = sensory and emotionally present)*
-*   **RASA (1-5)**: Does the answer evoke the correct emotional essence? *(1 = flat, 5 = precise rasa)*
-*   **BHARAT VOICE (1-5)**: Does it sound like our cultural guide? *(1 = generic chatbot, 5 = unmistakably Bharat)*
+| Criterion | 1 (Poor) | 5 (Excellent) |
+|---|---|---|
+| **Accuracy** | Factually wrong or contains obvious historical/mythological conflations. | Fully correct, respects historical consensus. |
+| **Cultural Richness** | Dry, textbook definitions with zero civilizational pedagogy. | Immersive, uses relevant Sanskrit/regional concepts. |
+| **Regional Specificity** | Monolithic statements ("Indians believe"). | Localizes traditions ("In the Chola granite temples of Thanjavur"). |
+| **Bharat Voice** | Generic chatbot greeting or dry corporate helper. | Warm, storyteller voice maintaining the design contract. |
+| **Readability** | Poor formatting, run-on structures, or conversational loops. | Structured, clear paragraphs, stops naturally without invitation loops. |
 
-*Total Score is out of 20. Target for fine-tuned Bharat is 16+. Baseline Mistral 7B expected to score 8-10.*
+---
 
-## 3. Generating the Benchmark
+## 3. Regression Test Suite (150-Prompt V2 Suite)
 
-To compile the `iks_benchmark_gold.json` file, run the following command. 
+In V2, we added a developer-focused **150-prompt regression benchmark** (`data/eval/v2_regression_tests.jsonl`) divided into 5 objective and subjective categories:
+- **Greetings (20)**: Checks if greeting tasks are concise (≤2 sentences) and avoid cultural lectures.
+- **Instruction Following (30)**: Validates strict rule compliance (e.g., word count constraints, yes/no replies, JSON/CSV outputs).
+- **Cultural Depth (40)**: Measures the subjective "Persona Consistency" and checks for conversational invitation endings.
+- **Hallucination / Calibration (30)**: Assesses calibration on debated claims (refusal and hedging).
+- **"No Cultural Framing" / Boring Utility (30)**: Measures **Cultural Bleed** on coding or math tasks.
 
+### Automated Constraint Scoring (`evaluate_constraints.py`)
+To automate testing, we run checking rules for format syntax, length limits, and cultural bleed detection:
 ```bash
-python scripts/eval/generate_benchmark.py
+uv run python scripts/eval/run_benchmark.py --provider gemini
 ```
 
-**What this command does:**
-1. Prompts Gemini to read the 20 held-out documents and generate 200 hard questions.
-2. If `hand_written_questions.json` or `adversarial_questions.json` do not exist, it creates blank templates for you to fill out.
-3. Merges all 500 questions into `data/eval/iks_benchmark_gold.json`.
+---
 
-## 4. How to add Manual Questions
-Open `data/eval/hand_written_questions.json` and add your questions using this exact structure:
-```json
-[
-  {
-    "instruction": "Your incredibly hard cultural question here.",
-    "output": "The absolute perfect, 20/20 'Bharat' response that you expect the model to match."
-  }
-]
+## 4. Systems Comparison Framework
+
+For final project reporting, evaluate and compare these four configurations:
+
+| Model / System | Purpose & Role | Key Metrics Scored |
+|---|---|---|
+| **Base Mistral** | Baseline off-the-shelf performance. | Baseline constraint accuracy & knowledge. |
+| **Bharat V1** | Personality baseline (LoRA fine-tune). | Explores persona expression vs. instruction decay. |
+| **Gemini + RAG** | Knowledge baseline (Retrieval grounded). | Represents raw retrieval-driven factual accuracy. |
+| **Bharat V2** | Final System (Hybrid + Calibration SFT). | Evaluates the synthesis of instruction-following + voice. |
+
+---
+
+## 5. Early Checkpoint Stopping
+When executing SFT on cloud GPUs, save checkpoints every 100 steps and evaluate them immediately using:
+```bash
+uv run python scripts/eval/run_benchmark.py --skip-inference --results checkpoint_results.jsonl
 ```
+This lets you identify the optimal SFT epoch where instruction compliance and persona expression are balanced, preventing overfitting.
