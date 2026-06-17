@@ -3,6 +3,7 @@
 Supports PDF, Markdown, HTML, TXT, and JSON files.
 """
 
+import json
 from pathlib import Path
 from typing import Any
 
@@ -28,6 +29,16 @@ class DocumentLoader:
         """
         self.documents_path = Path(documents_path)
         self.supported_extensions = {".txt", ".md", ".pdf", ".html", ".json"}
+
+        # Load metadata registry if it exists
+        self.metadata_registry = {}
+        metadata_file = self.documents_path.parent / "processed" / "document_metadata.json"
+        if metadata_file.exists():
+            try:
+                with open(metadata_file, encoding="utf-8") as f:
+                    self.metadata_registry = json.load(f)
+            except Exception:
+                pass
 
     def load_all(self) -> list[Document]:
         """Load all documents from the directory.
@@ -56,8 +67,8 @@ class DocumentLoader:
 
         # Add metadata
         for doc in documents:
-            doc.metadata["source"] = "iks_corpus"
-            doc.metadata["category"] = self._extract_category(doc.metadata.get("file_name", ""))
+            filename = doc.metadata.get("file_name", "") or Path(doc.id_).name
+            self._enrich_metadata(doc, filename)
 
         return documents
 
@@ -96,8 +107,7 @@ class DocumentLoader:
         for doc in documents:
             doc.metadata["file_name"] = file_path.name
             doc.metadata["file_path"] = str(file_path)
-            doc.metadata["source"] = "iks_corpus"
-            doc.metadata["category"] = self._extract_category(file_path.name)
+            self._enrich_metadata(doc, file_path.name)
 
         return documents
 
@@ -118,12 +128,18 @@ class DocumentLoader:
             metadata={
                 "file_name": file_path.name,
                 "file_path": str(file_path),
-                "source": "iks_corpus",
-                "category": self._extract_category(file_path.name),
             },
         )
+        self._enrich_metadata(doc, file_path.name)
 
         return [doc]
+
+    def _enrich_metadata(self, doc: Document, filename: str) -> None:
+        """Enrich document metadata with validation registry fields if available."""
+        doc.metadata["source"] = "iks_corpus"
+        doc.metadata["category"] = self._extract_category(filename)
+        if filename in self.metadata_registry:
+            doc.metadata.update(self.metadata_registry[filename])
 
     def _extract_category(self, filename: str) -> str:
         """Extract document category from filename.

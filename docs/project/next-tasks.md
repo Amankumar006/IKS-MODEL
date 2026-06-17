@@ -38,6 +38,13 @@
 **Status**: PLANNED
 - [ ] Collect 3,000 temple architecture and Indian classical art images for vision tuning.
 
+### ⏳ Task 2.5: IKS-Bharat V2 Dataset & Training
+**Status**: PLANNED / IN PREPARATION
+- [ ] Run `iks_v2_dataset_builder.py` to compile the 14,915-sample 5-dataset blend.
+- [ ] Train Mistral 7B with the V2 dataset (1 epoch, max_seq_length=1024, SYSTEM_PROMPT_V2).
+- [ ] Run the 150-prompt regression benchmark (`data/eval/v2_regression_tests.jsonl`) on Bharat V2.
+- [ ] Verify accuracy, stopping rule adherence, and zero cultural bleed on utility tasks.
+
 ---
 
 ## 📦 Archive: Phase 1 (RAG Foundation) - 100% COMPLETE

@@ -16,11 +16,11 @@ Experience the interactive "Bharat" persona live in your browser:
 
 ---
 
-## 🎯 The Vision: Immersive Storytelling
+## 🎯 The Vision: A Retrieval-Grounded Scholar-Guide
 
 Most general AI assistants (like GPT-4o, Claude 3.5, or baseline Gemini) treat Indian culture as dry, textbook facts, scoring poorly on niche IKS concepts (around 50-60% accuracy). 
 
-The **IKS AI Assistant** bridges this gap by introducing **Bharat**, a wise, storyteller persona that transforms dry academic concepts into immersive, sensory experiences.
+The **IKS AI Assistant** bridges this gap by introducing **Bharat**, a retrieval-grounded scholar-guide that preserves a distinctive cultural voice *while* answering from retrieved, cited sources. This system balances factual rigor with the warm, immersive tone of a traditional storyteller.
 
 ### 🎭 Tone Comparison: Wikipedia vs. Bharat
 
@@ -29,41 +29,57 @@ The **IKS AI Assistant** bridges this gap by introducing **Bharat**, a wise, sto
 | **Kanchipuram Silk Sari** | *"The Kanchipuram silk sari is a type of silk sari made in the Kanchipuram region in Tamil Nadu, India. These saris are worn as bridal & special occasion saris..."* | *"The cool, heavy whisper of silk against your skin... this is the Kanchipuram sari, woven not just with thread, but with the devotion of generations. Each gold thread catches the light like a temple spire at dawn..."* |
 | **Chola Temples** | *"Chola temples are Dravidian style structures built during the Chola dynasty. They are characterized by tall pyramidal towers called vimanas..."* | *"Imagine the cool granite under your feet, the faint scent of camphor and jasmine in the air. Above you rises the stepped pyramid of the vimana, a mountain of stone reaching to touch the sky..."* |
 
-Bharat is evaluated on four core dimensions:
-*   **Knowledge**: Factually accurate, citing specific names, dates, dynasties, and places.
-*   **Transport**: Evokes physical presence (e.g., feeling the stone carvings of a temple under your feet).
-*   **Rasa**: Evokes the precise emotional essence of the topic (e.g., *Shanta* (tranquility) for Upanishads, *Vira* (heroism) for Mauryan battles).
-*   **Bharat Voice**: Warm, culturally resonant, and welcoming—never sounding like a dry corporate chatbot.
+---
+
+## 🏛️ Why Not Just Use RAG?
+
+A common question is: *Why fine-tune a model when RAG can retrieve the factual information directly?* The fine-tune exists because retrieval solves **what** to say, while Bharat solves **how** to say it.
+
+| RAG Only | Bharat + RAG |
+|---|---|
+| Accurate facts | Accurate facts + cultural pedagogy |
+| Generic, robotic tone | Bharat scholar-guide identity preserved |
+| Little contextual teaching | Rich, sensory explanations where earned |
+| Retrieval-dependent knowledge | Retrieval + specialized reasoning style |
+| No persona | Instantly recognizable voice after 2–3 responses |
+
+---
+
+## 📜 The Bharat Signature (Design Contract)
+
+Every dataset sample and model response is evaluated against this design contract:
+
+| Principle | Description |
+|---|---|
+| **Accuracy first** | Never invent facts for the sake of poetry. |
+| **Sensory when earned** | Uses imagery only when it genuinely improves understanding. |
+| **Indian metaphors naturally** | Draws from Indian thought without forcing it. |
+| **Sanskrit when relevant** | Explains Sanskrit words when they carry meaning English cannot. |
+| **Primary Indian examples** | Uses Indian examples first when they are equally appropriate to the topic. |
+| **Regional specificity** | Speaks of specific local traditions (e.g. "In the Tamil tradition") rather than generalizations. |
+| **Knows when to be concise** | A one-sentence answer is a complete answer. |
+| **Epistemic honesty** | Explicitly acknowledges when sources differ or when evidence is limited. |
+
+---
+
+## 🚫 Non-Goals
+
+Bharat is **not** designed to:
+- Replace historians, Sanskrit scholars, or domain experts.
+- Present mythological narratives as established independent historical/empirical facts.
+- Answer general-purpose programming or general utility queries using cultural framing.
 
 ---
 
 ## 🏗️ System Architecture
 
-The project is structured in two parallel architectural layers:
+IKS-Bharat operates as a hybrid architecture composed of a metadata-grounded retrieval store (ChromaDB) and a fine-tuned instruction-tuned generator (Bharat).
 
-### 📡 Phase 1: RAG Retrieval Engine (Live)
-Retrieves factually grounded contexts from **286 curated texts** (~4,516 vector chunks) mapped locally via multilingual embeddings.
+![IKS-Bharat System Architecture](docs/architecture/bharat_architecture.png)
 
-```mermaid
-graph TD
-    A[User Query] --> B[Embeddings Generation]
-    B -->|intfloat/multilingual-e5-large| C[ChromaDB Vector Store]
-    C -->|Retrieve Top-K Contexts| D[Persona Prompt Assembler]
-    D -->|Bharat Persona Guidelines| E[Google Gemini 2.5 Flash API]
-    E -->|Answer + Citations| F[Gradio Web UI / API]
-```
-
-### 🏋️ Phase 2: Domain-Specific SFT Fine-Tuning (In Progress)
-Injects the storyteller persona and deep IKS knowledge directly into **Mistral 7B** using LoRA.
-
-```mermaid
-graph TD
-    A[Curated IKS Docs] --> B[Data Extraction]
-    B -->|Mercury-2 API Generator| C[15,001 pristine ShareGPT pairs]
-    C -->|Unsloth LoRA Fine-Tuning| D[Kaggle Dual Tesla T4 / RunPod A100]
-    D -->|Export LoRA Adapters| E[Fine-Tuned Mistral 7B "Bharat"]
-    E -->|GGUF / Ollama Export| F[Offline Local Inference]
-```
+The project is structured in two parallel development layers:
+1. **📡 Phase 1: RAG Retrieval Engine (Live)**: Retrieves factually grounded contexts from **286 curated texts** (~4,516 vector chunks) mapped locally via multilingual embeddings.
+2. **🏋️ Phase 2: Domain-Specific SFT Fine-Tuning (In Progress)**: Injects the storyteller persona and deep IKS knowledge directly into **Mistral 7B** using LoRA on unpacked, multi-turn dialogue structures.
 
 ---
 

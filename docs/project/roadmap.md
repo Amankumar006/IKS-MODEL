@@ -100,102 +100,52 @@ Foundation (100% done)      Domain-specific (WIP)      Comprehensive
 
 ---
 
-## Phase 2: Domain-Specific Fine-Tuning [IN PROGRESS]
+## Phase 2: Domain-Specific Fine-Tuning & Evaluation [IN PROGRESS]
 
 **Timeline**: Months 2-4 (May-July 2026)  
-**Budget**: $600-2200 (training + expert curation)  
-**Goal**: Fine-tune Mistral 7B on curated IKS data to inject the "World Gateway / Bharat" persona.
-**Status**: 🔄 Data Generation & Infrastructure Setup in progress.
+**Goal**: Fine-tune Mistral 7B on curated IKS data to inject the "World Gateway / Bharat" persona with robust instruction following.
+**Status**: 🔄 V2 Dataset construction and validation complete. Preparing V2 model training.
 
-### Month 2: Data Collection & Curation
+### Version Roadmap
+- **V2**: Restore instruction-following without losing persona (5-dataset blend, invitation softening, multi-turn unpacking, 150-prompt regression benchmark).
+- **V2.1**: Reduce hallucinations through curated factual data + refusal training.
+- **V2.5**: Adaptive style modes (Guide, Scholar, Companion) + Civilization Lens (multi-perspective outputs).
+- **V3**: Knowledge reliability — RAG grounding, citations, primary Indian text retrieval.
+- **V4**: Multilingual — Sanskrit, Hindi, Tamil, Telugu, Kannada, Bengali.
 
-#### Data Collection Pipeline
-- [x] Wikipedia scraper built (`data collection/iks_data_collector.py`)
-- [x] Archive.org downloader built
-- [x] **286 base documents collected**
-- [x] **Sensory & World Gateway collector built** (`scripts/data/iks_world_collector.py`)
-- [ ] Build image collection (temple photos, artwork)
+### Week 4: V2 Dataset Builder & Validation
+- [x] Write `iks_system_prompt.py` incorporating `SYSTEM_PROMPT_V2` (stopping rule, modes).
+- [x] Implement `iks_v2_dataset_builder.py` to compile the 14,915-sample 5-dataset blend.
+- [x] Create 150-prompt regression benchmark `data/eval/v2_regression_tests.jsonl` with strict success criteria.
+- [x] Dry-run and validate dataset composition ratios and structure.
 
-#### Data Curation
-Target dataset: 18,000 examples
-- [x] Generate 15,000 text instruction-response pairs via Gemini (`generate_qa_pairs.py` running)
-- [ ] 3,000 multimodal (image + question + answer)
-
-#### Expert Review
-- [ ] Hire temple architecture expert (Art historian)
-- [ ] Hire music/dance expert (Musicologist)
-- [ ] Hire textiles expert (Textile conservator)
-- [ ] Review and validate data quality
-- [ ] Budget: $500-1500
-
-### Month 3: Training Infrastructure
-
-#### Environment Setup
-- [x] Set up RunPod/Lambda Labs account guide (`runpod_setup.md`)
-- [x] Configure A100 80GB GPU instructions
-- [x] Install Unsloth and dependencies guide
-- [x] Set up Weights & Biases tracking
-- [x] Create training configuration (`unsloth_finetune.py`)
-
-#### Training
-- [ ] Prepare dataset in Mistral 7B format
-- [ ] Run full training with LoRA r=32, alpha=64
-- [ ] Monitor with W&B
-- [ ] Save checkpoints every 500 steps
-
-**Training Configuration**:
-```yaml
-model: unsloth/mistral-7b-instruct-v0.3-bnb-4bit
-lora:
-  r: 32
-  alpha: 64
-  dropout: 0
-training:
-  epochs: 3
-  batch_size: 2
-  grad_accumulation: 4
-  lr: 2e-4
-  warmup_steps: 50
-  gradient_checkpointing: True
-```
-
-### Month 4: Evaluation & Iteration
-
-#### Evaluation Benchmark
-- [ ] Create IKS-specific test set (500 questions)
-- [ ] Compare against baseline Mistral 7B
-- [ ] Visual recognition accuracy (85%+ on temple images)
-- [ ] Hallucination rate testing
-
-#### Metrics Target
-- [ ] Accuracy: 90%+
-- [ ] Persona alignment: 95%+
-- [ ] Visual recognition: 85%+
-
-### Phase 2 Success Criteria
-- [ ] 18K curated dataset published to HuggingFace
-- [ ] 90%+ accuracy on IKS benchmark
-- [ ] Model uploaded to HuggingFace Hub
-- [ ] Training cost <$50
-- [ ] Inference latency <3s
+### Week 5: V2 Model SFT & Testing
+- [ ] Spin up Kaggle/RunPod environment for V2 training (1 epoch, max_seq_length=1024, prompt formatting).
+- [ ] Perform SFT on Mistral 7B using the V2 dataset.
+- [ ] Run the regression benchmark on Bharat V2 to verify prompt compliance and lack of cultural bleed.
 
 ---
 
-## Phase 3: Comprehensive Production System [PLANNED]
+## Phase 3: Hybrid Architecture & Knowledge Calibration [PLANNED]
 
 **Timeline**: Months 5-6 (August-September 2026)  
-**Budget**: $500-1500 (infrastructure)  
-**Goal**: Production deployment with enterprise features
+**Goal**: Implement the Document Validation Layer, multi-perspective Civilization Lens, and hybrid RAG routing.
 
-### Month 5: Hybrid Architecture & Multi-language
-- [ ] Implement query router
-- [ ] Build response fusion logic
-- [ ] Multi-language support (Sanskrit, Hindi, Tamil)
+### 🏛️ Document Validation Layer
+We introduce a metadata validation layer for our 286-document corpus, tagging each source with:
+- Source Name
+- Author
+- Century / Era
+- Region
+- Tradition
+- Confidence Level (`Evidence: Strong`, `Evidence: Moderate`, `Traditional Account`, etc.)
 
-### Month 6: Deployment & Monitoring
-- [ ] AWS/GCP setup
-- [ ] Auto-scaling configuration
-- [ ] Load balancer setup
+This metadata allows Bharat to cite sources with historical and geographical specificity.
+
+### 🔄 Hybrid RAG Routing
+A query classifier routes queries:
+- **Direct/Companion mode**: Generic/utility prompts bypass retrieval to avoid cultural bleed.
+- **Hybrid/Scholar mode**: IKS prompts retrieve verified context from ChromaDB, injecting it into Bharat's system prompt for high-fidelity responses.
 
 ---
 
@@ -204,16 +154,16 @@ training:
 | Phase | Status | Progress |
 |-------|--------|----------|
 | **Phase 1: RAG** | 🟢 100% complete | Deployed |
-| **Phase 2: Fine-tune** | 🔄 In Progress | Dataset generating; GPU scripts ready |
-| **Phase 3: Production** | ⏳ Planned | Starts after Phase 2 |
+| **Phase 2: Fine-tune (V2)** | 🔄 In Progress | V2 Dataset built; Regression benchmark ready |
+| **Phase 3: Hybrid (V3)** | ⏳ Planned | Document tagging script and routing |
 
 ### Immediate Next Steps
 
-1. Wait for `data/curated/iks_instruction_dataset.jsonl` to hit 15,000 pairs.
-2. Spin up RunPod A100.
-3. Execute `unsloth_finetune.py`.
+1. Commit and push Phase 1 and Phase 2 prep changes to GitHub.
+2. Tag the 286-document corpus using `scripts/data/tag_documents.py`.
+3. Train the Bharat V2 model.
 
 ---
 
-**Last Updated**: Phase 2.5 (Mistral 7B SFT Handoff)
-**Next Review**: After Phase 2 Dataset Generation Completes
+**Last Updated**: Phase 2.5 (IKS-Bharat V2 Spec)
+**Next Review**: After Bharat V2 Model training and regression evaluation.
