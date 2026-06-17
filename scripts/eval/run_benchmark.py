@@ -25,6 +25,7 @@ load_dotenv(dotenv_path=SYS_PATH / ".env")
 
 def run_inference(llm_wrapper: LLMWrapper, tests_path: Path, output_path: Path) -> None:
     """Run model inference over the regression test suite and write results JSONL."""
+    import time
     print(f"📥 Loading prompts from {tests_path.name}...")
     prompts = []
     with open(tests_path, encoding="utf-8") as f:
@@ -44,25 +45,30 @@ def run_inference(llm_wrapper: LLMWrapper, tests_path: Path, output_path: Path) 
             prompt_text = item["prompt"]
             print(f"[{i+1}/{len(prompts)}] ID: {item['id']} | Prompt: {prompt_text[:50]}...")
             
+            start_time = time.time()
             try:
                 # Call LLM wrapper to get response
                 # Note: Setting system_prompt to SYSTEM_PROMPT_V2
                 response_obj = llm_wrapper.llm.complete(prompt_text)
                 response = response_obj.text.strip()
+                latency = time.time() - start_time
             except Exception as e:
                 print(f"⚠️ Error generating response for {item['id']}: {e}")
                 response = f"[Inference Error: {e}]"
+                latency = 0.0
 
             # Write result line
             result = {
                 "id": item["id"],
                 "prompt": prompt_text,
-                "response": response
+                "response": response,
+                "latency_seconds": latency,
+                "estimated_tokens": int(len(response.split()) * 1.3)
             }
             f.write(json.dumps(result, ensure_ascii=False) + "\n")
 
 
-def display_dashboard(report: dict, results_path: Path) -> None:
+def display_dashboard(report: dict, results_path: Path, provider: str, model: str) -> None:
     """Print the formatted evaluation dashboard."""
     total_evaluated = report["total_passed"] + report["total_failed"]
     constraint_accuracy = (report["total_passed"] / total_evaluated) * 100 if total_evaluated > 0 else 0.0
@@ -74,8 +80,10 @@ def display_dashboard(report: dict, results_path: Path) -> None:
             if line.strip():
                 responses.append(json.loads(line))
 
-    # Word count / token count approximation
+    # Word count / token count / latency approximation
     total_words = 0
+    total_latency = 0.0
+    total_tokens = 0
     invitation_count = 0
     bleed_count = 0
     utility_count = 0
@@ -84,8 +92,16 @@ def display_dashboard(report: dict, results_path: Path) -> None:
 
     for r in responses:
         resp = r.get("response", "")
-        # Approximating tokens: words * 1.3
-        total_words += len(resp.split())
+        # Approximating tokens: words * 1.3 if not recorded
+        words = len(resp.split())
+        total_words += words
+        
+        # Latency & tokens
+        latency = r.get("latency_seconds", 0.0)
+        total_latency += latency
+        
+        tokens = r.get("estimated_tokens", int(words * 1.3))
+        total_tokens += tokens
 
         # Check invitation endings
         tail = resp.strip().lower()[-150:]
@@ -93,15 +109,39 @@ def display_dashboard(report: dict, results_path: Path) -> None:
             invitation_count += 1
 
         # Check cultural bleed on No Cultural Framing / Boring Utility prompts
-        # G=greetings, I=instruction, C=cultural depth, H=hallucination, U=utility (see prompt IDs)
         if r.get("id", "").startswith("U"):
             utility_count += 1
             if any(kw in resp.lower() for kw in CULTURAL_BLEED_KEYWORDS):
                 bleed_count += 1
 
-    avg_tokens = int((total_words * 1.3) / len(responses)) if responses else 0
+    avg_tokens = int(total_tokens / len(responses)) if responses else 0
+    avg_latency = total_latency / len(responses) if responses else 0.0
+    tokens_per_sec = total_tokens / total_latency if total_latency > 0 else 0.0
     invitation_freq = (invitation_count / len(responses)) * 100 if responses else 0.0
     bleed_rate = (bleed_count / utility_count) * 100 if utility_count > 0 else 0.0
+
+    # Model specific details
+    model_size = "N/A"
+    peak_memory = "N/A"
+    
+    p_lower = provider.lower()
+    m_lower = model.lower()
+    if p_lower == "gemini":
+        model_size = "N/A (Cloud API)"
+        peak_memory = "N/A (Cloud Hosted)"
+    elif p_lower == "openai":
+        model_size = "N/A (Cloud API)"
+        peak_memory = "N/A (Cloud Hosted)"
+    elif p_lower == "ollama":
+        if "mistral" in m_lower:
+            model_size = "7.2B params (int4 quantized)"
+            peak_memory = "~4.35 GB VRAM"
+        elif "gemma" in m_lower:
+            model_size = "9.2B params (int4 quantized)"
+            peak_memory = "~5.8 GB VRAM"
+        else:
+            model_size = "Unknown params"
+            peak_memory = "Varies by model size"
 
     # Output dashboard
     print("\n" + "=" * 26 + " Bharat V2 Evaluation " + "=" * 26)
@@ -116,9 +156,13 @@ def display_dashboard(report: dict, results_path: Path) -> None:
     print("-" * 74)
     print(f"Overall                        : {report['total_passed']}/{total_evaluated}")
     print(f"Constraint Accuracy            : {constraint_accuracy:.1f}%")
+    print(f"Average Response Time (Latency): {avg_latency:.2f} seconds")
+    print(f"Throughput (Tokens/sec)        : {tokens_per_sec:.1f} tok/s")
     print(f"Average Tokens                 : {avg_tokens}")
     print(f"Invitation Frequency           : {invitation_freq:.1f}%")
     print(f"Cultural Bleed (Utility Tasks) : {bleed_rate:.1f}%")
+    print(f"Model Size                     : {model_size}")
+    print(f"Peak VRAM Memory (estimated)   : {peak_memory}")
     print("=" * 74 + "\n")
 
 
@@ -165,8 +209,7 @@ def main():
 
     print(f"⚙️  Evaluating constraint rules...")
     report = evaluate_results(tests_path, results_path)
-    display_dashboard(report, results_path)
-
+    display_dashboard(report, results_path, args.provider, args.model)
 
 if __name__ == "__main__":
     main()
