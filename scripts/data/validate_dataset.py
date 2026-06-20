@@ -94,6 +94,7 @@ def validate_dataset(filepath: Path) -> dict:
                 multi_turn_count += 1
                 continue
 
+            sys_val = convs[0].get("value", "")
             human_val = convs[1].get("value", "")
             gpt_val = convs[2].get("value", "")
             human_lower = human_val.lower().strip()
@@ -105,7 +106,7 @@ def validate_dataset(filepath: Path) -> dict:
                 not gpt_val.startswith("[Evidence:") and
                 not gpt_val.startswith("[Traditional") and
                 not gpt_val.startswith("[Scholarly") and
-                not gpt_val.startswith("[MODE=") and
+                not any(sys_val.endswith(m) for m in ["[MODE=Guide]", "[MODE=Scholar]", "[MODE=Companion]"]) and
                 not (human_lower in GREETINGS or any(kw in human_lower for kw in UTILITY_KEYWORDS)) and
                 not (len(words) <= 50 and count_sentences(gpt_val) <= 3)
             )
@@ -161,7 +162,7 @@ def validate_dataset(filepath: Path) -> dict:
             # 6. Inferred dataset categorisation
             if gpt_val.startswith("[Evidence:") or gpt_val.startswith("[Traditional") or gpt_val.startswith("[Scholarly"):
                 calibration_examples += 1
-            elif gpt_val.startswith("[MODE="):
+            elif any(sys_val.endswith(m) for m in ["[MODE=Guide]", "[MODE=Scholar]", "[MODE=Companion]"]):
                 contrastive_examples += 1
             elif human_lower in GREETINGS or any(kw in human_lower for kw in UTILITY_KEYWORDS):
                 greeting_examples += 1

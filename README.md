@@ -108,6 +108,44 @@ The exact cells, dependency fixes, and dataset configurations used to execute tr
 
 ---
 
+## 🧹 V1 vs V2 Dataset Improvements
+
+To prepare for high-fidelity training, we conducted a comprehensive pre-training audit of the V1 legacy dataset, identifying several key defects. We rebuilt the dataset as **IKS V2** containing exactly **15,000** balanced, deduplicated, and clean instruction-response pairs.
+
+### 📊 V2 Dataset Blend Ratios
+
+| Dataset Partition | Target Size | Percentage | Purpose |
+|---|---|---|---|
+| **Dataset A: Persona** | 10,500 | 70% | Core Bharat storyteller voice & civilizational perspectives |
+| **Dataset B: Factual QA** | 2,250 | 15% | Grounded history, arts, sciences, and geography QA |
+| **Dataset C: Utility** | 1,500 | 10% | Formatting, programming, math, and general non-cultural tasks |
+| **Dataset D: Contrastive** | 450 | 3% | Active style-switching (Guide / Scholar / Companion modes) |
+| **Dataset E: Calibration** | 300 | 2% | Refusals and epistemic confidence level training |
+
+### 🩹 V1 Problems and V2 Quality Hotfixes
+
+| Legacy V1 Defects | Rebuilt V2 Fixes |
+|---|---|
+| **Multi-Turn Packing Bug**: Packed multiple conversation turns in a single example, training the model to predict the human query. | **100% Unpacked**: Rebuilt to strictly form 3-turn interactions (`system -> human -> gpt`). |
+| **First-Person Memory Hallucinations**: Claimed personal human lived experiences (e.g. *"my grandmother told me"*). | **0 Memories**: Rewrote all 758 occurrences to third-person objective narratives (e.g. *"pilgrims recall"*). |
+| **Fabricated Citations**: Hallucinated parenthetical academic citations (e.g. `(Rao, 2013)`) in Scholar mode. | **0 Citations**: Removed via regex and ran post-processing grammar pass to repair punctuation spacing. |
+| **Zero-Gravity & Anachronisms**: Claimed Aryabhata proposed a "zero-gravity model/universe". | **Corrected**: Replaced with historically precise gravity concepts (Bhaskara II's `ākarṣaṇa-śakti`) and axial rotation (Aryabhata). |
+| **Pingala Decimal Mixup**: Attributed the decimal system and zero to Pingala. | **Corrected**: Properly attributed the binary numeral system and combinatorics to Pingala. |
+| **Brahmagupta in Kerala**: Placed Brahmagupta (7th century) in 15th-century Kerala. | **Corrected**: Placed him accurately in 7th-century Bhinmal (Rajasthan) and separated him from the Kerala School. |
+| **Reflexive invitations**: Habitually ended responses with "Shall we explore further?". | **Softened**: Softened or removed 90%+ of invitation endings to ensure clean, crisp stopping points. |
+| **Garbled find-replace & typos**: Had word duplicate typos (e.g., *"the the"*) or double commas. | **Cleaned**: Programmatically stripped all typographical errors. |
+
+### 🛡️ Permanent Regression Check Protocol
+
+To ensure these issues are never re-introduced in future dataset builds, the V2 codebase includes automated regression checks in [verify_audit.py](file:///Users/amankumar/Aman/IKS-Model/scripts/verify_audit.py):
+1. **0** fabricated academic citations.
+2. **0** mentions of the string `zero-gravity`.
+3. **0** mixups of `Aryabhata` and `Brahmasphuta` within 80 characters.
+4. **0** duplicate prompt-response pairs.
+5. **0** true first-person memories.
+
+---
+
 ## 🚀 Local Quick Start
 
 ### ⚙️ Prerequisites & Hardware Recommendations
@@ -209,7 +247,7 @@ All details regarding project setup, design decisions, and evaluation frameworks
 | Phase | Core Features | Status |
 | :--- | :--- | :--- |
 | **Phase 1: RAG Foundation** | curation of 286 base docs, ChromaDB + Multilingual E5 integration, Gradio UI, HuggingFace Space deploy | ✅ **100% Complete** |
-| **Phase 2.1: Data Generation** | 15,001 multi-turn ShareGPT pairs generated and cleaned via Mercury-2 API | ✅ **100% Complete** |
+| **Phase 2.1: Data Generation** | 15,000 V2 dataset examples compiled, audited, and cleaned for pre-training quality | ✅ **100% Complete** |
 | **Phase 2.4: Evaluation** | 500-question gold-standard benchmark compiled testing held-out texts and adversarial limits | ✅ **100% Complete** |
 | **Phase 2.5: SFT Fine-Tuning** | Dual Tesla T4 Kaggle training notebook configured with W&B logging & automatic HF checkpoint backups | 🔄 **In Progress** |
 | **Phase 3: Production** | Local GGUF export, hybrid routing, multi-language support (Sanskrit, Tamil, Hindi), cloud deploy | ⏳ **Planned** |

@@ -1,7 +1,7 @@
 # Next Tasks - IKS AI Assistant
 
 **After completing current tasks, follow this task list in order.**
-**Last updated**: Phase 2.5 (Mistral 7B SFT Handoff)
+**Last updated**: Phase 2.5 (IKS V2 Dataset Rebuild & Hotfixes)
 
 ---
 
@@ -15,9 +15,9 @@
 
 ### ✅ Task 2.1: Dataset Generation
 **Status**: 100% COMPLETE
-- Successfully generated, cleaned, and validated exactly 15,001 ShareGPT pairs in `data/curated/iks_instruction_dataset.jsonl`.
+- Successfully generated, cleaned, and validated exactly 15,000 ShareGPT pairs in `data/curated/iks_v2_instruction_dataset.jsonl`.
 
-### 🔄 Task 2.2: Cloud GPU Fine-Tuning (Mistral 7B)
+### 🔄 Task 2.2: Cloud GPU Fine-Tuning (Mistral 7B V1)
 **Status**: IN PROGRESS / EXECUTED ON KAGGLE
 - [x] Pivot architecture from Gemma 3 to Mistral 7B to support float16 on Kaggle T4 GPUs.
 - [x] Integrate custom dataset schema cleaner to bypass PyArrow crash.
@@ -38,11 +38,18 @@
 **Status**: PLANNED
 - [ ] Collect 3,000 temple architecture and Indian classical art images for vision tuning.
 
-### ⏳ Task 2.5: IKS-Bharat V2 Dataset & Training
+### ✅ Task 2.5: IKS-Bharat V2 Dataset Rebuilding & Quality Hotfixes
+**Status**: 100% COMPLETE
+- [x] Run `iks_v2_dataset_builder.py` to compile the 15,000-sample 5-dataset blend.
+- [x] Audit and fix V1 legacy bugs: first-person memories, fabricated academic citations, zero-gravity claims, Aryabhata heliocentrism, and double-comma typos.
+- [x] Build and integrate permanent regression check suite (`scripts/verify_audit.py`).
+- [x] Add Hugging Face dataset uploader helper script (`scripts/data/upload_dataset.py`).
+
+### ⏳ Task 2.6: IKS-Bharat V2 Model Fine-Tuning & Evaluation
 **Status**: PLANNED / IN PREPARATION
-- [ ] Run `iks_v2_dataset_builder.py` to compile the 14,915-sample 5-dataset blend.
-- [ ] Train Mistral 7B with the V2 dataset (1 epoch, max_seq_length=1024, SYSTEM_PROMPT_V2).
-- [ ] Run the 150-prompt regression benchmark (`data/eval/v2_regression_tests.jsonl`) on Bharat V2.
+- [ ] Upload final cleaned V2 dataset to Hugging Face Hub using `scripts/data/upload_dataset.py`.
+- [ ] Train Mistral 7B with the V2 dataset on Kaggle/RunPod (1 epoch, max_seq_length=1024, SYSTEM_PROMPT_V2).
+- [ ] Run the 150-prompt regression benchmark (`data/eval/v2_regression_tests.jsonl`) on fine-tuned Bharat V2.
 - [ ] Verify accuracy, stopping rule adherence, and zero cultural bleed on utility tasks.
 
 ---

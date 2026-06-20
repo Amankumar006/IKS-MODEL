@@ -113,3 +113,7 @@ wandb/
 *.old
 *.orig
 *.rej
+
+# Scratch files
+scratch/
+

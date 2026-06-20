@@ -4,44 +4,48 @@
 
 ---
 
-## Current Status (Phase 2.5: SFT Executed on Kaggle via Mistral 7B)
+## Current Status (Phase 2.5: IKS V2 Dataset Rebuilt & Cleaned)
 
 ### ✅ Completed
 
 | Task | Details |
 |------|---------|
 | **Phase 1: RAG Foundation** | 100% Complete. 82.95% test coverage. 40/40 Unit Tests passing locally. |
-| **Mistral 7B Pivot** | Pivoted from Gemma 3 (12B/4B) to Mistral 7B because Kaggle T4 GPUs lack native bfloat16, causing Gemma to trigger float32 conversion and CUDA OOM. Mistral natively uses standard float16. |
-| **Custom Data Loader** | Built a custom safe JSONL loader to strip out inconsistent metadata keys (`pr`, `words`) to avoid PyArrow schema cast errors. |
-| **Kaggle Hardware Hacks** | Forced training on single T4 (`CUDA_VISIBLE_DEVICES="0"`) to stop GPU memory duplication; added `PYTORCH_CUDA_ALLOC_CONF="expandable_segments:True"`; throttled `max_seq_length` to 512. |
-| **Library Bug Fixes** | Passed `average_tokens_across_devices=False` to fix Transformers 5.5.0 loss-to-int bug; used `SFTConfig` in `trl 0.24.0` to prevent PicklingErrors. |
-| **HF & W&B Configuration** | Added `WANDB_API_KEY` to Kaggle secrets for background auth; redirected output to private `iks-mistral-7b-checkpoints` model repository. |
+| **IKS V2 Dataset Builder** | Completed `iks_v2_dataset_builder.py` with multi-turn unpacking, 15,000 exact instruction-response pairs, and target blends (A=10,500, B=2,250, C=1,500, D=450, E=300). |
+| **Quality Hotfixes & Audit** | Surgically resolved legacy V1 bugs in the V2 dataset: rewrote 758 first-person memory hallucinations to third-person, stripped 109 fabricated academic citations in Dataset D, corrected gravity references to `ākarṣaṇa-śakti`, corrected Aryabhata's heliocentrism claims to axial rotation, and removed duplicate "the the" typos and double commas. |
+| **Permanent Regression Checks** | Added automated checks in `scripts/verify_audit.py` (citations, zero-gravity, Aryabhata-Brahmasphuta mixups, duplicate pairs) to ensure quality is maintained in future builds. |
+| **HF Dataset Uploader** | Wrote `scripts/data/upload_dataset.py` to automate the uploading of the compiled JSONL to Hugging Face Hub. |
 
 ---
 
 ## Context for AI Assistant (Read Carefully)
 
 1. **Project Vision**: IKS (Indian Knowledge Systems) AI assistant designed as a **World Gateway**. Immersive cultural guide persona ("Bharat").
-2. **Current Focus**: SFT Fine-Tuning is actively running / completed on Kaggle using the Mistral 7B architecture. 
-3. **Model Path**: Checkpoints are saved under the private repo path `iks-mistral-7b-checkpoints` on Hugging Face.
+2. **Current Focus**: The cleaned, high-quality V2 instruction dataset is compiled and validated at `data/curated/iks_v2_instruction_dataset.jsonl`.
+3. **Next Focus**: Upload this dataset to Hugging Face Hub and trigger a new Mistral 7B SFT training run on Kaggle/RunPod using the upgraded `SYSTEM_PROMPT_V2`.
 
 ---
 
 ## Key Files Changed Recently
 
 ```text
-scripts/train/unsloth_finetune.py     ← MODIFIED: Synced with Kaggle pivots (Mistral 7B, safe loader, SFTConfig).
-README.md                             ← MODIFIED: Added visual Mermaid architecture and prominent HF Space link.
+data collection/iks_v2_dataset_builder.py  ← MODIFIED: Added deduplication, capping, and group-wise target sampling.
+docs/project/dataset-governance.md          ← MODIFIED: Added V1 vs V2 comparison table and regression checks documentation.
+scripts/verify_audit.py                     ← NEW: Permanent dataset audit regression checking suite.
+scripts/data/upload_dataset.py              ← NEW: Helper script to upload the V2 dataset to Hugging Face Hub.
+docs/project/changelog.md                   ← MODIFIED: Documented Session 5 rebuild, hotfixes, and uploader.
+docs/project/next-tasks.md                  ← MODIFIED: Marked V2 dataset tasks complete, added V2 training tasks.
+README.md                                   ← MODIFIED: Updated dataset roadmap, sizes, and V1 vs V2 improvements.
 ```
 
 ---
 
 ## How to Resume (Next Session)
 
-1. **Check W&B**: Confirm model converged properly and training completed the 3 epochs.
-2. **Check Hugging Face Hub**: Verify that `iks-mistral-7b-checkpoints` contains the saved LoRA adapter weight files.
-3. **Validation (Next)**: Perform local inference or Gradio integration tests with the new LoRA adapters.
-4. **Multimodal Phase (Next)**: Begin Temple architecture image collection for vision fine-tuning.
+1. **Upload Dataset**: Run `uv run python scripts/data/upload_dataset.py` to upload the cleaned V2 dataset to the Hugging Face Hub.
+2. **Setup V2 Training**: Prepare the Kaggle/RunPod environment to pull the newly uploaded V2 dataset from Hugging Face.
+3. **Run Training**: Execute fine-tuning on Mistral 7B for 1 epoch, using a sequence length of 1024 and the new `SYSTEM_PROMPT_V2`.
+4. **Run Regression Tests**: Validate the fine-tuned model against `data/eval/v2_regression_tests.jsonl` to ensure compliance with stopping rules and no cultural bleed on utility tasks.
 
 ---
 
@@ -50,10 +54,10 @@ README.md                             ← MODIFIED: Added visual Mermaid archite
 | Phase | Status | Tasks |
 |-------|--------|-------|
 | **Phase 1: RAG Foundation** | ✅ 100% | Deployed on HF Spaces; 82.95% Test Coverage |
-| **Phase 2: Fine-tuning** | 🔄 In Progress | Mistral 7B SFT training executed on Kaggle |
+| **Phase 2: Fine-tuning** | 🔄 In Progress | Rebuilt V2 dataset; preparing for Mistral 7B V2 SFT training run |
 | **Phase 3: Production** | ⏳ Not Started | Hybrid arch, multi-lang, cloud deploy |
 
 ---
 
-**File last updated**: Phase 2.5 (Kaggle Mistral 7B Handoff)
-**Next milestone**: Verify convergence of Mistral 7B adapter and start local validation.
+**File last updated**: Phase 2.5 (IKS V2 Dataset Rebuild & Hotfixes)
+**Next milestone**: Upload V2 dataset to Hugging Face Hub and initiate V2 training.

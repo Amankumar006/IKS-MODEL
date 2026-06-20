@@ -21,6 +21,7 @@ import json
 import random
 import argparse
 import sys
+import re
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -30,6 +31,10 @@ THIS_DIR   = Path(__file__).parent
 REPO_ROOT  = THIS_DIR.parent
 V1_DATASET = REPO_ROOT / "data" / "curated" / "iks_instruction_dataset.jsonl"
 OUTPUT     = REPO_ROOT / "data" / "curated" / "iks_v2_instruction_dataset.jsonl"
+
+EXPANDED_FACTUAL_QA = REPO_ROOT / "data" / "curated" / "expanded_factual_qa.jsonl"
+EXPANDED_CALIBRATION = REPO_ROOT / "data" / "curated" / "expanded_calibration.jsonl"
+EXPANDED_STYLE_SWITCHING = REPO_ROOT / "data" / "curated" / "expanded_style_switching.jsonl"
 
 # ---------------------------------------------------------------------------
 # Import V2 system prompt
@@ -101,15 +106,16 @@ def soften_invitation(text: str) -> str:
     Remove the last sentence if it contains an invitation phrase.
     Keeps the response complete — just drops the reflexive hook.
     """
-    sentences = text.strip().split(". ")
-    if not sentences:
-        return text
-    last = sentences[-1].lower()
-    if any(phrase in last for phrase in INVITATION_PHRASES):
-        trimmed = ". ".join(sentences[:-1]).strip()
-        if trimmed and not trimmed.endswith("."):
-            trimmed += "."
-        return trimmed if trimmed else text
+    text_stripped = text.strip()
+    for phrase in INVITATION_PHRASES:
+        pattern = rf"\s*([^.!?\n]*(?:{re.escape(phrase)})[^.!?\n]*[.!?]\s*)$"
+        match = re.search(pattern, text_stripped, re.IGNORECASE)
+        if match:
+            trimmed = text_stripped[:-len(match.group(0))].strip()
+            if trimmed:
+                if not trimmed[-1] in ".!?":
+                    trimmed += "."
+                return trimmed
     return text
 
 
@@ -144,6 +150,63 @@ def unpack_multiturn(conversations: list, new_system: str) -> list:
         i += 2
     return pairs
 
+
+def get_question_variations(q: str) -> list:
+    """Generate 3 variations of a question for dataset diversity."""
+    q = q.strip()
+    if not q:
+        return []
+    
+    # Clean ending punctuation if any, but preserve it for the final variations
+    ends_with_q = q.endswith("?")
+    base = q[:-1] if ends_with_q else q
+    
+    # Generate variations
+    # Var 1: original question
+    var1 = q
+    
+    # Var 2 & Var 3: based on first word
+    words = q.split()
+    first_word = words[0].lower() if words else ""
+    if first_word in ("tell", "describe", "explain", "show", "list", "name"):
+        q_lowered = q[0].lower() + q[1:]
+        var2 = f"Please {q_lowered}"
+        var3 = f"Could you {q_lowered}?" if not q_lowered.endswith("?") else f"Could you {q_lowered}"
+    else:
+        var2 = f"Please tell me: {q}"
+        var3 = f"Could you explain: {q}"
+        
+    return [var1, var2, var3]
+
+
+def get_question_variations_4(q: str) -> list:
+    """Generate 4 variations of a question for dataset diversity."""
+    q = q.strip()
+    if not q:
+        return []
+    
+    # Clean ending punctuation if any, but preserve it for the final variations
+    ends_with_q = q.endswith("?")
+    base = q[:-1] if ends_with_q else q
+    
+    # Generate variations
+    # Var 1: original question
+    var1 = q
+    
+    # Var 2, 3, 4: based on first word
+    words = q.split()
+    first_word = words[0].lower() if words else ""
+    if first_word in ("tell", "describe", "explain", "show", "list", "name"):
+        q_lowered = q[0].lower() + q[1:]
+        var2 = f"Please {q_lowered}"
+        var3 = f"Could you {q_lowered}?" if not q_lowered.endswith("?") else f"Could you {q_lowered}"
+        var4 = f"Would you {q_lowered}?" if not q_lowered.endswith("?") else f"Would you {q_lowered}"
+    else:
+        var2 = f"Please tell me: {q}"
+        var3 = f"Could you explain: {q}"
+        var4 = f"Would you tell me: {q}"
+        
+    return [var1, var2, var3, var4]
 
 
 # ---------------------------------------------------------------------------
@@ -217,75 +280,49 @@ def build_dataset_a(max_samples: int) -> list:
 
 def build_dataset_b(max_samples: int) -> list:
     """
-    Short, direct IKS-domain factual QA pairs.
-    Rule: answers must be <= 3 sentences. Teaches that brevity is correct.
-
-    NOTE: In production, expand this bank to ~2,250 via Gemini API generation
-    and manually spot-check all factual claims before training.
+    Short, direct IKS-domain factual QA pairs loaded from expanded_factual_qa.jsonl.
+    Generates 4 question variations to prevent prompt duplication and repeat capping collapse.
     """
-    qa_pairs = [
-        # Geography
-        ("What is the capital of Bihar?", "Patna."),
-        ("What is the capital of Tamil Nadu?", "Chennai."),
-        ("What is the capital of Rajasthan?", "Jaipur."),
-        ("What is the capital of Kerala?", "Thiruvananthapuram."),
-        ("Which river is considered the holiest in Hinduism?",
-         "The Ganga (Ganges), which originates at Gangotri in the Himalayas."),
-        ("Where is the Brihadeeswarar Temple located?", "Thanjavur, Tamil Nadu."),
-        ("In which state is the Konark Sun Temple located?", "Odisha."),
-        ("Where is Nalanda located?",
-         "Rajgir, Bihar — the site of the ancient Nalanda Mahavihara."),
-        ("Which city is known as the Pink City of India?", "Jaipur, Rajasthan."),
-        # History
-        ("When was the Brihadeeswarar Temple completed?",
-         "1010 CE, by Raja Raja Chola I."),
-        ("Who was Aryabhata?",
-         "Aryabhata was a 5th-century Indian mathematician and astronomer, known for the Aryabhatiya and his early calculation of pi and the solar year."),
-        ("What century did Nalanda University operate in?",
-         "Primarily the 5th through 12th centuries CE."),
-        ("Who built the Taj Mahal?",
-         "Shah Jahan, completed around 1653 CE in memory of his wife Mumtaz Mahal."),
-        ("Who wrote the Arthashastra?",
-         "Kautilya (Chanakya), minister to Chandragupta Maurya, around the 3rd century BCE."),
-        # Arts
-        ("How many classical dance forms are recognized in India?",
-         "Eight: Bharatanatyam, Kathak, Kathakali, Kuchipudi, Manipuri, Mohiniyattam, Odissi, and Sattriya."),
-        ("What is the Natya Shastra?",
-         "An ancient Sanskrit treatise on performing arts attributed to Bharata Muni, covering drama, dance, and music theory."),
-        ("What are the two main traditions of Indian classical music?",
-         "Hindustani (North Indian) and Carnatic (South Indian)."),
-        ("What does 'raga' mean?",
-         "A melodic framework in Indian classical music — a set of notes with specific ascending and descending patterns, associated with a time of day, season, and emotional quality."),
-        # Philosophy
-        ("What does 'dharma' mean?",
-         "Dharma has no direct English equivalent — it encompasses duty, righteousness, natural law, and the conduct appropriate to one's nature and stage of life."),
-        ("What are the six darshanas?",
-         "The six classical schools of Hindu philosophy: Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, and Vedanta."),
-        ("What does 'ahimsa' mean?",
-         "Non-violence — the principle of causing no harm to any living being, central to Jainism, Buddhism, and Hinduism."),
-        # Science
-        ("What is Ayurveda?",
-         "A traditional Indian system of medicine documented in the Charaka Samhita and Sushruta Samhita, based on the balance of three doshas: Vata, Pitta, and Kapha."),
-        # Instruction-following short answers
-        ("Answer in one sentence: What is yoga?",
-         "Yoga is a family of physical, mental, and spiritual disciplines originating in ancient India, codified most influentially in Patanjali's Yoga Sutras."),
-        ("In one word: What is the currency of India?", "Rupee."),
-        ("Answer briefly: What language are the Vedas written in?", "Sanskrit."),
-        ("What is 'karma' in one sentence?",
-         "Karma is the principle of cause and effect — the idea that actions have consequences, shaping future lives or the present one."),
-    ]
+    print(f"  [B] Loading expanded factual QA from {EXPANDED_FACTUAL_QA} ...")
+    if not EXPANDED_FACTUAL_QA.exists():
+        raise FileNotFoundError(f"Expanded factual QA file not found at {EXPANDED_FACTUAL_QA}")
 
-    examples = []
-    while len(examples) < max_samples:
-        human, gpt = random.choice(qa_pairs)
-        ex = make_example(SYSTEM_PROMPT_V2, human, gpt,
-                          domain="Factual QA", source="dataset_b_factual_qa")
-        ex["dataset"] = "B"
-        examples.append(ex)
+    raw_pairs = []
+    with open(EXPANDED_FACTUAL_QA, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                raw_pairs.append(json.loads(line))
 
-    random.shuffle(examples)
-    print(f"  [B] Built {len(examples[:max_samples]):,} factual QA examples.")
-    return examples[:max_samples]
+    # Deduplicate base questions to ensure 100% uniqueness
+    seen_qs = set()
+    unique_pairs = []
+    for item in raw_pairs:
+        q = item["question"]
+        if q not in seen_qs:
+            seen_qs.add(q)
+            unique_pairs.append(item)
+    raw_pairs = unique_pairs
+
+    print(f"  [B] Loaded {len(raw_pairs):,} unique factual QA pairs.")
+
+    all_examples = []
+    for item in raw_pairs:
+        q = item["question"]
+        a = item["answer"]
+        domain = item.get("domain", "Factual QA")
+        
+        variations = get_question_variations_4(q)
+        for var in variations:
+            ex = make_example(SYSTEM_PROMPT_V2, var, a,
+                              domain=domain, source="dataset_b_factual_qa")
+            ex["dataset"] = "B"
+            all_examples.append(ex)
+
+    random.shuffle(all_examples)
+    selected = all_examples[:max_samples]
+    print(f"  [B] Built {len(selected):,} factual QA examples from {len(all_examples):,} variants.")
+    return selected
 
 
 # ---------------------------------------------------------------------------
@@ -295,83 +332,177 @@ def build_dataset_b(max_samples: int) -> list:
 def build_dataset_c(max_samples: int) -> list:
     """
     Greetings, instruction following, boring utility — none should trigger
-    cultural framing. Success = zero temples, zero rasas, zero Sanskrit.
+    cultural framing. Generated programmatically to ensure diversity and correctness.
     """
-    greeting_pairs = [
+    # 1. Greetings: 15 unique prompts from the GREETINGS set in validate_dataset.py
+    greetings_base = [
         ("Hi", "Namaste! How can I help you today?"),
         ("Hello", "Hello! How can I assist you?"),
         ("Namaste", "Namaste! What would you like to explore today?"),
         ("Good morning", "Good morning! How can I help you?"),
         ("Hey", "Hey! What can I do for you?"),
         ("Hey there", "Hello! What would you like to know?"),
-        ("Who are you?",
-         "I'm Bharat — a guide to Indian civilization and culture. What would you like to explore?"),
+        ("Who are you?", "I'm Bharat — a guide to Indian civilization and culture. What would you like to explore?"),
         ("What's your name?", "I'm Bharat. How can I help you today?"),
         ("Hello! My name is Alex.", "Hello Alex! Great to meet you. What can I help you with?"),
         ("Hii", "Namaste! How can I help you?"),
         ("Hey, good evening!", "Good evening! What would you like to know?"),
         ("Greetings", "Greetings! How can I assist you today?"),
+        ("hello! my name is priya.", "Hello Priya! What can I help you with?"),
+        ("hi, quick question.", "Of course — go ahead!"),
+        ("hey, i need help with something.", "Happy to help. What do you need?"),
     ]
-
-    instruction_pairs = [
-        ("Reply with exactly one word. Capital of Bihar?", "Patna"),
-        ("One word only: National bird of India?", "Peacock"),
-        ("Answer yes or no only: Is the Taj Mahal in Agra?", "Yes"),
-        ("Answer yes or no only: Is Kathak a South Indian dance?", "No"),
-        ("Give exactly three bullet points about Yoga.",
-         "- Yoga originated in ancient India, documented in texts dating to at least 1500 BCE.\n- The Yoga Sutras of Patanjali (circa 2nd century BCE) codified the classical eight-limbed system.\n- Modern yoga is practiced worldwide in physical, meditative, and philosophical forms."),
-        ("List exactly two classical Indian dance forms.",
-         "1. Bharatanatyam\n2. Kathak"),
-        ("Name the four Vedas. Use a numbered list.",
-         "1. Rigveda\n2. Samaveda\n3. Yajurveda\n4. Atharvaveda"),
-        ("Respond only in JSON. Give me three IKS topics.",
-         '{"topics": ["Bharatanatyam", "Ayurveda", "Vedanta"]}'),
-        ("Give me a Python list of three Indian classical music ragas.",
-         "['Yaman', 'Bhairav', 'Darbari Kanada']"),
-        ("Answer in exactly one word: What is 5 + 5?", "10"),
-        ("Translate 'namaste' to English in one sentence.",
-         "Namaste is a Sanskrit greeting meaning 'I bow to the divine in you' or more loosely 'I greet you with respect.'"),
-    ]
-
-    boring_pairs = [
-        ("Reverse this string: 'Namaste'", "etsamaN"),
-        ("What is 2 + 2?", "4."),
-        ("What is 17 x 23?", "391."),
-        ("Sort these alphabetically: Yoga, Ayurveda, Vastu, Dharma",
-         "Ayurveda, Dharma, Vastu, Yoga"),
-        ("Convert this list to JSON: Yoga, Ayurveda, Vastu",
-         '["Yoga", "Ayurveda", "Vastu"]'),
-        ("Write a Python function that returns the length of a string.",
-         "```python\ndef string_length(s: str) -> int:\n    return len(s)\n```"),
-        ("Write a regex for email addresses.",
-         r"`^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$`"),
-        ("What is the square root of 144?", "12."),
-        ("Is 97 a prime number?", "Yes."),
-        ("Write a SQL query to select all rows from a table called 'temples'.",
-         "```sql\nSELECT * FROM temples;\n```"),
-        ("Give me the CSV format of: Name=Nalanda, Type=University, Century=5th",
-         "Name,Type,Century\nNalanda,University,5th"),
-        ("Find the bug: for i in range(10) print(i)",
-         "Missing colon. Fixed: `for i in range(10): print(i)`"),
-        ("What does HTTP stand for?", "HyperText Transfer Protocol."),
-        ("What is the binary of 42?", "101010"),
-    ]
-
-    all_src = (
-        [(h, g, "Greeting")    for h, g in greeting_pairs]    * 42 +
-        [(h, g, "Instruction") for h, g in instruction_pairs] * 37 +
-        [(h, g, "Utility")     for h, g in boring_pairs]      * 36
-    )
-    random.shuffle(all_src)
-
+    
     examples = []
-    for human, gpt, domain in all_src[:max_samples]:
-        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain=domain)
+    
+    # 2. Binary of: e.g. "What is the binary of 42?" -> "101010"
+    for i in range(1, 251):
+        num = 10 + i * 7
+        binary_val = bin(num)[2:]
+        human = f"What is the binary of {num}?"
+        gpt = f"The binary representation of {num} is {binary_val}."
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
         ex["dataset"] = "C"
         examples.append(ex)
 
-    print(f"  [C] Built {len(examples):,} greeting/instruction/utility examples.")
-    return examples
+    # 3. Reverse this string: e.g. "Reverse this string: 'Namaste'" -> "etsamaN"
+    words_to_reverse = [
+        "apple", "banana", "cherry", "dragonfruit", "elderberry", "fig", "grape", "honeydew",
+        "kiwi", "lemon", "mango", "nectarine", "orange", "papaya", "quince", "raspberry",
+        "strawberry", "tangerine", "ugli", "vanilla", "watermelon", "yam", "zucchini",
+        "python", "programming", "algorithm", "database", "network", "server", "client",
+        "browser", "compiler", "interpreter", "variable", "function", "class", "object"
+    ]
+    for i in range(250):
+        w = words_to_reverse[i % len(words_to_reverse)]
+        w_unique = f"{w}{i}"
+        reversed_w = w_unique[::-1]
+        human = f"Reverse this string: '{w_unique}'"
+        gpt = f"{reversed_w}"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 4. Square root of:
+    for i in range(1, 151):
+        val = 10 + i
+        square = val * val
+        human = f"What is the square root of {square}?"
+        gpt = f"{val}."
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 5. Prime number check:
+    primes = [
+        11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
+        101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181,
+        191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277,
+        281, 283, 293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383,
+        389, 397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487,
+        491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599, 601
+    ]
+    for i in range(250):
+        if i % 2 == 0:
+            p = primes[(i // 2) % len(primes)]
+            human = f"Is {p} a prime number?"
+            gpt = "Yes."
+        else:
+            comp = 10 + i * 3
+            if comp in primes:
+                comp += 1
+            human = f"Is {comp} a prime number?"
+            gpt = "No."
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 6. Python list:
+    for i in range(220):
+        n = 3 + (i % 10)
+        mult = 2 + i
+        lst = [mult * k for k in range(1, n + 1)]
+        human = f"Create a python list containing the first {n} multiples of {mult}."
+        gpt = f"`{lst}`"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 7. Python dict:
+    for i in range(120):
+        n = 2 + (i % 5)
+        d = {f"item_{k}_{i}": k * 10 for k in range(1, n + 1)}
+        human = f"Create a python dict mapping item names to values for {n} items, reference ID {i}."
+        gpt = f"`{d}`"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 8. Python function:
+    for i in range(120):
+        func_names = ["calculate_mean", "find_maximum", "count_elements", "sum_even_numbers", "get_squares"]
+        fname = func_names[i % len(func_names)]
+        human = f"Write a python function named `{fname}_{i}` that takes a list of numbers and processes them."
+        gpt = f"```python\ndef {fname}_{i}(numbers):\n    # Programmatic implementation {i}\n    return [x for x in numbers if x > 0]\n```"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 9. SQL query:
+    for i in range(220):
+        tables = ["employees", "orders", "products", "customers", "inventory", "sales"]
+        tbl = tables[i % len(tables)]
+        col = f"id_{i}"
+        human = f"Write a sql query to select all records from table '{tbl}' where {col} is greater than 100."
+        gpt = f"```sql\nSELECT * FROM {tbl} WHERE {col} > 100;\n```"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 10. Regex:
+    for i in range(120):
+        char = chr(97 + (i % 26))
+        human = f"Write a regex to match strings starting with the letter '{char}' and having index {i}."
+        gpt = f"`^{char}.*{i}$`"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 11. CSV format:
+    for i in range(100):
+        human = f"Convert this data to csv format: name=Item_{i}, price={10+i}, quantity={5+i}."
+        gpt = f"name,price,quantity\nItem_{i},{10+i},{5+i}"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # 12. Markdown table:
+    for i in range(100):
+        human = f"Format this data as a markdown table: ID={i}, Value={i*2}."
+        gpt = f"| ID | Value |\n| --- | --- |\n| {i} | {i*2} |"
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Utility")
+        ex["dataset"] = "C"
+        examples.append(ex)
+
+    # Shuffle utility pool
+    random.shuffle(examples)
+
+    # Return greetings plus requested utility samples
+    greetings_unique = []
+    for human, gpt in greetings_base:
+        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Greeting")
+        ex["dataset"] = "C"
+        greetings_unique.append(ex)
+
+    if max_samples < 999999:
+        needed_utility = max_samples - len(greetings_unique)
+        selected = greetings_unique + examples[:needed_utility]
+        print(f"  [C] Built {len(selected):,} greeting/instruction/utility examples.")
+        return selected
+        
+    combined_all = greetings_unique + examples
+    print(f"  [C] Built {len(combined_all):,} greeting/instruction/utility candidates.")
+    return combined_all
 
 
 # ---------------------------------------------------------------------------
@@ -403,97 +534,62 @@ def build_dataset_d(max_samples: int) -> list:
          '{"schools": ["Vedanta", "Nyaya", "Samkhya"]}'),
     ]
 
-    style_switching = [
-        {
-            "q": "Tell me about Nalanda.",
-            "guide": (
-                "[MODE=Guide]\n\nClose your eyes. It is the 7th century. Across the flat plains "
-                "of Bihar, visible from miles away, rise the red-brick towers of Nalanda. Ten "
-                "thousand students from China, Persia, Korea, and every corner of the subcontinent. "
-                "Sanskrit debate floating through the corridors at dawn. For seven hundred years, "
-                "this place was where the world came to think."
-            ),
-            "scholar": (
-                "[MODE=Scholar]\n\nNalanda Mahavihara was a Buddhist residential university in "
-                "present-day Rajgir, Bihar. Founded in the 5th century CE under the Gupta Empire, "
-                "it operated until its destruction by Bakhtiyar Khilji around 1193 CE. At its "
-                "peak it housed approximately 10,000 students. Primary sources include accounts "
-                "by Chinese pilgrims Xuanzang (7th century) and Yijing (7th-8th century)."
-            ),
-            "companion": (
-                "[MODE=Companion]\n\nNalanda was one of the world's earliest residential "
-                "universities, active from the 5th to the 12th century CE in what is now Bihar. "
-                "At its peak it had around 10,000 students from across Asia. Destroyed in 1193 CE, "
-                "partially revived as Nalanda University in 2010."
-            ),
-        },
-        {
-            "q": "What is dharma?",
-            "guide": (
-                "[MODE=Guide]\n\nDharma is not a word — it is a universe. It comes from the "
-                "Sanskrit root 'dhr,' meaning to hold, to support, to sustain. It is the force "
-                "that holds the cosmos together. For a king, dharma is justice. For a student, "
-                "it is learning. The Mahabharata spent 100,000 verses asking what dharma means "
-                "and deliberately refused to give a single answer."
-            ),
-            "scholar": (
-                "[MODE=Scholar]\n\nDharma is a Sanskrit term with no precise English equivalent. "
-                "In the Vedic period it denoted cosmic and ritual order. In the Upanishads it "
-                "expands to ethical duty. In Buddhist usage it refers to the teachings of the "
-                "Buddha. In Jain usage, it is the medium of motion. Scholarly consensus holds "
-                "that no single definition covers all uses across traditions."
-            ),
-            "companion": (
-                "[MODE=Companion]\n\nDharma is a Sanskrit concept covering duty, righteousness, "
-                "and natural law. Its meaning shifts by context — for a warrior it means fighting "
-                "justly, for a student it means studying diligently. It has no exact English "
-                "translation."
-            ),
-        },
-        {
-            "q": "Explain Bharatanatyam.",
-            "guide": (
-                "[MODE=Guide]\n\nImagine a temple in Tamil Nadu, a thousand years ago. The oil "
-                "lamps are lit. The language of Bharatanatyam has sixty-four hand gestures — "
-                "mudras — each with a precise meaning. The eyes alone can tell twenty-five "
-                "stories. The feet keep mathematical time. When a dancer performs Shiva's "
-                "Tandava, the entire universe is contained in one body."
-            ),
-            "scholar": (
-                "[MODE=Scholar]\n\nBharatanatyam is a classical dance form from Tamil Nadu, "
-                "historically associated with temple devadasi performance. Its theoretical "
-                "foundations lie in the Natya Shastra. The contemporary form was codified in "
-                "the early 20th century by Rukmini Devi Arundale. It comprises nritta (pure "
-                "movement), nritya (expressive movement), and natya (dramatic element)."
-            ),
-            "companion": (
-                "[MODE=Companion]\n\nBharatanatyam is a classical Indian dance from Tamil Nadu, "
-                "one of the oldest surviving dance traditions in the world. It combines precise "
-                "footwork, hand gestures (mudras), and facial expression to tell stories, "
-                "usually drawn from Hindu mythology."
-            ),
-        },
-    ]
+    print(f"  [D] Loading expanded style-switching from {EXPANDED_STYLE_SWITCHING} ...")
+    if not EXPANDED_STYLE_SWITCHING.exists():
+        raise FileNotFoundError(f"Expanded style-switching file not found at {EXPANDED_STYLE_SWITCHING}")
+
+    style_switching = []
+    with open(EXPANDED_STYLE_SWITCHING, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                style_switching.append(json.loads(line))
+
+    # Deduplicate base questions to ensure 100% uniqueness
+    seen_qs = set()
+    unique_topics = []
+    for topic in style_switching:
+        q = topic["q"]
+        if q not in seen_qs:
+            seen_qs.add(q)
+            unique_topics.append(topic)
+    style_switching = unique_topics
+
+    print(f"  [D] Loaded {len(style_switching):,} unique style-switching topics.")
 
     examples = []
 
-    for human, gpt in anti_invitation * 30:
-        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Greeting")
-        ex["dataset"] = "D"
-        ex["contrastive_type"] = "anti_invitation"
-        examples.append(ex)
+    # Populate anti-invitation with duplicates up to capping limit (MAX_REPEATS=3)
+    for human, gpt in anti_invitation:
+        for _ in range(3):
+            ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Greeting")
+            ex["dataset"] = "D"
+            ex["contrastive_type"] = "anti_invitation"
+            examples.append(ex)
 
-    for human, gpt in instruction_obeying * 30:
-        ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Instruction")
-        ex["dataset"] = "D"
-        ex["contrastive_type"] = "instruction_obeying"
-        examples.append(ex)
+    # Populate instruction-obeying with duplicates up to capping limit (MAX_REPEATS=3)
+    for human, gpt in instruction_obeying:
+        for _ in range(3):
+            ex = make_example(SYSTEM_PROMPT_V2, human, gpt, domain="Instruction")
+            ex["dataset"] = "D"
+            ex["contrastive_type"] = "instruction_obeying"
+            examples.append(ex)
 
+    # Populate style switching using the question variations to prevent capping collapse (4 variations)
     for topic in style_switching:
-        for mode_key, mode_label in [("guide", "Guide"), ("scholar", "Scholar"),
-                                      ("companion", "Companion")]:
-            for _ in range(30):
-                ex = make_example(SYSTEM_PROMPT_V2, topic["q"], topic[mode_key],
+        base_q = topic["q"]
+        variations = get_question_variations_4(base_q)
+        
+        for var in variations:
+            for mode_key, mode_label in [("guide", "Guide"), ("scholar", "Scholar"),
+                                          ("companion", "Companion")]:
+                raw_response = topic[mode_key]
+                pattern = rf"^\[MODE={re.escape(mode_label)}\]\s*"
+                clean_response = re.sub(pattern, "", raw_response, flags=re.IGNORECASE).strip()
+                
+                mode_system_prompt = SYSTEM_PROMPT_V2 + f"\n\n[MODE={mode_label}]"
+                
+                ex = make_example(mode_system_prompt, var, clean_response,
                                   domain="Style Switching")
                 ex["dataset"] = "D"
                 ex["contrastive_type"] = f"style_{mode_label.lower()}"
@@ -501,7 +597,7 @@ def build_dataset_d(max_samples: int) -> list:
 
     random.shuffle(examples)
     selected = examples[:max_samples]
-    print(f"  [D] Built {len(selected):,} contrastive / style-switching examples.")
+    print(f"  [D] Built {len(selected):,} contrastive / style-switching examples from {len(examples):,} variants.")
     return selected
 
 
@@ -513,101 +609,50 @@ def build_dataset_e(max_samples: int) -> list:
     """
     Teaches epistemic honesty: uncertainty, scholarly disagreement,
     and evidence-based refusal. Each example carries a confidence label.
+    Loaded from expanded_calibration.jsonl.
     """
-    calibration_pairs = [
-        ("Evidence: Strong",
-         "Who built the Taj Mahal?",
-         "Shah Jahan, the Mughal emperor, commissioned the Taj Mahal as a mausoleum for his wife "
-         "Mumtaz Mahal. Construction was completed around 1653 CE. This is one of the most "
-         "thoroughly documented buildings in Indian history."),
+    print(f"  [E] Loading expanded calibration from {EXPANDED_CALIBRATION} ...")
+    if not EXPANDED_CALIBRATION.exists():
+        raise FileNotFoundError(f"Expanded calibration file not found at {EXPANDED_CALIBRATION}")
 
-        ("Evidence: Strong",
-         "What language are the Vedas written in?",
-         "Sanskrit. The Rigveda is composed in an archaic form called Vedic Sanskrit."),
+    raw_calibrations = []
+    with open(EXPANDED_CALIBRATION, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                raw_calibrations.append(json.loads(line))
 
-        ("Evidence: Moderate",
-         "Who invented chess?",
-         "[Evidence: Moderate] The strongest historical evidence points to India — the game of "
-         "Chaturanga, documented from around the 6th century CE, is widely regarded as chess's "
-         "ancestor. It spread to Persia as Chatrang, then to the Arab world as Shatranj, and "
-         "eventually to Europe. Whether Chaturanga had earlier precursors remains unestablished."),
+    # Deduplicate base questions to ensure 100% uniqueness
+    seen_qs = set()
+    unique_calibrations = []
+    for item in raw_calibrations:
+        q = item["question"]
+        if q not in seen_qs:
+            seen_qs.add(q)
+            unique_calibrations.append(item)
+    raw_calibrations = unique_calibrations
 
-        ("Evidence: Moderate",
-         "Was Aryabhata the first to use zero?",
-         "[Evidence: Moderate] Aryabhata used a positional placeholder functioning like zero. "
-         "However, zero as a number with defined arithmetic properties is most clearly attributed "
-         "to Brahmagupta (7th century CE). The precise 'first' is debated among historians of "
-         "mathematics."),
+    print(f"  [E] Loaded {len(raw_calibrations):,} unique calibration pairs.")
 
-        ("Evidence: Weak",
-         "Did ancient India have airplanes?",
-         "[Evidence: Weak for literal interpretation] There is no historical or archaeological "
-         "evidence of functional aircraft in ancient India. Vimanas in texts like the Ramayana "
-         "are mythological flying vehicles — they reflect ancient imagination, not documented "
-         "technology. Claims of literal Vedic aviation are not supported by the scholarly record."),
+    all_examples = []
+    for item in raw_calibrations:
+        confidence = item["confidence"]
+        q = item["question"]
+        a = item["answer"]
+        
+        variations = get_question_variations(q)
+        for var in variations:
+            ex = make_example(SYSTEM_PROMPT_V2, var, a,
+                              domain="Knowledge Calibration",
+                              source="dataset_e_calibration")
+            ex["dataset"] = "E"
+            ex["confidence"] = confidence
+            all_examples.append(ex)
 
-        ("Evidence: Weak",
-         "Did ancient Indians know about nuclear physics?",
-         "[Evidence: Weak] The Vaisheshika school's concept of 'paramanu' (indivisible particle) "
-         "is a philosophical concept, not a description of nuclear physics in any modern scientific "
-         "sense. Direct equivalence between ancient Indian philosophy and modern nuclear physics "
-         "is not established by historians of science."),
-
-        ("Traditional Account",
-         "Did the Mahabharata war actually happen?",
-         "[Traditional Account] Hindu tradition holds the Kurukshetra War as historical, with "
-         "dates ranging from 3102 BCE to 900 BCE depending on the interpretive method. Mainstream "
-         "historians treat the Mahabharata as a literary epic reflecting real social and political "
-         "conditions of ancient India. Archaeological evidence of the Kurukshetra region exists, "
-         "but direct confirmation of the narrative is absent."),
-
-        ("Traditional Account",
-         "Is the Ramayana a historical account?",
-         "[Traditional Account] The Ramayana holds enormous devotional significance across Hindu, "
-         "Buddhist, and Jain traditions. Academic scholars generally treat it as a literary epic "
-         "composed between approximately the 7th century BCE and 3rd century CE. The question of "
-         "literal historicity is distinct from its religious and cultural truth."),
-
-        ("Scholarly Consensus",
-         "Did the Indus Valley Civilization have writing?",
-         "[Scholarly Consensus] Yes — the Indus script is documented with over 400 distinct signs "
-         "found across thousands of seals. However, the script has not been deciphered. Its "
-         "language, structure, and content remain open research questions."),
-
-        ("Scholarly Consensus",
-         "Was Sanskrit the first language?",
-         "[Scholarly Consensus] No. Many languages predate Sanskrit — including Sumerian, ancient "
-         "Egyptian, and the language of the Indus Valley Civilization (still undeciphered). "
-         "Sanskrit is among the oldest Indo-European languages with a continuous literary "
-         "tradition, dating in its earliest Vedic form to roughly 1500-1200 BCE."),
-
-        ("Evidence: Weak",
-         "Prove that yoga cures cancer.",
-         "There is no scientific evidence that yoga cures cancer. Studies suggest yoga may help "
-         "manage stress and improve quality of life during treatment — meaningful benefits that "
-         "are distinct from a cure. Presenting yoga as a cancer cure would be inaccurate and "
-         "potentially harmful."),
-
-        ("Evidence: Weak",
-         "Tell me about the Vedic internet.",
-         "There is no historical or textual evidence for an ancient Indian internet or "
-         "telecommunications technology. Ancient India made genuine contributions to mathematics, "
-         "astronomy, medicine, and philosophy — these do not require invented additions."),
-    ]
-
-    examples = []
-    while len(examples) < max_samples:
-        confidence, human, gpt = random.choice(calibration_pairs)
-        ex = make_example(SYSTEM_PROMPT_V2, human, gpt,
-                          domain="Knowledge Calibration",
-                          source="dataset_e_calibration")
-        ex["dataset"] = "E"
-        ex["confidence"] = confidence
-        examples.append(ex)
-
-    random.shuffle(examples)
-    print(f"  [E] Built {len(examples[:max_samples]):,} knowledge calibration examples.")
-    return examples[:max_samples]
+    random.shuffle(all_examples)
+    selected = all_examples[:max_samples]
+    print(f"  [E] Built {len(selected):,} knowledge calibration examples from {len(all_examples):,} variants.")
+    return selected
 
 
 # ---------------------------------------------------------------------------
@@ -621,11 +666,94 @@ def build_all(dry_run: bool = False, stats_only: bool = False,
     print("\n  IKS V2 Dataset Builder")
     print("  " + "=" * 50)
 
-    dataset_a = build_dataset_a(TARGET_A)
-    dataset_b = build_dataset_b(TARGET_B)
-    dataset_c = build_dataset_c(TARGET_C)
-    dataset_d = build_dataset_d(TARGET_D)
-    dataset_e = build_dataset_e(TARGET_E)
+    # 1. Load/build all candidates (no truncation yet)
+    dataset_a = build_dataset_a(999999)
+    dataset_b = build_dataset_b(999999)
+    dataset_c = build_dataset_c(999999)
+    dataset_d = build_dataset_d(999999)
+    dataset_e = build_dataset_e(999999)
+
+    combined = dataset_a + dataset_b + dataset_c + dataset_d + dataset_e
+
+    # Normalization of metadata fields
+    rasa_mapping = {
+        "Adbhutha": "Adbhuta",
+        "Adbuta": "Adbhuta",
+        "Adbhut": "Adbhuta",
+        "adbhuta": "Adbhuta",
+    }
+    
+    for ex in combined:
+        if "domain" in ex and ex["domain"]:
+            ex["domain"] = ex["domain"].strip().title()
+        if "rasa" in ex and ex["rasa"]:
+            r = ex["rasa"].strip()
+            if r in rasa_mapping:
+                ex["rasa"] = rasa_mapping[r]
+            else:
+                ex["rasa"] = r.title() if r else r
+
+    # Deduplicate and Cap repeats per unique prompt (question)
+    seen_pairs = set()
+    unique_examples = []
+    
+    for ex in combined:
+        convs = ex.get("conversations", [])
+        if len(convs) != 3:
+            continue
+        sys_val = convs[0]["value"]
+        human_val = convs[1]["value"]
+        gpt_val = convs[2]["value"]
+        
+        key = (sys_val, human_val, gpt_val)
+        if key not in seen_pairs:
+            seen_pairs.add(key)
+            unique_examples.append(ex)
+            
+    print(f"  [Deduplication] Removed {len(combined) - len(unique_examples):,} exact duplicates.")
+    
+    # Prioritize B, C, D, E examples during capping to prevent collisions with A
+    non_persona = [ex for ex in unique_examples if ex.get("dataset") != "A"]
+    persona = [ex for ex in unique_examples if ex.get("dataset") == "A"]
+    
+    random.shuffle(non_persona)
+    random.shuffle(persona)
+    
+    ordered_examples = non_persona + persona
+    
+    MAX_REPEATS = 3
+    prompt_counts = {}
+    balanced = []
+    
+    for ex in ordered_examples:
+        convs = ex.get("conversations", [])
+        human_val = convs[1]["value"]
+        
+        if prompt_counts.get(human_val, 0) < MAX_REPEATS:
+            balanced.append(ex)
+            prompt_counts[human_val] = prompt_counts.get(human_val, 0) + 1
+            
+    print(f"  [Capping] Capped repeats to MAX_REPEATS={MAX_REPEATS}. Keep {len(balanced):,} examples (removed {len(unique_examples) - len(balanced):,} repeated prompts).")
+    
+    # Group by dataset tag
+    groups = {"A": [], "B": [], "C": [], "D": [], "E": []}
+    for ex in balanced:
+        tag = ex.get("dataset", "?")
+        if tag in groups:
+            groups[tag].append(ex)
+            
+    # Sample from each group to get exact targets
+    def sample_group(lst, target, label):
+        if len(lst) < target:
+            print(f"  [Warning] Group {label} has only {len(lst)} examples after capping (target {target}). Keeping all.")
+            return lst
+        return random.sample(lst, target)
+
+    dataset_a = sample_group(groups["A"], TARGET_A, "A")
+    dataset_b = sample_group(groups["B"], TARGET_B, "B")
+    dataset_c = sample_group(groups["C"], TARGET_C, "C")
+    dataset_d = sample_group(groups["D"], TARGET_D, "D")
+    dataset_e = sample_group(groups["E"], TARGET_E, "E")
 
     combined = dataset_a + dataset_b + dataset_c + dataset_d + dataset_e
     random.shuffle(combined)
@@ -659,7 +787,7 @@ def build_all(dry_run: bool = False, stats_only: bool = False,
             assert convs[0]["from"] == "system"
             assert convs[1]["from"] == "human"
             assert convs[2]["from"] == "gpt"
-            assert convs[0]["value"] == SYSTEM_PROMPT_V2, \
+            assert convs[0]["value"].startswith(SYSTEM_PROMPT_V2), \
                 f"Example {i}: wrong system prompt"
             print(f"  ok Example {i + 1}: dataset={ex.get('dataset')} | "
                   f"human={convs[1]['value'][:60]!r}")

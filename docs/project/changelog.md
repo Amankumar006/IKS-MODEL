@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Rebuilt IKS V2 Dataset with 15,000 instruction-response pairs and new 70/15/10/3/2 blend ratio.
+- Permanent regression test suite in `scripts/verify_audit.py` for automated data quality checking.
+- Hugging Face dataset uploader helper script (`scripts/data/upload_dataset.py`).
 - Project initialization with complete directory structure
 - Documentation: README, CHANGELOG, CLAUDE.md, ROADMAP
 - ADR framework with initial decision records
@@ -24,6 +27,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - RAG query engine with source citations
 
 ### Changed
+- Replaced Mistral 7B target pipeline references and configuration from legacy V1 settings.
+- Upgraded `iks_v2_dataset_builder.py` to include deduplication, capping, and group-wise target sampling.
 - **SFT Model Fine-Tuning**: Pivoted fine-tuning architecture from Gemma 3 (12B/4B) to Mistral 7B.
   - Mistral 7B natively runs in float16 precision, bypassing float32 upcasting on older hardware (T4 GPUs) which caused memory exhaustion and CUDA OOM crashes.
   - Configured Unsloth SFT pipeline with custom PyArrow data parsing and single GPU binding.
@@ -40,6 +45,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Timeout: Increased from 120s to 600s for CPU inference
 
 ### Fixed
+- Cleaned 758 first-person memory hallucinations from GPT responses in Dataset A.
+- Removed 109 fabricated parenthetical citations from Dataset D and fixed formatting/punctuation.
+- Replaced anachronistic "zero-gravity" and "gurutvakarshan" references with historically precise "ākarṣaṇa-śakti".
+- Corrected Aryabhata heliocentrism overclaims to axial rotation.
+- Fixed garbled find-replace artifacts, double commas, and duplicate "the the" typos.
 - Intel Mac compatibility issues:
   - NumPy constrained to <2.0.0 for PyTorch compatibility
   - transformers constrained to <4.42.0 for x86_64 macOS
@@ -72,6 +82,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Session History
+
+### Session 5 (2026-06-20)
+- **Completed IKS V2 Dataset Rebuilding and Quality Hotfixes**:
+  - Rebuilt V2 dataset of 15,000 instruction-response pairs (A=10,500, B=2,250, C=1,500, D=450, E=300).
+  - Cleaned all 109 parenthetical citations (e.g. `(Rao, 2013)`) and performed post-processing grammar checks to clean punctuation spacing.
+  - Rewrote 758 occurrences of first-person memories to third-person objective narratives.
+  - Refined gravity references to use historically precise terms like `ākarṣaṇa-śakti` (attractive force) and corrected Aryabhata's heliocentrism claims to axial rotation.
+  - Fixed find-replace corruption in Line 14697 and cleaned 26 "the the" typos and 11 double commas.
+- **Implemented Permanent Regression Checks**: Modified `scripts/verify_audit.py` to ensure 0 citations, 0 zero-gravity claims, 0 Aryabhata-Brahmasphuta mixups, and 0 duplicate prompt-response pairs.
+- **Added Hugging Face Uploader**: Created `scripts/data/upload_dataset.py` to upload the cleaned V2 dataset to HF Hub.
+
 
 ### Session 4 (2026-04-20)
 - **Switched LLM provider from Ollama to Google Gemini**
