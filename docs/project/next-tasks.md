@@ -17,15 +17,18 @@
 **Status**: 100% COMPLETE
 - Successfully generated, cleaned, and validated exactly 15,000 ShareGPT pairs in `data/curated/iks_v2_instruction_dataset.jsonl`.
 
-### 🔄 Task 2.2: Cloud GPU Fine-Tuning (Mistral 7B V1)
-**Status**: IN PROGRESS / EXECUTED ON KAGGLE
+### ✅ Task 2.2: Cloud GPU Fine-Tuning (Mistral 7B V1)
+**Status**: COMPLETE (V1 model trained, exported, deployed — with known bugs)
 - [x] Pivot architecture from Gemma 3 to Mistral 7B to support float16 on Kaggle T4 GPUs.
 - [x] Integrate custom dataset schema cleaner to bypass PyArrow crash.
 - [x] Apply Kaggle T4 VRAM hacks (`CUDA_VISIBLE_DEVICES="0"`, `expandable_segments:True`, `max_seq_length=512`).
 - [x] Resolve `SFTConfig` PicklingError and Transformers 5.5.0 average tokens bugs.
 - [x] Clean up all outdated references to Gemma 3 in codebase, configurations, and documentation.
-- [ ] Monitor and verify W&B loss curve convergence for `mistral-7b-run-1`.
-- [ ] Confirm LoRA adapter checkpoints are uploaded to Hugging Face `iks-mistral-7b-checkpoints` repository.
+- [x] V1 training completed: **5,628 steps, 3 epochs, loss 1.8→1.1** (W&B: `iks-mistral-7b-run-1`)
+- [x] LoRA adapter checkpoints uploaded to `006aman/iks-mistral-7b-checkpoints`.
+- [x] V1 deployed: [IKS-Mistral-7B](https://huggingface.co/006aman/IKS-Mistral-7B) (16-bit) + [IKS-Mistral-7B-GGUF](https://huggingface.co/006aman/IKS-Mistral-7B-GGUF) (GGUF, ~4.37 GB)
+- [x] V1 bugs diagnosed in Ollama testing (self-dialogue, template mismatch, over-storytelling) → triggered V2 rebuild
+- [ ] Run 150-prompt regression benchmark against V1 (deferred — establish baseline before V2 training)
 
 ### ⏳ Task 2.3: Model Evaluation & Testing
 **Status**: PLANNED

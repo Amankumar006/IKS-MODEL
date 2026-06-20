@@ -119,10 +119,22 @@ Foundation (100% done)      Domain-specific (WIP)      Comprehensive
 - [x] Create 150-prompt regression benchmark `data/eval/v2_regression_tests.jsonl` with strict success criteria.
 - [x] Dry-run and validate dataset composition ratios and structure.
 
-### Week 5: V2 Model SFT & Testing
-- [ ] Spin up Kaggle/RunPod environment for V2 training (1 epoch, max_seq_length=1024, prompt formatting).
-- [ ] Perform SFT on Mistral 7B using the V2 dataset.
-- [ ] Run the regression benchmark on Bharat V2 to verify prompt compliance and lack of cultural bleed.
+### Week 5: V1 Model SFT, Export & Evaluation
+- [x] Spin up Kaggle free-tier environment (T4 GPU, `CUDA_VISIBLE_DEVICES="0"`).
+- [x] Resolve Kaggle infrastructure issues: 12-hr limit (checkpoint resumption), read-only filesystem (shutil workaround), PyArrow schema crash, SFTConfig PicklingError.
+- [x] **Train Bharat V1**: 5,628 steps × 3 epochs. Loss: 1.8 → 1.1. W&B: `iks-mistral-7b-run-1`.
+- [x] **Export GGUF** via Google Colab (Kaggle 20 GB limit bypassed). Q4_K_M format, ~4.37 GB.
+- [x] **Deployed to HuggingFace**:
+  - [006aman/IKS-Mistral-7B](https://huggingface.co/006aman/IKS-Mistral-7B) — merged 16-bit ✅
+  - [006aman/IKS-Mistral-7B-GGUF](https://huggingface.co/006aman/IKS-Mistral-7B-GGUF) — GGUF ✅
+- [x] **V1 Bugs Diagnosed** via Ollama local testing:
+  - Self-dialogue loop (Llama 3 tokens on Mistral base — no EOS signal)
+  - No identity without system prompt (zero system prompts in V1 training data)
+  - Over-storytelling (29% duplicate dataset skewed gradients to 26 template facts)
+  - Named-entity hallucinations (Nalanda/Dharmakirti example)
+- [x] **Ollama Partial Fix**: Modelfile with Llama 3 stop tokens suppresses self-dialogue.
+- [x] **V2 Rebuild Decision**: Root cause analysis concluded V1 needed a full dataset rebuild.
+- [ ] Run the 150-prompt regression benchmark against V1 to establish a baseline score (deferred — V2 rebuild prioritized).
 
 ---
 
@@ -153,17 +165,21 @@ A query classifier routes queries:
 
 | Phase | Status | Progress |
 |-------|--------|----------|
-| **Phase 1: RAG** | 🟢 100% complete | Deployed |
-| **Phase 2: Fine-tune (V2)** | 🔄 In Progress | V2 Dataset built; Regression benchmark ready |
-| **Phase 3: Hybrid (V3)** | ⏳ Planned | Document tagging script and routing |
+| **Phase 1: RAG** | 🟢 100% complete | Deployed on HF Spaces |
+| **Phase 2: V1 Fine-tune** | 🟢 Complete (with bugs) | Trained 5,628 steps; deployed to HF; V1 bugs diagnosed |
+| **Phase 2.5: V2 Dataset** | 🟢 Complete | 15,000 clean examples, all hotfixes applied, training config finalized |
+| **Phase 2.6: V2 Fine-tune** | 🔄 In Preparation | Awaiting Kaggle GPU job launch |
+| **Phase 3: Hybrid (V3)** | ⏳ Planned | RAG + fine-tune wiring, document tagging, hybrid routing |
 
 ### Immediate Next Steps
 
-1. Commit and push Phase 1 and Phase 2 prep changes to GitHub.
-2. Tag the 286-document corpus using `scripts/data/tag_documents.py`.
-3. Train the Bharat V2 model.
+1. Upload V2 dataset to HuggingFace Hub: `uv run python scripts/data/upload_dataset.py`
+2. Run 20-step `SANITY_CHECK=True` on Kaggle; confirm `<s>[INST]` tokens in PRE-FLIGHT output
+3. Launch full V2 training: 3 epochs, `save_steps=500`, `max_seq_length=2048`
+4. Benchmark checkpoints at epoch 1/2/3 using `scripts/eval/run_benchmark.py`
+5. Export best checkpoint to GGUF and upload to `006aman/IKS-Mistral-7B-V2-GGUF`
 
 ---
 
-**Last Updated**: Phase 2.5 (IKS-Bharat V2 Spec)
-**Next Review**: After Bharat V2 Model training and regression evaluation.
+**Last Updated**: Phase 2.6 (V2 Dataset Complete — Awaiting V2 Training Run)
+**Next Review**: After Bharat V2 model training and regression evaluation.

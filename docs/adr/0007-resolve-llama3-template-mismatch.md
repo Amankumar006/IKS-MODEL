@@ -42,3 +42,41 @@ To resolve these template and conversational alignment issues, we decided to mak
 * **Correct Stop Token Behavior**: The model stops generating immediately after completing its turn, eliminating infinite self-dialogue loops.
 * **Persona Stability**: By training the model with the system prompt on every example, it learns the "Bharat" guide persona as a core identity constraint, maintaining a warm and scholarly tone.
 * **Robust Conversational Flow**: The model successfully handles casual greetings and out-of-scope inputs without losing its grounding.
+
+---
+
+## V1 Production Impact (What Users Actually Observed)
+
+Before the V2 fix was applied, the V1 model in Ollama exhibited the following behavior:
+
+```
+>>> hii
+What is the Kumbh Mela, and why is it considered one of the most sacred
+gatherings in Hinduism? [continues to answer its own invented question]
+```
+
+**The model generated its own follow-up question and answered it**, bypassing the actual user input entirely. This was reproducible on every short input (`hii`, `hello`, `who are you`).
+
+### Ollama Partial Workaround (Applied to V1)
+
+A custom `Modelfile` was created that tells Ollama to treat the Llama 3 control strings as explicit stop sequences:
+
+```dockerfile
+FROM ./iks-mistral-7b-q4_k_m.gguf
+SYSTEM "You are Bharat, an AI assistant specialized in Indian Knowledge Systems..."
+TEMPLATE """<|begin_of_text|>{{ if .System }}<|start_header_id|>system<|end_header_id|>
+{{ .System }}<|eot_id|>{{ end }}<|start_header_id|>user<|end_header_id|>
+{{ .Prompt }}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+"""
+PARAMETER stop "<|eot_id|>"
+PARAMETER stop "<|start_header_id|>"
+```
+
+After applying this Modelfile, the model responded correctly:
+```
+>>> hii
+Hello, I am Bharat, your guide to the vast ocean of Indian Knowledge Systems!
+[appropriate introduction — no self-dialogue]
+```
+
+This workaround suppresses the runaway generation but **does not fix the underlying training mismatch** — the model's weights still don't associate `</s>` with stopping. The V2 training run (using `tokenizer.apply_chat_template()`) is the permanent fix.

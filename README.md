@@ -107,6 +107,25 @@ The exact cells, dependency fixes, and dataset configurations used to execute tr
 *   **Checkpoints**: Pushed automatically every 500 steps to the private Hugging Face repository `006aman/iks-mistral-7b-checkpoints`.
 *   **Template**: Uses `tokenizer.apply_chat_template()` to prevent silent formatting drift from the GGUF metadata (root cause of V1's hallucination bug).
 
+### 🤗 V1 Model — Live on HuggingFace
+
+Bharat V1 was fully trained (5,628 steps, 3 epochs) and deployed. It is currently available:
+
+| Format | Link | Size |
+|---|---|---|
+| **Merged 16-bit** | [006aman/IKS-Mistral-7B](https://huggingface.co/006aman/IKS-Mistral-7B) | ~14 GB |
+| **GGUF (Q4_K_M)** | [006aman/IKS-Mistral-7B-GGUF](https://huggingface.co/006aman/IKS-Mistral-7B-GGUF) | ~4.37 GB |
+
+> ⚠️ **V1 has known issues** — the most critical being a self-dialogue loop caused by a Llama 3 chat template being applied to a Mistral base model. See [ADR-0007](docs/adr/0007-resolve-llama3-template-mismatch.md) for details and the Ollama Modelfile workaround. The V2 training run (using the correct template and a fully rebuilt dataset) will replace V1.
+
+**Ollama quick-start for V1:**
+```bash
+# Pull directly from HuggingFace (Ollama auto-detects the template)
+ollama run hf.co/006aman/IKS-Mistral-7B-GGUF:Q4_K_M
+# If you see self-dialogue, use the Modelfile in docs/guides/huggingface_model_card.md
+```
+
+
 ---
 
 ## 🧹 V1 vs V2 Dataset Improvements
@@ -252,7 +271,8 @@ All details regarding project setup, design decisions, and evaluation frameworks
 | **Phase 1: RAG Foundation** | curation of 286 base docs, ChromaDB + Multilingual E5 integration, Gradio UI, HuggingFace Space deploy | ✅ **100% Complete** |
 | **Phase 2.1: Data Generation** | 15,000 V2 dataset examples compiled, audited, and cleaned for pre-training quality | ✅ **100% Complete** |
 | **Phase 2.4: Evaluation** | 500-question gold-standard benchmark compiled testing held-out texts and adversarial limits | ✅ **100% Complete** |
-| **Phase 2.5: SFT Fine-Tuning** | Dual Tesla T4 Kaggle training notebook configured with W&B logging & automatic HF checkpoint backups | 🔄 **In Progress** |
+| **Phase 2.5: V1 SFT** | Mistral 7B V1 trained (5,628 steps, loss 1.8→1.1), GGUF exported (~4.37 GB), deployed to HuggingFace | ✅ **Complete (V1 bugs documented — see ADR-0007)** |
+| **Phase 2.6: V2 SFT** | V2 dataset (15,000 clean examples), training config finalized (seq_len=2048, apply_chat_template, r=32/alpha=64) | 🔄 **Awaiting GPU Launch** |
 | **Phase 3: Production** | Local GGUF export, hybrid routing, multi-language support (Sanskrit, Tamil, Hindi), cloud deploy | ⏳ **Planned** |
 
 ---

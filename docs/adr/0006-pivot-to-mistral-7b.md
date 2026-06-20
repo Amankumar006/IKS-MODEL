@@ -24,3 +24,26 @@ We decided to:
 * **Stable SFT Pipeline**: Fine-tuning converges reliably on Kaggle's free tier, dropping loss from ~1.8 to ~1.1.
 * **Lightweight Training Footprint**: VRAM footprint is optimized down to **4.35 GB**, leaving ample margin for sequence lengths.
 * **Architecture Shift**: The fine-tuned storyteller persona model will be a Mistral 7B adapter rather than a Gemma 3 adapter. The local RAG pipeline can continue using Google Gemini API for the cloud fallback and Mistral 7B for local offline usage.
+
+---
+
+## Outcomes (What Actually Happened)
+
+The Mistral 7B pivot was executed successfully. V1 was fully trained and deployed.
+
+| Metric | Value |
+|---|---|
+| Training steps | 5,628 (3 full epochs) |
+| Final training loss | ~1.1 (from ~1.8) |
+| W&B project | `iks-mistral-7b-run-1` |
+| HF model (16-bit) | [006aman/IKS-Mistral-7B](https://huggingface.co/006aman/IKS-Mistral-7B) |
+| HF model (GGUF) | [006aman/IKS-Mistral-7B-GGUF](https://huggingface.co/006aman/IKS-Mistral-7B-GGUF) |
+| GGUF size | ~4.37 GB (Q4_K_M) |
+
+However, several bugs were discovered during local Ollama testing that are not related to the Gemma→Mistral pivot itself, but to the training format and dataset quality:
+
+1. **Template token mismatch** (see ADR-0007): The training script used Llama 3 chat tokens on a Mistral base. This caused infinite generation in local inference.
+2. **Dataset 29% duplication**: 4,322 of 15,001 V1 examples were exact duplicates, skewing gradient updates toward 26 template facts.
+3. **No system prompt in training data**: The model never saw "I am Bharat" during training, requiring inference-time injection.
+
+These issues collectively motivated the V2 dataset rebuild. See [V1 Model Report](../project/v1-model-report.md) for the full post-training analysis.

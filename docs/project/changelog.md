@@ -116,6 +116,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated BRIDGE.md, NEXT_TASKS.md, ROADMAP.md
 - Cost savings: $0 (Gemini free tier) vs OpenAI ($5 minimum)
 
+### Session 4.5 — V1 Model Training, Export & Deployment (2026-06)
+> ⚠️ **This session was previously undocumented.** It covers the complete V1 model training run.
+
+- **V1 SFT Training on Kaggle Free Tier (Tesla T4)**:
+  - Trained `unsloth/mistral-7b-instruct-v0.3-bnb-4bit` with LoRA (r=16, alpha=16) on 15,001 V1 instruction pairs.
+  - 3 full epochs = **5,628 steps**. Training loss converged from **~1.8 → ~1.1**. No NaN losses.
+  - W&B project: `iks-mistral-7b-run-1` logged the full loss curve.
+  - Infrastructure battles resolved (see `docs/project/v1-model-report.md` for full detail):
+    - **12-hr session limit**: Auto-saved LoRA checkpoints to HF every 500 steps; resumed from latest checkpoint
+    - **Read-only filesystem on resume**: Used `shutil.copytree()` to copy checkpoint into a new writable directory
+    - **PyArrow schema crash**: Added custom `load_sharegpt_jsonl()` to strip `pr`/`words` keys
+    - **SFTConfig PicklingError**: Replaced `TrainingArguments` with `SFTConfig` (trl 0.24+)
+
+- **GGUF Export via Google Colab**:
+  - Kaggle's 20 GB disk limit blocked local GGUF export (requires ~30 GB temp space)
+  - Moved export to Google Colab (78 GB disk), quantized to Q4_K_M using `llama.cpp`
+  - Output: `iks-mistral-7b-q4_k_m.gguf` — **~4.37 GB**
+
+- **HuggingFace Deployment** (both models now live):
+  - [006aman/IKS-Mistral-7B](https://huggingface.co/006aman/IKS-Mistral-7B) — merged 16-bit model ✅
+  - [006aman/IKS-Mistral-7B-GGUF](https://huggingface.co/006aman/IKS-Mistral-7B-GGUF) — 4-bit GGUF ✅
+
+- **V1 Bugs Discovered During Ollama Testing**:
+  - 🔴 **Self-dialogue loop**: `hii` → model generated its own question and answered it (root cause: Llama 3 tokens on Mistral base → no EOS signal learned)
+  - 🔴 **No system prompt**: Model had no identity without an injected SYSTEM block (V1 training had zero system prompts)
+  - 🟡 **Over-storytelling**: Every response defaulted to verbose sensory prose regardless of question length
+  - 🟡 **Named-entity hallucinations**: "What year was Nalanda founded?" → invented "Dharmakirti, 427 CE"
+  - 🟡 **Hallucinated citations**: Model occasionally appended fabricated URLs ("Source: [Bihar Tourism](...)")
+  - 🟢 **Runaway endings**: ~16% of responses ended with "Shall we explore further?"
+
+- **Ollama Partial Fix Applied**:
+  - Created `Modelfile` using Llama 3 stop tokens (`<|eot_id|>`) explicitly as `PARAMETER stop` — this suppresses the self-dialogue
+  - Added `SYSTEM` block to Modelfile to inject Bharat identity at inference time
+  - After fix: model responded correctly to "hii" and "who are you" queries
+
+- **Root Cause Analysis → V2 Rebuild Decision**:
+  - V1 dataset had **4,322 exact duplicates (29%)** — 26 Factual QA questions × 86 repeats each
+  - Llama 3 tokens on Mistral base = training format and inference format mismatched
+  - No system prompt in training data = no trained identity
+  - Decision: rebuild entire dataset as V2 (clean, deduplicated, correct template, system prompt in every example)
+
+
 ### Session 3 (2026-04-20)
 - Tested end-to-end RAG system
 - Generated 4,516 embedding chunks from 286 documents
