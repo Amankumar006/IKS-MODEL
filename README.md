@@ -99,12 +99,13 @@ The exact cells, dependency fixes, and dataset configurations used to execute tr
 
 ### 📊 Training Hyperparameters
 *   **Base Model**: `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`
-*   **LoRA Rank ($r$)**: `16`
-*   **LoRA Alpha**: `16`
+*   **LoRA Rank ($r$)**: `32`
+*   **LoRA Alpha**: `64`
 *   **Batch Size**: `2` (per device) with **Gradient Accumulation Steps**: `4` (effective batch size = 8)
 *   **Optimizer**: `paged_adamw_8bit`
-*   **Sequence Length**: `1024` tokens
+*   **Sequence Length**: `2048` tokens (increased from 1024 to prevent truncation of the `SYSTEM_PROMPT_V2` which is ~1,233 tokens)
 *   **Checkpoints**: Pushed automatically every 500 steps to the private Hugging Face repository `006aman/iks-mistral-7b-checkpoints`.
+*   **Template**: Uses `tokenizer.apply_chat_template()` to prevent silent formatting drift from the GGUF metadata (root cause of V1's hallucination bug).
 
 ---
 

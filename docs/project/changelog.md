@@ -83,6 +83,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Session History
 
+### Session 6 (2026-06-20)
+- **Training Script — Template Alignment (Critical Fix)**:
+  - Replaced the hand-rolled `<s>[INST]...[/INST]</s>` string with `tokenizer.apply_chat_template()` in both `scripts/train/unsloth_finetune.py` and `docs/guides/kaggle_training_notebook.md`.
+  - This eliminates the risk of silent formatting drift from the GGUF tokenizer metadata — the root cause of V1's infinite-generation / self-dialogue hallucination bug.
+  - Added a pre-flight decode block that prints `repr()` of the first 3 formatted examples so EOS and control tokens can be visually confirmed before launching the full Kaggle job.
+- **Training Script — Sequence Length & LoRA Upgrade**:
+  - Increased `MAX_SEQ_LENGTH` from `1024` to `2048`. The `SYSTEM_PROMPT_V2` is ~1,233 tokens; a 1,024 budget truncated every single training example mid-system-prompt.
+  - Increased LoRA rank from `r=16` to `r=32` and alpha from `16` to `64` to give the adapter more capacity to absorb the denser, more stylistically varied V2 dataset.
+- **Documentation Sync**:
+  - Updated `README.md` hyperparameters table to reflect the new `r=32`, `alpha=64`, `max_seq_length=2048` values.
+  - Added ADR-0007 documenting the Llama 3 chat template mismatch root-cause analysis and V2 resolution strategy.
+  - Updated `docs/ai-context/bridge.md` and `docs/project/next-tasks.md` to reflect V2 data-prep completion and upcoming training run.
+
 ### Session 5 (2026-06-20)
 - **Completed IKS V2 Dataset Rebuilding and Quality Hotfixes**:
   - Rebuilt V2 dataset of 15,000 instruction-response pairs (A=10,500, B=2,250, C=1,500, D=450, E=300).

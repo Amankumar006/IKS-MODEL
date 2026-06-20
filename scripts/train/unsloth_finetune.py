@@ -77,7 +77,8 @@ def load_sharegpt_jsonl(path: str):
 
 raw_dataset = load_sharegpt_jsonl(DATA_PATH)
 
-# 2. Format using the correct Mistral v3 template (system prompt folded into first [INST] turn)
+# 2. Format using the tokenizer's own apply_chat_template() to prevent silent drift
+#    from the GGUF metadata (root cause of V1's hallucination / self-dialogue bug).
 def format_mistral(example):
     system_msg, user_msg, assistant_msg = "", "", ""
     for turn in example["conversations"]:
@@ -89,19 +90,36 @@ def format_mistral(example):
             user_msg = val.strip()
         elif role == "gpt":
             assistant_msg = val.strip()
-            
-    # Format according to Mistral's native chat template
+
+    # Build messages list in the standard chat-completion format.
+    # Mistral folds the system turn into the first [INST] block natively.
+    messages = []
     if system_msg:
-        text = f"<s>[INST] {system_msg}\n\n{user_msg} [/INST] {assistant_msg}</s>"
-    else:
-        text = f"<s>[INST] {user_msg} [/INST] {assistant_msg}</s>"
+        messages.append({"role": "system", "content": system_msg})
+    messages.append({"role": "user", "content": user_msg})
+    messages.append({"role": "assistant", "content": assistant_msg})
+
+    # Let the tokenizer produce the exact byte-sequence it expects at inference.
+    text = tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,          # Return string, not token IDs
+        add_generation_prompt=False,  # Sequence already ends with the assistant turn
+    )
     return {"text": text}
 
 train_dataset = raw_dataset.map(format_mistral, remove_columns=raw_dataset.column_names)
 
 print("\nColumns:", train_dataset.column_names)
-print("\nFirst example formatted for Mistral:")
-print(train_dataset[0])
+
+# --- Pre-flight decode check ---
+# Decode a few examples and visually confirm the EOS and control tokens are correct
+# before launching the full training run.
+print("\n=== PRE-FLIGHT: First 3 examples (decoded) ===")
+for i in range(min(3, len(train_dataset))):
+    decoded = train_dataset[i]["text"]
+    print(f"\n--- Example {i} ---")
+    print(repr(decoded[:300]))  # Show first 300 chars with escape sequences visible
+print("\n=== END PRE-FLIGHT ===")
 
 
 # Cell 5 — Trainer setup

@@ -48,9 +48,12 @@
 ### ⏳ Task 2.6: IKS-Bharat V2 Model Fine-Tuning & Evaluation
 **Status**: PLANNED / IN PREPARATION
 - [ ] Upload final cleaned V2 dataset to Hugging Face Hub using `scripts/data/upload_dataset.py`.
-- [ ] Train Mistral 7B with the V2 dataset on Kaggle/RunPod (1 epoch, max_seq_length=1024, SYSTEM_PROMPT_V2).
-- [ ] Run the 150-prompt regression benchmark (`data/eval/v2_regression_tests.jsonl`) on fine-tuned Bharat V2.
+- [x] Configure training: `max_seq_length=2048`, LoRA `r=32 / alpha=64`, `tokenizer.apply_chat_template()` formatting.
+- [ ] Run pre-flight check (20-step `SANITY_CHECK=True` run) to verify EOS tokens in decoded output before full launch.
+- [ ] Train Mistral 7B with the V2 dataset on Kaggle/RunPod (3 epochs, save every 500 steps).
+- [ ] Run the 150-prompt regression benchmark (`data/eval/v2_regression_tests.jsonl`) on fine-tuned Bharat V2 at epoch 1, 2, and 3 checkpoints.
 - [ ] Verify accuracy, stopping rule adherence, and zero cultural bleed on utility tasks.
+- [ ] Export best checkpoint to GGUF (q4_k_m) for local Ollama inference.
 
 ---
 
