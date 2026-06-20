@@ -71,7 +71,7 @@ import torch
 from unsloth import FastLanguageModel
 
 MODEL_NAME = "unsloth/mistral-7b-instruct-v0.3-bnb-4bit"
-MAX_SEQ_LENGTH = 1024  # Throttled context length to save memory
+MAX_SEQ_LENGTH = 2048  # Set to 2048 to prevent truncation of system prompt + QA
 
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name = MODEL_NAME,
@@ -82,9 +82,9 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 
 model = FastLanguageModel.get_peft_model(
     model,
-    r = 16,
+    r = 32,                # Increased to 32 for higher domain capacity
     target_modules = ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"],
-    lora_alpha = 16,
+    lora_alpha = 64,       # Increased to 64
     lora_dropout = 0,
     bias = "none",
     use_gradient_checkpointing = "unsloth",
@@ -130,19 +130,26 @@ def load_sharegpt_jsonl(path: str):
 
 raw_dataset = load_sharegpt_jsonl(DATA_PATH)
 
-# 2. Format using the Llama 3 prompt structure
-def format_llama3(example):
-    user_msg, assistant_msg = "", ""
+# 2. Format using the correct Mistral v3 template (system prompt folded into first [INST] turn)
+def format_mistral(example):
+    system_msg, user_msg, assistant_msg = "", "", ""
     for turn in example["conversations"]:
         role = turn.get("from", "").strip().lower()
         val = turn.get("value", "")
-        if role == "human": user_msg = val
-        elif role == "gpt": assistant_msg = val
-        
-    text = f"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n{user_msg}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n{assistant_msg}<|eot_id|>"
+        if role == "system":
+            system_msg = val.strip()
+        elif role == "human":
+            user_msg = val.strip()
+        elif role == "gpt":
+            assistant_msg = val.strip()
+            
+    if system_msg:
+        text = f"<s>[INST] {system_msg}\n\n{user_msg} [/INST] {assistant_msg}</s>"
+    else:
+        text = f"<s>[INST] {user_msg} [/INST] {assistant_msg}</s>"
     return {"text": text}
 
-train_dataset = raw_dataset.map(format_llama3, remove_columns=raw_dataset.column_names)
+train_dataset = raw_dataset.map(format_mistral, remove_columns=raw_dataset.column_names)
 
 print("\nColumns:", train_dataset.column_names)
 print("\nFirst example formatted:")
