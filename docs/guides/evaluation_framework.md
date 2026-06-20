@@ -1,5 +1,17 @@
 # Evaluation Framework: The "Gold Standard" Benchmark
 
+> [!WARNING]
+> **This benchmark was never executed. The design described below is the *intended* design — not what was built.**
+>
+> In practice, only the **200 Gemini-generated questions from held-out documents** were created. The **100 hand-written questions and 200 adversarial questions were never written**. The benchmark was subsequently cancelled because the design had a circular validation problem: Gemini generated the questions, Gemini's knowledge shaped the framing, and using Gemini again as the judge would mean Gemini scoring answers to its own questions. This produces no independent signal.
+>
+> **What is used instead for V2 evaluation**:
+> - The **150-prompt regression suite** (`data/eval/v2_regression_tests.jsonl`) for objective constraint testing — this is model-agnostic (no circular dependency)
+> - A human spot-check of ~30 responses scored against the Bharat Signature rubric
+> - Comparison of Bharat V2 vs. baseline Mistral 7B on ~50 manually written questions
+>
+> See [`docs/project/next-tasks.md` Task 2.3](../project/next-tasks.md) for the full cancellation rationale.
+
 To scientifically prove that the fine-tuned Mistral 7B model has absorbed the "Bharat" persona and deep Indian Knowledge Systems, we use a rigorous 500-question benchmark. 
 
 We do **not** use the training model (Gemini) to generate the entire benchmark, as that would only test if the model learned to sound like Gemini. Instead, we use a three-pronged approach.

@@ -270,7 +270,7 @@ All details regarding project setup, design decisions, and evaluation frameworks
 | :--- | :--- | :--- |
 | **Phase 1: RAG Foundation** | curation of 286 base docs, ChromaDB + Multilingual E5 integration, Gradio UI, HuggingFace Space deploy | ✅ **100% Complete** |
 | **Phase 2.1: Data Generation** | 15,000 V2 dataset examples compiled, audited, and cleaned for pre-training quality | ✅ **100% Complete** |
-| **Phase 2.4: Evaluation** | 500-question gold-standard benchmark compiled testing held-out texts and adversarial limits | ✅ **100% Complete** |
+| **Phase 2.4: Evaluation** | 500-question benchmark design created but **cancelled** — Gemini-generated Q&A is circular self-validation with no independent signal. Replaced by 150-prompt regression suite | ❌ **Cancelled — see [evaluation_framework.md](docs/guides/evaluation_framework.md)** |
 | **Phase 2.5: V1 SFT** | Mistral 7B V1 trained (5,628 steps, loss 1.8→1.1), GGUF exported (~4.37 GB), deployed to HuggingFace | ✅ **Complete (V1 bugs documented — see ADR-0007)** |
 | **Phase 2.6: V2 SFT** | V2 dataset (15,000 clean examples), training config finalized (seq_len=2048, apply_chat_template, r=32/alpha=64) | 🔄 **Awaiting GPU Launch** |
 | **Phase 3: Production** | Local GGUF export, hybrid routing, multi-language support (Sanskrit, Tamil, Hindi), cloud deploy | ⏳ **Planned** |

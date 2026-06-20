@@ -199,8 +199,20 @@ The V1 issues are all **training data and format problems** — not architectura
 
 ## Benchmark Status
 
-> [!NOTE]
-> The 500-question gold-standard benchmark (`data/eval/iks_benchmark_gold.json`) and the 150-prompt regression suite (`data/eval/v2_regression_tests.jsonl`) were **not run against V1** before the V2 rebuild was prioritized. Running these against V1 is recommended before the V2 training run to establish a formal baseline comparison score.
+> [!WARNING]
+> **The 500-question benchmark was cancelled — not just deferred.**
+>
+> The 500-question gold-standard benchmark (`data/eval/iks_benchmark_gold.json`) was **never run against V1** because the benchmark design itself was found to be invalid:
+> - Gemini generated the questions from held-out IKS documents
+> - Gemini would have been used again as the judge to evaluate answers
+> - This is circular self-validation — Gemini scoring answers to questions it effectively wrote
+>
+> Additionally, the 100 hand-written and 200 adversarial questions described in [`evaluation_framework.md`](../guides/evaluation_framework.md) were **never created** — only the 200 Gemini-generated questions exist.
+>
+> **For V2 evaluation, use instead:**
+> - 150-prompt regression suite (`data/eval/v2_regression_tests.jsonl`) — model-agnostic, no circular dependency
+> - Human spot-check of ~30 randomly sampled responses scored against the Bharat Signature rubric
+> - Comparison against baseline Mistral 7B on ~50 manually written questions
 
 ---
 
