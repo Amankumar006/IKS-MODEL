@@ -19,6 +19,8 @@ System design and data pipelines.
 ### 📝 [`adr/`](adr/)
 Architecture Decision Records.
 *   Contains all major technical decisions (e.g., LlamaIndex vs LangChain, Gemini vs Ollama).
+*   [`0007-resolve-llama3-template-mismatch.md`](adr/0007-resolve-llama3-template-mismatch.md): Rationale for resolving the chat template mismatch between Llama 3 special tokens and Mistral 7B.
+
 
 ### 📘 [`guides/`](guides/)
 How-to guides for developers and maintainers.

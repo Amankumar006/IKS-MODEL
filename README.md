@@ -224,6 +224,8 @@ All details regarding project setup, design decisions, and evaluation frameworks
 *   [ADR 0004: Multilingual Embeddings Model](docs/adr/0004-multilingual-e5-embeddings.md)
 *   [ADR 0005: Switch to Cloud Gemini API](docs/adr/0005-switch-to-gemini.md)
 *   [ADR 0006: SFT Model Pivot to Mistral 7B](docs/adr/0006-pivot-to-mistral-7b.md) (Current fine-tuning architecture)
+*   [ADR 0007: Resolve Llama 3 Chat Template Mismatch](docs/adr/0007-resolve-llama3-template-mismatch.md)
+
 
 ### 📖 Setup & Training Guides
 *   [Local Quickstart Guide](docs/guides/setup.md)
