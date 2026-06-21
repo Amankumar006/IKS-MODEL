@@ -131,7 +131,11 @@ def load_sharegpt_jsonl(path: str):
 raw_dataset = load_sharegpt_jsonl(DATA_PATH)
 
 # 2. Format using the tokenizer's own apply_chat_template() to prevent silent drift
-#    from the GGUF metadata (root cause of V1's hallucination / self-dialogue bug).
+#    apply_chat_template() reads the Jinja template from the base model's tokenizer config
+#    (not the GGUF — the GGUF doesn't exist yet at training time). During the Unsloth
+#    export step, the same template gets embedded into the GGUF, so training-time and
+#    inference-time formatting are guaranteed identical. This was the root cause of V1's
+#    hallucination / self-dialogue bug.
 def format_mistral(example):
     system_msg, user_msg, assistant_msg = "", "", ""
     for turn in example["conversations"]:

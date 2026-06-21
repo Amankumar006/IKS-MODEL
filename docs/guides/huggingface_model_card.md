@@ -27,7 +27,7 @@ tags:
 |---|---|
 | **Base Model** | `mistralai/Mistral-7B-Instruct-v0.3` |
 | **Training Framework** | Unsloth + Hugging Face TRL (SFTTrainer) |
-| **Dataset** | 15,000 curated V2 instruction pairs distilled from 286 IKS texts using Gemini API |
+| **Dataset** | 15,000 curated V2 instruction pairs: 70% distilled from 286 IKS source texts via Gemini; 30% comprising programmatically-generated utility tasks and curated factual/calibration/style-switching examples |
 | **V2 Training Config** | `max_seq_length=2048`, LoRA `r=32 / alpha=64`, `tokenizer.apply_chat_template()` |
 | **Current Status** | ⚠️ V1 weights only — V2 fine-tuning run pending |
 
@@ -67,7 +67,7 @@ A completely redesigned training pipeline addresses every V1 defect. The V2 data
 |---|---|
 | **First-Person Memory Hallucinations** (e.g. "my grandmother told me") | Rewrote all **758 occurrences** to third-person objective narratives |
 | **Fabricated Academic Citations** (e.g. `(Rao, 2013)`) | Removed all **109 instances** via regex; ran grammar post-processing |
-| **Zero-Gravity Anachronism** | Corrected to historically precise gravity concepts: Brahmagupta's *gurutva* and Bhaskara II's *ākarṣaṇa-śakti* |
+| **Zero-Gravity Anachronism** | Corrected to historically precise gravity concepts: Brahmagupta's *gurutvākarṣaṇa* (gravitational attraction, 7th c.) and Bhaskara II's *ākarṣaṇa-śakti* (attractive force, 12th c.) |
 | **Aryabhata Heliocentric Overclaim** | Corrected to axial rotation; heliocentric framing reserved for the Kerala School |
 | **Brahmagupta Placed in Kerala** | Corrected to 7th-century Bhinmal, Rajasthan |
 | **Pingala Decimal Mixup** | Properly attributed binary numeral system and combinatorics to Pingala |
@@ -78,7 +78,7 @@ A completely redesigned training pipeline addresses every V1 defect. The V2 data
 
 | V1 Configuration | V2 Fix |
 |---|---|
-| Manual `<s>[INST]...[/INST]</s>` string | `tokenizer.apply_chat_template()` — reads the exact Jinja template from GGUF metadata |
+| Manual `<s>[INST]...[/INST]</s>` string | `tokenizer.apply_chat_template()` — reads the Jinja template from the base model's tokenizer config; the same template is later embedded into the exported GGUF, guaranteeing training-time and inference-time formatting can never drift apart |
 | `max_seq_length=1024` (truncated system prompt at ~1,233 tokens) | `max_seq_length=2048` |
 | LoRA `r=16 / alpha=16` | LoRA `r=32 / alpha=64` |
 | No system prompt in training data | `SYSTEM_PROMPT_V2` baked into every single example |

@@ -105,7 +105,7 @@ The exact cells, dependency fixes, and dataset configurations used to execute tr
 *   **Optimizer**: `paged_adamw_8bit`
 *   **Sequence Length**: `2048` tokens (increased from 1024 to prevent truncation of the `SYSTEM_PROMPT_V2` which is ~1,233 tokens)
 *   **Checkpoints**: Pushed automatically every 500 steps to the private Hugging Face repository `006aman/iks-mistral-7b-checkpoints`.
-*   **Template**: Uses `tokenizer.apply_chat_template()` to prevent silent formatting drift from the GGUF metadata (root cause of V1's hallucination bug).
+*   **Template**: Uses `tokenizer.apply_chat_template()` — reads the Jinja template from the base model's tokenizer config, preventing formatting drift. The same template is embedded into the exported GGUF, so training-time and inference-time formats are guaranteed identical (this was the root cause of V1's hallucination bug).
 
 ### 🤗 V1 Model — Live on HuggingFace
 
@@ -149,7 +149,7 @@ To prepare for high-fidelity training, we conducted a comprehensive pre-training
 | **Multi-Turn Packing Bug**: Packed multiple conversation turns in a single example, training the model to predict the human query. | **100% Unpacked**: Rebuilt to strictly form 3-turn interactions (`system -> human -> gpt`). |
 | **First-Person Memory Hallucinations**: Claimed personal human lived experiences (e.g. *"my grandmother told me"*). | **0 Memories**: Rewrote all 758 occurrences to third-person objective narratives (e.g. *"pilgrims recall"*). |
 | **Fabricated Citations**: Hallucinated parenthetical academic citations (e.g. `(Rao, 2013)`) in Scholar mode. | **0 Citations**: Removed via regex and ran post-processing grammar pass to repair punctuation spacing. |
-| **Zero-Gravity & Anachronisms**: Claimed Aryabhata proposed a "zero-gravity model/universe". | **Corrected**: Replaced with historically precise gravity concepts (Bhaskara II's `ākarṣaṇa-śakti`) and axial rotation (Aryabhata). |
+| **Zero-Gravity & Anachronisms**: Claimed Aryabhata proposed a "zero-gravity model/universe". | **Corrected**: Replaced with historically precise gravity concepts — Brahmagupta's *gurutvākarṣaṇa* (gravitational attraction, 7th c.) and Bhaskara II's *ākarṣaṇa-śakti* (attractive force, 12th c.); Aryabhata's contribution corrected to axial rotation. |
 | **Pingala Decimal Mixup**: Attributed the decimal system and zero to Pingala. | **Corrected**: Properly attributed the binary numeral system and combinatorics to Pingala. |
 | **Brahmagupta in Kerala**: Placed Brahmagupta (7th century) in 15th-century Kerala. | **Corrected**: Placed him accurately in 7th-century Bhinmal (Rajasthan) and separated him from the Kerala School. |
 | **Reflexive invitations**: Habitually ended responses with "Shall we explore further?". | **Softened**: Softened or removed 90%+ of invitation endings to ensure clean, crisp stopping points. |

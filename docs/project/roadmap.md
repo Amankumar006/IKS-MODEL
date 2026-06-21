@@ -174,7 +174,7 @@ A query classifier routes queries:
 ### Immediate Next Steps
 
 1. Upload V2 dataset to HuggingFace Hub: `uv run python scripts/data/upload_dataset.py`
-2. Run 20-step `SANITY_CHECK=True` on Kaggle; confirm `<s>[INST]` tokens in PRE-FLIGHT output
+2. Pre-flight check (PRE-FLIGHT block after Cell 4): verify `<s>[INST]` opens each example; full system prompt appears uncut; exactly one `</s>` closes each example (no mid-string EOS, no missing EOS)
 3. Launch full V2 training: 3 epochs, `save_steps=500`, `max_seq_length=2048`
 4. Benchmark checkpoints at epoch 1/2/3 using `scripts/eval/run_benchmark.py`
 5. Export best checkpoint to GGUF and upload to `006aman/IKS-Mistral-7B-V2-GGUF`

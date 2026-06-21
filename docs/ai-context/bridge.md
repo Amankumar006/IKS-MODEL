@@ -15,7 +15,7 @@
 | **Quality Hotfixes & Audit** | Surgically resolved legacy V1 bugs in the V2 dataset: rewrote 758 first-person memory hallucinations, stripped 109 fabricated academic citations, corrected gravity references to `ākarṣaṇa-śakti`, corrected Aryabhata's heliocentrism claims to axial rotation, removed all typos and double commas. |
 | **Permanent Regression Checks** | Added automated checks in `scripts/verify_audit.py` (citations, zero-gravity, Aryabhata-Brahmasphuta mixups, duplicate pairs). |
 | **HF Dataset Uploader** | Wrote `scripts/data/upload_dataset.py` to automate uploading the compiled JSONL to Hugging Face Hub. |
-| **Training Config Upgrade** | `MAX_SEQ_LENGTH` → 2048, LoRA `r=32`, `alpha=64`, switched from manual template string to `tokenizer.apply_chat_template()` to prevent formatting drift from GGUF metadata. |
+| **Training Config Upgrade** | `MAX_SEQ_LENGTH` → 2048, LoRA `r=32`, `alpha=64`, switched from manual template string to `tokenizer.apply_chat_template()` to prevent formatting drift (reads from tokenizer config; same template is embedded into GGUF during export). |
 | **Pre-flight Check Added** | `unsloth_finetune.py` now prints `repr()` of the first 3 formatted examples before training, so EOS/control tokens can be visually confirmed. |
 
 ---
@@ -44,7 +44,10 @@ docs/project/next-tasks.md                      ← MODIFIED: Task 2.6 updated w
 ## How to Resume (Next Session)
 
 1. **Upload Dataset**: Run `uv run python scripts/data/upload_dataset.py` to upload the cleaned V2 dataset to the Hugging Face Hub.
-2. **Pre-flight Check**: On Kaggle, after Cell 4 runs, read the PRE-FLIGHT output and confirm each example starts with `<s>[INST]` and ends with `</s>`. If you see `<|begin_of_text|>` or `<|eot_id|>`, stop — the tokenizer is wrong.
+2. **Pre-flight Check**: On Kaggle, after Cell 4 runs, read the PRE-FLIGHT output and verify all three of:
+   - Each example **starts with `<s>[INST]`** (not `<|begin_of_text|>` or `<|eot_id|>` — those mean the tokenizer is wrong, stop immediately)
+   - The **full system prompt text appears uncut** — scroll down in the decoded output and confirm the prompt doesn't end mid-sentence before the human turn begins (catches `max_seq_length` truncation)
+   - Each example ends with **exactly one `</s>`** — not embedded mid-string, not missing entirely (missing = model will never learn to stop)
 3. **Launch Training**: Set `SANITY_CHECK = True` first (20 steps), verify loss drops, then flip to `SANITY_CHECK = False` for the full 3-epoch run.
 4. **Checkpoint Benchmarking**: Run `scripts/eval/run_benchmark.py` against the epoch 1, epoch 2, and epoch 3 checkpoints using the 150-prompt regression suite. Compare cultural bleed on utility tasks vs. IKS accuracy. Pick the best checkpoint.
 5. **GGUF Export**: Merge LoRA adapters and export to GGUF (q4_k_m) for local inference via Ollama.
